@@ -1,0 +1,26 @@
+/*
+ *
+ * CollabPress Styles
+ *
+*/
+
+#cp-gravatar {
+	float: left;
+	margin-right: 12px;
+}
+
+#cp-gravatar img {
+	padding: 6px;
+}
+
+#cp-task-summary {
+	min-height: 75px;
+	height: auto;
+	border-bottom: 1px solid #F0F0F0;
+	margin-bottom: 6px;
+    word-wrap:break-word;
+}
+
+.cp_about {
+    text-align: center;
+}
