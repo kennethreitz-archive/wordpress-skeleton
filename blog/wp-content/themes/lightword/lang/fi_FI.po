@@ -1,0 +1,676 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Finnish translation of LightWord (1.5.0)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-22 21:25+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Tomi Rantalankila\n"
+"Language-Team: Tomi Rantalankila\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Finnish\n"
+"X-Poedit-Country: FINLAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;_ngettext:1,2\n"
+"X-Poedit-Basepath: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1\n"
+"X-Poedit-SearchPath-0: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1\n"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/404.php:4
+#: Media/LightWord/English/1.9.1/archives.php:61
+#: Media/LightWord/English/1.9.1/archives.php:71
+#: Media/LightWord/English/1.9.1/index.php:26
+#: Media/LightWord/English/1.9.1/page.php:17
+#: Media/LightWord/English/1.9.1/single.php:46
+msgid "Not Found"
+msgstr "Ei löytynyt"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/404.php:5
+#: Media/LightWord/English/1.9.1/archives.php:61
+#: Media/LightWord/English/1.9.1/archives.php:72
+#: Media/LightWord/English/1.9.1/index.php:27
+#: Media/LightWord/English/1.9.1/page.php:18
+#: Media/LightWord/English/1.9.1/single.php:47
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Valitettavasti etsit jotakin mitä ei ole täällä."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/archives.php:10
+#: Media/LightWord/English/1.9.1/index.php:17
+msgid "Continue reading"
+msgstr "Lisää"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:6
+#: Media/LightWord/English/1.9.1/legacy.comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Tämä viesti on salasanasuojattu. Ole hyvä ja syötä salasana nähdäksesi kommentit."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:15
+#: Media/LightWord/English/1.9.1/index.php:17
+#: Media/LightWord/English/1.9.1/legacy.comments.php:12
+msgid "Comments"
+msgstr "Kommentit"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:16
+msgid "Trackbacks"
+msgstr "Paluuviitteet"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:17
+#: Media/LightWord/English/1.9.1/legacy.comments.php:13
+msgid "( subscribe to comments on this post )"
+msgstr "( seuraa tämän artikkelin kommentteja )"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:30
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Vanhemmat kommentit"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:31
+msgid "Newer Comments &raquo;"
+msgstr "Uudemmat kommentit &raquo;"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:39
+#: Media/LightWord/English/1.9.1/legacy.comments.php:47
+msgid "No comments yet."
+msgstr "Ei kommentteja vielä."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:41
+#: Media/LightWord/English/1.9.1/legacy.comments.php:91
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Valitettavasti kommentointi on toistaiseksi estetty."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:48
+#: Media/LightWord/English/1.9.1/legacy.comments.php:52
+#: Media/LightWord/English/1.9.1/single.php:30
+msgid "Leave a comment"
+msgstr "Jätä kommentti"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:51
+#: Media/LightWord/English/1.9.1/legacy.comments.php:55
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Sinun pitää olle <a href=\"%s\">kirjautuneena sisään</a> jättääksesi kommentin."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:56
+#: Media/LightWord/English/1.9.1/legacy.comments.php:62
+#, php-format
+msgid "Logged in as %s."
+msgstr "Kirjautunut sisään tunnuksella %s."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:56
+#: Media/LightWord/English/1.9.1/legacy.comments.php:62
+msgid "Log out of this account"
+msgstr "Kirjaudu ulos tästä tunnuksesta"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:56
+#: Media/LightWord/English/1.9.1/legacy.comments.php:62
+msgid "Log out &raquo;"
+msgstr "Kirjaudu ulos &raquo;"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:65
+#: Media/LightWord/English/1.9.1/legacy.comments.php:67
+msgid "Name"
+msgstr "Nimi"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:65
+#: Media/LightWord/English/1.9.1/comments.php:68
+#: Media/LightWord/English/1.9.1/legacy.comments.php:67
+#: Media/LightWord/English/1.9.1/legacy.comments.php:70
+msgid "(required)"
+msgstr "(vaaditaan)"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:68
+#: Media/LightWord/English/1.9.1/legacy.comments.php:70
+msgid "Mail (will not be published)"
+msgstr "Sähköposti (ei julkaista)"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:71
+#: Media/LightWord/English/1.9.1/legacy.comments.php:73
+msgid "Website"
+msgstr "WWW-sivu"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:75
+#: Media/LightWord/English/1.9.1/legacy.comments.php:81
+msgid "Submit"
+msgstr "Lähetä"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:75
+msgid "( Cancel )"
+msgstr "( Peruuta )"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:85
+msgid "No trackbacks yet."
+msgstr "Ei paluuviitteitä vielä."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/comments.php:86
+msgid "Trackbacks are disabled."
+msgstr "Paluuviitteet kytketty pois päältä."
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/footer.php:7
+#, php-format
+msgid "Copyright %s %s %s &middot; Powered by %s <br/> %s developed by %s for you."
+msgstr "Copyright %s %s %s &middot; Toteutettu %sin avulla. / %s on %sn kehittämä ulkoasu Sinulle."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/footer.php:11
+msgid "Go to top"
+msgstr "Siirry ylös"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:20
+msgid "Layout settings"
+msgstr "Ulkoasun asetukset"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:22
+#: Media/LightWord/English/1.9.1/functions.php:23
+msgid "Original"
+msgstr "Alkuperäinen"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:22
+msgid "Wider"
+msgstr "Leveämpi"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:26
+msgid "Cufon settings"
+msgstr "Cufonin asetukset<p><i>(kytke pois päältä jos ääkköset eivät toimi)</i></p>"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:28
+#: Media/LightWord/English/1.9.1/functions.php:29
+#: Media/LightWord/English/1.9.1/functions.php:112
+#: Media/LightWord/English/1.9.1/functions.php:113
+msgid "Enabled"
+msgstr "Päällä"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:28
+#: Media/LightWord/English/1.9.1/functions.php:112
+msgid "Disabled"
+msgstr "Pois päältä"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:28
+msgid "Extra"
+msgstr ""
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:32
+msgid "Disable comments on pages"
+msgstr "Estä kommentointi sivuilla"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:33
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr "Laita ruksi tähän laatikkoon jos haluat ESTÄÄ KOMMENTIT sivuilla"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:38
+msgid "Custom image header"
+msgstr "Muokattu kuvakenttä"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:39
+msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code>"
+msgstr "Laita ruksi tähän laatikkoon jos haluat NÄYTTÄÄ KUVAN Cufon tekstin sijasta sivun ylätunnisteessa.<br/>Kuvan sijainti: <code>lightword/images/header-image.png</code> / Mitat: <code>600x56px</code>"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:44
+msgid "Header image height in pixels"
+msgstr "Ylätunnisteen kuvan korkeus pikseleinä"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:50
+msgid "About author feature"
+msgstr "Tietoa artikkelin kirjoittaja ominaisuudesta"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:51
+msgid "Add information about post author on post footer"
+msgstr "Jätä tietoa artikkelin kirjoittajasta artikkelin alatunnisteeseen"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:56
+msgid "Enjoy this post feature"
+msgstr "Nauti tämän viestin ominaisuuksista"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:57
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr "Laita ruksi tähän laatikkoon jos haluat laittaa <em>Nauti tästä artikkelista</em> ominaisuuden PÄÄLLE"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:62
+msgid "Show categories on front menu"
+msgstr "Näytä kategoriat päävalikossa"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:63
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr "Laita ruksi tähän laatikkoon jos haluat NÄYTTÄÄ KATEGORIAT sivujen sijasta päävalikossa"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:68
+msgid "Exclude pages from front menu"
+msgstr "Poista sivut yläotsakkeesta"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:69
+msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
+msgstr "Kirjoita sivun numero seuraavaan kenttään, esimerkiksi : <code>5,19,24</code>"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:74
+msgid "Exclude categories from front menu"
+msgstr "Poista kategoriat yläotsakkeesta"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:75
+msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
+msgstr "Kirjoita kategorioiden numero seuraavaan kenttään, esimerkiksi: <code>5,19,24</code>"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:80
+msgid "Remove home button"
+msgstr "Poista etusivu-nappi"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:81
+msgid "Remove home button from front menu"
+msgstr "Poista etusivu-nappi päävalikosta"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:86
+msgid "Remove search box"
+msgstr "Poista hakulaatikko"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:87
+msgid "Remove search box and expand space for front menu"
+msgstr "Poista hakulaatikko ja lisää tilaa ylätunnisteelle"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:92
+msgid "Remove tags from posts"
+msgstr "Poista tagit artikkeleista"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:93
+msgid "Show only categories in post footer"
+msgstr "Näytä ainoastaan kategoriat artikkelin alatunnisteessa"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:98
+msgid "Remove RSS badge"
+msgstr "Poista RSS-leima"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:99
+msgid "Remove RSS badge from blog header"
+msgstr "Poista RSS-leima blogin ylätunnisteesta"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:105
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr "Etsi <code>name=\"cx\"</code> in the <strong>Hakulaatikon koodi</strong> Google CSE:llä ja kirjoita <code>arvo</code> tähän."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:110
+msgid "Sidebox settings"
+msgstr "Artikkelin päivämäärän esitys"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:112
+msgid "Show only date"
+msgstr "Näytä vain päivämäärä"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:112
+msgid "Show only in posts"
+msgstr "Näytä ainoastaan artikkeleissa"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:112
+msgid "Last two options together"
+msgstr "Viimeiset kaksi vaihtoehtoa yhdessä"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:118
+msgid "Put your custom css code here"
+msgstr "Kirjoita oma CSS-koodisi tähän"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:151
+#: Media/LightWord/English/1.9.1/functions.php:163
+msgid "LightWord Settings"
+msgstr "LightWordin asetukset"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:158
+msgid "settings saved"
+msgstr ": asetukset tallennettu"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:159
+msgid "settings reset"
+msgstr ": asetukset palautettu"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:167
+msgid "Support the developer"
+msgstr "Tue kehittäjää"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:178
+msgid "Theme version check"
+msgstr "Teeman version tarkistus"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:187
+msgid "Version check failed."
+msgstr "Teeman version tarkistus epäonnistui."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:189
+msgid "Cool! You have the latest version."
+msgstr "Hienoa! Sinulla on uusin versio."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:189
+#: Media/LightWord/English/1.9.1/functions.php:190
+msgid "view changelog"
+msgstr "näytä versiokohtaiset muutokset (changelog)"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:190
+msgid "You have"
+msgstr "Sinulla on"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:190
+msgid "Latest version"
+msgstr "Uusin versio"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:190
+msgid "Get the latest version"
+msgstr "Hanki uusin versio"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:197
+msgid "General settings"
+msgstr "Yleiset asetukset"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:258
+msgid "Save changes"
+msgstr "Tallenna muutokset"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:264
+msgid "Search for help"
+msgstr "Etsi apua"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:264
+msgid "or"
+msgstr "tai"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:279
+#: Media/LightWord/English/1.9.1/functions.php:291
+msgid "No updates available."
+msgstr "Ei päivityksiä saatavilla."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:298
+msgid "What is Cufon?"
+msgstr "Mikä on Cufon?"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:305
+msgid "Click here to reset all settings"
+msgstr "Palauta tästä kaikki alkuperäiset asetukset"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:502
+msgid "Search"
+msgstr "Hae"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:527
+#: Media/LightWord/English/1.9.1/functions.php:544
+msgid "Off"
+msgstr "Pois"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:572
+msgid "Posted on"
+msgstr "Kirjoitettu"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:589
+msgid "delete"
+msgstr "poista"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:590
+msgid "spam"
+msgstr "merkitse roskapostiksi"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:591
+msgid "edit"
+msgstr "muokkaa"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:599
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr "Ole hyvä ja laita selaimesi viitteet päälle. Jos taas olet roskapostittaja niin poistu sivulta!"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:620
+#: Media/LightWord/English/1.9.1/sidebar.php:48
+msgid "Syndicate this site using RSS"
+msgstr "Seuraa sivua RSS-syötteellä"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:620
+msgid "Subscribe via RSS"
+msgstr "Seuraa RSS:llä"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:651
+msgid "F jS, Y - H:i"
+msgstr "j.m.Y, G:i"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:653
+msgid "( REPLY )"
+msgstr "( VASTAA )"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/functions.php:654
+#: Media/LightWord/English/1.9.1/legacy.comments.php:33
+msgid "Your comment is awaiting moderation."
+msgstr "Kommenttisi odottaa tarkistusta."
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/header.php:34
+msgid "Home"
+msgstr "Etusivu"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/index.php:13
+#: Media/LightWord/English/1.9.1/page.php:11
+#: Media/LightWord/English/1.9.1/single.php:12
+msgid "PAGES"
+msgstr "SIVUT"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/index.php:16
+#: Media/LightWord/English/1.9.1/single.php:29
+msgid "Filed under:"
+msgstr "Kategoriat:"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/index.php:16
+#: Media/LightWord/English/1.9.1/single.php:29
+msgid "Tagged as:"
+msgstr "Tagit:"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/index.php:17
+msgid "1 Comment"
+msgstr "1 kommentti"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/index.php:17
+#: Media/LightWord/English/1.9.1/single.php:30
+msgid "Comments Off"
+msgstr "Kommentit pois päältä"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/index.php:17
+msgid "No Comments"
+msgstr "Ei kommentteja"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/index.php:17
+msgid "Read more about"
+msgstr "Lue lisää"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/index.php:32
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; Uudemmat artikkelit"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/index.php:33
+msgid "Older Entries &raquo;"
+msgstr "Vanhemmat artikkelit &raquo;"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/legacy.comments.php:26
+msgid "F jS, Y"
+msgstr "j.m.Y, G:i"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/legacy.comments.php:26
+msgid "edit this comment"
+msgstr "muokkaa tätä kommenttia"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/legacy.comments.php:77
+#, php-format
+msgid "You can use these tags: %s"
+msgstr "Voit käyttää näitä tageja: %s"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/page.php:7
+msgid "Edit this page"
+msgstr "Muokkaa tätä sivua"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/sidebar.php:9
+msgid "Pages"
+msgstr "Sivut"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/sidebar.php:14
+msgid "Categories"
+msgstr "Kategoriat"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/sidebar.php:34
+msgid "Blogroll"
+msgstr ""
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/sidebar.php:39
+msgid "Archive"
+msgstr "Arkisto"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/sidebar.php:44
+msgid "Meta"
+msgstr ""
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/sidebar.php:48
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"RSS-syöte\">RSS</abbr>"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/sidebar.php:49
+msgid "The latest comments to all posts in RSS"
+msgstr "Viimeimmät kommentit kaikista artikkeleista RSS-syötteenä"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/sidebar.php:49
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "Kommentit <abbr title=\"Really Simple Syndication\">RSS-syötteenä</abbr>"
+
+#: /Volumes/Media HD 1/Translations Media/LightWord/English/1.9.1/single.php:8
+msgid "Edit this post"
+msgstr "Muokkaa tätä artikkelia"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/single.php:16
+msgid "Enjoy this article?"
+msgstr "Nauti tästä artikkelista?"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/single.php:17
+msgid "Consider subscribing to our rss feed!"
+msgstr "Harkitse RSS-syötteemme seuraamista!"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/single.php:24
+msgid "About"
+msgstr "Tietoa"
+
+#: /Volumes/Media HD 1/Translations
+#: Media/LightWord/English/1.9.1/single.php:24
+msgid "No description. Please complete your profile."
+msgstr "Ei kuvausta. Ole hyvä ja täydennä profiiliasi."
+
+#~ msgid "Image instead text on header"
+#~ msgstr "Kuva tekstin sijasta sivun ylätunnisteessa"
+#~ msgid "Correct input: <code>5,19,24</code>"
+#~ msgstr "Syöttötapa : <code>5,19,24</code>"
+#~ msgid "Check this box if you would like to DISABLE <em>Cufon</em><br/>"
+#~ msgstr ""
+#~ "Ruksita tämä laatikko jos haluat kytkeä <em>Cufonin</em> POIS PÄÄLTÄ<br/>"
+#~ msgid "Activate Extra Cufon"
+#~ msgstr "Laita Extra Cufon päälle"
+#~ msgid ""
+#~ "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature."
+#~ "<br/><b>For umlauts (german) and other special characters.</b>"
+#~ msgstr ""
+#~ "Laita ruksi tähän laatikkoon laittaaksesi <em>Extra Cufon</em> "
+#~ "ominaisuuden PÄÄLLE<br/><b>Kielillä joissa on erikoismerkkejä (kuten "
+#~ "saksa)</b>"
+#~ msgid "Take out tags in posts footer"
+#~ msgstr "Poista tagit artikkelin alaosasta"
+#~ msgid "Author"
+#~ msgstr "Kirjoittaja"
+#~ msgid "Click here to cancel reply"
+#~ msgstr "Klikkaa tästä peruuttaaksesi vastaus"
+#~ msgid "Reply to this comment"
+#~ msgstr "Vastaa tähän kommenttiin"
+#~ msgid "% Comments"
+#~ msgstr "% kommenttia"
+

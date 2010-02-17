@@ -1,0 +1,16 @@
+#wrapper{width:977px;}
+#header{background:transparent url(images/wider/content_top.png) no-repeat;}
+#top_bar{padding-top:72px;}
+#content{background: #FFF url(images/wider/content_middle.png) repeat-y;width:935px;}
+#content-body{width:714px;}
+#footer{background:transparent url(images/wider/content_bottom.png) no-repeat;height:8px;}
+#footer .text{width:960px;}
+ul#front_menu{width:720px;}
+.expand{width:930px !important;}
+.hentry{width:713px;overflow:hidden;}
+.cat_tags{background:#FFF url(images/wider/tags_category.png) no-repeat;width:713px;}
+.cat_tags_close{background:#FFF url(images/wider/tags_category.png) 0 -81px no-repeat;width:713px;}
+* html .cat_tags{width:705px;}
+* html .cats_tags_close{width:705px;}
+.cat_tags .category{width:570px;}
+.cat_tags .continue{padding-right:15px;}

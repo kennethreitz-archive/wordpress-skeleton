@@ -1,0 +1,52 @@
+<h2>Role Manager Help</h2>
+<h3 id="help_toc">Table of Contents</h3>
+<ul>
+<li><a href="#general">Some basics for using the "Role Manager Plugin"</a></li>
+<li><a href="#roles">Roles</a>
+ <ul>
+  <li><a href="#attached_roles">Attached Roles</a>
+  <li><a href="#detached_roles">Detached Roles</a>
+ </ul>
+</li>
+<li><a href="#caps">Capabilities</a>
+ <ul>
+  <li><a href="#detached_caps">Detached Capabilities</a>
+  <li><a href="#dedicated_caps">Dedicated Capabilities</a>
+  <li><a href="#unused_caps">Unused Capabilities</a>
+ </ul>
+</li>
+<li><a href="#web">External Docs about WordPress's Roles and Capabilities</a></li>
+</ul>
+<h3 id="#general">Some basics for using the "Role Manager Plugin"</h3>
+<p>With the "Role Manager Plugin" you can manage Roles and Capabilities of your WordPress-Blog.</p>
+<p><strong>Please use this plugin with care, because all changes you make, are persistent. This means that if you deactivate 
+the "Role Manager Plugin" your changes stay active!</strong></p>
+<p>The "Role Manager" adds four pages to your blogs users menu and an additional fieldset with capabilities on a single 
+users profile page. For using the "Role Manager" a user needs the capability "Manage Roles" in addition to the "Edit Users" 
+capability.</p>
+<h3 id="roles">Roles</h3>
+<p>When using "Role Manager" a single user can be a member of only one role. The maximum length for a role-name is 30 characters. 
+Only letters, digits and spaces are allowed. You can't set a role-name equal to an existing capability-name.</p>  
+<h4 id="attached_roles">Attached Roles</h4>
+<p>An "attached role" is a role with one or more assigned users.</p>
+<h4 id="detached_roles">Detached Roles</h4>
+<p>A role with no assigned users is a "detached role".</p>
+<h3 id="caps">Capabilities</h3>
+<p>The maximum length for a capability-name is 30 chars. 
+Only letters, digits and spaces are allowed. You can't set a capability-name equal to an existing role-name.</p>  
+<h4 id="detached_caps">Detached Capabilities</h4>
+<p>If a capability is asigned to a role and no users are assigned to the role it is considered a "detached capability".</p>
+<h4 id="dedicated_caps">Dedicated Capabilities</h4>
+<p>The capability isn't assigned to any role but is assigned to one or more users as an extra capability.</p>
+<h4 id="unused_caps">Unused Capabilities</h4>
+<p>Unused Capabilities are not assigned to any role or any user as an extra capability. Only this kind of capabilities can 
+be removed by using the button "Purge Unused Capabilities".</p>
+
+<h3 id="#web">External Docs about WordPress's Roles and Capabilities</h3>
+<p>Places where you can find more about the System of Roles and Capabilities in WordPress:</p>
+<ul>
+<li>Homepage of the "<a href="http://www.im-web-gefunden.de/wordpress-plugins/role-manager/" title="Role Manager Homepage">Role Manager Plugin</a>"</li>
+<li><a href="http://codex.wordpress.org/Roles_and_Capabilities" title="Wordpress Codex about Roles and Capabilities">Wordpress Codex about Roles and Capabilities</a></li>
+<li>Owen Winkler's <a href="http://asymptomatic.net/2005/07/11/1747/permission-change-overview-in-16/" title="Permission Change Overview">Permission Change Overview in Wordpress</a> Version 2.0 and above</li>
+<li>Ryan Boren's <a href="http://boren.nu/archives/2005/12/01/whats-new-in-20-roles-and-capabilities/" title="What's New in 2.0: Roles and Capabilities">What's New in 2.0: Roles and Capabilities</a></li>
+</ul>

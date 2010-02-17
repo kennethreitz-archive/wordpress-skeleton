@@ -1,0 +1,17 @@
+# Asynchronous Google Analytics Plugin for WordPress
+
+## What is this?
+As you know, Google Analytics is the web's premier analytics tracking and analysis tool.
+Until recently, it has been a (very small) bear to load to page, since it would block content downloads until it was finished loading. To fix this, Google recently announced it's new Asynchronous JavaScript loading capabilities. This will heavily increase your site's loading speed.
+
+## When happend?
+As soon as they did this, the world freaked out, and everyone started talking about it. However, no one decided to make a WordPress plugin to do all the 'hard work' for you. 
+
+## I wanna' play!
+So, Kenneth Reitz (http://kennethreitz.com) decided to capitalize on this by, naturally, building a plugin for the masses to utilize this amazing new offering and giving it away for free.
+
+**Enjoy.**
+
+Oh, To install, copy *this folder* to:
+	
+	wp-content/plugins/ . 

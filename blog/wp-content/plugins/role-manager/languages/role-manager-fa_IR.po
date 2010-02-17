@@ -1,0 +1,172 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: role-manager\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-08-17 19:35+0330\n"
+"Last-Translator: Mohammad Mihankhah <manager24@gmail.com>\n"
+"Language-Team: Mohamamd Mihankhah <manager24@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Persian(Farsi)\n"
+"X-Poedit-Country: Iran\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: http://underline.wordpress.com/persian-role-manager/\n"
+
+#: role-manager.php:77
+msgid "Removing this permission from a role assigned to you could be a really bad idea.  Are you sure?"
+msgstr "حذف این مجوز دسترسی از قوانین دسترسی کار مناسبی نیست . آیا مطمئن هستید ؟"
+
+#: role-manager.php:171
+#: role-manager.php:383
+msgid "Capability granted"
+msgstr "مجوز داده شد"
+
+#: role-manager.php:171
+#: role-manager.php:385
+msgid "Capability denied"
+msgstr "مجوز گرفته شد"
+
+#: role-manager.php:255
+#: role-manager.php:263
+msgid "Rename Role"
+msgstr "تغییر نام سطح دسترسی"
+
+#: role-manager.php:259
+msgid "New Name:"
+msgstr "نام جدید :"
+
+#: role-manager.php:287
+msgid "You cannot delete the default role."
+msgstr "شما قادر به حذف کردن سطح دسترسی پیش فرض نمیباشید"
+
+#: role-manager.php:314
+msgid "Can't make "
+msgstr "ایجاد نشد"
+
+#: role-manager.php:314
+msgid " the default. Not a role."
+msgstr "این پیشفرض . سطح دسترسی نمیباشد ."
+
+#: role-manager.php:317
+msgid "Default role changed."
+msgstr "سطح دسترسی پیشفرض تغییر کرد"
+
+#: role-manager.php:340
+msgid "Set user level of role."
+msgstr "افزودن کاربران این سطح دسترسی"
+
+#: role-manager.php:353
+msgid "Delete Role"
+msgstr "حذف سطح دسترسی"
+
+#: role-manager.php:354
+msgid "All users with this role will have it removed, and they will lose all capabilities from this role (unless other roles provide it). If a user has only this role, they will be assigned the default role, "
+msgstr "تمامی کاربرانی که در این سطح دسترسی قرار دارند حذف خواهند شد و همچنین آن ها تمامی مجوزهایی که از طریق این سطح دسترسی گرفته اند را از دست خواهند داد و اگر کاربری فقط عضو این سطح دسترسی باشد به سطح دسترسی پیشفرض ، تغییر میابد"
+
+#: role-manager.php:358
+msgid "Confirm Delete Role"
+msgstr "تائید حذف سطح دسترسی"
+
+#: role-manager.php:387
+msgid "New role created"
+msgstr "سطح دسترسی جدید ایجاد شد"
+
+#: role-manager.php:389
+msgid "New capability created"
+msgstr "مجوز جدید ایجاد گردید"
+
+#: role-manager.php:391
+msgid "Unused capabilites purged"
+msgstr "حذف مجوزهای استفاده نشده"
+
+#: role-manager.php:393
+msgid "Role renamed"
+msgstr "نام سطح دسترسی تغییر یافت"
+
+#: role-manager.php:395
+msgid "Role deleted"
+msgstr "سطح دسترسی حذف گردید"
+
+#: role-manager.php:397
+msgid "Default role changed"
+msgstr "سطح دسترسی پیشفرض تغییر یافت"
+
+#: role-manager.php:399
+msgid "Set user level of role"
+msgstr "افزودن کاربران این سطح دسترسی"
+
+#: role-manager.php:403
+msgid "Manage Roles"
+msgstr "مدیریت سطوح دسترسی"
+
+#: role-manager.php:404
+msgid "This page is for editing what capabilities are associated with each role. To change the capabilities of a specific user, click on Authors &amp; Users, then click Edit next to the user you want to change. You can <a href=\"#new-role\">add new roles</a> as well."
+msgstr "این صفحه برای ایجاد و ویرایش مجوز ها و سطوح دسترسی میباشد ، شما میتوانید با <a href=\"#new-role\">کلیک بر اینجا</a> یک سطح دسترسی جدید ایجاد نمائید ."
+
+#: role-manager.php:420
+msgid "rename"
+msgstr "تغییر نام"
+
+#: role-manager.php:424
+msgid "delete"
+msgstr "حذف"
+
+#: role-manager.php:436
+#: role-manager.php:439
+msgid "Granted"
+msgstr "اعمال"
+
+#: role-manager.php:443
+msgid "Denied"
+msgstr "عدم تائید"
+
+#: role-manager.php:450
+msgid "Update"
+msgstr "بروزرسانی"
+
+#: role-manager.php:460
+#, php-format
+msgid " User Level: %s"
+msgstr "سطح کاربری : %s"
+
+#: role-manager.php:466
+msgid "Create a new Role"
+msgstr "ایجاد سطح دسترسی جدید"
+
+#: role-manager.php:468
+msgid "Role Name:"
+msgstr "نام سطح دسترسی :"
+
+#: role-manager.php:469
+msgid "Capabilities to be included:"
+msgstr "مجوزهایی که شامل میشود :"
+
+#: role-manager.php:477
+msgid "Create Role"
+msgstr "ایجاد سطح دسترسی"
+
+#: role-manager.php:480
+msgid "Custom Capabilities"
+msgstr "امکانات اختیاری"
+
+#: role-manager.php:482
+msgid "New Capability Name:"
+msgstr "نام مجوز جدید :"
+
+#: role-manager.php:483
+msgid "Create Capability"
+msgstr "ایجاد مجوز"
+
+#: role-manager.php:486
+msgid "Purge Unused Capabilities"
+msgstr "حذف مجوزهای استفاده نشده"
+
+#: role-manager.php:486
+msgid "If core capabilities are not currently assigned to any Role, then you must manually re-add them after this action if you want to use them.  Are you sure you want to do this?"
+msgstr "اگر مجوزهای اصلی که توسط سیستم تعریف شده اند را حذف نمائید ، شما میبایستید آنها را به صورت دستی ایجاد نمائید ، آیا مطمئن هستید ؟"
+
+#: role-manager.php:496
+msgid "Assign extra capabilites"
+msgstr "حذف و اضافه مجوز"
+

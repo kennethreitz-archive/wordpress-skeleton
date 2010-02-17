@@ -1,0 +1,429 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: role-manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-10-20 17:43+0200\n"
+"PO-Revision-Date: 2008-01-31 14:32+0100\n"
+"Last-Translator: Myriam Faulkner <web@fairweb.fr>\n"
+"Language-Team: Myriam Faulkner <web@fairweb.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../capability-management.php:86
+msgid "New capability created"
+msgstr "Le nouveau droit a été créé"
+
+#: ../capability-management.php:88
+msgid "Unused capabilites purged"
+msgstr "Les droits non-utilisés ont été purgées"
+
+#: ../capability-management.php:93
+msgid "Manage Capabilities"
+msgstr "Gérer les droits"
+
+#: ../capability-management.php:94
+msgid "This page is for editing capabilities."
+msgstr "Cette page permet d&#180;éditer les droits."
+
+#: ../capability-management.php:96
+msgid "Custom Capabilities"
+msgstr "Droits personnalisés"
+
+#: ../capability-management.php:98
+msgid "New Capability Name: "
+msgstr "Nom du nouveau droit :"
+
+#: ../capability-management.php:101
+msgid "Create Capability"
+msgstr "Créer un droit"
+
+#: ../capability-management.php:103
+#: ../capability-management.php:115
+msgid "Purge Unused Capabilities"
+msgstr "Purger les droits inutilisés"
+
+#: ../capability-management.php:107
+msgid "This capabilities are unused and will be purged"
+msgstr "Ces droits ne sont pas utilisés et suront purgés"
+
+#: ../capability-management.php:115
+msgid "If core capabilities are not currently assigned to any Role, then you must manually re-add them after this action if you want to use them.  Are you sure you want to do this?"
+msgstr "Si les droits par défaut de Wordpress ne sont actuellement pas affectés aux rôles, vous devez alors les ré-ajouter manuellement après cette action si vous voulez les utiliser. Etes-vous certain de vouloir faire celà ?"
+
+#: ../capability-management.php:119
+#: ../general.php:91
+msgid "You don't have unused capabilities."
+msgstr "Vous n&#180;avez pas de droits inutilisés"
+
+#: ../capability-management.php:136
+msgid "Assign extra capabilites"
+msgstr "Ajouter des droits complémentaires"
+
+#: ../general.php:28
+msgid "General information about your Roles and Capabilities and this Plugin"
+msgstr "Information générale concernant vos Rôles et Droits et ce Plugin"
+
+#: ../general.php:30
+msgid "Statistics"
+msgstr "Statistiques"
+
+#: ../general.php:32
+msgid "User-Statistic"
+msgstr "Statistiques Utilisateurs"
+
+#: ../general.php:34
+msgid "Users in your Blog: "
+msgstr "Utilisateurs de votre blog :"
+
+#: ../general.php:36
+msgid "Roles-Statistic"
+msgstr "Statistiques Rôles"
+
+#: ../general.php:38
+msgid "Roles in your Blog: "
+msgstr "Rôles de votre blog :"
+
+#: ../general.php:39
+msgid "Attached Roles: "
+msgstr "Rôles affectés :"
+
+#: ../general.php:46
+msgid "Detached Roles: "
+msgstr "Rôles détachés :"
+
+#: ../general.php:54
+msgid "Capabilities-Statistic"
+msgstr "Statistiques Droits :"
+
+#: ../general.php:56
+msgid "Capabilities in your Blog: "
+msgstr "Droits de votre blog :"
+
+#: ../general.php:62
+msgid "Detached Capabilities: "
+msgstr "Droits détachés :"
+
+#: ../general.php:69
+msgid "You don't have detached capabilities."
+msgstr "Vous n&#180;avez pas de droits détachés."
+
+#: ../general.php:73
+msgid "Dedicated Capabilities: "
+msgstr "Droits dédiés :"
+
+#: ../general.php:80
+msgid "You don't have dedicated capabilities."
+msgstr "Vous n&#180;avez pas de droits dédiés."
+
+#: ../general.php:84
+msgid "Unused Capabilities: "
+msgstr "Droits non-utilisés"
+
+#: ../help.php:31
+msgid "Help for the Role Manager Plugin"
+msgstr "Aide pour le plugin Role Manager"
+
+#: ../help.php:33
+msgid "General Help Contents"
+msgstr "Aide générale"
+
+#: ../help.php:35
+msgid "Help TOC"
+msgstr "Aide Table des Matières"
+
+#: ../help.php:36
+#: ../help.php:46
+msgid "System Information for your Support Request"
+msgstr "Informations système"
+
+#: ../help.php:44
+msgid "No help file found!"
+msgstr "Aucune aide ne correspond !"
+
+#: ../help.php:47
+msgid "Use this information if you have any problems or questions with the \"Role Manager\" at the \"<a href=\"http://www.im-web-gefunden.de/wordpress-plugins/role-manager\" title=\"Role Manager Plugin Homepage\">Role Manager Plugin Homepage</a>\"."
+msgstr "Si vous avez des problèmes ou questions concernant \"Role Manager\", allez sur \"<a href=\"http://www.im-web-gefunden.de/wordpress-plugins/role-manager\" title=\"Role Manager Plugin Homepage\">la page d&#180;accueil de Role Manager</a>\"."
+
+#: ../help.php:50
+msgid "WordPress-Version"
+msgstr "Version de Wordpress"
+
+#: ../help.php:51
+msgid "WordPress-Db-Version"
+msgstr "Version Db Wordpress"
+
+#: ../help.php:52
+msgid "Role-Manager-Version"
+msgstr "Version de Role Manager"
+
+#: ../help.php:53
+msgid "PHP-Version"
+msgstr "Version de PHP"
+
+#: ../help.php:55
+msgid "preg_replace"
+msgstr "preg_replace"
+
+#: ../help.php:55
+msgid "yes"
+msgstr "oui"
+
+#: ../help.php:55
+msgid "no"
+msgstr "non"
+
+#: ../help.php:56
+msgid "Help-URI"
+msgstr "Aide URI"
+
+#: ../help.php:59
+msgid "Your comments are also welcome!"
+msgstr "Vos commentaires sont les bienvenus !"
+
+#: ../role-management.php:69
+#: ../role-management.php:439
+msgid "Capability granted"
+msgstr "Droit affecté"
+
+#: ../role-management.php:69
+#: ../role-management.php:441
+msgid "Capability denied"
+msgstr "Droit refusé"
+
+#: ../role-management.php:117
+#: ../role-management.php:125
+msgid "Rename Role"
+msgstr "Renommer le rôle"
+
+#: ../role-management.php:121
+#: ../role-management.php:207
+msgid "New Name:"
+msgstr "Nouveau nom :"
+
+#: ../role-management.php:203
+#: ../role-management.php:221
+msgid "Copy Role"
+msgstr "Copier un rôle"
+
+#: ../role-management.php:208
+msgid "Copy of"
+msgstr "Copie de"
+
+#: ../role-management.php:210
+#: ../role-management.php:534
+msgid "Capabilities to be included:"
+msgstr "Droits à affecter:"
+
+#: ../role-management.php:261
+msgid "Delete Role"
+msgstr "Supprimer le rôle."
+
+#: ../role-management.php:262
+msgid "All users with this role will have it removed, and they will lose all capabilities from this role (unless other roles provide it). If a user has only this role, they will be assigned the default role, "
+msgstr "Ce rôle sera supprimé pour tous les utilisateurs qui y sont affectés et ceux-ci perdront les droits correspondants (à moins que les autres rôles ne les détiennent). Si un utilisateur est seulement affecté à ce rôle, il se verra attribuer le rôle par défaut,"
+
+#: ../role-management.php:267
+msgid "Confirm Delete Role"
+msgstr "Confirmer la suppression du rôle"
+
+#: ../role-management.php:341
+msgid "Default role changed."
+msgstr "Le rôle par défaut a été modifié."
+
+#: ../role-management.php:349
+msgid "Error: Default role not changed."
+msgstr "Erreur : le rôle par défaut n&#180;a pas a été modifié."
+
+#: ../role-management.php:409
+msgid "Set user level of role."
+msgstr "Définir le niveau du rôle."
+
+#: ../role-management.php:443
+msgid "New role created"
+msgstr "Le nouveau rôle a été créé"
+
+#: ../role-management.php:445
+msgid "Role renamed"
+msgstr "Le rôle a été renommé"
+
+#: ../role-management.php:447
+msgid "Role copied"
+msgstr "Le rôle a été copié"
+
+#: ../role-management.php:449
+msgid "Role deleted"
+msgstr "Le rôle a été supprimé"
+
+#: ../role-management.php:451
+msgid "Default role changed"
+msgstr "Le rôle par défaut a été modifié."
+
+#: ../role-management.php:453
+msgid "Set user level of role"
+msgstr "Définir le niveau d&#8217;utilisateur du rôle"
+
+#: ../role-management.php:457
+msgid "Manage Roles"
+msgstr "Gérer les rôles"
+
+#: ../role-management.php:458
+msgid "This page is for editing what capabilities are associated with each role. To change the capabilities of a specific user, click on Authors &amp; Users, then click Edit next to the user you want to change. You can <a href=\"#new-role\">add new roles</a> as well."
+msgstr "Cette page permet d&#8217;éditer les droits affectés à chaque rôles. Pour modifier les droits d&#8217;un utilisateur spécifique, cliquez sur Auteurs et Utilisateurs, puis cliquez sur Modifier en face de l&#8217;utilisateur concerné. You pouvez également <a href=\"#new-role\">Ajouter un nouveau rôle</a>."
+
+#: ../role-management.php:475
+msgid "rename"
+msgstr "renommer"
+
+#: ../role-management.php:478
+msgid "copy"
+msgstr "copier"
+
+#: ../role-management.php:484
+msgid "delete"
+msgstr "supprimer"
+
+#: ../role-management.php:498
+#: ../role-management.php:500
+msgid "Granted"
+msgstr "Affecté"
+
+#: ../role-management.php:503
+msgid "Denied"
+msgstr "Refusé"
+
+#: ../role-management.php:514
+msgid "Update"
+msgstr "Mise à jour"
+
+#: ../role-management.php:525
+#, php-format
+msgid " User Level: %s"
+msgstr "Niveau de l&#8217;utilisateur: %s"
+
+#: ../role-management.php:531
+msgid "Create a new Role"
+msgstr "Créer un nouveau rôle"
+
+#: ../role-management.php:533
+msgid "Role Name:"
+msgstr "Nom du rôle:"
+
+#: ../role-management.php:543
+msgid "Create Role"
+msgstr "Créer un rôle"
+
+#: ../role-manager.php:108
+msgid "Role Management"
+msgstr "Gestion des rôles"
+
+#: ../role-manager.php:108
+msgid "Roles"
+msgstr "Rôles"
+
+#: ../role-manager.php:110
+msgid "Capability Management"
+msgstr "Gestion des droits"
+
+#: ../role-manager.php:110
+msgid "Capabilities"
+msgstr "Droits"
+
+#: ../role-manager.php:112
+msgid "Role-/Capability Management General"
+msgstr "Gestion générale des Rôles/Droits"
+
+#: ../role-manager.php:114
+msgid "Role-/Capability Management Help"
+msgstr "Aide sur la gestion des rôles/droits"
+
+#: ../role-manager.php:128
+#: ../role-manager.php:561
+msgid "You can't remove this permission from a role assigned to you!"
+msgstr "Vous ne pouvez pas supprimer le droit d&#180;un rôle qui vous est affecté !"
+
+#: ../role-manager.php:544
+msgid "You must enter a role name."
+msgstr "Vous devez entrer le nom d'un rôle."
+
+#: ../role-manager.php:545
+#, php-format
+msgid "Can't rename. A Role with the name %s already exists."
+msgstr "Impossible à renommer. Un rôle du nom de %s existe déjà."
+
+#: ../role-manager.php:546
+msgid "You cannot delete the default role."
+msgstr "Vous ne pouvez pas supprimer le rôle par défaut."
+
+#: ../role-manager.php:547
+#, php-format
+msgid "Can't make %s the default. Not a role."
+msgstr "Impossible de choisir %s par défaut. Ce n&#180; pas un rôle."
+
+#: ../role-manager.php:548
+#, php-format
+msgid "Can't create the new Role. A Role with the name %s already exists."
+msgstr "Impossible de créer le nouveau rôle. Un rôle du nom de %s existe déjà."
+
+#: ../role-manager.php:549
+msgid "Role name to short or to long"
+msgstr "Nom du rôle trop court ou trop long"
+
+#: ../role-manager.php:550
+#: ../role-manager.php:551
+msgid "A valid role name can only have letters, digits and spaces"
+msgstr "Le nom du rôle doit être composé de lettres, de chiffres et espaces pour être valide"
+
+#: ../role-manager.php:552
+#, php-format
+msgid "Can't create the new Role. A Capability with the name %s already exists."
+msgstr "Impossible de créer le nouveau rôle. Un droit du nom de %s existe déjà."
+
+#: ../role-manager.php:553
+msgid "You must enter a valid user level"
+msgstr "Vous devez entrer un niveau d&#180;utilisateur valide."
+
+#: ../role-manager.php:554
+msgid "You must enter a capability name."
+msgstr "Vous devez entrer un nom de droit."
+
+#: ../role-manager.php:555
+msgid "Capability don't exists."
+msgstr "Ce droit n&#180;existe pas."
+
+#: ../role-manager.php:556
+msgid "Capability name to short or to long"
+msgstr "Nom du droit trop court ou trop long."
+
+#: ../role-manager.php:557
+#: ../role-manager.php:558
+msgid "A valid capability name can only have letters, digits and spaces"
+msgstr "Un nom de droit doit être composé de lettres, chiffre et espaces pour être valide."
+
+#: ../role-manager.php:559
+#, php-format
+msgid "Can't create the new Capability. A Role with the name %s already exists."
+msgstr "Impossible de créer ce droit. Un rôle du nom de %s existe déjà."
+
+#: ../role-manager.php:560
+msgid "You are not allowed to do this here"
+msgstr "Vous n&#180;avez pas le droit de faire celà"
+
+#: ../role-manager.php:562
+msgid "You cannot remove the Edit Users or Manage Roles capability from yourself."
+msgstr "Vous ne pouvez pas supprimer l&#180;édition du profil ou la gestion des rôles et droit de votre propre profil."
+
+#: ../role-manager.php:563
+msgid "Wrong User-ID!"
+msgstr "Mauvais ID d&#180;utilisateur !"
+
+#: ../role-manager.php:564
+msgid "User don't exists!"
+msgstr "L&#180;utilisateur n&#180;exsite pas !"
+
+#~ msgid "Can't make "
+#~ msgstr "Impossible à réaliser"
+

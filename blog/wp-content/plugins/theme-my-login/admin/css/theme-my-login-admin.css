@@ -1,0 +1,10 @@
+#tml-container { margin: 20px 0 5px 0; font-size: 12px; }
+
+#tml-container table th { width: 125px; }
+
+#tml-container table input.regular-text { width: 25em; }
+#tml-container table input.extended-text { width: 40em; }
+#tml-container table input.full-text { width: 99%; }
+#tml-container table input.small-text { width: 50px; }
+
+#tml-container div div { font-size: 1em; }

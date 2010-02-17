@@ -1,0 +1,609 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LightWord 1.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-23 14:29+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"Language-Team: Stefano Tombolini\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:4
+#: archives.php:61
+#: archives.php:71
+#: index.php:26
+#: page.php:17
+#: single.php:46
+msgid "Not Found"
+msgstr "Non trovato"
+
+#: 404.php:5
+#: archives.php:61
+#: archives.php:72
+#: index.php:27
+#: page.php:18
+#: single.php:47
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Spiacenti, quello che stai cercando non &egrave; qui."
+
+#: archives.php:10
+#: index.php:17
+msgid "Continue reading"
+msgstr "Continua a leggere"
+
+#: comments.php:6
+#: legacy.comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Questo articolo &egrave; protetto da password. Inserire la password per visualizzare i commenti."
+
+#: comments.php:15
+#: index.php:17
+#: legacy.comments.php:12
+msgid "Comments"
+msgstr "Commenti"
+
+#: comments.php:16
+msgid "Trackbacks"
+msgstr "Trackback"
+
+#: comments.php:17
+#: legacy.comments.php:13
+msgid "( subscribe to comments on this post )"
+msgstr "(iscriviti ai commenti di questo post)"
+
+#: comments.php:30
+msgid "&laquo; Older Comments"
+msgstr "&laquo;  Successivi"
+
+#: comments.php:31
+msgid "Newer Comments &raquo;"
+msgstr "Precedenti &raquo;"
+
+#: comments.php:39
+#: legacy.comments.php:47
+msgid "No comments yet."
+msgstr "Ancora nessun commento."
+
+#: comments.php:41
+#: legacy.comments.php:91
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Spiacenti, il modulo dei commenti è chiuso per ora."
+
+#: comments.php:48
+#: legacy.comments.php:52
+#: single.php:30
+msgid "Leave a comment"
+msgstr "Lascia un commento"
+
+#: comments.php:51
+#: legacy.comments.php:55
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Devi effettuare il <a href=\"%s\">login</a> per inserire un commento."
+
+#: comments.php:56
+#: legacy.comments.php:62
+#, php-format
+msgid "Logged in as %s."
+msgstr "Connesso come %s."
+
+#: comments.php:56
+#: legacy.comments.php:62
+msgid "Log out of this account"
+msgstr "Esci da questo account"
+
+#: comments.php:56
+#: legacy.comments.php:62
+msgid "Log out &raquo;"
+msgstr "Esci &raquo;"
+
+#: comments.php:65
+#: legacy.comments.php:67
+msgid "Name"
+msgstr "Nome"
+
+#: comments.php:65
+#: comments.php:68
+#: legacy.comments.php:67
+#: legacy.comments.php:70
+msgid "(required)"
+msgstr "(richiesto)"
+
+#: comments.php:68
+#: legacy.comments.php:70
+msgid "Mail (will not be published)"
+msgstr "Mail (non sarà pubblicata)"
+
+#: comments.php:71
+#: legacy.comments.php:73
+msgid "Website"
+msgstr "Sito web"
+
+#: comments.php:75
+#: legacy.comments.php:81
+msgid "Submit"
+msgstr "Invia"
+
+#: comments.php:75
+msgid "( Cancel )"
+msgstr "( Annulla )"
+
+#: comments.php:85
+msgid "No trackbacks yet."
+msgstr "Ancora nessun trackback."
+
+#: comments.php:86
+msgid "Trackbacks are disabled."
+msgstr ""
+
+#: footer.php:7
+#, fuzzy, php-format
+msgid "Copyright %s %s %s &middot; Powered by %s <br/> %s developed by %s for you."
+msgstr "Copyright %s %s %s &middot; Powered by %s &middot; Tema sviluppato da %s."
+
+#: footer.php:11
+msgid "Go to top"
+msgstr "Torna in cima"
+
+#: functions.php:20
+#, fuzzy
+msgid "Layout settings"
+msgstr "Impostazioni"
+
+#: functions.php:22
+#: functions.php:23
+msgid "Original"
+msgstr ""
+
+#: functions.php:22
+msgid "Wider"
+msgstr ""
+
+#: functions.php:26
+#, fuzzy
+msgid "Cufon settings"
+msgstr "Impostazioni"
+
+#: functions.php:28
+#: functions.php:29
+#: functions.php:112
+#: functions.php:113
+msgid "Enabled"
+msgstr ""
+
+#: functions.php:28
+#: functions.php:112
+#, fuzzy
+msgid "Disabled"
+msgstr "Disabilita Cuf&oacute;n"
+
+#: functions.php:28
+msgid "Extra"
+msgstr ""
+
+#: functions.php:32
+msgid "Disable comments on pages"
+msgstr "Disabilita i commenti nelle pagine"
+
+#: functions.php:33
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr "Inserire la spunta se s'intende DISABILITARE i commenti nelle pagine"
+
+#: functions.php:38
+msgid "Custom image header"
+msgstr ""
+
+#: functions.php:39
+msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code>"
+msgstr "Inserire la spunta se s'intende ABILITARE la visualizzazione di un'immagine nell'header invece del testo formattato con Cuf&oacute;. <br /> Posizione dell'immagine: <code>lightword/images/header-image.png</code> / Dimensioni: <code>600x56px</code>"
+
+#: functions.php:44
+msgid "Header image height in pixels"
+msgstr ""
+
+#: functions.php:50
+msgid "About author feature"
+msgstr ""
+
+#: functions.php:51
+msgid "Add information about post author on post footer"
+msgstr "Mostra informazioni sull'autore dell'articolo nel footer dell'articolo stesso"
+
+#: functions.php:56
+#, fuzzy
+msgid "Enjoy this post feature"
+msgstr "Mi piace!"
+
+#: functions.php:57
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr "Inserire la spunta se s'intende ABILITARE <em>Mi piace</em>"
+
+#: functions.php:62
+#, fuzzy
+msgid "Show categories on front menu"
+msgstr "Mostra le categorie nel menu principale"
+
+#: functions.php:63
+#, fuzzy
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr "Inserire la spunta se s'intende ABILITARE la visualizzazione delle categorie nella barra del menu, al posto delle pagine"
+
+#: functions.php:68
+#, fuzzy
+msgid "Exclude pages from front menu"
+msgstr "Mostra le categorie nel menu principale"
+
+#: functions.php:69
+msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
+msgstr ""
+
+#: functions.php:74
+#, fuzzy
+msgid "Exclude categories from front menu"
+msgstr "Mostra le categorie nel menu principale"
+
+#: functions.php:75
+msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
+msgstr ""
+
+#: functions.php:80
+msgid "Remove home button"
+msgstr ""
+
+#: functions.php:81
+msgid "Remove home button from front menu"
+msgstr ""
+
+#: functions.php:86
+msgid "Remove search box"
+msgstr ""
+
+#: functions.php:87
+msgid "Remove search box and expand space for front menu"
+msgstr ""
+
+#: functions.php:92
+msgid "Remove tags from posts"
+msgstr ""
+
+#: functions.php:93
+#, fuzzy
+msgid "Show only categories in post footer"
+msgstr "Mostra le categorie nel menu principale"
+
+#: functions.php:98
+msgid "Remove RSS badge"
+msgstr "Rimuovere il badge RSS"
+
+#: functions.php:99
+msgid "Remove RSS badge from blog header"
+msgstr "Rimuovere il badge RSS dall'intestazione del blog"
+
+#: functions.php:105
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr ""
+
+#: functions.php:110
+#, fuzzy
+msgid "Sidebox settings"
+msgstr "Impostazioni"
+
+#: functions.php:112
+msgid "Show only date"
+msgstr ""
+
+#: functions.php:112
+#, fuzzy
+msgid "Show only in posts"
+msgstr "Mostra le categorie nel menu principale"
+
+#: functions.php:112
+msgid "Last two options together"
+msgstr ""
+
+#: functions.php:118
+msgid "Put your custom css code here"
+msgstr ""
+
+#: functions.php:151
+#: functions.php:163
+msgid "LightWord Settings"
+msgstr "Opzioni LightWord"
+
+#: functions.php:158
+msgid "settings saved"
+msgstr "opzioni salvate"
+
+#: functions.php:159
+msgid "settings reset"
+msgstr "opzioni ripristinate"
+
+#: functions.php:167
+msgid "Support the developer"
+msgstr "Sostieni lo sviluppatore"
+
+#: functions.php:178
+msgid "Theme version check"
+msgstr "Controllo versione"
+
+#: functions.php:187
+msgid "Version check failed."
+msgstr "Controllo della versione fallito."
+
+#: functions.php:189
+msgid "Cool! You have the latest version."
+msgstr "Ottimo! Hai già l'ultima versione."
+
+#: functions.php:189
+#: functions.php:190
+#, fuzzy
+msgid "view changelog"
+msgstr "Salva le modifiche"
+
+#: functions.php:190
+msgid "You have"
+msgstr "È installata"
+
+#: functions.php:190
+msgid "Latest version"
+msgstr "Ultima versione"
+
+#: functions.php:190
+msgid "Get the latest version"
+msgstr "Scarica l'ultima versione"
+
+#: functions.php:197
+msgid "General settings"
+msgstr "Impostazioni"
+
+#: functions.php:258
+msgid "Save changes"
+msgstr "Salva le modifiche"
+
+#: functions.php:264
+msgid "Search for help"
+msgstr "Supporto ed aiuto"
+
+#: functions.php:264
+msgid "or"
+msgstr "o"
+
+#: functions.php:279
+#: functions.php:291
+msgid "No updates available."
+msgstr "Nessun aggiornamento disponibile."
+
+#: functions.php:298
+msgid "What is Cufon?"
+msgstr "Cos'&egrave; il Cuf&oacute;n?"
+
+#: functions.php:305
+msgid "Click here to reset all settings"
+msgstr "Annulla tutte le modifiche"
+
+#: functions.php:502
+msgid "Search"
+msgstr "Cerca"
+
+#: functions.php:527
+#: functions.php:544
+msgid "Off"
+msgstr ""
+
+#: functions.php:572
+#, fuzzy
+msgid "Posted on"
+msgstr "Autore dell'articolo"
+
+#: functions.php:589
+msgid "delete"
+msgstr "elimina"
+
+#: functions.php:590
+msgid "spam"
+msgstr "spam"
+
+#: functions.php:591
+msgid "edit"
+msgstr "modifica"
+
+#: functions.php:599
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr "Abilitare i referrer nelle impostazioni del browser, oppure, se sei uno spammer, semplicemente sparisci!"
+
+#: functions.php:620
+#: sidebar.php:33
+#: sidebar_two-columns-for-categories.php:48
+msgid "Syndicate this site using RSS"
+msgstr "Diffondi questo sito via RSS"
+
+#: functions.php:620
+msgid "Subscribe via RSS"
+msgstr "Iscriviti via RSS"
+
+#: functions.php:651
+#, fuzzy
+msgid "F jS, Y - H:i"
+msgstr "d F Y"
+
+#: functions.php:653
+msgid "( REPLY )"
+msgstr "( RISPONDI )"
+
+#: functions.php:654
+#: legacy.comments.php:33
+msgid "Your comment is awaiting moderation."
+msgstr "Il tuo commento è in moderazione."
+
+#: header.php:34
+msgid "Home"
+msgstr "Home"
+
+#: index.php:13
+#: page.php:11
+#: single.php:12
+msgid "PAGES"
+msgstr ""
+
+#: index.php:16
+#: single.php:29
+msgid "Filed under:"
+msgstr "Inserito in:"
+
+#: index.php:16
+#: single.php:29
+msgid "Tagged as:"
+msgstr "Tag: "
+
+#: index.php:17
+msgid "1 Comment"
+msgstr "1 commento"
+
+#: index.php:17
+#: single.php:30
+#, fuzzy
+msgid "Comments Off"
+msgstr "Commenti"
+
+#: index.php:17
+msgid "No Comments"
+msgstr "Nessun commento"
+
+#: index.php:17
+msgid "Read more about"
+msgstr "Leggi di pi&ugrave; al riguardo"
+
+#: index.php:32
+msgid "&laquo; Newer Entries"
+msgstr "&laquo;  Successivi"
+
+#: index.php:33
+msgid "Older Entries &raquo;"
+msgstr "Precedenti &raquo;"
+
+#: legacy.comments.php:26
+msgid "F jS, Y"
+msgstr "d F Y"
+
+#: legacy.comments.php:26
+msgid "edit this comment"
+msgstr "modifica questo commento"
+
+#: legacy.comments.php:77
+#, php-format
+msgid "You can use these tags: %s"
+msgstr "Puoi utilizzare questi tag: %s"
+
+#: page.php:7
+msgid "Edit this page"
+msgstr "Modifica questa pagina"
+
+#: sidebar.php:9
+#: sidebar_two-columns-for-categories.php:9
+msgid "Pages"
+msgstr "Pagine"
+
+#: sidebar.php:14
+#: sidebar_two-columns-for-categories.php:14
+msgid "Categories"
+msgstr "Categorie"
+
+#: sidebar.php:19
+#: sidebar_two-columns-for-categories.php:34
+msgid "Blogroll"
+msgstr "Blogroll"
+
+#: sidebar.php:24
+#: sidebar_two-columns-for-categories.php:39
+msgid "Archive"
+msgstr "Archivio"
+
+#: sidebar.php:29
+#: sidebar_two-columns-for-categories.php:44
+msgid "Meta"
+msgstr "Meta"
+
+#: sidebar.php:33
+#: sidebar_two-columns-for-categories.php:48
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: sidebar.php:34
+#: sidebar_two-columns-for-categories.php:49
+msgid "The latest comments to all posts in RSS"
+msgstr "Gli ultimi commenti a tutti gli articoli in RSS"
+
+#: sidebar.php:34
+#: sidebar_two-columns-for-categories.php:49
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> dei commenti"
+
+#: single.php:8
+msgid "Edit this post"
+msgstr "Modifica questo articolo"
+
+#: single.php:16
+msgid "Enjoy this article?"
+msgstr "Mi piace!"
+
+#: single.php:17
+msgid "Consider subscribing to our rss feed!"
+msgstr "Iscriviti al nostro feed RSS!"
+
+#: single.php:24
+msgid "About"
+msgstr ""
+
+#: single.php:24
+msgid "No description. Please complete your profile."
+msgstr "Nessuna descrizione inserita. Completa il profilo."
+
+#~ msgid "Image instead text on header"
+#~ msgstr "Header in formato immagine anzich&egrave; testo"
+#~ msgid "Take out tags in posts footer"
+#~ msgstr "Rimuovi i tag in coda all'articolo"
+#~ msgid "Author"
+#~ msgstr "Autore"
+#~ msgid "Check this box if you would like to DISABLE <em>Cufon</em><br/>"
+#~ msgstr ""
+#~ "Inserire la spunta se s'intende DISABILITARE il <em>Cuf&oacute;n</em>"
+#~ msgid "Activate Extra Cufon"
+#~ msgstr "Attiva Extra Cuf&oacute;n"
+#~ msgid ""
+#~ "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature."
+#~ "<br/><b>For umlauts (german) and other special characters.</b>"
+#~ msgstr ""
+#~ "Inserire la spunta se s'intende ABILITARE l'Extra <em>Cuf&oacute;n</"
+#~ "em><br /><b>Per caratteri tedeschi (es.umlaut) e altri caratteri "
+#~ "speciali</b></code>"
+
+#, fuzzy
+#~ msgid "( Click here to cancel reply )"
+#~ msgstr "Annulla tutte le modifiche"
+#~ msgid "% Comments"
+#~ msgstr "% commenti"
+#~ msgid "Reply to this comment"
+#~ msgstr "modifica questo commento"
+
+#, fuzzy
+#~ msgid ""
+#~ "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature"
+#~ msgstr ""
+#~ "Inserire la spunta se s'intende DISABILITARE il <em>Cuf&oacute;n</em>"
+
+#, fuzzy
+#~ msgid ""
+#~ "Check this box if you would like to SHOW IMAGE instead Cufon text on "
+#~ "header."
+#~ msgstr ""
+#~ "Inserire la spunta se s'intende ABILITARE la visualizzazione delle "
+#~ "categorie nella barra del menu, al posto delle pagine"
+

@@ -1,0 +1,95 @@
+table.pod_enclosure, table.pod_format {
+	border: 1px solid #ccc;
+	margin: 0 0 10px 0;
+	width: 100%;
+}
+
+table.pod_format {
+	width: 95%;
+	margin: 0 auto 20px auto;
+}
+
+#podcasting table.pod_enclosure td, table.pod_format td {
+	padding-right: 12px;
+	background: #f1f1f1;
+}
+
+#podcasting table.pod_enclosure td.pod-title, table.pod_format td.pod-title {
+	font-weight: bold;
+	background: #dfdfdf;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+
+#podcasting table.pod_enclosure td.pod-player input {
+	text-align: center;
+}
+
+#podcasting table.pod_enclosure input, #podcasting table.pod_enclosure select,
+table.pod_format input, table.pod_format select {
+	width: 100%;
+}
+
+#podcasting table.pod_enclosure .pod-length {
+	width: 60px;
+}
+
+#podcasting table.pod_enclosure .pod-explicit, #podcasting table.pod_format .pod-format-explicit {
+	width: 68px;
+}
+
+#podcasting table.pod_enclosure .pod-update, table.pod_format .pod-update {
+	width: 128px;
+}
+
+table.pod_format .pod-update input {
+	width: 35px !important;
+}
+
+#podcasting h3 {
+	margin-bottom: 5px;
+}
+
+#podcasting abbr {
+	border-bottom: 1px dotted #c3c3c3;
+}
+
+#podcasting table.pod_enclosure a {
+	position: relative;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px dotted #aaa;
+}
+
+table.pod_new_enclosure {
+	width: 97%;
+}
+
+#podcasting table.pod_new_enclosure input, #podcasting table.pod_new_enclosure select {
+	width: 100%;
+}
+
+#podcasting table.pod_new_enclosure td {
+	padding-right: 12px;
+}
+
+#podcasting table.pod_new_enclosure td.pod-title {
+	width: 55px;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+
+#podcasting table.pod_new_enclosure td.pod-new-format {
+	width: 25%;
+	padding-left: 3px;
+	padding-right: 2px;
+}
+
+#podcasting table.pod_new_enclosure td.submit {
+	float: none;
+	width: 45px;
+	padding-right: 0;
+	margin-top: 0;
+	padding-top: 0;
+	border-top: 0;
+}

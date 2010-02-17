@@ -1,0 +1,237 @@
+/* @override http://beta.dagensskiva.com/wp-content/plugins/more-fields/more-fields.css */
+
+table 
+{
+	width: 100%;
+}
+
+/*
+.fieldKey,
+.fieldkey-value,
+.fieldTitle,
+.fieldTitle-value,
+.fieldType,
+.fieldType-value,
+.fieldActions
+{
+}
+*/
+
+.fieldkey-value input,
+.fieldTitle-value input,
+.fieldType-value select
+{
+	width: 95%;
+	margin: 0;
+}
+
+.fieldValues input 
+{
+	width: 95%;
+	margin: 0;
+}
+
+
+div.box_header {
+	background: #aaff66; 
+	height: 64px; 
+	border-top: 5px solid;
+	border-color: #335533;
+}
+
+.fieldActions 
+{
+	text-align: right;
+	padding: 0 1% 0 0;
+}
+
+div.box_name {
+	padding: 10px; 
+	float: left;
+}
+
+input.box_name {
+	width: 240px; 
+	margin-top: 0px;
+}
+
+div.box_position
+{
+	float: left; 
+	padding: 10px; 
+	border: 1px dashed;
+	border-bottom: none;
+	border-top: none;
+}
+
+div.box_options {
+	padding: 16px; 
+	float: left;
+}
+
+div.box_fields {
+	clear: left;
+	padding-left: 10px;
+	background: #88bb66;
+}
+
+div.box_field 
+{
+	padding: 2px; 
+	overflow: hidden;
+}
+
+	.box_field-keys label
+	{
+	}
+
+div.box_delete {
+	float: right;
+/*	padding: 10px; */
+}
+
+label.field_entry {
+	display: block;
+/*	padding: 2px; */
+}
+
+div.field_options {
+	float: right;
+	padding: 5px; 
+}
+
+label.field 
+{
+	display: block;
+	float: left;
+	margin-top: 5px;
+	padding: 0 0 0 0;
+}
+select.where {
+}
+
+
+div.field_select_values {
+	padding-top: 0px;
+	margin-bottom: 0px; 
+}
+
+input.field_select_values 
+{
+	width: 98%;
+}
+
+.postbox.mf-right {
+	background: #f2f2f2; 
+	margin: 0px; margin-top: 
+	0px;
+}
+
+.mf-right-divider {
+	width: 100%; 
+	background: #ffffff; 
+	height: 10px;
+}
+
+/* Write/Edit page formatting */
+
+.mf_label_left { 
+	margin-top: 4px; 
+	display: block; 
+	float: left; 
+	width: 100px; 
+}
+.mf_label_right { 
+	text-align: right; 
+		display: block; 
+		float: left; 
+		margin-left: 2px; 
+}
+.mf_text_left { 
+	width: 80%;
+}
+.mf_text_right { 
+	width: 95%; 
+	margin-left: 1px; 
+}
+.mf_textarea_right { 
+	width: 95%; 
+	margin-left: 1px; 
+	height: 150px; 
+}
+.mf_textarea_left { 
+	width: 80%; 
+	margin-left: 1px; 
+	height: 150px;
+}
+.mf_select_right {
+	width: 100%; 
+}
+.mf_select_left { 
+}
+
+/**
+***   The tabs at the top.
+**/
+.tabs
+{
+	margin: 0;
+	padding: 0 0 0 0;
+	list-style: none;
+	overflow: hidden;
+	background: #eeeeee;
+}
+
+.tabs li
+{
+	float: left;
+	white-space: nowrap;
+	margin: 0;
+}
+
+.tabs li a
+{
+	border: 1px solid #dedede;
+	border-top: none;
+	padding: 6px;
+	display: block;
+	background: #eeeeee;
+	text-decoration: none;
+}
+
+	.tabs li a:hover 
+	{
+		border: 1px solid #bbb;
+		border-top: none;
+	}
+
+.tabs li a.tabs-current
+{
+	background: #fff;
+	color: #D54E21;
+	border: 1px solid #bbb;
+	border-bottom: none;
+}
+
+.tabs li.tabs-leftpadd {
+	width: 20px;
+}
+
+.error {
+	margin: 5em 5em 5em 5em;
+}
+
+ul.subsubsub.mf {
+	float: none;
+	display: block;
+}
+
+ul.subsubsub.mf li {
+	border-left: 1px solid #ccc;
+	padding: 0 .5em;
+}
+
+ul.subsubsub.mf li:first-child {
+	padding-left: 0;
+	border-left: none;
+}

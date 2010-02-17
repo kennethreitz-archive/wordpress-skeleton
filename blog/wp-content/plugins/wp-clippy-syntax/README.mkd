@@ -1,0 +1,14 @@
+# WP Syntax w/ Clippy
+
+WP-Syntax provides clean syntax highlighting for embedding source code within pages or posts.
+And, thanks to [Kenneth Reitz](http://kennethreitz.com), it now supports Clippy from GitHub too :)
+
+
+## Example
+
+	<pre lang="python">
+		for i in range(45):
+			print i
+	</pre>
+
+**Note: ** This plugin is based upon the world of [rmm5t](http://ryan.mcgeary.org/wp-syntax/). 

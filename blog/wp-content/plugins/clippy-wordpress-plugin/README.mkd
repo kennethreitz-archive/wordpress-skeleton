@@ -1,0 +1,8 @@
+# Clippy for Wordress
+
+Once this plugin is installed, you can add a pretty Clippy clip.
+
+##Example 
+
+	<?php clippy("I'm text in your clipboard. tee-hee.") ?>
+	

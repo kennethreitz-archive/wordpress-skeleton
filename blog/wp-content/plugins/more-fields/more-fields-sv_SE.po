@@ -1,0 +1,112 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: More Fields Svenska\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2008-03-31 13:05-0800\n"
+"Last-Translator: \n"
+"Language-Team: http://labs.dagensskiva.com <henrik@dagensskiva.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /Users/henrik/Documents/wp-svn/more-fields/trunk\n"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:71
+msgid "Options saved."
+msgstr "Inställningarna sparades!"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:80
+msgid "Administration"
+msgstr "Administration"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:82
+#, fuzzy
+msgid "Here you can create boxes on the Write/Edit pages (for both Posts and Pages) containing fields that add value to your text. See <a href=\"http://labs.dagensskiva.com/plugins/more-fields/\">some examples</a>. These fields will be stored as custom fields with the key specified for each field."
+msgstr "Lägg till ett fält!"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:84
+msgid "Each key must be unique."
+msgstr "Varje fälts nyckel maste vara unik."
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:89
+msgid "Add new box!"
+msgstr "Lägg till en box!"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:89
+msgid "New boxes will appear at the bottom of the page"
+msgstr "Nya boxar läggs till längst ner på sidan"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:92
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:128
+msgid "Save Settings"
+msgstr "Spara inställningar"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:116
+msgid "General options"
+msgstr "Allmanna inställningar"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:118
+msgid "Remove 'Related' links on Write/Edit page"
+msgstr "Ta bort 'Relaterande' länkarna pa Skriv/Redigera sidan."
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:152
+msgid "Key"
+msgstr "Nyckel"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:154
+msgid "Title"
+msgstr "Titel"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:156
+msgid "Type"
+msgstr "Typ"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:159
+msgid "Remove"
+msgstr "Ta bort"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:160
+msgid "Move up"
+msgstr "Flytta upp"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:161
+msgid "Move down"
+msgstr "Flytta ner"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:216
+msgid "Name of box"
+msgstr "Namn på boxen"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:219
+msgid "Position"
+msgstr "Position"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:219
+msgid "Right"
+msgstr "Höger"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:219
+msgid "Left"
+msgstr "Vänster"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:221
+msgid "Include on Post Write/Edit"
+msgstr "Inkludera på skriv/redigera Inlägg"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:222
+msgid "Include on Page Write/Edit"
+msgstr "Inkludera på skriv/redigera Sida"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:242
+msgid "Delete this box"
+msgstr "Ta bort boxen"
+
+#: /Users/henrik/Documents/wp-svn/more-fields/trunk/more-fields.php:245
+#, fuzzy
+msgid "Add new field!"
+msgstr "Lägg till ett fält!"
+

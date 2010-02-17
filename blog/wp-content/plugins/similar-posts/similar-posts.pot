@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Rob Marsh, SJ
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/similar-posts\n"
+"POT-Creation-Date: 2008-09-09 13:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: similar-posts-admin.php:6
+msgid "Similar Posts Options"
+msgstr ""
+
+#: similar-posts-admin.php:6 similar-posts-admin.php:645
+#: similar-posts-admin.php:648 similar-posts.php:506
+msgid "Similar Posts"
+msgstr ""
+
+#: similar-posts-admin.php:12
+msgid "Similar Posts Feed Options"
+msgstr ""
+
+#: similar-posts-admin.php:12
+msgid "Similar Posts Feed"
+msgstr ""
+
+#: similar-posts-admin.php:34
+msgid "Similar Posts "
+msgstr ""
+
+#: similar-posts-admin.php:36 similar-posts-admin.php:345
+msgid "help and instructions"
+msgstr ""
+
+#: similar-posts-admin.php:38
+#, php-format
+msgid "Please install the %sPost Plugin Library%s plugin."
+msgstr ""
+
+#: similar-posts-admin.php:66 similar-posts-admin.php:106
+#: similar-posts-admin.php:151 similar-posts-admin.php:186
+#: similar-posts-admin.php:226 similar-posts-admin.php:367
+#: similar-posts-admin.php:407 similar-posts-admin.php:452
+#: similar-posts-admin.php:494
+msgid "Options saved"
+msgstr ""
+
+#: similar-posts-admin.php:71 similar-posts-admin.php:372
+msgid "General Settings"
+msgstr ""
+
+#: similar-posts-admin.php:73 similar-posts-admin.php:89
+#: similar-posts-admin.php:374 similar-posts-admin.php:390
+msgid "Save General Settings"
+msgstr ""
+
+#: similar-posts-admin.php:111 similar-posts-admin.php:412
+msgid "Output Settings"
+msgstr ""
+
+#: similar-posts-admin.php:113 similar-posts-admin.php:134
+#: similar-posts-admin.php:414 similar-posts-admin.php:435
+msgid "Save Output Settings"
+msgstr ""
+
+#: similar-posts-admin.php:156 similar-posts-admin.php:457
+msgid "Filter Settings"
+msgstr ""
+
+#: similar-posts-admin.php:158 similar-posts-admin.php:169
+#: similar-posts-admin.php:459 similar-posts-admin.php:470
+msgid "Save Filter Settings"
+msgstr ""
+
+#: similar-posts-admin.php:191
+msgid "Placement Settings"
+msgstr ""
+
+#: similar-posts-admin.php:193 similar-posts-admin.php:202
+msgid "Save Placement Settings"
+msgstr ""
+
+#: similar-posts-admin.php:231 similar-posts-admin.php:499
+msgid "Other Settings"
+msgstr ""
+
+#: similar-posts-admin.php:233 similar-posts-admin.php:244
+#: similar-posts-admin.php:501 similar-posts-admin.php:511
+msgid "Save Other Settings"
+msgstr ""
+
+#: similar-posts-admin.php:272
+#, php-format
+msgid "Indexed %d posts."
+msgstr ""
+
+#: similar-posts-admin.php:279
+msgid "Manage Index"
+msgstr ""
+
+#: similar-posts-admin.php:280
+msgid ""
+"Similar Posts maintains a special index to help search for related posts. "
+"The index is created when the plugin is activated and then kept up-to-date  "
+"automatically when posts are added, edited, or deleted."
+msgstr ""
+
+#: similar-posts-admin.php:281
+msgid "The options that affect the index can be set below."
+msgstr ""
+
+#: similar-posts-admin.php:282
+msgid ""
+"If you are using a language other than english you may find that the plugin "
+"mangles some characters since PHP is normally blind to multibyte characters. "
+"You \tcan force the plugin to interpret extended characters as UTF-8 at the "
+"expense of a little speed but this facility is only available if your "
+"installation of PHP supports the mbstring functions."
+msgstr ""
+
+#: similar-posts-admin.php:283
+msgid ""
+"Languages like Chinese, Korean and Japanese pose a special difficulty for "
+"the full-text search algorithm. As an experiment I have introduced an option "
+"below to work around some of these issues. The text must be encoded as UTF-"
+"8. I would be very grateful for feedback from any users knowledgeable in "
+"these languages."
+msgstr ""
+
+#: similar-posts-admin.php:284
+msgid ""
+"Some related word forms should really be counted together, e.g., \"follow\", "
+"\"follows\", and \"following\". By default, Similar Posts treats such "
+"differences strictly but has two other algorithms which are more relaxed: "
+"<em>stemming</em> and <em>fuzzy matching</em>. The stemming algorithm tries "
+"to reduce related forms to their root stem. Stemming algorithms are provided "
+"for english, german, spanish, french and italian but stemmers for other "
+"languages can be created: see the help for instructions. Fuzzy matching uses "
+"the \"metaphone\" algorithm to handle word variations. Note: both stemming "
+"and fuzzy matching slow down the indexing more than a little. It is worth "
+"experimenting with the three possibilities to see what improves the "
+"similarity of posts in your particular circumstances."
+msgstr ""
+
+#: similar-posts-admin.php:285
+msgid ""
+"The indexing routine processes posts in batches of 100 by default. If you "
+"run into problems with limited memory you can opt to make the batches "
+"smaller."
+msgstr ""
+
+#: similar-posts-admin.php:286
+msgid ""
+"Note: the process of indexing may take a little while. On my modest machine "
+"500 posts take between 5 seconds and 20 seconds (with stemming and utf-8 "
+"support). Don't worry if the screen fails to update until finished."
+msgstr ""
+
+#: similar-posts-admin.php:291
+msgid "Handle extended characters?"
+msgstr ""
+
+#: similar-posts-admin.php:300
+msgid "Treat as Chinese, Korean, or Japanese?"
+msgstr ""
+
+#: similar-posts-admin.php:309
+msgid "Treat Related Word Variations:"
+msgstr ""
+
+#: similar-posts-admin.php:319
+msgid "Batch size:"
+msgstr ""
+
+#: similar-posts-admin.php:324
+msgid "Recreate Index"
+msgstr ""
+
+#: similar-posts-admin.php:343
+msgid "Similar Posts Feed "
+msgstr ""
+
+#: similar-posts-admin.php:604 similar-posts-admin.php:660
+msgid "None Found"
+msgstr ""
+
+#: similar-posts.php:57
+msgid "Post-Plugin Library missing"
+msgstr ""
+
+#: similar-posts.php:538
+msgid "Title:"
+msgstr ""
+
+#: similar-posts.php:539
+msgid "Number of posts to show:"
+msgstr ""
+
+#: similar-posts.php:539
+msgid "(at most 15)"
+msgstr ""
+
+#: similar-posts.php:540
+#, php-format
+msgid "Show only if page: (e.g., %sis_single()%s)"
+msgstr ""
+
+#: similar-posts.php:545 similar-posts.php:546
+msgid "Similar Posts +"
+msgstr ""
+
+#. Plugin Name of an extension
+msgid "Similar Posts"
+msgstr ""
+
+#. Plugin URI of an extension
+msgid "http://rmarsh.com/plugins/similar-posts/"
+msgstr ""
+
+#. Description of an extension
+msgid ""
+"Displays a <a href=\"options-general.php?page=similar-posts.php\">highly "
+"configurable</a> list of related posts. Similarity can be based on any "
+"combination of word usage in the content, title, or tags. Don't be disturbed "
+"if it takes a few moments to complete the installation -- the plugin is "
+"indexing your posts. <a "
+"href=\"http://rmarsh.com/plugins/post-options/\">Instructions and help "
+"online</a>. Requires the latest version of the <a "
+"href=\"http://wordpress.org/extend/plugins/post-plugin-library/\">Post-Plugin "
+"Library</a> to be installed."
+msgstr ""
+
+#. Author of an extension
+msgid "Rob Marsh, SJ"
+msgstr ""
+
+#. Author URI of an extension
+msgid "http://rmarsh.com/"
+msgstr ""

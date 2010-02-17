@@ -1,0 +1,14 @@
+#wrapper{width:811px;}
+#header{background:transparent url(images/content_top.png) no-repeat;}
+#top_bar{padding-top:74px;}
+#content{background: #FFF url(images/content_middle.png) repeat-y;width:769px;}
+#content-body{width:547px;}
+#footer{background:transparent url(images/content_bottom.png) no-repeat;}
+#footer .text{width:785px;}
+ul#front_menu{width:548px;}
+.expand{width:768px !important;}
+.hentry{width:548px;overflow:hidden;}
+.cat_tags{background:#FFF url(images/tags_category.png) no-repeat;width:540px;}
+.cat_tags_close{background:#FFF url(images/tags_category.png)  0 -81px no-repeat;width:548px;}
+.cat_tags .category{width:400px;}
+.cat_tags .continue{padding-right:10px;}

@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PS Disable Auto Formatting 0.9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-01-21 17:35+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-SearchPath-0: ps_disable_auto_formatting\n"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:15
+msgid "content formatting"
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:16
+msgid "comment formatting"
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:17
+msgid "excerpt formatting"
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:18
+msgid "term description formatting"
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:155
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:229
+msgid "Auto Formatting"
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:195
+msgid "Could not update post in the database"
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:198
+msgid "Database is not found."
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:208
+msgid "No formatting post or page exists."
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:211
+msgid "Require checked allow batch formatting."
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:232
+msgid "The settings has changed successfully."
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:236
+#, php-format
+msgid "Batch fomatting process has completed. total %d posts formatted."
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:244
+msgid "The settings has not been changed. There were no changes or failed to update the data base."
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:255
+msgid "disable"
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:264
+msgid "Batch formatting for past posts"
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:265
+msgid ""
+"<p>To make it display the same as the format before run this plug-in,\n"
+"automatic operation process to the specified period of the posts.<br />\n"
+"Even if some unexpected errors occur, the data is restorable because\n"
+"rivision on the processed post is made.<br />\n"
+"This process is safe even if you do two or more times, perhaps. We cannot assure though.<br />\n"
+"* It is strongly recommended to take the <a href=\"http://codex.wordpress.org/Backing_Up_Your_Database\" title=\"Backing Up Your Database\">backup your database</a> before processing.</p>"
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:273
+msgid "Formatting before"
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:276
+msgid "* Formatting posts and pages are modified before this time."
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:281
+msgid "Batch formatting"
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:283
+msgid "Allow batch formatting"
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:287
+msgid "If you have any problems or find a bug in this plugin, please <a href=\"http://www.web-strategy.jp/wp_plugin/ps_disable_auto_formatting/#postcomment\">report to us</a>."
+msgstr ""
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:295
+msgid "Sorry, Your WordPress (version %s) is old to use PS Disable Auto Formatting plugin. Please upgrade to version 2.5 or higher."
+msgstr ""
+

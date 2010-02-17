@@ -1,0 +1,54 @@
+<h2>Hilfethemen zum "Role Manager Plugin"</h2>
+<h3 id="help_toc">Inhalt</h3>
+<ul>
+<li><a href="#general">Einige Grundlagen zur Benutzung des "Role Manager Plugin"</a></li>
+<li><a href="#roles">Rollen</a>
+ <ul>
+  <li><a href="#attached_roles">Zugewiesene Rollen (Attached Roles)</a>
+  <li><a href="#detached_roles">Nicht zugewiesene Rollen (Detached Roles)</a>
+ </ul>
+</li>
+<li><a href="#caps">Berechtigungen</a>
+ <ul>
+  <li><a href="#detached_caps">Berechtigungen mit Rollen aber ohne Benutzer (Detached Capabilities)</a>
+  <li><a href="#dedicated_caps">Berechtigungen ohne Rollen aber mit Benutzern (Dedicated Capabilities)</a>
+  <li><a href="#unused_caps">Unbenutzte Berechtigungen (Unused Capabilities)</a>
+ </ul>
+</li>
+<li><a href="#web">Dokumente im Internet zu WordPress's Rollen und Berehtigungen</a></li>
+</ul>
+<h3 id="#general">Einige Grundlagen zur Benutzung des "Role Manager Plugin"</h3>
+<p>Mit dem "Role Manager Plugin" können Rollen und Berechtigunen eines WordPress-Blog verwaltet werden.</p>
+<p><strong>Bitte benutze dieses Plugin mit Umsicht und Vorsicht, da alle vorgenommenen Änderungen dauerhaft gespeichert werden. 
+Das bedeutet: Auch wenn das "Role Manager Plugin" deaktiviert wird, bleiben die gemachten Änderungen erhalten!</strong></p>
+<p>Der "Role Manager" erweitert das "Benutzer-Menü" des Blogs um vier zusätzliche Seiten. Weiterhin wird die Profil-Seite eines 
+Benutzers um zusätzliche Berechtigungs-Einstellungen für den jeweiligen Benutzer erweitert. 
+Um den "Role Manager" benutzen zu können, benötigt ein Benutzer die Berechtigung "Manage Roles" zusätzlich zur "Edit Users" 
+Berechtigung.</p>
+<h3 id="roles">Rollen</h3>
+<p>Ein Benutzer kann auch bei der Benutzung des "Role Manager" nur einer Rolle angehören. Ein Name für eine Rolle darf 
+nicht länger als 30 Zeichen sein und nur aus Buchstaben, Zahlen und Leerzeichen bestehen. Es ist nicht möglich, den selben 
+Namen für eine Rolle und eine Berechtigung zu vergeben.</p>  
+<h4 id="attached_roles">Zugewiesene Rollen (Attached Roles)</h4>
+<p>Eine Rolle wird als zugewiesene Rolle (attached role) bezeichnet, wenn ihr mindestens ein Benutzer angehört.</p>
+<h4 id="detached_roles">Nicht zugewiesene Rollen (Detached Roles)</h4>
+<p>Alle Rollen ohne einen Benutzer sind "nicht zugewiesene Rollen" (detached roles).</p>
+<h3 id="caps">Berechtigungen</h3>
+<p>Der Name für eine Berechtigung darf maximal 30 Zeichen lang sein und nur Buchstaben, Zahlen und Leerzeichen beinhalten. 
+Es kann keine neue Berechtigung angelegt werden, wenn schon eine Rolle mit diesem Namen existiert.</p>  
+<h4 id="detached_caps">Berechtigungen mit Rollen aber ohne Benutzer (Detached Capabilities)</h4>
+<p>Hierunter fallen alle Berechtigungen, die ausschließlich Rollen ohne Benutzer zugewiesen sind.</p>
+<h4 id="dedicated_caps">Berechtigungen ohne Rollen aber mit Benutzern (Dedicated Capabilities)</h4>
+<p>Diese Klasse von Berechtigungen sind keiner Rolle zugewiesen, sondern sind nur bei mindestens einem einzelnen 
+Benutzern als "Extra Berechtigung" aktiviert.</p>
+<h4 id="unused_caps">Unbenutzte Berechtigungen (Unused Capabilities)</h4>
+<p>Diese Berechtigungen sind keiner Rolle zugewiesenen und für keinen Benutzer als "Extra Berechtigung" aktiviert. 
+Nur Berechtigungen dieses Typs können über den Button "Lösche unbenutzte Berechtigungen" gelöscht werden.</p>
+<h3 id="#web">Dokumente im Internet zu WordPress's Rollen und Berehtigungen</h3>
+<p>Internet-Seiten mit zusätzlichen Informationen zum System von Rollen und Berechtigungen von WordPress:</p>
+<ul>
+<li>Homepage "<a href="http://www.im-web-gefunden.de/wordpress-plugins/role-manager/" title="Role Manager Homepage">Role Manager Plugin</a>"</li>
+<li><a href="http://codex.wordpress.org/Roles_and_Capabilities" title="Wordpress Codex zu Rollen und Berechtigungen">Wordpress Codex über Rollen und Berechtigungen</a></li>
+<li>Owen Winkler's <a href="http://asymptomatic.net/2005/07/11/1747/permission-change-overview-in-16/" title="Permission Change Overview">Überblick zu Berechtigungsänderungen in WordPress</a> Version 2.0 und höher</li>
+<li>Ryan Boren's <a href="http://boren.nu/archives/2005/12/01/whats-new-in-20-roles-and-capabilities/" title="What's New in 2.0: Roles and Capabilities">Was ist neu in 2.0: Rolelen und berechtigungen</a></li>
+</ul>

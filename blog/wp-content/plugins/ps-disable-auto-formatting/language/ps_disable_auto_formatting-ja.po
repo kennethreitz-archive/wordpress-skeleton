@@ -1,0 +1,109 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PS Disable Auto Formatting\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-01-13 11:37+0900\n"
+"PO-Revision-Date: 2009-01-21 17:38+0900\n"
+"Last-Translator: hitoshi omagari\n"
+"Language-Team: Prime Strategy Co.,Ltd. <system@prime-strategy.co.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Japanese\n"
+"X-Poedit-Country: JAPAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: ps_disable_auto_formatting\n"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:15
+msgid "content formatting"
+msgstr "記事内容の自動整形"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:16
+msgid "comment formatting"
+msgstr "コメントの自動整形"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:17
+msgid "excerpt formatting"
+msgstr "抜粋の自動整形"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:18
+msgid "term description formatting"
+msgstr "説明（カテゴリー、リンクなど）の自動整形"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:155
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:229
+msgid "Auto Formatting"
+msgstr "自動整形"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:195
+msgid "Could not update post in the database"
+msgstr "データベースのアップデートに失敗いたしました。"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:198
+msgid "Database is not found."
+msgstr "データベースが見つかりません。"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:208
+msgid "No formatting post or page exists."
+msgstr "整形する記事が存在しません。"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:211
+msgid "Require checked allow batch formatting."
+msgstr "一括整形処理の許可が必要です。"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:232
+msgid "The settings has changed successfully."
+msgstr "設定が変更されました。"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:236
+#, php-format
+msgid "Batch fomatting process has completed. total %d posts formatted."
+msgstr "一括整形処理が完了いたしました。整形処理が行われた記事は、全部で%dです。"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:244
+msgid "The settings has not been changed. There were no changes or failed to update the data base."
+msgstr "設定は変更されていません。変更された項目が存在しないか、データベースのアップデート失敗です。"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:255
+msgid "disable"
+msgstr "停止"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:264
+msgid "Batch formatting for past posts"
+msgstr "過去記事の一括整形"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:265
+msgid ""
+"<p>To make it display the same as the format before run this plug-in,\n"
+"automatic operation process to the specified period of the posts.<br />\n"
+"Even if some unexpected errors occur, the data is restorable because\n"
+"rivision on the processed post is made.<br />\n"
+"This process is safe even if you do two or more times, perhaps. We cannot assure though.<br />\n"
+"* It is strongly recommended to take the <a href=\"http://codex.wordpress.org/Backing_Up_Your_Database\" title=\"Backing Up Your Database\">backup your database</a> before processing.</p>"
+msgstr "<p>プラグインを利用する場合にも段落・改行が以前通り表示されるよう、最新の編集が指定日以前の投稿・ページ全てに対し、自動段落整形の一括処理を行います。<br />整形処理を行った投稿・ページについては、リビジョンを作成しますので、万が一不具合が発生した投稿・ページにおいても復元が可能です。<br />複数回整形処理を行ってもおそらく問題にはならないと思いますが、極力避けてください。<br />※ 処理を行う前に極力<a href=\"http://wpdocs.sourceforge.jp/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%83%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97\" title=\"データベースのバックアップ\">データベースのバックアップ</a>を行っておいてください。</p>"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:273
+msgid "Formatting before"
+msgstr "整形処理時限"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:276
+msgid "* Formatting posts and pages are modified before this time."
+msgstr "※ 最新の更新時刻が指定時刻以前である記事に対して整形処理が行われます。"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:281
+msgid "Batch formatting"
+msgstr "一括整形処理"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:283
+msgid "Allow batch formatting"
+msgstr "一括整形処理を許可"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:287
+msgid "If you have any problems or find a bug in this plugin, please <a href=\"http://www.web-strategy.jp/wp_plugin/ps_disable_auto_formatting/#postcomment\">report to us</a>."
+msgstr "本プラグインのご利用に際して問題があったり、バグを発見された場合には、<a href=\"http://www.web-strategy.jp/wp_plugin/ps_disable_auto_formatting/#postcomment\">ご連絡</a>いただければ幸いです。"
+
+#: ps_disable_auto_formatting/ps_disable_auto_formatting.php:295
+msgid "Sorry, Your WordPress (version %s) is old to use PS Disable Auto Formatting plugin. Please upgrade to version 2.5 or higher."
+msgstr "ご利用中のWordPress (バージョン %s)では、PS Natural Paragraph Formatting プラグインはご利用になれません。2.5以上のバージョンにアップグレードしてください。"
+

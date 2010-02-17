@@ -1,0 +1,432 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-10-20 17:43+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../capability-management.php:86
+msgid "New capability created"
+msgstr ""
+
+#: ../capability-management.php:88
+msgid "Unused capabilites purged"
+msgstr ""
+
+#: ../capability-management.php:93
+msgid "Manage Capabilities"
+msgstr ""
+
+#: ../capability-management.php:94
+msgid "This page is for editing capabilities."
+msgstr ""
+
+#: ../capability-management.php:96
+msgid "Custom Capabilities"
+msgstr ""
+
+#: ../capability-management.php:98
+msgid "New Capability Name: "
+msgstr ""
+
+#: ../capability-management.php:101
+msgid "Create Capability"
+msgstr ""
+
+#: ../capability-management.php:103 ../capability-management.php:115
+msgid "Purge Unused Capabilities"
+msgstr ""
+
+#: ../capability-management.php:107
+msgid "This capabilities are unused and will be purged"
+msgstr ""
+
+#: ../capability-management.php:115
+msgid ""
+"If core capabilities are not currently assigned to any Role, then you must "
+"manually re-add them after this action if you want to use them.  Are you "
+"sure you want to do this?"
+msgstr ""
+
+#: ../capability-management.php:119 ../general.php:91
+msgid "You don't have unused capabilities."
+msgstr ""
+
+#: ../capability-management.php:136
+msgid "Assign extra capabilites"
+msgstr ""
+
+#: ../general.php:28
+msgid "General information about your Roles and Capabilities and this Plugin"
+msgstr ""
+
+#: ../general.php:30
+msgid "Statistics"
+msgstr ""
+
+#: ../general.php:32
+msgid "User-Statistic"
+msgstr ""
+
+#: ../general.php:34
+msgid "Users in your Blog: "
+msgstr ""
+
+#: ../general.php:36
+msgid "Roles-Statistic"
+msgstr ""
+
+#: ../general.php:38
+msgid "Roles in your Blog: "
+msgstr ""
+
+#: ../general.php:39
+msgid "Attached Roles: "
+msgstr ""
+
+#: ../general.php:46
+msgid "Detached Roles: "
+msgstr ""
+
+#: ../general.php:54
+msgid "Capabilities-Statistic"
+msgstr ""
+
+#: ../general.php:56
+msgid "Capabilities in your Blog: "
+msgstr ""
+
+#: ../general.php:62
+msgid "Detached Capabilities: "
+msgstr ""
+
+#: ../general.php:69
+msgid "You don't have detached capabilities."
+msgstr ""
+
+#: ../general.php:73
+msgid "Dedicated Capabilities: "
+msgstr ""
+
+#: ../general.php:80
+msgid "You don't have dedicated capabilities."
+msgstr ""
+
+#: ../general.php:84
+msgid "Unused Capabilities: "
+msgstr ""
+
+#: ../help.php:31
+msgid "Help for the Role Manager Plugin"
+msgstr ""
+
+#: ../help.php:33
+msgid "General Help Contents"
+msgstr ""
+
+#: ../help.php:35
+msgid "Help TOC"
+msgstr ""
+
+#: ../help.php:36 ../help.php:46
+msgid "System Information for your Support Request"
+msgstr ""
+
+#: ../help.php:44
+msgid "No help file found!"
+msgstr ""
+
+#: ../help.php:47
+msgid ""
+"Use this information if you have any problems or questions with the \"Role "
+"Manager\" at the \"<a href=\"http://www.im-web-gefunden.de/wordpress-plugins/"
+"role-manager\" title=\"Role Manager Plugin Homepage\">Role Manager Plugin "
+"Homepage</a>\"."
+msgstr ""
+
+#: ../help.php:50
+msgid "WordPress-Version"
+msgstr ""
+
+#: ../help.php:51
+msgid "WordPress-Db-Version"
+msgstr ""
+
+#: ../help.php:52
+msgid "Role-Manager-Version"
+msgstr ""
+
+#: ../help.php:53
+msgid "PHP-Version"
+msgstr ""
+
+#: ../help.php:55
+msgid "preg_replace"
+msgstr ""
+
+#: ../help.php:55
+msgid "yes"
+msgstr ""
+
+#: ../help.php:55
+msgid "no"
+msgstr ""
+
+#: ../help.php:56
+msgid "Help-URI"
+msgstr ""
+
+#: ../help.php:59
+msgid "Your comments are also welcome!"
+msgstr ""
+
+#: ../role-management.php:69 ../role-management.php:439
+msgid "Capability granted"
+msgstr ""
+
+#: ../role-management.php:69 ../role-management.php:441
+msgid "Capability denied"
+msgstr ""
+
+#: ../role-management.php:117 ../role-management.php:125
+msgid "Rename Role"
+msgstr ""
+
+#: ../role-management.php:121 ../role-management.php:207
+msgid "New Name:"
+msgstr ""
+
+#: ../role-management.php:203 ../role-management.php:221
+msgid "Copy Role"
+msgstr ""
+
+#: ../role-management.php:208
+msgid "Copy of"
+msgstr ""
+
+#: ../role-management.php:210 ../role-management.php:534
+msgid "Capabilities to be included:"
+msgstr ""
+
+#: ../role-management.php:261
+msgid "Delete Role"
+msgstr ""
+
+#: ../role-management.php:262
+msgid ""
+"All users with this role will have it removed, and they will lose all "
+"capabilities from this role (unless other roles provide it). If a user has "
+"only this role, they will be assigned the default role, "
+msgstr ""
+
+#: ../role-management.php:267
+msgid "Confirm Delete Role"
+msgstr ""
+
+#: ../role-management.php:341
+msgid "Default role changed."
+msgstr ""
+
+#: ../role-management.php:349
+msgid "Error: Default role not changed."
+msgstr ""
+
+#: ../role-management.php:409
+msgid "Set user level of role."
+msgstr ""
+
+#: ../role-management.php:443
+msgid "New role created"
+msgstr ""
+
+#: ../role-management.php:445
+msgid "Role renamed"
+msgstr ""
+
+#: ../role-management.php:447
+msgid "Role copied"
+msgstr ""
+
+#: ../role-management.php:449
+msgid "Role deleted"
+msgstr ""
+
+#: ../role-management.php:451
+msgid "Default role changed"
+msgstr ""
+
+#: ../role-management.php:453
+msgid "Set user level of role"
+msgstr ""
+
+#: ../role-management.php:457
+msgid "Manage Roles"
+msgstr ""
+
+#: ../role-management.php:458
+msgid ""
+"This page is for editing what capabilities are associated with each role. To "
+"change the capabilities of a specific user, click on Authors &amp; Users, "
+"then click Edit next to the user you want to change. You can <a href=\"#new-"
+"role\">add new roles</a> as well."
+msgstr ""
+
+#: ../role-management.php:475
+msgid "rename"
+msgstr ""
+
+#: ../role-management.php:478
+msgid "copy"
+msgstr ""
+
+#: ../role-management.php:484
+msgid "delete"
+msgstr ""
+
+#: ../role-management.php:498 ../role-management.php:500
+msgid "Granted"
+msgstr ""
+
+#: ../role-management.php:503
+msgid "Denied"
+msgstr ""
+
+#: ../role-management.php:514
+msgid "Update"
+msgstr ""
+
+#: ../role-management.php:525
+#, php-format
+msgid " User Level: %s"
+msgstr ""
+
+#: ../role-management.php:531
+msgid "Create a new Role"
+msgstr ""
+
+#: ../role-management.php:533
+msgid "Role Name:"
+msgstr ""
+
+#: ../role-management.php:543
+msgid "Create Role"
+msgstr ""
+
+#: ../role-manager.php:108
+msgid "Role Management"
+msgstr ""
+
+#: ../role-manager.php:108
+msgid "Roles"
+msgstr ""
+
+#: ../role-manager.php:110
+msgid "Capability Management"
+msgstr ""
+
+#: ../role-manager.php:110
+msgid "Capabilities"
+msgstr ""
+
+#: ../role-manager.php:112
+msgid "Role-/Capability Management General"
+msgstr ""
+
+#: ../role-manager.php:114
+msgid "Role-/Capability Management Help"
+msgstr ""
+
+#: ../role-manager.php:128 ../role-manager.php:561
+msgid "You can't remove this permission from a role assigned to you!"
+msgstr ""
+
+#: ../role-manager.php:544
+msgid "You must enter a role name."
+msgstr ""
+
+#: ../role-manager.php:545
+#, php-format
+msgid "Can't rename. A Role with the name %s already exists."
+msgstr ""
+
+#: ../role-manager.php:546
+msgid "You cannot delete the default role."
+msgstr ""
+
+#: ../role-manager.php:547
+#, php-format
+msgid "Can't make %s the default. Not a role."
+msgstr ""
+
+#: ../role-manager.php:548
+#, php-format
+msgid "Can't create the new Role. A Role with the name %s already exists."
+msgstr ""
+
+#: ../role-manager.php:549
+msgid "Role name to short or to long"
+msgstr ""
+
+#: ../role-manager.php:550 ../role-manager.php:551
+msgid "A valid role name can only have letters, digits and spaces"
+msgstr ""
+
+#: ../role-manager.php:552
+#, php-format
+msgid ""
+"Can't create the new Role. A Capability with the name %s already exists."
+msgstr ""
+
+#: ../role-manager.php:553
+msgid "You must enter a valid user level"
+msgstr ""
+
+#: ../role-manager.php:554
+msgid "You must enter a capability name."
+msgstr ""
+
+#: ../role-manager.php:555
+msgid "Capability don't exists."
+msgstr ""
+
+#: ../role-manager.php:556
+msgid "Capability name to short or to long"
+msgstr ""
+
+#: ../role-manager.php:557 ../role-manager.php:558
+msgid "A valid capability name can only have letters, digits and spaces"
+msgstr ""
+
+#: ../role-manager.php:559
+#, php-format
+msgid ""
+"Can't create the new Capability. A Role with the name %s already exists."
+msgstr ""
+
+#: ../role-manager.php:560
+msgid "You are not allowed to do this here"
+msgstr ""
+
+#: ../role-manager.php:562
+msgid ""
+"You cannot remove the Edit Users or Manage Roles capability from yourself."
+msgstr ""
+
+#: ../role-manager.php:563
+msgid "Wrong User-ID!"
+msgstr ""
+
+#: ../role-manager.php:564
+msgid "User don't exists!"
+msgstr ""

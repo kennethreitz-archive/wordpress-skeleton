@@ -1,0 +1,42 @@
+form.role-manager label {
+  display: block;
+  margin-bottom: 1em
+}
+form.cap_form, label.cap-label, form.userlevel_form {
+  display: block;
+  float: left;
+  width: 15em;
+  height: 2.5em;
+  margin-bottom: auto;
+}
+h3.roles_name {
+  clear: both;
+  margin: 0px;
+  padding: 1em 0em 0em;
+}
+h2#new-role {
+  clear: both;
+  padding-top: 40px;
+}
+a.roledefaulter {
+  text-decoration:none;
+  border:0px;
+}
+.wrap .rolemanagement_help h2, .wrap .rolemanagement_general h2 {
+  border-bottom: 2px solid #14568A;
+  margin-top: 20px;
+  line-height: 1em;
+}
+.wrap .rolemanagement_help h3, .wrap .rolemanagement_general h3 {
+  border-bottom: 1px solid #14568A;
+  margin-top: 20px;
+  line-height: 1em;
+}
+.wrap .rolemanagement_help a, .wrap .rolemanagement_general a {
+  text-decoration: none;
+  border-bottom: none;
+}
+div.rolemanagement_sysinfo {
+  border: 1px solid #000;
+  padding: 15px;
+}

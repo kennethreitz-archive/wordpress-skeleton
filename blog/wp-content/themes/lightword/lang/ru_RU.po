@@ -1,0 +1,593 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LightWord\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-23 14:29+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: UKRAINE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:4
+#: archives.php:61
+#: archives.php:71
+#: index.php:26
+#: page.php:17
+#: single.php:46
+msgid "Not Found"
+msgstr "Не найдено"
+
+#: 404.php:5
+#: archives.php:61
+#: archives.php:72
+#: index.php:27
+#: page.php:18
+#: single.php:47
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Извините, ничего не найдено по вашему запросу."
+
+#: archives.php:10
+#: index.php:17
+msgid "Continue reading"
+msgstr "Читать полностью"
+
+#: comments.php:6
+#: legacy.comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Эта запись закрыта. Чтобы просмотреть введите пароль."
+
+#: comments.php:15
+#: index.php:17
+#: legacy.comments.php:12
+msgid "Comments"
+msgstr "Комментарии"
+
+#: comments.php:16
+msgid "Trackbacks"
+msgstr "Пинги"
+
+#: comments.php:17
+#: legacy.comments.php:13
+msgid "( subscribe to comments on this post )"
+msgstr "(подписаться на новые комментарии в этой ветке)"
+
+#: comments.php:30
+#, fuzzy
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Новее записи"
+
+#: comments.php:31
+#, fuzzy
+msgid "Newer Comments &raquo;"
+msgstr "Предыдущие записи &raquo;"
+
+#: comments.php:39
+#: legacy.comments.php:47
+msgid "No comments yet."
+msgstr "Пока нет комментариев."
+
+#: comments.php:41
+#: legacy.comments.php:91
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Извините, комментировать здесь запрещено."
+
+#: comments.php:48
+#: legacy.comments.php:52
+#: single.php:30
+msgid "Leave a comment"
+msgstr "Оставить комментарий"
+
+#: comments.php:51
+#: legacy.comments.php:55
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Вы должны <a href=\"%s\">войти в систему</a> чтобы публиковать комментарии."
+
+#: comments.php:56
+#: legacy.comments.php:62
+#, php-format
+msgid "Logged in as %s."
+msgstr "Вошли в систему как %s."
+
+#: comments.php:56
+#: legacy.comments.php:62
+msgid "Log out of this account"
+msgstr "Войти под другой учетной записью"
+
+#: comments.php:56
+#: legacy.comments.php:62
+msgid "Log out &raquo;"
+msgstr "Выйти из системы &raquo;"
+
+#: comments.php:65
+#: legacy.comments.php:67
+msgid "Name"
+msgstr "Имя"
+
+#: comments.php:65
+#: comments.php:68
+#: legacy.comments.php:67
+#: legacy.comments.php:70
+msgid "(required)"
+msgstr "(обязательное)"
+
+#: comments.php:68
+#: legacy.comments.php:70
+msgid "Mail (will not be published)"
+msgstr "Почта (не публикуется)"
+
+#: comments.php:71
+#: legacy.comments.php:73
+msgid "Website"
+msgstr "Вебсайт"
+
+#: comments.php:75
+#: legacy.comments.php:81
+msgid "Submit"
+msgstr "Отправить"
+
+#: comments.php:75
+msgid "( Cancel )"
+msgstr ""
+
+#: comments.php:85
+msgid "No trackbacks yet."
+msgstr "Нет обратных ссылок на эту запись."
+
+#: comments.php:86
+msgid "Trackbacks are disabled."
+msgstr ""
+
+#: footer.php:7
+#, php-format
+msgid "Copyright %s %s %s &middot; Powered by %s <br/> %s developed by %s for you."
+msgstr ""
+
+#: footer.php:11
+msgid "Go to top"
+msgstr "Перейти наверх"
+
+#: functions.php:20
+#, fuzzy
+msgid "Layout settings"
+msgstr "Основные установки"
+
+#: functions.php:22
+#: functions.php:23
+msgid "Original"
+msgstr ""
+
+#: functions.php:22
+msgid "Wider"
+msgstr ""
+
+#: functions.php:26
+#, fuzzy
+msgid "Cufon settings"
+msgstr "Основные установки"
+
+#: functions.php:28
+#: functions.php:29
+#: functions.php:112
+#: functions.php:113
+msgid "Enabled"
+msgstr ""
+
+#: functions.php:28
+#: functions.php:112
+#, fuzzy
+msgid "Disabled"
+msgstr "Отключить Cufon"
+
+#: functions.php:28
+msgid "Extra"
+msgstr ""
+
+#: functions.php:32
+msgid "Disable comments on pages"
+msgstr "Отключить комментарии на этой странице"
+
+#: functions.php:33
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr ""
+
+#: functions.php:38
+msgid "Custom image header"
+msgstr ""
+
+#: functions.php:39
+#, fuzzy
+msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code>"
+msgstr "Активируйте эту опцию если вы хотите ОТКЛЮЧИТЬ <em>Cufon</em>"
+
+#: functions.php:44
+msgid "Header image height in pixels"
+msgstr ""
+
+#: functions.php:50
+msgid "About author feature"
+msgstr ""
+
+#: functions.php:51
+msgid "Add information about post author on post footer"
+msgstr ""
+
+#: functions.php:56
+#, fuzzy
+msgid "Enjoy this post feature"
+msgstr "Понравилась запись"
+
+#: functions.php:57
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr ""
+
+#: functions.php:62
+#, fuzzy
+msgid "Show categories on front menu"
+msgstr "Показывать категории сверху"
+
+#: functions.php:63
+#, fuzzy
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr "Активируйте эту опцию если вы хотите ОТКЛЮЧИТЬ <em>Cufon</em>"
+
+#: functions.php:68
+#, fuzzy
+msgid "Exclude pages from front menu"
+msgstr "Показывать категории сверху"
+
+#: functions.php:69
+msgid "Type the pages id in the box below. Example input: <code>5,19,24</code>"
+msgstr ""
+
+#: functions.php:74
+#, fuzzy
+msgid "Exclude categories from front menu"
+msgstr "Показывать категории сверху"
+
+#: functions.php:75
+msgid "Type the categories id in the box below. Example input: <code>5,19,24</code>"
+msgstr ""
+
+#: functions.php:80
+msgid "Remove home button"
+msgstr ""
+
+#: functions.php:81
+msgid "Remove home button from front menu"
+msgstr ""
+
+#: functions.php:86
+msgid "Remove search box"
+msgstr ""
+
+#: functions.php:87
+msgid "Remove search box and expand space for front menu"
+msgstr ""
+
+#: functions.php:92
+msgid "Remove tags from posts"
+msgstr ""
+
+#: functions.php:93
+#, fuzzy
+msgid "Show only categories in post footer"
+msgstr "Показывать категории сверху"
+
+#: functions.php:98
+msgid "Remove RSS badge"
+msgstr ""
+
+#: functions.php:99
+msgid "Remove RSS badge from blog header"
+msgstr ""
+
+#: functions.php:105
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr ""
+
+#: functions.php:110
+#, fuzzy
+msgid "Sidebox settings"
+msgstr "Основные установки"
+
+#: functions.php:112
+msgid "Show only date"
+msgstr ""
+
+#: functions.php:112
+#, fuzzy
+msgid "Show only in posts"
+msgstr "Показывать категории сверху"
+
+#: functions.php:112
+msgid "Last two options together"
+msgstr ""
+
+#: functions.php:118
+msgid "Put your custom css code here"
+msgstr ""
+
+#: functions.php:151
+#: functions.php:163
+msgid "LightWord Settings"
+msgstr "LightWord установки"
+
+#: functions.php:158
+msgid "settings saved"
+msgstr ""
+
+#: functions.php:159
+msgid "settings reset"
+msgstr ""
+
+#: functions.php:167
+msgid "Support the developer"
+msgstr "Поддержка разработчика"
+
+#: functions.php:178
+msgid "Theme version check"
+msgstr ""
+
+#: functions.php:187
+msgid "Version check failed."
+msgstr ""
+
+#: functions.php:189
+msgid "Cool! You have the latest version."
+msgstr ""
+
+#: functions.php:189
+#: functions.php:190
+#, fuzzy
+msgid "view changelog"
+msgstr "Сохранить изменения"
+
+#: functions.php:190
+msgid "You have"
+msgstr ""
+
+#: functions.php:190
+msgid "Latest version"
+msgstr ""
+
+#: functions.php:190
+msgid "Get the latest version"
+msgstr ""
+
+#: functions.php:197
+msgid "General settings"
+msgstr "Основные установки"
+
+#: functions.php:258
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+#: functions.php:264
+msgid "Search for help"
+msgstr "Искать в справке"
+
+#: functions.php:264
+msgid "or"
+msgstr ""
+
+#: functions.php:279
+#: functions.php:291
+msgid "No updates available."
+msgstr "Не найдено обновлений."
+
+#: functions.php:298
+msgid "What is Cufon?"
+msgstr ""
+
+#: functions.php:305
+msgid "Click here to reset all settings"
+msgstr "Сбросить все настройки"
+
+#: functions.php:502
+msgid "Search"
+msgstr "Поиск"
+
+#: functions.php:527
+#: functions.php:544
+msgid "Off"
+msgstr ""
+
+#: functions.php:572
+msgid "Posted on"
+msgstr ""
+
+#: functions.php:589
+msgid "delete"
+msgstr ""
+
+#: functions.php:590
+msgid "spam"
+msgstr ""
+
+#: functions.php:591
+msgid "edit"
+msgstr ""
+
+#: functions.php:599
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr ""
+
+#: functions.php:620
+#: sidebar.php:33
+#: sidebar_two-columns-for-categories.php:48
+msgid "Syndicate this site using RSS"
+msgstr "Экспортировать новости сайта в формате RSS"
+
+#: functions.php:620
+msgid "Subscribe via RSS"
+msgstr "Подписка на RSS"
+
+#: functions.php:651
+msgid "F jS, Y - H:i"
+msgstr ""
+
+#: functions.php:653
+msgid "( REPLY )"
+msgstr ""
+
+#: functions.php:654
+#: legacy.comments.php:33
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает проверки."
+
+#: header.php:34
+msgid "Home"
+msgstr "Главная"
+
+#: index.php:13
+#: page.php:11
+#: single.php:12
+msgid "PAGES"
+msgstr ""
+
+#: index.php:16
+#: single.php:29
+msgid "Filed under:"
+msgstr "Связано с категорией:"
+
+#: index.php:16
+#: single.php:29
+msgid "Tagged as:"
+msgstr "Метки записи:"
+
+#: index.php:17
+msgid "1 Comment"
+msgstr "1 комментарий"
+
+#: index.php:17
+#: single.php:30
+#, fuzzy
+msgid "Comments Off"
+msgstr "Комментарии"
+
+#: index.php:17
+msgid "No Comments"
+msgstr "Нет комментариев"
+
+#: index.php:17
+msgid "Read more about"
+msgstr "Читать далее"
+
+#: index.php:32
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; Новее записи"
+
+#: index.php:33
+msgid "Older Entries &raquo;"
+msgstr "Предыдущие записи &raquo;"
+
+#: legacy.comments.php:26
+msgid "F jS, Y"
+msgstr ""
+
+#: legacy.comments.php:26
+msgid "edit this comment"
+msgstr "редактировать этот комментарий"
+
+#: legacy.comments.php:77
+#, php-format
+msgid "You can use these tags: %s"
+msgstr "Вы можете использовать данные тэги: %s"
+
+#: page.php:7
+msgid "Edit this page"
+msgstr "Отредактировать страницу"
+
+#: sidebar.php:9
+#: sidebar_two-columns-for-categories.php:9
+msgid "Pages"
+msgstr "Страницы"
+
+#: sidebar.php:14
+#: sidebar_two-columns-for-categories.php:14
+msgid "Categories"
+msgstr "Категории"
+
+#: sidebar.php:19
+#: sidebar_two-columns-for-categories.php:34
+msgid "Blogroll"
+msgstr "Ссылки"
+
+#: sidebar.php:24
+#: sidebar_two-columns-for-categories.php:39
+msgid "Archive"
+msgstr "Архив"
+
+#: sidebar.php:29
+#: sidebar_two-columns-for-categories.php:44
+msgid "Meta"
+msgstr "Служебные"
+
+#: sidebar.php:33
+#: sidebar_two-columns-for-categories.php:48
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: sidebar.php:34
+#: sidebar_two-columns-for-categories.php:49
+msgid "The latest comments to all posts in RSS"
+msgstr "Последние комментарии ко всем записям в RSS"
+
+#: sidebar.php:34
+#: sidebar_two-columns-for-categories.php:49
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "Комментарии в <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: single.php:8
+msgid "Edit this post"
+msgstr "Править эту запись"
+
+#: single.php:16
+msgid "Enjoy this article?"
+msgstr "Понравилась статья?"
+
+#: single.php:17
+msgid "Consider subscribing to our rss feed!"
+msgstr "Подпишитесь на rss-ленту новостей!"
+
+#: single.php:24
+msgid "About"
+msgstr ""
+
+#: single.php:24
+msgid "No description. Please complete your profile."
+msgstr ""
+
+#, fuzzy
+#~ msgid "Check this box if you would like to DISABLE <em>Cufon</em><br/>"
+#~ msgstr "Активируйте эту опцию если вы хотите ОТКЛЮЧИТЬ <em>Cufon</em>"
+#~ msgid "Activate Extra Cufon"
+#~ msgstr "Включить Extra Cufon"
+
+#, fuzzy
+#~ msgid ""
+#~ "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature."
+#~ "<br/><b>For umlauts (german) and other special characters.</b>"
+#~ msgstr ""
+#~ "Активируйте эту опцию если вы хотите ВКЛЮЧИТЬ функцию <em>Extra Cufon</em>"
+
+#, fuzzy
+#~ msgid "( Click here to cancel reply )"
+#~ msgstr "Сбросить все настройки"
+#~ msgid "% Comments"
+#~ msgstr "% комментариев"
+
+#, fuzzy
+#~ msgid "Reply to this comment"
+#~ msgstr "редактировать этот комментарий"
+

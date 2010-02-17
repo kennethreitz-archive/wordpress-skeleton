@@ -1,0 +1,12 @@
+textarea, input, select {
+	background: #F4F4F4;
+	border: 1px solid #B2B2B2;
+	vertical-align: middle;
+}
+form.role-manager {
+	margin-top: 10px;
+	background-color:#CFEBF7;
+}
+.cap_form, .userlevel_form, #rolemanager_singleuser_fs, #cap_space_config {
+	background-color:#CFEBF7;
+}

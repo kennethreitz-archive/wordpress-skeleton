@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Role-manager\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-02-14 05:11+0100\n"
+"Last-Translator: Stefano <steve@40annibuttati.it>\n"
+"Language-Team: wordpress-it.it <info@wordpress-it.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: role-manager.php:77
+msgid "Removing this permission from a role assigned to you could be a really bad idea.  Are you sure?"
+msgstr "Rimuovere questi permessi da un ruolo assegnato a te stesso potrebbe essere una pessima idea. Sei sicuro?"
+
+#: role-manager.php:171
+#: role-manager.php:383
+msgid "Capability granted"
+msgstr "Capacit&agrave; garantita"
+
+#: role-manager.php:171
+#: role-manager.php:385
+msgid "Capability denied"
+msgstr "Capacit&agrave; negata"
+
+#: role-manager.php:255
+#: role-manager.php:263
+msgid "Rename Role"
+msgstr "Rinomina Ruolo"
+
+#: role-manager.php:259
+msgid "New Name:"
+msgstr "Nuovo Nome:"
+
+#: role-manager.php:287
+msgid "You cannot delete the default role."
+msgstr "Non puoi cancellare il ruolo standard"
+
+#: role-manager.php:314
+msgid "Can't make "
+msgstr "Non posso farlo"
+
+#: role-manager.php:314
+msgid " the default. Not a role."
+msgstr " quello standard. Non un ruolo."
+
+#: role-manager.php:317
+msgid "Default role changed."
+msgstr "Ruolo standard modificato"
+
+#: role-manager.php:340
+msgid "Set user level of role."
+msgstr "Imposta livello utente del ruolo"
+
+#: role-manager.php:353
+msgid "Delete Role"
+msgstr "Cancella Ruolo"
+
+#: role-manager.php:354
+msgid "All users with this role will have it removed, and they will lose all capabilities from this role (unless other roles provide it). If a user has only this role, they will be assigned the default role, "
+msgstr "Tutti gli utenti con questo ruolo lo vedranno rimosso e perderanno tutte le capacit&agrave; di questo ruolo (a meno che altri ruoli le forniscano). Se un utente ha solo questo ruolo, gli verrà assegnato il ruolo standard, "
+
+#: role-manager.php:358
+msgid "Confirm Delete Role"
+msgstr "Conferma Cancellazione Ruolo"
+
+#: role-manager.php:387
+msgid "New role created"
+msgstr "Creato nuovo ruolo"
+
+#: role-manager.php:389
+msgid "New capability created"
+msgstr "Creata nuova capacit&agrave;"
+
+#: role-manager.php:391
+msgid "Unused capabilites purged"
+msgstr "Capacit&agrave; inutilizzate eliminate"
+
+#: role-manager.php:393
+msgid "Role renamed"
+msgstr "Ruolo rinominato"
+
+#: role-manager.php:395
+msgid "Role deleted"
+msgstr "Ruolo cancellato"
+
+#: role-manager.php:397
+msgid "Default role changed"
+msgstr "Ruolo standard modificato"
+
+#: role-manager.php:399
+msgid "Set user level of role"
+msgstr "Imposta il livello utente per il ruolo"
+
+#: role-manager.php:403
+msgid "Manage Roles"
+msgstr "Gestione Ruoli"
+
+#: role-manager.php:404
+msgid "This page is for editing what capabilities are associated with each role. To change the capabilities of a specific user, click on Authors &amp; Users, then click Edit next to the user you want to change. You can <a href=\"#new-role\">add new roles</a> as well."
+msgstr "Questa pagine serve a modificare quali capacit&agrave; sono associate a ciascun ruolo. Per cambiare le capacit&agrave; di uno specifico utente, fare click su Autori &amp; Utenti, quidi fare click su Modifica accanto all&#8217;utente che si desidra modificare. Potete anche <a href=\"#new-role\">aggiungere nuovi ruoli</a>."
+
+#: role-manager.php:420
+msgid "rename"
+msgstr "rinomina"
+
+#: role-manager.php:424
+msgid "delete"
+msgstr "cancella"
+
+#: role-manager.php:436
+#: role-manager.php:439
+msgid "Granted"
+msgstr "Garantita"
+
+#: role-manager.php:443
+msgid "Denied"
+msgstr "Negata"
+
+#: role-manager.php:450
+msgid "Update"
+msgstr "Aggiornato"
+
+#: role-manager.php:460
+#, php-format
+msgid " User Level: %s"
+msgstr " Livello Utente: %s"
+
+#: role-manager.php:466
+msgid "Create a new Role"
+msgstr "Crea un nuovo Ruolo"
+
+#: role-manager.php:468
+msgid "Role Name:"
+msgstr "Nome Ruolo:"
+
+#: role-manager.php:469
+msgid "Capabilities to be included:"
+msgstr "Capacit&agrave; da includere:"
+
+#: role-manager.php:477
+msgid "Create Role"
+msgstr "Crea Ruolo"
+
+#: role-manager.php:480
+msgid "Custom Capabilities"
+msgstr "Capacit&agrave; Personalizzate"
+
+#: role-manager.php:482
+msgid "New Capability Name:"
+msgstr "Nome Nuova Capacit&agrave;:"
+
+#: role-manager.php:483
+msgid "Create Capability"
+msgstr "Crea Capacit&agrave;"
+
+#: role-manager.php:486
+msgid "Purge Unused Capabilities"
+msgstr "Elimina Capacit&agrave; Inutilizzate"
+
+#: role-manager.php:486
+msgid "If core capabilities are not currently assigned to any Role, then you must manually re-add them after this action if you want to use them.  Are you sure you want to do this?"
+msgstr "Se le capacit&agrave; di base non sono attualmente assegnati ad alcun Ruolo, allora dovete ri-assegnarli manualmente dopo questa operazione se desiderate poterli utilizzare. Sei sicuro di volere fare questo?"
+
+#: role-manager.php:496
+msgid "Assign extra capabilites"
+msgstr "Assegna capacit&agrave; extra"
+

@@ -1,0 +1,28 @@
+ul#dsq-tabs li.selected, ul.dsq-tabs li:hover {
+	background: url( ../images/fade-butt.png );
+	border: 3px double #999;
+}
+ul#dsq-tabs li {
+	float: left;
+	border: 3px solid #999;
+	border-left-color: #ccc;
+	border-top-color: #ccc;
+	color: #333;
+	padding: 0.25em;
+	height: 20px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+ul#dsq-tabs {
+	display: block;
+	height: 45px;
+	list-style: none;
+	margin: 15px 0;
+	padding: 0;
+	border: 0;
+}
+
+select.disqus-replace {
+    border-color: #C6D9E9;
+}

@@ -1,0 +1,436 @@
+# Japanese Language File for Role Manager
+# (role-manager-ja_UTF.po)
+# This file is distributed under the same license as the WordPress package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Role-manager 1.4.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-10-20 17:43+0200\n"
+"PO-Revision-Date: 2008-03-10 22:42-0500\n"
+"Last-Translator: Naoko McCracken <info@nao-net.com>\n"
+"Language-Team: WordPress J-Series Project <http://wppluginsj.sourceforge.jp/i18n-ja_jp/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Japanese\n"
+"X-Poedit-Country: JAPAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ../capability-management.php:86
+msgid "New capability created"
+msgstr "新しいユーザー権限を作成しました。"
+
+#: ../capability-management.php:88
+msgid "Unused capabilites purged"
+msgstr "使用していないユーザー権限を削除しました。"
+
+#: ../capability-management.php:93
+msgid "Manage Capabilities"
+msgstr "ユーザー権限の管理"
+
+#: ../capability-management.php:94
+msgid "This page is for editing capabilities."
+msgstr "このページでは、ユーザー権限を編集することができます。"
+
+#: ../capability-management.php:96
+msgid "Custom Capabilities"
+msgstr "カスタムユーザー権限"
+
+#: ../capability-management.php:98
+msgid "New Capability Name: "
+msgstr "新しいユーザー権限名: "
+
+#: ../capability-management.php:101
+msgid "Create Capability"
+msgstr "ユーザー権限を作成する"
+
+#: ../capability-management.php:103
+#: ../capability-management.php:115
+msgid "Purge Unused Capabilities"
+msgstr "使用していない役割グループを削除する"
+
+#: ../capability-management.php:107
+msgid "This capabilities are unused and will be purged"
+msgstr "このユーザー権限は利用されていないため、削除されます。"
+
+#: ../capability-management.php:115
+msgid "If core capabilities are not currently assigned to any Role, then you must manually re-add them after this action if you want to use them.  Are you sure you want to do this?"
+msgstr "主要権限がどの役割グループにも割り当てられていない場合、このアクションを実行した後に手動で追加する必要があります。本当に実行しますか？"
+
+#: ../capability-management.php:119
+#: ../general.php:91
+msgid "You don't have unused capabilities."
+msgstr "使用していないユーザー権限はありません。"
+
+#: ../capability-management.php:136
+msgid "Assign extra capabilites"
+msgstr "追加ユーザー権限を割り当てる"
+
+#: ../general.php:28
+msgid "General information about your Roles and Capabilities and this Plugin"
+msgstr "役割グループ/ユーザー権限/プラグイン基本情報"
+
+#: ../general.php:30
+msgid "Statistics"
+msgstr "統計情報"
+
+#: ../general.php:32
+msgid "User-Statistic"
+msgstr "ユーザー統計情報"
+
+#: ../general.php:34
+msgid "Users in your Blog: "
+msgstr "このブログのユーザー数:"
+
+#: ../general.php:36
+msgid "Roles-Statistic"
+msgstr "役割グループ統計情報"
+
+#: ../general.php:38
+msgid "Roles in your Blog: "
+msgstr "このブログの役割グループ数:"
+
+#: ../general.php:39
+msgid "Attached Roles: "
+msgstr "使用中の役割グループ:"
+
+#: ../general.php:46
+msgid "Detached Roles: "
+msgstr "使用していない役割グループ: "
+
+#: ../general.php:54
+msgid "Capabilities-Statistic"
+msgstr "ユーザー権限統計情報"
+
+#: ../general.php:56
+msgid "Capabilities in your Blog: "
+msgstr "このブログのユーザー権限数:"
+
+#: ../general.php:62
+msgid "Detached Capabilities: "
+msgstr "使用していないユーザー権限: "
+
+#: ../general.php:69
+msgid "You don't have detached capabilities."
+msgstr "使用していないユーザー権限はありません。"
+
+#: ../general.php:73
+msgid "Dedicated Capabilities: "
+msgstr "専用ユーザー権限: "
+
+#: ../general.php:80
+msgid "You don't have dedicated capabilities."
+msgstr "専用ユーザー権限はありません。"
+
+#: ../general.php:84
+msgid "Unused Capabilities: "
+msgstr "使用していないユーザー権限:"
+
+#: ../help.php:31
+msgid "Help for the Role Manager Plugin"
+msgstr "Role Managerプラグインのヘルプ"
+
+#: ../help.php:33
+msgid "General Help Contents"
+msgstr "基本ヘルプの内容"
+
+#: ../help.php:35
+msgid "Help TOC"
+msgstr "ヘルプページの目次"
+
+#: ../help.php:36
+#: ../help.php:46
+msgid "System Information for your Support Request"
+msgstr "サポートリクエスト用システム情報"
+
+#: ../help.php:44
+msgid "No help file found!"
+msgstr "ヘルプページのファイルが見つかりません！"
+
+#: ../help.php:47
+msgid "Use this information if you have any problems or questions with the \"Role Manager\" at the \"<a href=\"http://www.im-web-gefunden.de/wordpress-plugins/role-manager\" title=\"Role Manager Plugin Homepage\">Role Manager Plugin Homepage</a>\"."
+msgstr "Role Managerプラグインに関するトラブルや質問がある場合は、以下の情報を使って<a href=\"http://www.im-web-gefunden.de/wordpress-plugins/role-manager\" title=\"Role Manager Plugin Homepage\">Role Manager Plugin Homepage</a>で質問してみてください（英語のみ対応）。"
+
+#: ../help.php:50
+msgid "WordPress-Version"
+msgstr "WordPress-Version"
+
+#: ../help.php:51
+msgid "WordPress-Db-Version"
+msgstr "WordPress-Db-Version"
+
+#: ../help.php:52
+msgid "Role-Manager-Version"
+msgstr "Role-Manager-Version"
+
+#: ../help.php:53
+msgid "PHP-Version"
+msgstr "PHP-Version"
+
+#: ../help.php:55
+msgid "preg_replace"
+msgstr "preg_replace"
+
+#: ../help.php:55
+msgid "yes"
+msgstr "yes"
+
+#: ../help.php:55
+msgid "no"
+msgstr "no"
+
+#: ../help.php:56
+msgid "Help-URI"
+msgstr "Help-URI"
+
+#: ../help.php:59
+msgid "Your comments are also welcome!"
+msgstr "このプラグインに対するご意見をお待ちしています！"
+
+#: ../role-management.php:69
+#: ../role-management.php:439
+msgid "Capability granted"
+msgstr "新しい権限を割り当てました。"
+
+#: ../role-management.php:69
+#: ../role-management.php:441
+msgid "Capability denied"
+msgstr "権限の割り当てを削除しました。"
+
+#: ../role-management.php:117
+#: ../role-management.php:125
+msgid "Rename Role"
+msgstr "役割グループ名を変更する"
+
+#: ../role-management.php:121
+#: ../role-management.php:207
+msgid "New Name:"
+msgstr "新しい名称: "
+
+#: ../role-management.php:203
+#: ../role-management.php:221
+msgid "Copy Role"
+msgstr "役割グループを複製"
+
+#: ../role-management.php:208
+msgid "Copy of"
+msgstr "複製元: "
+
+#: ../role-management.php:210
+#: ../role-management.php:534
+msgid "Capabilities to be included:"
+msgstr "含める権限: "
+
+#: ../role-management.php:261
+msgid "Delete Role"
+msgstr "役割グループを削除する"
+
+#: ../role-management.php:262
+msgid "All users with this role will have it removed, and they will lose all capabilities from this role (unless other roles provide it). If a user has only this role, they will be assigned the default role, "
+msgstr "この役割グループを削除し、属していたユーザーにグループを通して与えられていた権限を取り消します。もしユーザーが他のグループに属していない場合、デフォルトのグループが割り当てられます。"
+
+#: ../role-management.php:267
+msgid "Confirm Delete Role"
+msgstr "役割グループを削除"
+
+#: ../role-management.php:341
+msgid "Default role changed."
+msgstr "新規ユーザーのデフォルト役割グループを変更しました。"
+
+#: ../role-management.php:349
+msgid "Error: Default role not changed."
+msgstr "エラー: デフォルト役割グループは変更されませんでした。"
+
+#: ../role-management.php:409
+msgid "Set user level of role."
+msgstr "役割グループのユーザーレベルを設定しました。"
+
+#: ../role-management.php:443
+msgid "New role created"
+msgstr "新しい役割グループを作成しました。"
+
+#: ../role-management.php:445
+msgid "Role renamed"
+msgstr "役割グループ名を変更しました。"
+
+#: ../role-management.php:447
+msgid "Role copied"
+msgstr "役割グループ名を複製しました。"
+
+#: ../role-management.php:449
+msgid "Role deleted"
+msgstr "役割グループを削除しました。"
+
+#: ../role-management.php:451
+msgid "Default role changed"
+msgstr "新規ユーザーのデフォルト役割グループを変更しました。"
+
+#: ../role-management.php:453
+msgid "Set user level of role"
+msgstr "役割グループのユーザーレベルを設定する"
+
+#: ../role-management.php:457
+msgid "Manage Roles"
+msgstr "役割グループ管理"
+
+#: ../role-management.php:458
+msgid "This page is for editing what capabilities are associated with each role. To change the capabilities of a specific user, click on Authors &amp; Users, then click Edit next to the user you want to change. You can <a href=\"#new-role\">add new roles</a> as well."
+msgstr "このページでは、各役割グループに割り当てられた権限の編集や、<a href=\"#new-role\">新しい役割グループを追加</a>ができます。<br />特定のユーザーアカウントの権限を変更するには、WordPress管理画面の「ユーザー」サブニューから「投稿者とユーザー」をクリックし、そのユーザーの行右端にある「編集」リンクをクリックしてください。"
+
+#: ../role-management.php:475
+msgid "rename"
+msgstr "名称変更"
+
+#: ../role-management.php:478
+msgid "copy"
+msgstr "複製"
+
+#: ../role-management.php:484
+msgid "delete"
+msgstr "削除"
+
+#: ../role-management.php:498
+#: ../role-management.php:500
+msgid "Granted"
+msgstr "許可"
+
+#: ../role-management.php:503
+msgid "Denied"
+msgstr "非許可"
+
+#: ../role-management.php:514
+msgid "Update"
+msgstr "更新"
+
+#: ../role-management.php:525
+#, php-format
+msgid " User Level: %s"
+msgstr "ユーザーレベル:  %s"
+
+#: ../role-management.php:531
+msgid "Create a new Role"
+msgstr "役割グループを作成する"
+
+#: ../role-management.php:533
+msgid "Role Name:"
+msgstr "役割グループ名: "
+
+#: ../role-management.php:543
+msgid "Create Role"
+msgstr "役割グループを新規作成"
+
+#: ../role-manager.php:108
+msgid "Role Management"
+msgstr "役割グループ管理"
+
+#: ../role-manager.php:108
+msgid "Roles"
+msgstr "役割グループ"
+
+#: ../role-manager.php:110
+msgid "Capability Management"
+msgstr "ユーザー権限管理"
+
+#: ../role-manager.php:110
+msgid "Capabilities"
+msgstr "ユーザー権限"
+
+#: ../role-manager.php:112
+msgid "Role-/Capability Management General"
+msgstr "役割グループ/ユーザー権限管理"
+
+#: ../role-manager.php:114
+msgid "Role-/Capability Management Help"
+msgstr "役割グループ/ユーザー権限管理のヘルプ"
+
+#: ../role-manager.php:128
+#: ../role-manager.php:561
+msgid "You can't remove this permission from a role assigned to you!"
+msgstr "自分自身に割り当てられている役割グループか、指定したユーザー権限を除外することはできません。"
+
+#: ../role-manager.php:544
+msgid "You must enter a role name."
+msgstr "役割グループ名を記入してください。"
+
+#: ../role-manager.php:545
+#, php-format
+msgid "Can't rename. A Role with the name %s already exists."
+msgstr "名前を変更できません。%sという名前の役割グループがすでに存在します。"
+
+#: ../role-manager.php:546
+msgid "You cannot delete the default role."
+msgstr "デフォルトの役割グループは削除できません。"
+
+#: ../role-manager.php:547
+#, php-format
+msgid "Can't make %s the default. Not a role."
+msgstr "%sは役割グループではないのでデフォルトに設定できません。"
+
+#: ../role-manager.php:548
+#, php-format
+msgid "Can't create the new Role. A Role with the name %s already exists."
+msgstr "役割グループを作成できません。%sという名前の役割グループがすでに存在します。"
+
+#: ../role-manager.php:549
+msgid "Role name to short or to long"
+msgstr "役割グループ名が長すぎるか、短すぎます。"
+
+#: ../role-manager.php:550
+#: ../role-manager.php:551
+msgid "A valid role name can only have letters, digits and spaces"
+msgstr "役割グループ名には、半角英数字と半角スペースのみをご使用ください。"
+
+#: ../role-manager.php:552
+#, php-format
+msgid "Can't create the new Role. A Capability with the name %s already exists."
+msgstr "役割グループを作成できません。%sという名前のユーザー権限がすでに存在します。"
+
+#: ../role-manager.php:553
+msgid "You must enter a valid user level"
+msgstr "正しいユーザーレベルを記入してください。"
+
+#: ../role-manager.php:554
+msgid "You must enter a capability name."
+msgstr "正しいユーザー権限名を記入してください。"
+
+#: ../role-manager.php:555
+msgid "Capability don't exists."
+msgstr "ユーザー権限が存在しません。"
+
+#: ../role-manager.php:556
+msgid "Capability name to short or to long"
+msgstr "ユーザー権限名が長すぎるか、短すぎます。"
+
+#: ../role-manager.php:557
+#: ../role-manager.php:558
+msgid "A valid capability name can only have letters, digits and spaces"
+msgstr "ユーザー権限名には、半角英数字と半角スペースのみをご使用ください。"
+
+#: ../role-manager.php:559
+#, php-format
+msgid "Can't create the new Capability. A Role with the name %s already exists."
+msgstr "新しいユーザー権限を作成できません。%sという名前の役割グループがすでに存在します。"
+
+#: ../role-manager.php:560
+msgid "You are not allowed to do this here"
+msgstr "ここでその処理を実行する権限がありません。"
+
+#: ../role-manager.php:562
+msgid "You cannot remove the Edit Users or Manage Roles capability from yourself."
+msgstr "あなた自身のユーザーアカウントに対し、役割グループ管理の権限を無効化することはできません。"
+
+#: ../role-manager.php:563
+msgid "Wrong User-ID!"
+msgstr "ユーザーIDが間違っています。"
+
+#: ../role-manager.php:564
+msgid "User don't exists!"
+msgstr "ユーザーが存在しません。"
+
+#~ msgid "Can't make "
+#~ msgstr "作成できません"
+

@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PageMash in Danish\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-20 22:56+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Georg S. Adamsen <gsa@blogos.dk>\n"
+"Language-Team: Danish team <g.s.adamsen@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2;plural=n != 1;\n"
+"X-Poedit-Language: Danish\n"
+"X-Poedit-Country: DENMARK\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2\n"
+"X-Poedit-Basepath: d:\\wordpress\\plugins\\pagemash\n"
+"X-Poedit-SearchPath-0: d:\\wordpress\\plugins\\pagemash\n"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:86
+msgid "Edit This Page"
+msgstr "Redigér denne side"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:86
+msgid "edit"
+msgstr "redigér"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:88
+msgid "Show|Hide"
+msgstr "Vis|Skjul"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:88
+msgid "hide"
+msgstr "skjul"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:91
+msgid "Rename Page"
+msgstr "Omdøb side"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:91
+msgid "Rename"
+msgstr "Omdøb"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:114
+msgid "pageMash - pageManagement     "
+msgstr "pageMash - sidehåndtering"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:116
+msgid "Just drag the pages <strong>up</strong> or <strong>down</strong> to change the page order and <strong>left</strong> or <strong>right</strong> to change the page`s parent, then hit \"update\".     "
+msgstr "Du skal blot trække siderne <strong>op</strong> eller <strong>ned</strong> for at ændre rækkefølgen eller <strong>til venstre</strong> eller <strong>højre</strong> for at ændre sidens forælder. Klik derefter \"Opdatér\"."
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:117
+msgid "The icon to the left of each page shows if it has child pages, <strong>double click</strong> on that item to toggle <strong>expand|collapse</strong> of it`s children.     "
+msgstr "Ikonet til venstre for hver side viser, om siden har et \"barn\". <strong>Dobbelt-klik</strong> på sidens navn for at <strong>skifte mellem at vise og skjule</strong> dets \"børn\".     "
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:119
+msgid "Expand All"
+msgstr "Udvid alle"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:119
+msgid "Collapse All     "
+msgstr "Skjul alle"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:125
+msgid "Update        "
+msgstr "Opdatér"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:132
+msgid "How to Use     "
+msgstr "Brugsvejledning"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:133
+msgid "pageMash works with the wp_list_pages function. The easiest way to use it is to put the pages widget in your sidebar [WP admin page > Appeaarance > Widgets]. Click the configure button on the widget and ensure that 'sort by' is set to 'page order'. Hey presto, you're done.     "
+msgstr "pageMash bruger wp_list_pages funktionen. Den nemmeste måde at gøre det på er at placere side-widgetten i sidepanelet via 'Kontrolpanel \\> Udseende \\> Widgets'. Klik på Redigér-knappen på widgetten og sæt 'sorter efter' til 'siderækkefølge'. Et voila, du er færdig!"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:134
+msgid "You can also use the function anywhere in your theme code. e.g. in your sidebar.php file (but the code in here will not run if you're using any widgets) or your header.php file (somewhere under the body tag, you may want to use the depth=1 parameter to only show top level pages). The code should look something like the following:"
+msgstr "Du kan også bruge funktionen overalt i dit temas kode, f.eks. i din sidebar.php-fil (men koden heri vil ikke blive udført, hvis du bruger widgets) eller din header.php-fil (et eller andet sted under body-tagget; du kan bruge parametret depth=1, hvis du kun vil vise niveau 1-sider (\"forælder\"-sider). Koden bør ligne noget i retning af følgende:"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:139
+msgid "You can also hard-code pages to exclude and these will be merged with the pages you set to exclude in your pageMash admin."
+msgstr "Du kan også angive sider, der ikke skal medtages, direkte i et tema. WordPress vil flette dem med pageMash's liste, så ingen vises."
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:140
+msgid "The code here is very simple and flexible, for more information look up <a href=\"http://codex.wordpress.org/Template_Tags/wp_list_pages\" title=\"wp_list_pages Documentation\">wp_list_pages() in the Wordpress Codex</a> as it is very well documented and if you have any further questions or feedback I like getting messages, so <a href=\"http://joelstarnes.co.uk/contact/\" title=\"email Joel Starnes\">drop me an email</a>."
+msgstr "Denne kode er meget simpel og fleksibel. Yderligere information kan findes på <a href=\"http://codex.wordpress.org/Template_Tags/wp_list_pages\" title=\"wp_list_pages dokumentation\">wp_list_pages() i Wordpress Codex</a>, eftersom det er meget veldokumenteret. Hvis du har flere spørgsmål eller feedback, kan jeg lide at få mails, så <a href=\"http://joelstarnes.co.uk/contact/\" title=\"email Joel Starnes\">send mig en e-mail</a>."
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:170
+msgid "Database Updated"
+msgstr "Database opdateret"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:171
+msgid "Show Further Info"
+msgstr "Vis mere info"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:172
+msgid "Hide Further Info"
+msgstr "Skjul mere info"
+
+#: d:\wordpress\plugins\pagemash/pagemash.php:205
+msgid "pageMash          "
+msgstr "pageMash"
+
