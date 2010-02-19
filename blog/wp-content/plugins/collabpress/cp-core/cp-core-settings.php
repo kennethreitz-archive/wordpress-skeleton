@@ -28,7 +28,11 @@ function cp_register_settings() {
 
 function cp_show_settings_page() {
 	?>
+	
+	<?php require ( CP_PLUGIN_DIR . '/cp-core/cp-core-isset.php' );	?>
+	
 	<div class="wrap">
+	
 	<p><h2><?php _e('CollabPress Settings', 'collabpress') ?></h2></p>
 
 	<form method="post" action="options.php">
@@ -36,7 +40,7 @@ function cp_show_settings_page() {
 	    <table class="form-table">
 
 	        <tr valign="top">
-		        <th scope="row"><?php _e('Email Notifications:', 'collabpress') ?></th>
+		        <th scope="row"><?php _e('Email Notifications', 'collabpress') ?></th>
 		        <td>
 			        <select name="cp_email_config">
 					<option <?php if (get_option('cp_email_config') == 1) echo "selected"; ?> value="1">Enabled</option>
@@ -46,7 +50,7 @@ function cp_show_settings_page() {
 	        </tr>
 	
 	        <tr valign="top">
-		        <th scope="row"><?php _e('User Level:', 'collabpress') ?></th>
+		        <th scope="row"><?php _e('User Level', 'collabpress') ?></th>
 		        <td>
 			        <select name="cp_user_level">
 					<option <?php if (get_option('cp_user_level') == 10) echo "selected"; ?> value="10">Administrator</option>
@@ -65,7 +69,22 @@ function cp_show_settings_page() {
 	    </p>
 
 	</form>
+	
     <hr />
+
+	<form method="post" action="">
+		
+		<?php wp_nonce_field('cp-uninstall'); ?>
+
+	    <p class="submit">
+		<strong><?php _e('Uninstall CollabPress', 'collabpress'); ?></strong><br /><br />
+	    <input type="submit" class="button-primary" name="cp_uninstall_task_button" value="<?php _e('Uninstall', 'collabpress') ?>" onclick="javascript:check=confirm('<?php _e('WARNING: This will uninstall CollabPress.\n\nChoose [Cancel] to Stop, [OK] to proceed.\n'); ?>');if(check==false) return false;" />
+	    </p>
+
+	</form>
+	
+	<hr />
+
     <p><a target="_blank" href="http://webdevstudios.com/support/forum/collabpress/">CollabPress</a> v<?php echo CP_VERSION; ?> - <?php _e( 'Copyright', 'collabpress' ) ?> &copy; 2010 - <a href="http://webdevstudios.com/support/forum/collabpress/" target="_blank">Please Report Bugs</a> &middot; Follow us on Twitter: <a href="http://twitter.com/scottbasgaard" target="_blank">Scott</a> &middot; <a href="http://twitter.com/williamsba" target="_blank">Brad</a> &middot; <a href="http://twitter.com/webdevstudios" target="_blank">WDS</a></p>
 	</div>
 	<?php

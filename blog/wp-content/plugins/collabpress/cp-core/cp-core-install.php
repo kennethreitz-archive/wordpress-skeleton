@@ -17,7 +17,12 @@ $cp_db_version = "0.1";
 function cp_install () {
 	
    global $wpdb, $cp_db_version;
-   
+
+	if ( ! empty($wpdb->charset) )
+		$charset_collate = "DEFAULT CHARACTER SET $wpdb->charset";
+	if ( ! empty($wpdb->collate) )
+		$charset_collate .= " COLLATE $wpdb->collate";
+		
    // Add activities table
    $activity_table_name = $wpdb->prefix . "cp_activity";
    if($wpdb->get_var("show tables like '$activity_table_name'") != $activity_table_name) {
@@ -31,7 +36,7 @@ function cp_install () {
 	  title text NOT NULL,
 	  type text NOT NULL,
 	  PRIMARY KEY id (id)
-	);";
+	)$charset_collate;";
 	
 	require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 	dbDelta($sql);
@@ -49,7 +54,7 @@ function cp_install () {
 	  title text NOT NULL,
 	  details longtext NOT NULL,
 	  PRIMARY KEY id (id)
-	);";
+	)$charset_collate;";
 
 	require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 	dbDelta($sql);
@@ -71,13 +76,35 @@ function cp_install () {
 	  due_date text NOT NULL,
 	  status mediumint(9) DEFAULT '0' NOT NULL,
 	  PRIMARY KEY id (id)
-	);";
+	)$charset_collate;";
 	
 	require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 	dbDelta($sql);
 
    }
 
+   // Add tasks meta table
+   $tasks_table_name = $wpdb->prefix . "cp_tasksmeta";
+   if($wpdb->get_var("show tables like '$tasks_table_name'") != $tasks_table_name) {
+      
+	$sql = "CREATE TABLE " . $tasks_table_name . " (
+	  id mediumint(9) NOT NULL AUTO_INCREMENT,
+	  task_id bigint(20) DEFAULT '0' NOT NULL,
+	  auth bigint(20) DEFAULT '0' NOT NULL,
+	  meta_key varchar(255) DEFAULT NULL,
+	  meta_value longtext,
+	  date datetime NOT NULL,
+	  PRIMARY KEY id (id)
+	)$charset_collate;";
+	
+	require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+	dbDelta($sql);
+
+   }
+
+	// Update DB Version
+	update_option("cp_db_version", $cp_db_version);
+   
 }
 
 ?>

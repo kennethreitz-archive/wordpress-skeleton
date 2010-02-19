@@ -7,10 +7,6 @@ if (!function_exists ('add_action')) {
 		exit();
 }
 
-// Insert a task
-function insert_cp_task() {	
-}
-
 // Delete a task
 function delete_cp_task($task, $title = NULL) {
 	
@@ -29,7 +25,6 @@ function delete_cp_task($task, $title = NULL) {
 }
 
 // Update task status
-
 function update_cp_task($task, $status) {
 	
 	global $wpdb;
@@ -40,6 +35,21 @@ function update_cp_task($task, $status) {
 	UPDATE $table_name SET status = $status
 	WHERE id = $task");
 	
+}
+
+// Get all task data
+function get_taskdata( $id ) {
+	
+	global $wpdb;
+
+	$id = absint($id);
+	if ( $id == 0 ) { return false; }
+	
+	$table_name = $wpdb->prefix . "cp_tasks";
+	
+	if ( !$task = $wpdb->get_row($wpdb->prepare("SELECT * FROM " . $table_name ." WHERE ID = %d LIMIT 1", $id)) ) { return false; }
+
+	return $task;
 }
 
 // Get tasks project id
@@ -84,6 +94,91 @@ function get_cp_task_title($id) {
 	
 }
 
+// List comments for a specific task
+function get_cp_task_comments($id) {
+	
+	global $wpdb;
+	
+	$table_name = $wpdb->prefix . "cp_tasksmeta";
+	
+	$get_cp_task_comments = $wpdb->get_results("SELECT * FROM $table_name WHERE task_id = $id AND meta_key = 'comment' ORDER BY date ASC");
+	
+	$cp_task_comments_count = 1;
+	
+	if ($get_cp_task_comments) { 
+		
+		foreach ($get_cp_task_comments as $get_cp_task_comment) {
+			
+			$user_info = get_userdata($get_cp_task_comment->auth);
+			
+			$user_comment_link = '<a href="admin.php?page=cp-dashboard-page&view=userpage&user=' . $user_info->ID . '">';
+			
+			echo '<p>' . $cp_task_comments_count . ': ' . $user_comment_link . '<strong>' . $user_info->user_nicename . '</strong></a>&nbsp;&nbsp;';
+			echo $get_cp_task_comment->date .'</p><div style="clear:both"></div>';
+			echo '<p>' . stripslashes(nl2br($get_cp_task_comment->meta_value)) . '</p>';
+			
+			$cp_task_comments_count++;
+		
+		}
+		
+	} else {
+		
+		echo '<p>No comments...</p>';
+		
+	}
+	
+}
+
+// Check if specific task exists
+function check_cp_task_exists($id) {
+	
+	global $wpdb;
+	
+	$table_name = $wpdb->prefix . "cp_tasks";
+	
+	$cp_check_tasks = $wpdb->get_results("SELECT id FROM $table_name WHERE id = '".$id."' ");
+	
+	if ($cp_check_tasks) {
+		
+		return true;
+		
+	} else {
+		
+		return false;
+		
+	}
+	
+}
+
+// Get comment count
+function get_cp_comment_count($id) {
+	
+	global $wpdb;
+	
+	$table_name = $wpdb->prefix . "cp_tasksmeta";
+	
+	if($id) {
+		
+		$cp_comment_count = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $table_name WHERE meta_key = 'comment' and task_id = $id;"));
+		
+	} else {
+		
+		$cp_comment_count = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $table_name WHERE meta_key = 'comment'"));
+		
+	}
+	
+	if ($cp_comment_count) {
+	
+		return $cp_comment_count;
+		
+	} else {
+		
+		return 0;
+		
+	}
+
+}
+
 // List tasks
 function list_cp_tasks($project_id=NULL, $page_name=NULL) {
 	
@@ -113,12 +208,14 @@ function list_cp_tasks($project_id=NULL, $page_name=NULL) {
 	}
 	
 	if ($cp_list_my_tasks) {
+	
+		$my_task_count = '';
 		
-		foreach ($cp_list_my_tasks as $cp_list_my_task) {
+		foreach ($cp_list_my_tasks as $task_data) {
 			
-			$user_info = get_userdata($cp_list_my_task->users);
+			$user_info = get_userdata($task_data->users);
 			
-			if ($cp_list_my_task->status != 1) {
+			if ($task_data->status != 1) {
 				
 				echo '<div style="height:auto">';
 			
@@ -132,7 +229,7 @@ function list_cp_tasks($project_id=NULL, $page_name=NULL) {
 			
 				echo '</div>';
 			
-				if ($cp_list_my_task->users == $current_user->ID) {
+				if ($task_data->users == $current_user->ID) {
 			
 					echo '<div style="background:#FFFFCC" id="cp-task-summary">';
 				
@@ -141,34 +238,40 @@ function list_cp_tasks($project_id=NULL, $page_name=NULL) {
 					echo '<div id="cp-task-summary">';
 					
 				}
+				
+				echo '<div style="margin-left:75px">';
 			
-				if ($cp_list_my_task->status != 1) {
+				if ($task_data->status != 1) {
 			
-					$link = 'admin.php?page='.$page_name.'&completed-task=' .$cp_list_my_task->id;
+					$link = 'admin.php?page='.$page_name.'&completed-task=' .$task_data->id;
 					$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-complete_task') : $link;
 					?><p><input onclick="window.location='<?php echo $link; ?>'; return true;" type='checkbox' name='option1' value='1'><?php
 				
 				} else {
 					// This should never get executed / remove in future version
-					$link = 'admin.php?page='.$page_name.'&reopened-task=' .$cp_list_my_task->id;
+					$link = 'admin.php?page='.$page_name.'&reopened-task=' .$task_data->id;
 					$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-uncomplete_task') : $link;
 					?><p><input onclick="window.location='<?php echo $link; ?>'; return true;" type='checkbox' name='option1' value='1'><?php
 				
 				}
 			
-				if ($cp_list_my_task->status == 1) {
+				if ($task_data->status == 1) {
 				
 					echo ' <span style="text-decoration:line-through">';
 				
 				}
 			
-				echo "<strong>". $cp_list_my_task->title . "</strong>";
+				echo "<strong>". stripslashes($task_data->title) . "</strong>";
 				
 				$today = date("n-d-Y", mktime(date("n"), date("d"), date("Y")));
 				
-				if ($cp_list_my_task->due_date < $today) {
+				$today_totime = strtotime($today); 
 				
-					$date_color = "#CC3333";
+				$duedate_totime = strtotime($task_data->due_date); 
+				
+				if ($duedate_totime > $today_totime) {
+				
+					$date_color = "#DB4D4D";
 					
 				} else {
 					
@@ -176,25 +279,31 @@ function list_cp_tasks($project_id=NULL, $page_name=NULL) {
 
 				}
 				
-				echo " <code style='background:".$date_color."'>" . __('Due', 'collabpress') . ": " . $cp_list_my_task->due_date . "</code>";
+				echo " <code style='background:".$date_color."'>" . __('Due', 'collabpress') . ": " . $task_data->due_date . "</code>";
 			
-				if ($cp_list_my_task->status == 1) {
+				if ($task_data->status == 1) {
 					echo '</span>';
 				}
 			
-				$link = 'admin.php?page='.$page_name.'&delete-task=' . $cp_list_my_task->id . '&task-title=' . $cp_list_my_task->title;
+				$link = 'admin.php?page='.$page_name.'&delete-task=' . $task_data->id . '&task-title=' . $task_data->title;
 				$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-delete_task') : $link;
 				
-				echo '<a style="color:#D54E21" href="'.$link.'">delete</a></p>';
+				echo ' <a href="admin.php?page=cp-projects-page&view=edit-task&task='.$task_data->id.'">edit</a>';
+				
+				echo ' <a style="color:#D54E21" href="'.$link.'" >delete</a></p>';
 				
 				// If there is a description
-				if ($cp_list_my_task->details) {
+				if ($task_data->details) {
 				
-					echo '<p><strong>Description:</strong> ' . $cp_list_my_task->details . '</p>';
+					echo '<p><strong>Description:</strong> ' . stripslashes(nl2br($task_data->details)) . '</p>';
 				
 				}
 				
+				require (CP_PLUGIN_DIR .'/cp-core/cp-core-comments.php');
+                
 				$my_task_count++;
+				
+				echo '</div>';
 				
 				echo '</div>';
 				
@@ -202,13 +311,13 @@ function list_cp_tasks($project_id=NULL, $page_name=NULL) {
 				
 			} else {
 				
-				$cp_completed_tasks[] = $cp_list_my_task;
+				$cp_completed_tasks[] = $task_data;
 				
 			}
 			
 		}
 		
-		if ($cp_completed_tasks) {
+		if (isset($cp_completed_tasks)) {
 			
 			foreach ($cp_completed_tasks as $cp_completed_task) {
 				
@@ -235,7 +344,8 @@ function list_cp_tasks($project_id=NULL, $page_name=NULL) {
 					echo '<div style="background:#EEEEEE" id="cp-task-summary">';
 					
 				}
-			
+				
+				echo '<div style="margin-left:75px">';
 			
 				if ($cp_completed_task->status != 1) {
 					// This should never get executed - remove in future version
@@ -255,7 +365,7 @@ function list_cp_tasks($project_id=NULL, $page_name=NULL) {
 				
 				}
 			
-				echo "<strong>". $cp_completed_task->title . "</strong>";
+				echo "<strong>". stripslashes($cp_completed_task->title) . "</strong>";
 				echo " <code>" . __('Due', 'collabpress') . ": " . $cp_completed_task->due_date . "</code>";
 			
 				if ($cp_completed_task->status == 1) {
@@ -265,16 +375,22 @@ function list_cp_tasks($project_id=NULL, $page_name=NULL) {
 				$link = 'admin.php?page='.$page_name.'&delete-task=' . $cp_completed_task->id . '&task-title=' . $cp_completed_task->title;
 				$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-delete_task') : $link;
 				
-				echo '<a style="color:#D54E21" href="'.$link.'">delete</a></p>';
+				echo ' <a href="admin.php?page=cp-projects-page&view=edit-task&task='.$cp_completed_task->id.'">edit</a>';
+				
+				echo ' <a style="color:#D54E21" href="'.$link.'" >delete</a></p>';
 				
 				// If there is a description
-				if ($cp_list_my_task->details) {
+				if ($cp_completed_task->details) {
 					
-					echo '<p><strong>Description:</strong> ' . $cp_list_my_task->details . '</p>';
+					echo '<p><strong>Description:</strong> ' . stripslashes(nl2br($cp_completed_task->details)) . '</p>';
 				
 				}
 				
+				require (CP_PLUGIN_DIR .'/cp-core/cp-core-comments.php');
+				
 				$my_task_count++;
+				
+				echo '</div>';
 				
 				echo '</div>';
 				
@@ -283,9 +399,110 @@ function list_cp_tasks($project_id=NULL, $page_name=NULL) {
 			}
 			
 		}
+	
+	} else {
 		
-		// View more
-		// echo '<p><a style="text-decoration:none; color:#D54E21" href="admin.php?page=cp-dashboard-page&view=alltasks">' . __('View More', 'collabpress') . '</a></p>';	
+		echo "<p>No tasks......</p>";
+		
+	}
+	
+}
+
+// List single task page
+function list_cp_task($task_id=NULL) {
+	
+	global $wpdb, $current_user;
+	
+	$my_task_count = '';
+	
+	$task_id = intval($task_id);
+	$task_data = get_taskdata($task_id);
+	
+	if ($task_data) {
+			
+			$user_info = get_userdata($task_data->users);
+			
+			if ($task_data->status != 1) {
+				
+				echo '<div style="height:auto">';
+			
+				echo '<div id="cp-gravatar" style="height:62px;width:62px;background:#F0F0F0;">';
+			
+				// Default gravatar
+				$def_gravatar = "http://www.gravatar.com/avatar/c11f04eee71dfd0f49132786c34ea4ff?s=50&d=&r=G&forcedefault=1";
+			
+				// Get gravatar
+				echo get_avatar( $user_info->user_email, $size = '50', $default = $def_gravatar );
+			
+				echo '</div>';
+			
+				if ($task_data->users == $current_user->ID) {
+			
+					echo '<div style="background:#FFFFCC" id="cp-task-summary">';
+				
+				} else {
+					
+					echo '<div id="cp-task-summary">';
+					
+				}
+				
+				echo '<div style="margin-left:75px">';
+			
+				if ($task_data->status == 1) {
+				
+					echo ' <span style="text-decoration:line-through">';
+				
+				}
+			
+				echo "<strong>". stripslashes($task_data->title) . "</strong>";
+				
+				$today = date("n-d-Y", mktime(date("n"), date("d"), date("Y")));
+				
+				$today_totime = strtotime($today); 
+				
+				$duedate_totime = strtotime($task_data->due_date); 
+				
+				if ($duedate_totime > $today_totime) {
+				
+					$date_color = "#DB4D4D";
+					
+				} else {
+					
+					$date_color = "#33FF99";
+
+				}
+				
+				echo " <code style='background:".$date_color."'>" . __('Due', 'collabpress') . ": " . $task_data->due_date . "</code>";
+			
+				if ($task_data->status == 1) {
+					echo '</span>';
+				}
+			
+				//$link = 'admin.php?page='.$page_name.'&delete-task=' . $task_data->id . '&task-title=' . $task_data->title;
+				//$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-delete_task') : $link;
+				
+				echo ' <a href="admin.php?page=cp-projects-page&view=edit-task&task='.$task_data->id.'">edit</a>';
+				
+				//echo ' <a style="color:#D54E21" href="'.$link.'">delete</a></p>';
+				
+				// If there is a description
+				if ($task_data->details) {
+				
+					echo '<p><strong>Description:</strong> ' . stripslashes(nl2br($task_data->details)) . '</p>';
+				
+				}
+				
+				require (CP_PLUGIN_DIR .'/cp-core/cp-core-comments.php');
+				
+				$my_task_count++;
+				
+				echo '</div>';
+				
+				echo '</div>';
+				
+				echo '</div>';
+				
+			}
 	
 	} else {
 		
@@ -314,11 +531,13 @@ function list_cp_my_tasks($project_id=NULL, $page_name=NULL) {
 	
 	if ($cp_list_my_tasks) {
 		
-		foreach ($cp_list_my_tasks as $cp_list_my_task) {
+		$my_task_count='';
+		
+		foreach ($cp_list_my_tasks as $task_data) {
 			
-			$user_info = get_userdata($cp_list_my_task->users);
+			$user_info = get_userdata($task_data->users);
 			
-			if ($cp_list_my_task->status != 1) {
+			if ($task_data->status != 1) {
 				
 				echo '<div style="height:auto">';
 			
@@ -338,34 +557,40 @@ function list_cp_my_tasks($project_id=NULL, $page_name=NULL) {
 				echo '</div>';
 			
 				echo '<div id="cp-task-summary">';
+				
+				echo '<div style="margin-left:75px">';
 			
-				if ($cp_list_my_task->status != 1) {
+				if ($task_data->status != 1) {
 			
-					$link = 'admin.php?page='.$page_name.'&completed-task=' .$cp_list_my_task->id;
+					$link = 'admin.php?page='.$page_name.'&completed-task=' .$task_data->id;
 					$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-complete_task') : $link;
 					?><p><input onclick="window.location='<?php echo $link; ?>'; return true;" type='checkbox' name='option1' value='1'><?php
 				
 				} else {
 					// This should never get executed / remove in future version
-					$link = 'admin.php?page='.$page_name.'&reopened-task=' .$cp_list_my_task->id;
+					$link = 'admin.php?page='.$page_name.'&reopened-task=' .$task_data->id;
 					$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-uncomplete_task') : $link;
 					?><p><input onclick="window.location='<?php echo $link; ?>'; return true;" type='checkbox' name='option1' value='1'><?php
 				
 				}
 			
-				if ($cp_list_my_task->status == 1) {
+				if ($task_data->status == 1) {
 				
 					echo ' <span style="text-decoration:line-through">';
 				
 				}
 			
-				echo "<strong>". $cp_list_my_task->title . "</strong>";
+				echo "<strong>". stripslashes($task_data->title) . "</strong>";
 				
 				$today = date("n-d-Y", mktime(date("n"), date("d"), date("Y")));
 				
-				if ($cp_list_my_task->due_date < $today) {
+				$today_totime = strtotime($today); 
 				
-					$date_color = "#CC3333";
+				$duedate_totime = strtotime($task_data->due_date); 
+				
+				if ($duedate_totime > $today_totime) {
+				
+					$date_color = "#DB4D4D";
 					
 				} else {
 					
@@ -373,30 +598,34 @@ function list_cp_my_tasks($project_id=NULL, $page_name=NULL) {
 
 				}
 				
-				echo " <code style='background:".$date_color."'>" . __('Due', 'collabpress') . ": " . $cp_list_my_task->due_date . "</code>";
+				echo " <code style='background:".$date_color."'>" . __('Due', 'collabpress') . ": " . $task_data->due_date . "</code>";
 			
-				if ($cp_list_my_task->status == 1) {
+				if ($task_data->status == 1) {
 					echo '</span>';
 				}
 			
-				$link = 'admin.php?page='.$page_name.'&delete-task=' . $cp_list_my_task->id . '&task-title=' . $cp_list_my_task->title;
+				$link = 'admin.php?page='.$page_name.'&delete-task=' . $task_data->id . '&task-title=' . $task_data->title;
 				$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-delete_task') : $link;
 				
-				echo '<a style="color:#D54E21" href="'.$link.'">delete</a></p>';
+				echo ' <a href="admin.php?page=cp-projects-page&view=edit-task&task='.$task_data->id.'">edit</a>';
+				
+				echo ' <a style="color:#D54E21" href="'.$link.'">delete</a></p>';
 				
 				// Display project title
-				if ($cp_list_my_task->proj_id) {
+				if ($task_data->proj_id) {
 					
-					echo '<p><strong>' . __('Project:', 'collabpress') . '</strong> ' . get_cp_project_title($cp_list_my_task->proj_id) . '</p>';
+					echo '<p><strong>' . __('Project:', 'collabpress') . '</strong> ' . get_cp_project_title($task_data->proj_id) . '</p>';
 				
 				}
 				
 				// If there is a description
-				if ($cp_list_my_task->details) {
+				if ($task_data->details) {
 					
-					echo '<p><strong>' . __('Description:', 'collabpress') . '</strong> ' . $cp_list_my_task->details . '</p>';
+					echo '<p><strong>' . __('Description:', 'collabpress') . '</strong> ' . stripslashes(nl2br($task_data->details)) . '</p>';
 				
 				}
+				
+				require (CP_PLUGIN_DIR .'/cp-core/cp-core-comments.php');
 				
 				$my_task_count++;
 				
@@ -404,15 +633,17 @@ function list_cp_my_tasks($project_id=NULL, $page_name=NULL) {
 				
 				echo '</div>';
 				
+				echo '</div>';
+				
 			} else {
 				
-				$cp_completed_tasks[] = $cp_list_my_task;
+				$cp_completed_tasks[] = $task_data;
 				
 			}
 			
 		}
 		
-		if ($cp_completed_tasks) {
+		if (isset($cp_completed_tasks)) {
 			
 			foreach ($cp_completed_tasks as $cp_completed_task) {
 				
@@ -436,6 +667,8 @@ function list_cp_my_tasks($project_id=NULL, $page_name=NULL) {
 				echo '</div>';
 			
 				echo '<div style="background:#eeeeee" id="cp-task-summary">';
+				
+				echo '<div style="margin-left:75px">';
 			
 				if ($cp_completed_task->status != 1) {
 					// This should never get executed - remove in future version
@@ -455,7 +688,7 @@ function list_cp_my_tasks($project_id=NULL, $page_name=NULL) {
 				
 				}
 			
-				echo "<strong>". $cp_completed_task->title . "</strong>";
+				echo "<strong>". stripslashes($cp_completed_task->title) . "</strong>";
 				echo " <code>" . __('Due', 'collabpress') . ": " . $cp_completed_task->due_date . "</code>";
 			
 				if ($cp_completed_task->status == 1) {
@@ -465,23 +698,29 @@ function list_cp_my_tasks($project_id=NULL, $page_name=NULL) {
 				$link = 'admin.php?page='.$page_name.'&delete-task=' . $cp_completed_task->id . '&task-title=' . $cp_completed_task->title;
 				$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-delete_task') : $link;
 				
-				echo '<a style="color:#D54E21" href="'.$link.'">delete</a></p>';
+				echo ' <a href="admin.php?page=cp-projects-page&view=edit-task&task='.$cp_completed_task->id.'">edit</a>';
+				
+				echo ' <a style="color:#D54E21" href="'.$link.'">delete</a></p>';
 				
 				// Display project title
-				if ($cp_list_my_task->proj_id) {
+				if (isset($cp_list_my_task->proj_id)) {
 					
 					echo '<p><strong>' . __('Project:', 'collabpress') . '</strong> ' . get_cp_project_title($cp_list_my_task->proj_id) . '</p>';
 				
 				}
 				
 				// If there is a description
-				if ($cp_list_my_task->details) {
+				if ($cp_completed_task->details) {
 					
-					echo '<p><strong>' . __('Description:', 'collabpress') . '</strong> ' . $cp_list_my_task->details . '</p>';
+					echo '<p><strong>' . __('Description:', 'collabpress') . '</strong> ' . stripslashes(nl2br($cp_completed_task->details)) . '</p>';
 				
 				}
 				
+				require (CP_PLUGIN_DIR .'/cp-core/cp-core-comments.php');
+				
 				$my_task_count++;
+				
+				echo '</div>';
 				
 				echo '</div>';
 				
@@ -490,9 +729,6 @@ function list_cp_my_tasks($project_id=NULL, $page_name=NULL) {
 			}
 			
 		}
-		
-		// View more
-		// echo '<p><a style="text-decoration:none; color:#D54E21" href="admin.php?page=cp-dashboard-page&view=allmytasks">' . __('View More', 'collabpress') . '</a></p>';	
 	
 	} else {
 		
@@ -513,11 +749,13 @@ function list_cp_users_tasks($userid, $page_name) {
 	
 	if ($cp_list_my_tasks) {
 		
-		foreach ($cp_list_my_tasks as $cp_list_my_task) {
+		$my_task_count='';
+		
+		foreach ($cp_list_my_tasks as $task_data) {
 			
 			$user_info = get_userdata($userid);
 			
-			if ($cp_list_my_task->status != 1) {
+			if ($task_data->status != 1) {
 				
 				echo '<div style="height:auto">';
 			
@@ -537,34 +775,40 @@ function list_cp_users_tasks($userid, $page_name) {
 				echo '</div>';
 			
 				echo '<div id="cp-task-summary">';
+				
+				echo '<div style="margin-left:75px">';
 			
-				if ($cp_list_my_task->status != 1) {
+				if ($task_data->status != 1) {
 			
-					$link = 'admin.php?page='.$page_name.'&view=userpage&user=' . $user_info->ID . '&completed-task=' .$cp_list_my_task->id;
+					$link = 'admin.php?page='.$page_name.'&view=userpage&user=' . $user_info->ID . '&completed-task=' .$task_data->id;
 					$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-complete_task') : $link;
 					?><p><input onclick="window.location='<?php echo $link; ?>'; return true;" type='checkbox' name='option1' value='1'><?php
 				
 				} else {
 					// This should never get executed / remove in future version
-					$link = 'admin.php?page='.$page_name.'&view=userpage&user=' . $user_info->ID . '&reopened-task=' .$cp_list_my_task->id;
+					$link = 'admin.php?page='.$page_name.'&view=userpage&user=' . $user_info->ID . '&reopened-task=' .$task_data->id;
 					$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-uncomplete_task') : $link;
 					?><p><input onclick="window.location='<?php echo $link; ?>'; return true;" type='checkbox' name='option1' value='1'><?php
 				
 				}
 			
-				if ($cp_list_my_task->status == 1) {
+				if ($task_data->status == 1) {
 				
 					echo ' <span style="text-decoration:line-through">';
 				
 				}
 			
-				echo "<strong>". $cp_list_my_task->title . "</strong>";
+				echo "<strong>". stripslashes($task_data->title) . "</strong>";
 				
 				$today = date("n-d-Y", mktime(date("n"), date("d"), date("Y")));
 				
-				if ($cp_list_my_task->due_date < $today) {
+				$today_totime = strtotime($today); 
 				
-					$date_color = "#CC3333";
+				$duedate_totime = strtotime($task_data->due_date); 
+				
+				if ($duedate_totime > $today_totime) {
+				
+					$date_color = "#DB4D4D";
 					
 				} else {
 					
@@ -572,30 +816,34 @@ function list_cp_users_tasks($userid, $page_name) {
 
 				}
 				
-				echo " <code style='background:".$date_color."'>" . __('Due', 'collabpress') . ": " . $cp_list_my_task->due_date . "</code>";
+				echo " <code style='background:".$date_color."'>" . __('Due', 'collabpress') . ": " . $task_data->due_date . "</code>";
 			
-				if ($cp_list_my_task->status == 1) {
+				if ($task_data->status == 1) {
 					echo '</span>';
 				}
 			
-				$link = 'admin.php?page='.$page_name.'&view=userpage&user=' . $user_info->ID . '&delete-task=' . $cp_list_my_task->id . '&task-title=' . $cp_list_my_task->title;
+				$link = 'admin.php?page='.$page_name.'&view=userpage&user=' . $user_info->ID . '&delete-task=' . $task_data->id . '&task-title=' . $task_data->title;
 				$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-delete_task') : $link;
 				
-				echo '<a style="color:#D54E21" href="'.$link.'">delete</a></p>';
+				echo ' <a href="admin.php?page=cp-projects-page&view=edit-task&task='.$task_data->id.'">edit</a>';
+				
+				echo ' <a style="color:#D54E21" href="'.$link.'">delete</a></p>';
 				
 				// Display project title
-				if ($cp_list_my_task->proj_id) {
+				if ($task_data->proj_id) {
 					
-					echo '<p><strong>' . __('Project:', 'collabpress') . '</strong> ' . get_cp_project_title($cp_list_my_task->proj_id) . '</p>';
+					echo '<p><strong>' . __('Project:', 'collabpress') . '</strong> ' . get_cp_project_title($task_data->proj_id) . '</p>';
 				
 				}
 				
 				// If there is a description
-				if ($cp_list_my_task->details) {
+				if ($task_data->details) {
 					
-					echo '<p><strong>' . __('Description:', 'collabpress') . '</strong> ' . $cp_list_my_task->details . '</p>';
+					echo '<p><strong>' . __('Description:', 'collabpress') . '</strong> ' . stripslashes(nl2br($task_data->details)) . '</p>';
 				
 				}
+				
+				require (CP_PLUGIN_DIR .'/cp-core/cp-core-comments.php');
 				
 				$my_task_count++;
 				
@@ -603,15 +851,17 @@ function list_cp_users_tasks($userid, $page_name) {
 				
 				echo '</div>';
 				
+				echo '</div>';
+				
 			} else {
 				
-				$cp_completed_tasks[] = $cp_list_my_task;
+				$cp_completed_tasks[] = $task_data;
 				
 			}
 			
 		}
 		
-		if ($cp_completed_tasks) {
+		if (isset($cp_completed_tasks)) {
 			
 			foreach ($cp_completed_tasks as $cp_completed_task) {
 				
@@ -635,6 +885,8 @@ function list_cp_users_tasks($userid, $page_name) {
 				echo '</div>';
 			
 				echo '<div style="background:#eeeeee" id="cp-task-summary">';
+				
+				echo '<div style="margin-left:75px">';
 			
 				if ($cp_completed_task->status != 1) {
 					// This should never get executed - remove in future version
@@ -654,7 +906,7 @@ function list_cp_users_tasks($userid, $page_name) {
 				
 				}
 			
-				echo "<strong>". $cp_completed_task->title . "</strong>";
+				echo "<strong>". stripslashes($cp_completed_task->title) . "</strong>";
 				echo " <code>" . __('Due', 'collabpress') . ": " . $cp_completed_task->due_date . "</code>";
 			
 				if ($cp_completed_task->status == 1) {
@@ -664,23 +916,29 @@ function list_cp_users_tasks($userid, $page_name) {
 				$link = 'admin.php?page='.$page_name.'&view=userpage&user=' . $user_info->ID . '&delete-task=' . $cp_completed_task->id . '&task-title=' . $cp_completed_task->title;
 				$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-delete_task') : $link;
 				
-				echo '<a style="color:#D54E21" href="'.$link.'">delete</a></p>';
+				echo ' <a href="admin.php?page=cp-projects-page&view=edit-task&task='.$cp_completed_task->id.'">edit</a>';
+				
+				echo ' <a style="color:#D54E21" href="'.$link.'">delete</a></p>';
 				
 				// Display project title
-				if ($cp_list_my_task->proj_id) {
+				if ($cp_completed_task->proj_id) {
 					
-					echo '<p><strong>' . __('Project:', 'collabpress') . '</strong> ' . get_cp_project_title($cp_list_my_task->proj_id) . '</p>';
+					echo '<p><strong>' . __('Project:', 'collabpress') . '</strong> ' . get_cp_project_title($cp_completed_task->proj_id) . '</p>';
 				
 				}
 				
 				// If there is a description
-				if ($cp_list_my_task->details) {
+				if ($cp_completed_task->details) {
 					
-					echo '<p><strong>' . __('Description:', 'collabpress') . '</strong> ' . $cp_list_my_task->details . '</p>';
+					echo '<p><strong>' . __('Description:', 'collabpress') . '</strong> ' . stripslashes(nl2br($cp_completed_task->details)) . '</p>';
 				
 				}
 				
+				require (CP_PLUGIN_DIR .'/cp-core/cp-core-comments.php');
+				
 				$my_task_count++;
+				
+				echo '</div>';
 				
 				echo '</div>';
 				
@@ -690,8 +948,6 @@ function list_cp_users_tasks($userid, $page_name) {
 			
 		}
 		
-		// View more
-		// echo '<p><a style="text-decoration:none; color:#D54E21" href="admin.php?page=cp-dashboard-page&view=allmytasks">' . __('View More', 'collabpress') . '</a></p>';	
 	
 	} else {
 		

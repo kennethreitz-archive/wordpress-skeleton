@@ -12,23 +12,40 @@ function insert_cp_project() {
 }
 
 // Delete a project
-function delete_cp_project($project_id) {	
+function delete_cp_project($project_id) {
+	
 	global $wpdb, $current_user;
 	
 	$cp_auth = $current_user->ID;
 	$cp_date =  date("Y-m-d H:m:s");
 	$title = get_cp_project_title($project_id);
 
-	//delete project
+	// Delete project
 	$table_name = $wpdb->prefix . "cp_projects";
 	$wpdb->query("DELETE FROM $table_name WHERE id = $project_id");
 	
-	//delete all tasks for project
+	// Delete all tasks for project
 	$table_name = $wpdb->prefix . "cp_tasks";
 	$wpdb->query("DELETE FROM $table_name WHERE proj_id = $project_id");
 
 	insert_cp_activity($cp_auth, $cp_date, 'deleted', $title, 'project', NULL);
 	
+}
+
+// Get all project data
+function get_projectdata( $id ) {
+	
+	global $wpdb;
+
+	$id = absint($id);
+	if ( $id == 0 ) { return false; }
+	
+	$table_name = $wpdb->prefix . "cp_projects";
+	
+	if ( !$project = $wpdb->get_row($wpdb->prepare("SELECT * FROM " . $table_name ." WHERE ID = %d LIMIT 1", $id)) )
+		return false;
+
+	return $project;
 }
 
 // Get project id by title
@@ -117,7 +134,7 @@ function list_cp_projects() {
 		
 	} else {
 		
-		echo "<p>No projects...</p>";
+		echo "<p>" . __('No projects...', 'collabpress') . "</p>";
 		
 	}
 	

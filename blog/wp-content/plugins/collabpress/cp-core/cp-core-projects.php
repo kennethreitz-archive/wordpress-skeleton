@@ -61,22 +61,30 @@ class cp_core_projects {
 		add_meta_box('cp-projects-metaboxes-sidebox-2', __( 'Projects', 'collabpress' ), array(&$this, 'cp_projects_onsidebox_2_content'), $this->pagehook, 'side', 'core');
 		add_meta_box('cp-projects-metaboxes-sidebox-3', __( 'Users', 'collabpress' ), array(&$this, 'cp_projects_onsidebox_3_content'), $this->pagehook, 'side', 'core');
 		
-		if ($_GET['view'] == 'project') {
-			
-			add_meta_box('cp-projects-metaboxes-contentbox-2', 'Tasks', array(&$this, 'cp_oncontentbox_2_content'), $this->pagehook, 'normal', 'core');
-			add_meta_box('cp-projects-metaboxes-contentbox-3', 'Add A New Task', array(&$this, 'cp_oncontentbox_3_content'), $this->pagehook, 'normal', 'core');
-			
-		} else if ($_GET['view'] == 'edit-project') {
 		
-			add_meta_box('cp-projects-metaboxes-contentbox-4', 'Edit Project', array(&$this, 'cp_oncontentbox_4_content'), $this->pagehook, 'normal', 'core');
+		// Project page
+		if (isset($_GET['view']) && $_GET['view'] == 'project') {
+			
+			add_meta_box('cp-projects-metaboxes-contentbox-2', 'Tasks', array(&$this, 'cp_projects_oncontentbox_2_content'), $this->pagehook, 'normal', 'core');
+			add_meta_box('cp-projects-metaboxes-contentbox-3', 'Add A New Task', array(&$this, 'cp_projects_oncontentbox_3_content'), $this->pagehook, 'normal', 'core');
 		
+		// Edit project	
+		} else if (isset($_GET['view']) && $_GET['view'] == 'edit-project') {
+		
+			add_meta_box('cp-projects-metaboxes-contentbox-4', 'Edit Project', array(&$this, 'cp_projects_oncontentbox_4_content'), $this->pagehook, 'normal', 'core');
+		
+		// Edit task	
+		} else if (isset($_GET['view']) && $_GET['view'] == 'edit-task') {
+			
+			add_meta_box('cp-projects-metaboxes-contentbox-5', 'Edit Task', array(&$this, 'cp_projects_oncontentbox_5_content'), $this->pagehook, 'normal', 'core');
+		
+		// Add project
 		} else  {
 			
-			add_meta_box('cp-projects-metaboxes-contentbox-1', 'Create New Project', array(&$this, 'cp_oncontentbox_1_content'), $this->pagehook, 'normal', 'core');
+			add_meta_box('cp-projects-metaboxes-contentbox-1', 'Create New Project', array(&$this, 'cp_projects_oncontentbox_1_content'), $this->pagehook, 'normal', 'core');
+			add_meta_box('cp-projects-metaboxes-contentbox-additional-2', __( 'About', 'collabpress' ), array(&$this, 'cp_projects_oncontentbox_additional_2_content'), $this->pagehook, 'additional', 'core');
 			
 		}
-		
-		add_meta_box('cp-projects-metaboxes-contentbox-additional-2', __( 'About', 'collabpress' ), array(&$this, 'cp_oncontentbox_additional_2_content'), $this->pagehook, 'additional', 'core');
 	
 	}
 	
@@ -99,26 +107,31 @@ class cp_core_projects {
 		
 		<?php
 		
-		// Get Project Title
-		$cp_project_title = get_cp_project_title(esc_html($_GET['project']));
-		// Get Project Description
-		$cp_project_details = get_cp_project_details(esc_html($_GET['project']));
+		// If we have a project ID
+		if (isset($_GET['project'])) {
+			// Get Project Title
+			$cp_project_title = get_cp_project_title(esc_html($_GET['project']));
+			// Get Project Description
+			$cp_project_details = get_cp_project_details(esc_html($_GET['project']));
+		}
 		
 		?>
 		
-		<?php if($cp_project_title && $_GET['view'] != 'edit-project') { ?>
+		<?php if(isset($cp_project_title) && isset($_GET['view']) && isset($_GET['project']) && $_GET['view'] != 'edit-project') { ?>
         	<?php
 			$link = 'admin.php?page=cp-dashboard-page&delete-project='.esc_html($_GET['project']).'&project='.esc_html($_GET['project']);
 			$link = ( function_exists('wp_nonce_url') ) ? wp_nonce_url($link, 'cp-action-delete_project') : $link;
 			?>
-			<p><h2><?php echo $cp_project_title; ?>  - <a href="admin.php?page=cp-projects-page&view=edit-project&project=<?php echo esc_html($_GET['project']); ?>"><?php _e('edit', 'collabpress'); ?></a> <a style="color:#D54E21" href="<?php echo $link; ?>" onclick="javascript:check=confirm('<?php _e('WARNING: This will delete this project and all project tasks.\n\nChoose [Cancel] to Stop, [OK] to delete.\n'); ?>');if(check==false) return false;"><?php _e('delete', 'collabpress'); ?></a></h2></p>
+			<p><h2><?php echo stripslashes($cp_project_title); ?>  - <a href="admin.php?page=cp-projects-page&view=edit-project&project=<?php echo esc_html($_GET['project']); ?>"><?php _e('edit', 'collabpress'); ?></a> <a style="color:#D54E21" href="<?php echo $link; ?>" onclick="javascript:check=confirm('<?php _e('WARNING: This will delete this project and all project tasks.\n\nChoose [Cancel] to Stop, [OK] to delete.\n'); ?>');if(check==false) return false;"><?php _e('delete', 'collabpress'); ?></a></h2></p>
 			
 			<?php if($cp_project_details) { ?>
-				<p><strong><?php _e('Description: ', 'collabpress'); ?></strong><?php echo $cp_project_details; ?></p>
+				<p><strong><?php _e('Description: ', 'collabpress'); ?></strong><?php echo stripslashes($cp_project_details); ?></p>
 			<?php } ?>
 		
-		<?php } else if($_GET['view'] == 'edit-project') { ?>
+		<?php } else if(isset($_GET['view']) && $_GET['view'] == 'edit-project') { ?>
 			<p><h2>Edit Project</h2></p>
+		<?php } else if(isset($_GET['view']) && $_GET['view'] == 'edit-task') { ?>
+			<p><h2>Edit Task</h2></p>
 		<?php } else { ?>
 			<p><h2>Create New Project</h2></p>
 		<?php } ?>
@@ -138,10 +151,10 @@ class cp_core_projects {
 					</div>
 				
 					<form action="admin-post.php" method="post">
-						<?php wp_nonce_field('cp-dashboard-metaboxes-general'); ?>
+						<?php wp_nonce_field('cp-projects-metaboxes-general'); ?>
 						<?php wp_nonce_field('closedpostboxes', 'closedpostboxesnonce', false ); ?>
 						<?php wp_nonce_field('meta-box-order', 'meta-box-order-nonce', false ); ?>
-						<input type="hidden" name="action" value="save_cp_dashboard_metaboxes_general" />
+						<input type="hidden" name="action" value="save_cp_projects_metaboxes_general" />
 
 						<p style="display:none">
 							<input type="submit" value="<?php _e( 'Save Changes', 'collabpress' ) ?>" class="button-primary" name="Submit"/>	
@@ -205,7 +218,7 @@ class cp_core_projects {
 		list_cp_users();
 	}
 	
-	function cp_oncontentbox_1_content($data) {
+	function cp_projects_oncontentbox_1_content($data) {
 	?>
 		<form method="post" action="">
 		<?php wp_nonce_field('cp-add-project'); ?>
@@ -231,7 +244,7 @@ class cp_core_projects {
 	<?php
 	}
 	
-	function cp_oncontentbox_2_content($data) {
+	function cp_projects_oncontentbox_2_content($data) {
 		
 		$project_id = $_GET['project'];
 		
@@ -239,7 +252,7 @@ class cp_core_projects {
 	
 	}
 	
-	function cp_oncontentbox_3_content($data) {
+	function cp_projects_oncontentbox_3_content($data) {
 	?>
 		<form method="post" action="" enctype="multipart/form-data">
 		<?php wp_nonce_field('cp-add-task'); ?>
@@ -340,15 +353,15 @@ class cp_core_projects {
 	<?php
 	}
 	
-	function cp_oncontentbox_4_content($data) {
+	function cp_projects_oncontentbox_4_content($data) {
 		
-			if (check_cp_project_exists(esc_html($_GET['project']))) {
-			
+		if (check_cp_project_exists(esc_html($_GET['project']))) {
+		
 			// Get Edit Project Title
 			$cp_edit_project_title = get_cp_project_title(esc_html($_GET['project']));
 			// Get Edit Project Description
 			$cp_edit_project_details = get_cp_project_details(esc_html($_GET['project']));
-			
+		
 	?>
 			<form method="post" action="">
 			<?php wp_nonce_field('cp-edit-project'); ?>
@@ -356,11 +369,11 @@ class cp_core_projects {
 			<table class="form-table">
 			<tr class="form-field form-required">
 			<th scope="row"><label for="cp_edit_project_title"><?php _e('Title', 'collabpress'); ?> <span class="description"><?php _e('(required)', 'collabpress'); ?></span></label></th>
-			<td><input name="cp_edit_project_title" type="text" id="cp_edit_project_title" value="<?php echo $cp_edit_project_title; ?>" aria-required="true" /></td>
+			<td><input name="cp_edit_project_title" type="text" id="cp_edit_project_title" value="<?php echo stripslashes($cp_edit_project_title); ?>" aria-required="true" /></td>
 			</tr>
 			<tr class="form-field">
 			<th scope="row"><label for="cp_edit_project_details"><?php _e('Details', 'collabpress'); ?></label></th>
-			<td><input name="cp_edit_project_details" type="text" id="cp_edit_project_details" value="<?php echo $cp_edit_project_details; ?>" /></td>
+			<td><input name="cp_edit_project_details" type="text" id="cp_edit_project_details" value="<?php echo stripslashes($cp_edit_project_details); ?>" /></td>
 			</tr>			
 			</table>
 
@@ -372,17 +385,125 @@ class cp_core_projects {
 			</p>
 
 			</form>
-	<?php
+		<?php
 	
 		} else {
 			
-			echo "Project doesn't exist...";
+			echo "<p>" . __("Project doesn't exist...", "collabpress") . "</p>";
 			
 		}
 		
 	}
 	
-	function cp_oncontentbox_additional_2_content($data) {
+	function cp_projects_oncontentbox_5_content($data) {
+		
+		if (check_cp_task_exists(esc_html($_GET['task']))) {
+			
+		$edit_task = get_taskdata(esc_html($_GET['task']));
+		
+		?>
+		
+			<form method="post" action="" enctype="multipart/form-data">
+			<?php wp_nonce_field('cp-edit-task'); ?>
+
+			<table class="form-table">
+			<tr class="form-field form-required">
+			<th scope="row"><label for="cp_title"><?php _e('Title: ', 'collabpress'); ?> <span class="description"><?php _e('(required)'); ?></span></label></th>
+			<td><input name="cp_title" type="text" id="cp_title" value="<?php echo stripslashes($edit_task->title); ?>" aria-required="true" /></td>
+			</tr>
+
+			<tr class="form-field">
+			<th scope="row"><label for="cp_details"><?php _e('Details: ', 'collabpress'); ?></label></th>
+			<td><textarea name="cp_details" id="cp_details" rows="10" cols="20" /><?php echo stripslashes($edit_task->details); ?></textarea></td>
+			</tr>
+
+			<tr class="form-field">
+			<th scope="row"><label for="cp_users"><?php _e('Assign to: ', 'collabpress'); ?></label></th>
+			<td><?php wp_dropdown_users('selected=' . $edit_task->users); ?><td>
+			</tr>
+		
+			<?php
+		
+			$edit_task_due_date = explode("-", $edit_task->due_date);
+		
+			?>
+
+			<tr class="form-field">
+			<th scope="row"><label for="cp_tasks_due"><?php _e('Due: ', 'collabpress'); ?></label></th>
+			<td>
+			<?php
+				$months = array (1 => 'January', 'February', 'March', 'April', 'May', 'June','July', 'August', 'September', 'October', 'November', 'December');
+				$days = range (1, 31);
+				$years = range (date('Y'), 2025);
+
+				// Month
+				echo __('Month', 'collabpress') . ": <select name='cp_tasks_due_month'>";
+				$cp_month_count = 1;
+				foreach ($months as $value) {
+
+					if ($cp_month_count == $edit_task_due_date[0]) {
+						$month_selected = "SELECTED";
+					} else {
+						$month_selected = '';
+					}
+
+					echo '<option ' . $month_selected . ' value="'.$cp_month_count.'">'.$value.'</option>\n';
+					$cp_month_count++;
+				} echo '</select>';
+
+				// Day
+				echo __('Day', 'collabpress') . ": <select name='cp_tasks_due_day'>";
+				foreach ($days as $value) {
+
+					if ($value == $edit_task_due_date[1]) {
+						$day_selected = "SELECTED";
+					} else {
+						$day_selected = '';
+					}
+
+					echo '<option ' . $day_selected . ' value="'.$value.'">'.$value.'</option>\n';
+				} echo '</select>';
+
+
+				// Year
+				echo __('Year', 'collabpress') . ": <select name='cp_tasks_due_year'>";
+				foreach ($years as $value) {
+
+					if ($value == $edit_task_due_date[2]) {
+						$year_selected = "SELECTED";
+					} else {
+						$year_selected = '';
+					}
+
+					echo '<option ' . $year_selected . ' value="'.$value.'">'.$value.'</option>\n';
+				} 
+				echo '</select>';
+			?>
+			</td>
+			</tr>
+
+			</table>
+
+			<input type="hidden" name="cp_edit_task_id" value="<?php echo esc_html($_GET['task']); ?>">
+			<input type="hidden" name="cp_add_tasks_project" value="<?php echo $edit_task->proj_id; ?>">
+			<input type="hidden" name="page_options" value="user, cp_title, cp_details, cp_users, cp_tasks_due_month, cp_tasks_due_day, cp_tasks_due_year, cp_add_tasks_project" />
+
+			<p>
+			<input type="submit" class="button-primary" name="cp_edit_task_button" value="<?php _e('Edit Task', 'collabpress') ?>" />
+			</p>
+
+			</form>
+		<?php
+		
+		} else {
+			
+			echo "<p>" . __("Task doesn't exist...", "collabpress") . "</p>";
+			
+		}
+		
+	}
+	
+	function cp_projects_oncontentbox_additional_2_content($data) {
 		?>
 			<p class="cp_about"><a target="_blank" href="http://webdevstudios.com/support/forum/collabpress/">CollabPress</a> v<?php echo CP_VERSION; ?> - <?php _e( 'Copyright', 'collabpress' ) ?> &copy; 2010 - <a href="http://webdevstudios.com/support/forum/collabpress/" target="_blank">Please Report Bugs</a> &middot; Follow us on Twitter: <a href="http://twitter.com/scottbasgaard" target="_blank">Scott</a> &middot; <a href="http://twitter.com/williamsba" target="_blank">Brad</a> &middot; <a href="http://twitter.com/webdevstudios" target="_blank">WDS</a></p>
 		<?php

@@ -60,35 +60,46 @@ class cp_core_dashboard {
 		wp_enqueue_script('postbox');
 
 		// Add several metaboxes now, all metaboxes registered during load page can be switched off/on at "Screen Options" automatically, nothing special to do therefore
-		add_meta_box('cp-dashboard-metaboxes-sidebox-1', __( 'Calendar', 'collabpress' ), array(&$this, 'cp_onsidebox_1_content'), $this->pagehook, 'side', 'core');
-		add_meta_box('cp-dashboard-metaboxes-sidebox-2', __( 'Projects', 'collabpress' ), array(&$this, 'cp_onsidebox_2_content'), $this->pagehook, 'side', 'core');
-		add_meta_box('cp-dashboard-metaboxes-sidebox-3', __( 'Users', 'collabpress' ), array(&$this, 'cp_onsidebox_3_content'), $this->pagehook, 'side', 'core');
+		add_meta_box('cp-dashboard-metaboxes-sidebox-1', __( 'Calendar', 'collabpress' ), array(&$this, 'cp_dashboard_onsidebox_1_content'), $this->pagehook, 'side', 'core');
+		add_meta_box('cp-dashboard-metaboxes-sidebox-2', __( 'Projects', 'collabpress' ), array(&$this, 'cp_dashboard_onsidebox_2_content'), $this->pagehook, 'side', 'core');
+		add_meta_box('cp-dashboard-metaboxes-sidebox-3', __( 'Users', 'collabpress' ), array(&$this, 'cp_dashboard_onsidebox_3_content'), $this->pagehook, 'side', 'core');
 		
-		// Toggle dashboard view
-		if ($_GET['view'] == 'allactivity') {
+		// All activity
+		if (isset($_GET['view']) && $_GET['view'] == 'allactivity') {
 			
-			add_meta_box('cp-dashboard-metaboxes-contentbox-3', __( 'Activity', 'collabpress' ), array(&$this, 'cp_oncontentbox_3_content'), $this->pagehook, 'normal', 'core');
+			add_meta_box('cp-dashboard-metaboxes-contentbox-3', __( 'Activity', 'collabpress' ), array(&$this, 'cp_dashboard_oncontentbox_3_content'), $this->pagehook, 'normal', 'core');
+		
+		// All my tasks	
+		} else if (isset($_GET['view']) && $_GET['view'] == 'allmytasks') {
 			
-		} else if ($_GET['view'] == 'allmytasks') {
-			
-			add_meta_box('cp-dashboard-metaboxes-contentbox-4', __( 'My Tasks', 'collabpress' ), array(&$this, 'cp_oncontentbox_4_content'), $this->pagehook, 'normal', 'core');
-			
-			} else if ($_GET['view'] == 'alltasks') {
+			add_meta_box('cp-dashboard-metaboxes-contentbox-4', __( 'My Tasks', 'collabpress' ), array(&$this, 'cp_dashboard_oncontentbox_4_content'), $this->pagehook, 'normal', 'core');
+		
+		// All tasks	
+		} else if (isset($_GET['view']) && $_GET['view'] == 'alltasks') {
 				
-				add_meta_box('cp-dashboard-metaboxes-contentbox-5', __( 'Tasks', 'collabpress' ), array(&$this, 'cp_oncontentbox_5_content'), $this->pagehook, 'normal', 'core');
-				
-				} else if ($_GET['view'] == 'userpage') {
+			add_meta_box('cp-dashboard-metaboxes-contentbox-5', __( 'Tasks', 'collabpress' ), array(&$this, 'cp_dashboard_oncontentbox_5_content'), $this->pagehook, 'normal', 'core');
+		
+		// User page		
+		} else if (isset($_GET['view']) && $_GET['view'] == 'userpage') {
 					
-					$user_info = get_userdata($_GET['user']);
+			$user_info = get_userdata($_GET['user']);
 
-					add_meta_box('cp-dashboard-metaboxes-contentbox-6', 'Tasks for ' . $user_info->user_nicename, array(&$this, 'cp_oncontentbox_6_content'), $this->pagehook, 'normal', 'core');
-					
-					} else {
+			add_meta_box('cp-dashboard-metaboxes-contentbox-6', 'Tasks for ' . $user_info->user_nicename, array(&$this, 'cp_dashboard_oncontentbox_6_content'), $this->pagehook, 'normal', 'core');
+		
+		// Task page		
+		} else if (isset($_GET['view']) && $_GET['view'] == 'task') {
+
+			$task_data = get_taskdata(intval($_GET['task_id']));
+
+			add_meta_box('cp-dashboard-metaboxes-contentbox-7', 'Task: ' .stripslashes($task_data->title), array(&$this, 'cp_dashboard_oncontentbox_7_content'), $this->pagehook, 'normal', 'core');
+		
+		// Dashboard			
+		} else {
 			
-					add_meta_box('cp-dashboard-metaboxes-contentbox-1', __( 'Recent Activity', 'collabpress' ), array(&$this, 'cp_oncontentbox_1_content'), $this->pagehook, 'normal', 'core');
-					add_meta_box('cp-dashboard-metaboxes-contentbox-2', __( 'My Tasks', 'collabpress' ), array(&$this, 'cp_oncontentbox_2_content'), $this->pagehook, 'normal', 'core');
-					add_meta_box('cp-dashboard-metaboxes-contentbox-additional-2', __( 'About', 'collabpress' ), array(&$this, 'cp_oncontentbox_additional_2_content'), $this->pagehook, 'additional', 'core');
-			
+			add_meta_box('cp-dashboard-metaboxes-contentbox-1', __( 'Recent Activity', 'collabpress' ), array(&$this, 'cp_dashboard_oncontentbox_1_content'), $this->pagehook, 'normal', 'core');
+			add_meta_box('cp-dashboard-metaboxes-contentbox-2', __( 'My Tasks', 'collabpress' ), array(&$this, 'cp_dashboard_oncontentbox_2_content'), $this->pagehook, 'normal', 'core');
+			add_meta_box('cp-dashboard-metaboxes-contentbox-additional-2', __( 'About', 'collabpress' ), array(&$this, 'cp_dashboard_oncontentbox_additional_2_content'), $this->pagehook, 'additional', 'core');
+	
 		}
 		
 	}
@@ -120,13 +131,8 @@ class cp_core_dashboard {
 		
 		<?php // screen_icon('options-general'); ?>
 		
-		<p><h2>CollabPress<?php if ($_GET['view']) { echo ' - <a href="admin.php?page=cp-dashboard-page">'.__('Back', 'collabpress').'</a>';}?></h2></p>
+		<p><h2>CollabPress<?php if (isset($_GET['view'])) { echo ' - <a href="admin.php?page=cp-dashboard-page">'.__('Back', 'collabpress').'</a>';}?></h2></p>
 		
-		<form action="admin-post.php" method="post">
-			<?php wp_nonce_field('cp-dashboard-metaboxes-general'); ?>
-			<?php wp_nonce_field('closedpostboxes', 'closedpostboxesnonce', false ); ?>
-			<?php wp_nonce_field('meta-box-order', 'meta-box-order-nonce', false ); ?>
-			<input type="hidden" name="action" value="save_cp_dashboard_metaboxes_general" />
 			<div id="poststuff" class="metabox-holder<?php echo 2 == $screen_layout_columns ? ' has-right-sidebar' : ''; ?>">
 				
 				<div id="side-info-column" class="inner-sidebar">
@@ -137,16 +143,25 @@ class cp_core_dashboard {
 					<div id="post-body-content" class="has-sidebar-content">
 						<?php do_meta_boxes($this->pagehook, 'normal', $data); ?>
 						<?php do_meta_boxes($this->pagehook, 'additional', $data); ?>
+					</div>
+						
+						<form action="admin-post.php" method="post">
+							<?php wp_nonce_field('cp-dashboard-metaboxes-general'); ?>
+							<?php wp_nonce_field('closedpostboxes', 'closedpostboxesnonce', false ); ?>
+							<?php wp_nonce_field('meta-box-order', 'meta-box-order-nonce', false ); ?>
+							<input type="hidden" name="action" value="save_cp_dashboard_metaboxes_general" />
+						
 						<p style="display:none">
 							<input type="submit" value="<?php _e( 'Save Changes', 'collabpress' ) ?>" class="button-primary" name="Submit"/>	
-						</p>
-					</div>
+						</p>	
+					</form>
+				
 				</div>
 				
 				<br class="clear"/>
 								
 			</div>	
-		</form>
+		
 		</div>
 
 	<script type="text/javascript">
@@ -180,7 +195,7 @@ class cp_core_dashboard {
 	}
 
 	// Below you will find for each registered metabox the callback method, that produces the content inside the boxes
-	function cp_onsidebox_1_content($data) {
+	function cp_dashboard_onsidebox_1_content($data) {
 		?><center><?php
 		$time = time();
     	echo cp_generate_small_calendar(date('Y', $time), date('n', $time));
@@ -188,40 +203,46 @@ class cp_core_dashboard {
     	?></center><?php
 	}
 	
-	function cp_onsidebox_2_content($data) {
+	function cp_dashboard_onsidebox_2_content($data) {
 		list_cp_projects();
 		echo '<p><a style="text-decoration:none; color:#D54E21" href="admin.php?page=cp-projects-page">' . __('Add New', 'collabpress') . '</a></p>';	
 	}
 	
-	function cp_onsidebox_3_content($data) {
+	function cp_dashboard_onsidebox_3_content($data) {
 		list_cp_users();
 	}
 	
-	function cp_oncontentbox_1_content($data) {
+	function cp_dashboard_oncontentbox_1_content($data) {
 		list_cp_activity();
 	}
 	
-	function cp_oncontentbox_2_content($data) {
+	function cp_dashboard_oncontentbox_2_content($data) {
 		list_cp_my_tasks(NULL, CP_DASHBOARD_METABOX_PAGE_NAME);
 	}
 	
-	function cp_oncontentbox_3_content($data) {
+	function cp_dashboard_oncontentbox_3_content($data) {
 		list_cp_activity($view_more = 1);
 	}
 	
-	function cp_oncontentbox_4_content($data) {
+	function cp_dashboard_oncontentbox_4_content($data) {
 		list_cp_my_tasks(NULL, CP_DASHBOARD_METABOX_PAGE_NAME);
 	}
 	
-	function cp_oncontentbox_5_content($data) {
+	function cp_dashboard_oncontentbox_5_content($data) {
 		list_cp_tasks(NULL, CP_DASHBOARD_METABOX_PAGE_NAME);
 	}
 	
-	function cp_oncontentbox_6_content($data) {
+	function cp_dashboard_oncontentbox_6_content($data) {
 		list_cp_users_tasks($_GET['user'], CP_DASHBOARD_METABOX_PAGE_NAME);
 	}
 	
-	function cp_oncontentbox_additional_2_content($data) {
+	// Function to display individual task page
+	function cp_dashboard_oncontentbox_7_content($data) {
+		list_cp_task($_GET['task_id']);
+		get_cp_task_comments($_GET['task_id']);
+	}
+	
+	function cp_dashboard_oncontentbox_additional_2_content($data) {
 		?>
 			<p class="cp_about"><a target="_blank" href="http://webdevstudios.com/support/forum/collabpress/">CollabPress</a> v<?php echo CP_VERSION; ?> - <?php _e( 'Copyright', 'collabpress' ) ?> &copy; 2010 - <a href="http://webdevstudios.com/support/forum/collabpress/" target="_blank">Please Report Bugs</a> &middot; Follow us on Twitter: <a href="http://twitter.com/scottbasgaard" target="_blank">Scott</a> &middot; <a href="http://twitter.com/williamsba" target="_blank">Brad</a> &middot; <a href="http://twitter.com/webdevstudios" target="_blank">WDS</a></p>
 		<?php

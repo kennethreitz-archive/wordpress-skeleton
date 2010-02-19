@@ -14,6 +14,7 @@ if (!function_exists ('add_action')) {
  */
 define( 'CP_PLUGIN_DIR', WP_PLUGIN_DIR . '/collabpress' );
 define( 'CP_PLUGIN_URL', plugins_url( $path = '/collabpress' ) );
+$cp_email_footer = "\n\nPowered by CollabPress for WordPress\nhttp://wordpress.org/extend/plugins/collabpress/";
 
 /*** 
  * Install or upgrade
@@ -76,9 +77,28 @@ function cp_wp_dashboard_widget_function() {
 
 // Add CollabPress CSS
 function cp_wp_add_stylesheet() {
-    $url = get_settings('siteurl');
+    $url = get_option('siteurl');
     $url = $url . '/wp-content/plugins/collabpress/style/cp-admin.css';
     echo '<link rel="stylesheet" type="text/css" href="' . $url . '" />';
+	?>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js">
+        </script>
+        <script type="text/javascript" >
+        $(document).ready(function()
+        {
+        $(".comment_button").click(function(){
+        
+        var element = $(this);
+        var I = element.attr("id");
+        
+        $("#slidepanel"+I).slideToggle(300);
+        $(this).toggleClass("active"); 
+        
+        return false;
+        });
+        });
+        </script>
+    <?php
 }
 
 add_action('admin_head', 'cp_wp_add_stylesheet');

@@ -69,7 +69,7 @@ function list_cp_activity($view_more = NULL) {
 			if ($cp_list_activity->action == 'created' || $cp_list_activity->action == 'added' || $cp_list_activity->action == 'completed') {
 				$activity_color = 'green';
 			} else if ($cp_list_activity->action == 'edited') {
-				$activity_color = 'yellow';
+				$activity_color = 'orange';
 			} else if ($cp_list_activity->action == 'deleted') {
 				$activity_color = 'red';
 			} else if ($cp_list_activity->action == 'reopened') {
@@ -83,7 +83,7 @@ function list_cp_activity($view_more = NULL) {
 			echo '<p><strong>Date:</strong> ' . $cp_list_activity->date . '</p>';
 			
 			// If this is a task
-			if ($cp_list_activity->type == 'task' || $cp_list_activity->type == 'completed' || $cp_list_activity->type == 'reopened' && $cp_list_activity->cp_id != 0 ) {
+			if ($cp_list_activity->type == 'task' || $cp_list_activity->type == 'comment' || $cp_list_activity->type == 'completed' || $cp_list_activity->type == 'reopened' && $cp_list_activity->cp_id != 0 ) {
 			
 				$task_project_id =  get_cp_task_project_id($cp_list_activity->cp_id);
 
@@ -91,14 +91,14 @@ function list_cp_activity($view_more = NULL) {
 			
 				echo '<p><strong>Project:</strong> ' . $task_project_title;
 				
-				echo '<p><strong>Summary: </strong><a href="admin.php?page=cp-dashboard-page&view=userpage&user=' . $user_info->ID . '">' . $user_info->user_nicename . '</a></strong> <span style="color:'.$activity_color.';">' . $cp_list_activity->action . '</span> new ' . $cp_list_activity->type . ' "<a href="admin.php?page=cp-projects-page&view=project&project='.$task_project_id.'">' . $cp_list_activity->title . '</a>".</p>';
+				echo '<p><strong>Summary: </strong><a href="admin.php?page=cp-dashboard-page&view=userpage&user=' . $user_info->ID . '">' . $user_info->user_nicename . '</a></strong> <span style="color:'.$activity_color.';">' . $cp_list_activity->action . '</span> ' . $cp_list_activity->type . ' "<a href="admin.php?page=cp-projects-page&view=project&project='.$task_project_id.'">' . $cp_list_activity->title . '</a>".</p>';
 			
 			// If this is a project
 			} else if ($cp_list_activity->type == 'project' && $cp_list_activity->cp_id != 0) {
 			
 				$activity_project_id = $cp_list_activity->cp_id;
 			
-				echo '<p><strong>Summary: </strong><a href="admin.php?page=cp-dashboard-page&view=userpage&user=' . $user_info->ID . '">' . $user_info->user_nicename . '</a></strong> <span style="color:'.$activity_color.';">' . $cp_list_activity->action . '</span> new ' . $cp_list_activity->type . ' "<a href="admin.php?page=cp-projects-page&view=project&project='.$activity_project_id.'">' . $cp_list_activity->title . '</a>".</p>';
+				echo '<p><strong>Summary: </strong><a href="admin.php?page=cp-dashboard-page&view=userpage&user=' . $user_info->ID . '">' . $user_info->user_nicename . '</a></strong> <span style="color:'.$activity_color.';">' . $cp_list_activity->action . '</span> ' . $cp_list_activity->type . ' "<a href="admin.php?page=cp-projects-page&view=project&project='.$activity_project_id.'">' . $cp_list_activity->title . '</a>".</p>';
 			
 			// If it's neither then it's been deleted and don't display link
 			} else {
