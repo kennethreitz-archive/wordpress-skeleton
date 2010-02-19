@@ -1,0 +1,16 @@
+.wrap, .updated, .error, #the-comment-list td.comment {
+	max-width: 99%;
+}
+
+html {
+	height: 100%;
+	margin-bottom: 1px;
+}
+
+#newcat {
+	width:95% !important;
+}
+
+#category-add select, #newtag {
+	width: 75% !important;
+}

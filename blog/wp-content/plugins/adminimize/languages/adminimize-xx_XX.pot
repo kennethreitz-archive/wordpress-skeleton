@@ -1,0 +1,877 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Adminimize\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-04 17:38+0100\n"
+"PO-Revision-Date: 2010-01-04 17:39+0100\n"
+"Last-Translator: Frank Bueltge <frank@bueltge.de>\n"
+"Language-Team: Frank Bueltge <frank@bueltge.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: adminimize.php:91
+#@ adminimize
+msgid "Unknown error."
+msgstr ""
+
+#: adminimize.php:98
+#@ adminimize
+msgid "The updates was saved."
+msgstr ""
+
+#: adminimize.php:99
+#@ adminimize
+msgid "You have not enough rights for edit entries in the database."
+msgstr ""
+
+#: adminimize.php:101
+#@ adminimize
+msgid "All entries in the database was delleted."
+msgstr ""
+
+#: adminimize.php:102
+#@ adminimize
+msgid "Set the checkbox on deinstall-button."
+msgstr ""
+
+#: adminimize.php:103
+#@ adminimize
+msgid "Can't load menu and submenu."
+msgstr ""
+
+#: adminimize.php:104
+#@ adminimize
+msgid "Backend-Theme was activated!"
+msgstr ""
+
+#: adminimize.php:105
+#@ adminimize
+msgid "Load user data to themes was successful."
+msgstr ""
+
+#: adminimize.php:372
+#: adminimize_page.php:528
+#: adminimize_page.php:980
+#@ adminimize
+msgid "Categories"
+msgstr ""
+
+#: adminimize.php:378
+#: adminimize.php:389
+msgid "+ Add New Category"
+msgstr ""
+
+#: adminimize.php:380
+#: adminimize.php:391
+msgid "New category name"
+msgstr ""
+
+#: adminimize.php:381
+#: adminimize.php:393
+msgid "Parent category"
+msgstr ""
+
+#: adminimize.php:382
+#: adminimize.php:394
+msgid "Add"
+msgstr ""
+
+#: adminimize.php:391
+#: adminimize_page.php:529
+#@ adminimize
+msgid "Add New Category"
+msgstr ""
+
+#: adminimize.php:415
+#: adminimize.php:416
+#: adminimize_page.php:527
+#@ adminimize
+msgid "Tags"
+msgstr ""
+
+#: adminimize.php:456
+#: adminimize.php:470
+#: adminimize.php:484
+msgid "Blue"
+msgstr ""
+
+#: adminimize.php:463
+#: adminimize.php:477
+#: adminimize.php:491
+msgid "Gray"
+msgstr ""
+
+#: adminimize.php:499
+#: adminimize.php:541
+#: adminimize.php:564
+msgid "Classic"
+msgstr ""
+
+#: adminimize.php:506
+#: adminimize.php:548
+#: adminimize.php:571
+msgid "Fresh"
+msgstr ""
+
+#: adminimize.php:513
+msgid "WordPress 2.3"
+msgstr ""
+
+#: adminimize.php:520
+msgid "Maybe i'm colorblind"
+msgstr ""
+
+#: adminimize.php:527
+msgid "Grey"
+msgstr ""
+
+#: adminimize.php:655
+#: adminimize.php:658
+msgid "Dashboard"
+msgstr ""
+
+#: adminimize.php:717
+#: adminimize.php:719
+#: adminimize.php:732
+#: adminimize.php:734
+#: adminimize.php:925
+msgid "Log Out"
+msgstr ""
+
+#: adminimize.php:944
+msgid "Visit plugin homepage"
+msgstr ""
+
+#: adminimize.php:947
+msgid "plugin"
+msgstr ""
+
+#: adminimize.php:947
+msgid "Version"
+msgstr ""
+
+#: adminimize.php:947
+#@ adminimize
+msgid "History"
+msgstr ""
+
+#: adminimize.php:947
+msgid "Author"
+msgstr ""
+
+#: adminimize.php:950
+#@ adminimize
+msgid "plugin activate"
+msgstr ""
+
+#: adminimize.php:970
+msgid "Settings"
+msgstr ""
+
+#: adminimize.php:1031
+#: adminimize.php:1052
+#@ adminimize
+msgid "<a href=\"http://wordpress.org/extend/plugins/adminimize/\">Documentation</a>"
+msgstr ""http://bueltge.de/wordpress-admin-theme-adminimize/674/\">Dokumentation</a> (<a href=\"http://wordpress.org/extend/plugins/adminimize/\">en</a>)"
+
+#: adminimize.php:1048
+#: adminimize_page.php:109
+#@ adminimize
+msgid "Adminimize"
+msgstr ""
+
+#: adminimize.php:1050
+#@ adminimize
+msgid "Adminimize Options"
+msgstr ""
+
+#: adminimize.php:1067
+msgid "Cheatin&#8217; uh?"
+msgstr ""
+
+#: adminimize_page.php:115
+#: adminimize_page.php:140
+#: adminimize_page.php:186
+#: adminimize_page.php:340
+#: adminimize_page.php:455
+#: adminimize_page.php:777
+#: adminimize_page.php:860
+#: adminimize_page.php:943
+#: adminimize_page.php:1065
+#: adminimize_page.php:1163
+#: adminimize_page.php:1198
+#: adminimize_page.php:1219
+msgid "Click to toggle"
+msgstr ""
+
+#: adminimize_page.php:145
+#: adminimize_page.php:187
+#@ adminimize
+msgid "Backend Options"
+msgstr ""
+
+#: adminimize_page.php:196
+#@ adminimize
+msgid "User-Info"
+msgstr ""
+
+#: adminimize_page.php:200
+#: adminimize_page.php:213
+#: adminimize_page.php:223
+#: adminimize_page.php:233
+#: adminimize_page.php:243
+#: adminimize_page.php:253
+#: adminimize_page.php:263
+#: adminimize_page.php:273
+#: adminimize_page.php:283
+#: adminimize_page.php:312
+#@ adminimize
+msgid "Default"
+msgstr ""
+
+#: adminimize_page.php:201
+#: adminimize_page.php:224
+#@ adminimize
+msgid "Hide"
+msgstr ""
+
+#: adminimize_page.php:202
+#@ adminimize
+msgid "Only logout"
+msgstr ""
+
+#: adminimize_page.php:203
+#@ adminimize
+msgid "User &amp; Logout"
+msgstr ""
+
+#: adminimize_page.php:204
+#@ adminimize
+msgid "The &quot;User-Info-area&quot; is on the top right side of the backend. You can hide or reduced show."
+msgstr ""
+
+#: adminimize_page.php:209
+#@ adminimize
+msgid "Change User-Info, redirect to"
+msgstr ""
+
+#: adminimize_page.php:214
+#@ adminimize
+msgid "Frontpage of the Blog"
+msgstr ""
+
+#: adminimize_page.php:215
+#@ adminimize
+msgid "When the &quot;User-Info-area&quot; change it, then it is possible to change the redirect."
+msgstr ""
+
+#: adminimize_page.php:219
+#@ adminimize
+msgid "Footer"
+msgstr ""
+
+#: adminimize_page.php:225
+#@ adminimize
+msgid "The Footer-area kann hide, include all links and details."
+msgstr ""
+
+#: adminimize_page.php:229
+#@ adminimize
+msgid "WriteScroll"
+msgstr ""
+
+#: adminimize_page.php:234
+#: adminimize_page.php:244
+#: adminimize_page.php:254
+#: adminimize_page.php:264
+#: adminimize_page.php:274
+#: adminimize_page.php:284
+#@ adminimize
+msgid "Activate"
+msgstr ""
+
+#: adminimize_page.php:235
+#@ adminimize
+msgid "With the WriteScroll option active, these pages will automatically scroll to an optimal position for editing, when you visit Write Post or Write Page."
+msgstr ""
+
+#: adminimize_page.php:239
+#@ adminimize
+msgid "Timestamp"
+msgstr ""
+
+#: adminimize_page.php:245
+#@ adminimize
+msgid "Opens the post timestamp editing fields without you having to click the \"Edit\" link every time."
+msgstr ""
+
+#: adminimize_page.php:249
+#@ adminimize
+msgid "Thickbox FullScreen"
+msgstr ""
+
+#: adminimize_page.php:255
+#@ adminimize
+msgid "All Thickbox-function use the full area of the browser. Thickbox is for examble in upload media-files."
+msgstr ""
+
+#: adminimize_page.php:259
+#@ adminimize
+msgid "Flashuploader"
+msgstr ""
+
+#: adminimize_page.php:265
+#@ adminimize
+msgid "Disable the flashuploader and users use only the standard uploader."
+msgstr ""
+
+#: adminimize_page.php:279
+#@ adminimize
+msgid "Advice in Footer"
+msgstr ""
+
+#: adminimize_page.php:313
+#@ adminimize
+msgid "Manage Posts"
+msgstr ""
+
+#: adminimize_page.php:314
+#@ adminimize
+msgid "Manage Pages"
+msgstr ""
+
+#: adminimize_page.php:315
+#@ adminimize
+msgid "Write Post"
+msgstr ""
+
+#: adminimize_page.php:316
+#@ adminimize
+msgid "Write Page"
+msgstr ""
+
+#: adminimize_page.php:317
+#: adminimize_page.php:533
+#@ adminimize
+msgid "Comments"
+msgstr ""
+
+#: adminimize_page.php:318
+#@ adminimize
+msgid "other Page"
+msgstr ""
+
+#: adminimize_page.php:330
+#: adminimize_page.php:445
+#: adminimize_page.php:767
+#: adminimize_page.php:850
+#: adminimize_page.php:933
+#: adminimize_page.php:1054
+#@ adminimize
+msgid "Update Options"
+msgstr ""
+
+#: adminimize_page.php:148
+#: adminimize_page.php:341
+#@ adminimize
+msgid "Global options"
+msgstr ""
+
+#: adminimize_page.php:348
+#: adminimize_page.php:420
+#: adminimize_page.php:825
+#: adminimize_page.php:908
+#: adminimize_page.php:951
+#: adminimize_page.php:1029
+#@ adminimize
+msgid "Option"
+msgstr ""
+
+#: adminimize_page.php:351
+#: adminimize_page.php:466
+#: adminimize_page.php:788
+#: adminimize_page.php:871
+#: adminimize_page.php:954
+#@ adminimize
+msgid "Deactivate for"
+msgstr ""
+
+#: adminimize_page.php:371
+#@ adminimize
+msgid "Favorite Actions"
+msgstr ""
+
+#: adminimize_page.php:372
+#@ adminimize
+msgid "Screen-Meta"
+msgstr ""
+
+#: adminimize_page.php:373
+#: adminimize_page.php:525
+#: adminimize_page.php:619
+#@ adminimize
+msgid "Screen Options"
+msgstr ""
+
+#: adminimize_page.php:374
+#@ adminimize
+msgid "Contextual Help"
+msgstr ""
+
+#: adminimize_page.php:375
+#@ adminimize
+msgid "Admin Color Scheme"
+msgstr ""
+
+#: adminimize_page.php:419
+#: adminimize_page.php:1028
+#@ adminimize
+msgid "Your own options"
+msgstr ""
+
+#: adminimize_page.php:419
+#: adminimize_page.php:824
+#: adminimize_page.php:907
+#: adminimize_page.php:1028
+#@ adminimize
+msgid "ID or class"
+msgstr ""
+
+#: adminimize_page.php:426
+#: adminimize_page.php:831
+#: adminimize_page.php:914
+#: adminimize_page.php:1035
+#@ adminimize
+msgid "It is possible to add your own IDs or classes from elements and tags. You can find IDs and classes with the FireBug Add-on for Firefox. Assign a value and the associate name per line."
+msgstr ""
+
+#: adminimize_page.php:432
+#: adminimize_page.php:837
+#: adminimize_page.php:920
+#: adminimize_page.php:1041
+#@ adminimize
+msgid "Possible nomination for ID or class. Separate multiple nomination through a carriage return."
+msgstr ""
+
+#: adminimize_page.php:437
+#: adminimize_page.php:842
+#: adminimize_page.php:925
+#: adminimize_page.php:1046
+#@ adminimize
+msgid "Possible IDs or classes. Separate multiple values through a carriage return."
+msgstr ""
+
+#: adminimize_page.php:151
+#: adminimize_page.php:456
+#@ adminimize
+msgid "Menu Options"
+msgstr ""
+
+#: adminimize_page.php:463
+#@ adminimize
+msgid "Menu options - Menu, <span style=\\\"font-weight: 400;\\\">Submenu</span>"
+msgstr ""font-weight: 400;\">Submenu</span>"
+
+#: adminimize_page.php:524
+#: adminimize_page.php:618
+msgid "Help"
+msgstr ""
+
+#: adminimize_page.php:526
+#: adminimize_page.php:620
+#@ adminimize
+msgid "Permalink"
+msgstr ""
+
+#: adminimize_page.php:530
+#@ adminimize
+msgid "Excerpt"
+msgstr ""
+
+#: adminimize_page.php:531
+#@ adminimize
+msgid "Trackbacks"
+msgstr ""
+
+#: adminimize_page.php:532
+#: adminimize_page.php:621
+msgid "Custom Fields"
+msgstr ""
+
+#: adminimize_page.php:534
+#@ adminimize
+msgid "Password Protect This Post"
+msgstr ""
+
+#: adminimize_page.php:535
+msgid "Post Author"
+msgstr ""
+
+#: adminimize_page.php:536
+msgid "Post Revisions"
+msgstr ""
+
+#: adminimize_page.php:537
+#@ adminimize
+msgid "Related, Shortcuts"
+msgstr ""
+
+#: adminimize_page.php:538
+#: adminimize_page.php:630
+#@ adminimize
+msgid "Messenges"
+msgstr ""
+
+#: adminimize_page.php:539
+#: adminimize_page.php:631
+#@ adminimize
+msgid "h2: Advanced Options"
+msgstr ""
+
+#: adminimize_page.php:540
+#: adminimize_page.php:632
+#@ adminimize
+msgid "Media Buttons (all)"
+msgstr ""
+
+#: adminimize_page.php:541
+#: adminimize_page.php:633
+#@ adminimize
+msgid "Word count"
+msgstr ""
+
+#: adminimize_page.php:542
+msgid "Post Slug"
+msgstr ""
+
+#: adminimize_page.php:543
+#: adminimize_page.php:635
+#: adminimize_page.php:984
+#@ adminimize
+msgid "Publish Actions"
+msgstr ""
+
+#: adminimize_page.php:544
+#: adminimize_page.php:636
+msgid "Discussion"
+msgstr ""
+
+#: adminimize_page.php:549
+msgid "Post Thumbnail"
+msgstr ""
+
+#: adminimize_page.php:551
+#: adminimize_page.php:643
+#@ adminimize
+msgid "Suggested tags from"
+msgstr ""
+
+#: adminimize_page.php:553
+msgid "Text Control"
+msgstr ""
+
+#: adminimize_page.php:555
+#: adminimize_page.php:645
+msgid "HTML Special Characters"
+msgstr ""
+
+#: adminimize_page.php:557
+msgid "All in One SEO Pack"
+msgstr ""
+
+#: adminimize_page.php:622
+#@ adminimize
+msgid "Comments &amp; Pings"
+msgstr ""
+
+#: adminimize_page.php:623
+#@ adminimize
+msgid "Password Protect This Page"
+msgstr ""
+
+#: adminimize_page.php:624
+msgid "Attributes"
+msgstr ""
+
+#: adminimize_page.php:625
+#@ adminimize
+msgid "Page Template"
+msgstr ""
+
+#: adminimize_page.php:626
+#@ adminimize
+msgid "Page Order"
+msgstr ""
+
+#: adminimize_page.php:627
+msgid "Page Author"
+msgstr ""
+
+#: adminimize_page.php:628
+msgid "Page Revisions"
+msgstr ""
+
+#: adminimize_page.php:629
+#@ adminimize
+msgid "Related"
+msgstr ""
+
+#: adminimize_page.php:634
+msgid "Page Slug"
+msgstr ""
+
+#: adminimize_page.php:641
+msgid "Page Image"
+msgstr ""
+
+#: adminimize_page.php:683
+#: adminimize_page.php:731
+#@ adminimize
+msgid "After activate the check box it heavy attitudes will change."
+msgstr ""
+
+#: adminimize_page.php:714
+msgid "Profile"
+msgstr ""
+
+#: adminimize_page.php:154
+#: adminimize_page.php:778
+#: adminimize_page.php:785
+#@ adminimize
+msgid "Write options - Post"
+msgstr ""
+
+#: adminimize_page.php:824
+#@ adminimize
+msgid "Your own post options"
+msgstr ""
+
+#: adminimize_page.php:157
+#: adminimize_page.php:861
+#: adminimize_page.php:868
+#@ adminimize
+msgid "Write options - Page"
+msgstr ""
+
+#: adminimize_page.php:907
+#@ adminimize
+msgid "Your own page options"
+msgstr ""
+
+#: adminimize_page.php:160
+#: adminimize_page.php:944
+#@ adminimize
+msgid "Links options"
+msgstr ""
+
+#: adminimize_page.php:977
+msgid "Name"
+msgstr ""
+
+#: adminimize_page.php:978
+msgid "Web Address"
+msgstr ""
+
+#: adminimize_page.php:979
+msgid "Description"
+msgstr ""
+
+#: adminimize_page.php:981
+msgid "Target"
+msgstr ""
+
+#: adminimize_page.php:982
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: adminimize_page.php:983
+msgid "Advanced"
+msgstr ""
+
+#: adminimize_page.php:163
+#: adminimize_page.php:1066
+#: adminimize_page.php:1151
+#@ adminimize
+msgid "Set Theme"
+msgstr ""
+
+#: adminimize_page.php:1073
+#@ adminimize
+msgid "For better peformance with many users on your blog; load only userlist, when you will change the theme options for users."
+msgstr ""
+
+#: adminimize_page.php:1076
+#@ adminimize
+msgid "Load User Data"
+msgstr ""
+
+#: adminimize_page.php:1087
+msgid "User-ID"
+msgstr ""
+
+#: adminimize_page.php:1088
+msgid "Username"
+msgstr ""
+
+#: adminimize_page.php:1089
+msgid "Display name publicly as"
+msgstr ""
+
+#: adminimize_page.php:1090
+msgid "Admin-Color Scheme"
+msgstr ""
+
+#: adminimize_page.php:1091
+msgid "User Level"
+msgstr ""
+
+#: adminimize_page.php:1092
+msgid "Role"
+msgstr ""
+
+#: adminimize_page.php:169
+#: adminimize_page.php:1199
+#@ adminimize
+msgid "Deinstall Options"
+msgstr ""
+
+#: adminimize_page.php:1202
+#@ adminimize
+msgid "Use this option for clean your database from all entries of this plugin. When you deactivate the plugin, the deinstall of the plugin <strong>clean not</strong> all entries in the database."
+msgstr ""
+
+#: adminimize_page.php:1206
+#@ adminimize
+msgid "Delete Options"
+msgstr ""
+
+#: adminimize_page.php:116
+#: adminimize_page.php:172
+#: adminimize_page.php:1220
+#@ adminimize
+msgid "About the plugin"
+msgstr ""
+
+#: adminimize_page.php:118
+#: adminimize_page.php:1223
+#@ adminimize
+msgid "Further information: Visit the <a href=\"http://bueltge.de/wordpress-admin-theme-adminimize/674/\">plugin homepage</a> for further information or to grab the latest version of this plugin."
+msgstr ""http://bueltge.de/wordpress-admin-theme-adminimize/674/\">Plugin Webseite</a> f&uuml;r weitere Informationen oder hole die aktuelle Version des Plugins."
+
+#: adminimize_page.php:124
+#: adminimize_page.php:1229
+#@ adminimize
+msgid "PayPal - The safer, easier way to pay online!"
+msgstr ""
+
+#: adminimize_page.php:128
+#: adminimize_page.php:1233
+#@ adminimize
+msgid "You want to thank me? Visit my <a href=\"http://bueltge.de/wunschliste/\">wishlist</a> or donate."
+msgstr ""http://bueltge.de/wunschliste/\">Wunschliste</a> oder spende."
+
+#: adminimize.php:100
+#@ adminimize
+msgid "All entries in the database was imported."
+msgstr ""
+
+#: adminimize_page.php:166
+#: adminimize_page.php:1164
+#@ adminimize
+msgid "Export/Import Options"
+msgstr ""
+
+#: adminimize_page.php:1168
+#@ adminimize
+msgid "Export"
+msgstr ""
+
+#: adminimize_page.php:1173
+#@ adminimize
+msgid "Export &raquo;"
+msgstr ""
+
+#: adminimize_page.php:1177
+#@ adminimize
+msgid "Import"
+msgstr ""
+
+#: adminimize_page.php:1182
+#@ adminimize
+msgid "Choose a file from your computer"
+msgstr ""
+
+#: adminimize_page.php:1187
+#@ adminimize
+msgid "Upload file and import &raquo;"
+msgstr ""
+
+#: adminimize_page.php:141
+#@ adminimize
+msgid "MiniMenu"
+msgstr ""
+
+#: adminimize_page.php:332
+#: adminimize_page.php:447
+#: adminimize_page.php:769
+#: adminimize_page.php:852
+#: adminimize_page.php:935
+#: adminimize_page.php:1057
+#: adminimize_page.php:1156
+#: adminimize_page.php:1190
+#: adminimize_page.php:1211
+#: adminimize_page.php:1237
+#@ adminimize
+msgid "scroll to top"
+msgstr ""
+
+#: adminimize_page.php:1170
+#@ adminimize
+msgid "You can save a .seq file with your options."
+msgstr ""
+
+#: adminimize_page.php:1180
+#@ adminimize
+msgid "Choose a Adminimize (<em>.seq</em>) file to upload, then click <em>Upload file and import</em>."
+msgstr ""
+
+#: adminimize_page.php:269
+#@ adminimize
+msgid "Category Height"
+msgstr ""
+
+#: adminimize_page.php:275
+#@ adminimize
+msgid "View the Meta Box with Categories in the full height, no scrollbar or whitespace."
+msgstr ""
+
+#: adminimize_page.php:286
+#@ adminimize
+msgid "In Footer kann you display a advice for change the Default-design, (x)HTML is possible."
+msgstr ""
+
+#: adminimize_page.php:308
+#@ adminimize
+msgid "Dashboard deactivate, redirect to"
+msgstr ""
+
+#: adminimize_page.php:321
+#@ adminimize
+msgid "You have deactivate the Dashboard, please select a page for redirect?"
+msgstr ""
+
+#: adminimize_page.php:545
+#: adminimize_page.php:637
+msgid "HTML Editor Button"
+msgstr ""
+

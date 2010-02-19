@@ -1,0 +1,2610 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Role Scoper 1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-27 12:51-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Kevin Behrens\n"
+"Language-Team: agapetry <kevin@agapetry.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: E:\\www\\mu28\\wp-content\\plugins\\role-scoper\\\n"
+"X-Poedit-KeywordsList: __;_e;_c;__ngettext;_n;scoper_po_trigger;_x\n"
+"X-Poedit-SearchPath-0: E:\\www\\mu28\\wp-content\\plugins\\role-scoper\n"
+"X-Poedit-SearchPath-1: E:\\www\\mu28\\wp-content\\plugins\\role-scoper\\admin\n"
+"X-Poedit-SearchPath-2: E:\\www\\mu28\\wp-content\\plugins\\role-scoper\\hardway\n"
+"X-Poedit-SearchPath-3: E:\\www\\mu28\\wp-content\\plugins\\role-scoper\\lib\n"
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/data_sources_rs.php:26
+msgid "Term"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/data_sources_rs.php:26
+msgid "Terms"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:95
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:112
+msgid "Sorry, this content requires additional permissions.  Please contact an administrator for help."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:96
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:113
+msgid "Sorry, you don't have access to this content.  Please log in or contact a site administrator for help."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:109
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:126
+msgid "note: This content requires a higher login level."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:110
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:127
+msgid "note: This content requires site login."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:166
+msgid "front-end"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:167
+msgid "admin"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:390
+msgid "Link"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:416
+msgid "Group"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:417
+msgid "Groups"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/defaults_rs.php:491
+msgid "Link Category"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/feed-interceptor_rs.php:57
+msgid "Access denied: Incorrect credentials supplied."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/role-scoper.php:37
+#, php-format
+msgid "<strong>Error:</strong> Multiple copies of Role Scoper activated. Only version %1$s (in folder \"%2$s\") is functional."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:8
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:14
+msgid "Post Reader"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:14
+msgid "Private Post Reader"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:17
+msgid "Post Contributor"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:20
+msgid "Post Author"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:23
+msgid "Post Revisor"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:27
+msgid "Post Publisher"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:29
+msgid "Post Editor"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:32
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:35
+msgid "Page Reader"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:35
+msgid "Private Page Reader"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:38
+msgid "Page Associate"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:41
+msgid "Page Contributor"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:44
+msgid "Page Author"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:47
+msgid "Page Revisor"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:51
+msgid "Page Publisher"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:53
+msgid "Page Editor"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:56
+msgid "Link Admin"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:59
+msgid "Category Manager"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:62
+msgid "Group Manager"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:75
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:79
+msgid "Readers"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:79
+msgid "Private Readers"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:83
+msgid "Contributors"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:87
+msgid "Authors"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:91
+msgid "Revisors"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:96
+msgid "Publishers"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:98
+msgid "Editors"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:101
+msgid "Associates"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:105
+msgid "Admins"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:109
+msgid "Managers"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:122
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:126
+msgid "Reader"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:126
+msgid "Pvt Reader"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:130
+msgid "Contrib"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:134
+msgid "Author"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:138
+msgid "Revisor"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:143
+msgid "Publisher"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:145
+msgid "Editor"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:148
+msgid "Assoc"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:152
+msgid "Admin"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles-strings_rs.php:156
+msgid "Manager"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/roles_rs.php:387
+msgid "Anonymous Reader"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/teaser_rs.php:263
+#, php-format
+msgid "%s..."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/about.php:31
+msgid "unselfish, benevolent love, born of the Spirit."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/about.php:33
+msgid "Agap&eacute; discerns needs and meets them unselfishly and effectively."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/about.php:36
+#, php-format
+msgid "This WordPress plugin is part of my agap&eacute; try, a lifelong effort to love God and love people by rightly using the time and abilities He has leant me. As a husband, father, engineer, farmer and/or software developer, I have found this stewardship effort to be often fraught with contradiction. A wise and sustainable balancing of roles has seemed to elude me. Yet I want to keep trying, trusting that if God blesses and multiplies the effort, it will become agapetry, a creative arrangement motivated by benevolent love.  A fleeting childlike sketch of the beautiful %1$s chain-breaking agap&eacute;%2$s which %3$s Jesus Christ unleashed%4$s so %5$s freely%6$s and aptly on an enslaving, enslaved world."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/about.php:38
+#, php-format
+msgid "Although Role Scoper's development was a maniacal hermit-like effort, it was only possible because of the clean and flexible %1$s WordPress code base%2$s.  My PHP programming skills grew immensely by the good examples set forth there and in plugins such as %3$s NextGen Gallery%4$s. I'm not done learning, and look forward to some real-time cooperation with these and other developers now that my all-consuming quest has reached a stable plateau."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/about.php:40
+#, php-format
+msgid "Thanks to %1$sAlberto Ramicciotti%2$s for the Italian translation.  I do try to be translator-friendly, but any untranslated captions are due to my flurry of recent additions and changes, and will no doubt be updated soon.  Now there must be someone else who wants Role Scoper in their language..."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/about.php:42
+#, php-format
+msgid "Role Scoper is open source software released under the %1$s General Public License (GPL)%2$s. Due to limitations, obligations and non-technical aspirations common to most human beings, I will probably never again pursue uncommissioned plugin development on the scale Role Scoper has required. However, I do plan to provide some free support, correct bugs which emerge and revise the plugin for future WordPress versions. If it adds value to your website or saves you time and money, you can express appreciation in several ways:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/about.php:44
+#, php-format
+msgid "%1$s Submit technical feedback%2$s, including improvement requests."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/about.php:46
+#, php-format
+msgid "%1$s Submit a case study%2$s, explaining how Role Scoper helps you do something excellent and praiseworthy."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/about.php:48
+#, php-format
+msgid "%1$s Localize Role Scoper%2$s to your own language %3$s using poEdit%4$s "
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/about.php:52
+#, php-format
+msgid "If the plugin has seriously broadened your CMS horizons, %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/about.php:54
+#, php-format
+msgid "If you are an established web developer, %1$s grant me your professional opinion%2$s on how this work stacks up. Might the skills, work ethic and values I express here fit into a development team near you?"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/about.php:56
+msgid "Hire or refer my services</a> to design, redesign or enhance your site - quality care at reasonable rates."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:48
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:667
+msgid "Users or Groups"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:57
+msgid "User / Group"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:59
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:262
+msgid "User"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:90
+msgid "Select Assignment Mode"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:107
+msgid "Select Restriction Mode"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:115
+msgid "Review and Submit"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:152
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:1061
+msgid "Update &raquo;"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:160
+#, php-format
+msgid "Select %s to Modify"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:174
+msgid "Set Role Duration and/or Content Date Limits (optional)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:184
+msgid "Select Roles to Assign / Remove"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:189
+msgid "Select Roles to Modify"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:254
+#, php-format
+msgid "Error: no %s were selected!"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:260
+msgid "Error: no roles were selected!"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:339
+#, php-format
+msgid "%d user"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:341
+#, php-format
+msgid "%d group"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:349
+#, php-format
+msgid "%d role selection"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:352
+#, php-format
+msgid "Role Assignments Updated: %1$s for %2$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:356
+#, php-format
+msgid "Role Restrictions Updated: %d setting"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:506
+msgid "unselect all roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:511
+msgid "hide users"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:515
+msgid "show users"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:521
+msgid "hide groups"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:525
+msgid "show groups"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:531
+msgid "hide roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:535
+msgid "show roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:561
+msgid "hide unmodified items"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:564
+msgid "hide defaulted"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:566
+msgid "hide unassigned"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:577
+msgid "items"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:580
+#, php-format
+msgid "include the newest %s with default restrictions"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:582
+#, php-format
+msgid "include the newest %s with no role assignments"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:586
+msgid "show defaulted"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:588
+msgid "show unassigned"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:602
+msgid "collapse all"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:613
+msgid "expand all"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:620
+#, php-format
+msgid "Note: %1$s with default restrictions will not be listed here unless they are among the %2$s newest."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:622
+#, php-format
+msgid "Note: %1$s with no role assignments will not be listed here unless they are among the %2$s newest."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:680
+msgid "prev"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:681
+msgid "next"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:690
+#, php-format
+msgid "Current %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:694
+msgid "Current Restrictions"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:724
+msgid "top"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:726
+msgid "show all"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:736
+#, php-format
+msgid "DEFAULTS for new %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:738
+#, php-format
+msgid "DEFAULTS for all %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:755
+msgid "edit roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:757
+#, php-format
+msgid "edit %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:815
+#, php-format
+msgid "id %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:1068
+msgid "select / unselect all:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:1069
+msgid "Actions"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:1090
+#, php-format
+msgid "(all %s)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-dashboard_rs.php:11
+msgid "Pending Post"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin-dashboard_rs.php:29
+msgid "Pending Page"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:53
+msgid "Role Duration specifies the time period in which a role is active."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:58
+msgid "Content Date Limits narrow the content which the role applies to."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:77
+msgid "Modify Role Duration"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:85
+msgid "Grant Role on:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:90
+msgid "Expire Role on:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:112
+msgid "Modify Content Date Limits"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:118
+msgid "Min Content Date:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:123
+msgid "Max Content Date:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:135
+msgid "This controls what limits to apply to the User / Group roles you select for creation or modification. <strong>Currently stored limits</strong> are indicated by a colored background behind the User or Group name.  For details, hover over the name or view the User or Group Profile."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:238
+#, php-format
+msgid "%1$s%2$s, %3$s @ %4$s : %5$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:266
+msgid "keep current setting"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-mu_rs.php:7
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:393
+msgid "Role Scoper Options"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-mu_rs.php:7
+msgid "Role Options"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-mu_rs.php:21
+msgid "Role Scoper Option Defaults"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib-mu_rs.php:21
+msgid "Role Defaults"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib_rs.php:219
+#, php-format
+msgid "[WP %s]"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib_rs.php:222
+msgid "[Anonymous]"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib_rs.php:233
+#, php-format
+msgid "All users with the WordPress role of %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_lib_rs.php:236
+msgid "Anonymous users (not logged in)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:114
+#, php-format
+msgid "assign role for this %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:115
+#, php-format
+msgid "assign role for sub-%s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:168
+#, php-format
+msgid "%1$s Role Scoper Documentation%2$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:169
+#, php-format
+msgid "%1$s Role Scoper Support Forum%2$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:254
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:259
+msgid "Role Groups"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:268
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:275
+msgid "User Groups"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:268
+msgid "Default Groups"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:275
+msgid "Group Members"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:382
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:400
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:405
+msgid "Restrictions"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:383
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:401
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:403
+msgid "Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:390
+msgid "Role Restrictions"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:417
+msgid "General Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:417
+msgid "General"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:458
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:530
+#, php-format
+msgid "%s Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:470
+#, php-format
+msgid "%s restrictions"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:539
+#, php-format
+msgid "%s Restrictions"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:553
+msgid "About Role Scoper"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:553
+msgid "About"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:569
+msgid "Attachment Utility"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_rs.php:637
+msgid "Object Role Edit"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:152
+#, php-format
+msgid "TO START on %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:153
+#, php-format
+msgid "started on %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:154
+#, php-format
+msgid "EXPIRED on %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:155
+#, php-format
+msgid "expire on %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:157
+#, php-format
+msgid "(for content %1$s to %2$s)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:158
+#, php-format
+msgid "(for content after %1$s)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:159
+#, php-format
+msgid "(for content before %1$s)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:234
+#, php-format
+msgid "Restricted for %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:235
+#, php-format
+msgid "Unrestricted for %1$s, Restricted for sub-%2$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:236
+#, php-format
+msgid "Restricted for selected and sub-%s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:237
+msgid "Unrestricted by default"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:238
+msgid "Unrestricted"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:241
+#, php-format
+msgid "Unrestricted for %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:242
+#, php-format
+msgid "Unrestricted for sub-%s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:243
+#, php-format
+msgid "Unrestricted for selected and sub-%s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:244
+msgid "Restricted by default"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:245
+msgid "Restricted"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:263
+msgid "Groupname"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:263
+msgid "Username"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:269
+msgid "Users / Groups Key"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:276
+#, php-format
+msgid "%1$s has role assigned for the specified %2$s."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:281
+#, php-format
+msgid "%1$s has role assigned for the specified %2$s and, by default, for all its sub-%3$s. (Propagated roles can also be explicitly removed)."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:286
+#, php-format
+msgid "%1$s does NOT have role assigned for the specified %2$s, but has it by default for sub-%3$s."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:291
+#, php-format
+msgid "%1$s has this role via propagation from parent %2$s, and by default for sub-%3$s."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:296
+msgid "Role Name"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:297
+#, php-format
+msgid "role is restricted for specified %s."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:308
+msgid "Scroll to current settings:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:380
+#, php-format
+msgid "Category Roles for WordPress pages are <a %s>disabled for this blog</a>. Object Roles can be assigned to individual pages, and optionally propagated to sub-pages."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:384
+#, php-format
+msgid "Another option is to categorise pages via the <a %s>Page&nbsp;Category&nbsp;Plus</a>&nbsp;plugin."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:435
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:438
+msgid "Main Page (no parent)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:28
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/general_roles.php:32
+#, php-format
+msgid "%1$s define user groups%2$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:30
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/general_roles.php:34
+#, php-format
+msgid "<strong>Note:</strong> To assign roles to user groups, first %1$s define the group(s)%2$s."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:71
+#, php-format
+msgid "Actions: %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:81
+msgid "Key:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:90
+msgid "Enter additional Group Names or IDs (comma-separate)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:90
+msgid "Enter additional User Names or IDs (comma-separate)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:96
+msgid "Enter additional Group Names or IDs for Subpages"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:96
+msgid "Enter additional User Names or IDs for Subpages"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:162
+#, php-format
+msgid "show current groups (%d)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:162
+#, php-format
+msgid "show eligible groups (%d)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:164
+#, php-format
+msgid "show current users (%d)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:164
+#, php-format
+msgid "show eligible users (%d)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:184
+msgid "filter:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:193
+msgid "select"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:198
+msgid "unselect"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:204
+msgid "propagate"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:209
+msgid "unpropagate"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:218
+#, php-format
+msgid "current groups (%d):"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:218
+#, php-format
+msgid "eligible groups (%d):"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:220
+#, php-format
+msgid "current users (%d):"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:220
+#, php-format
+msgid "eligible users (%d):"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:229
+msgid "object"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:232
+msgid "objects"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:475
+#, php-format
+msgid "inherited from parent %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:479
+msgid "has via other role"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:483
+msgid "has via group"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:487
+msgid "has via other scope"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:491
+#, php-format
+msgid "propagate to sub-%s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:495
+#, php-format
+msgid "%1$sEdit date limits%2$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:17
+msgid "<strong>Note</strong>: Direct access to uploaded file attachments cannot be filtered because your WP_CONTENT_DIR is not in the WordPress branch."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:19
+msgid "The operation was terminated due to an invalid configuration."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:48
+#, php-format
+msgid "<strong>checking %s posts / pages...</strong>"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:87
+#, php-format
+msgid "<span class=\"rs-brown\">skipping unfilterable file in %1$s \"%2$s\":</span> %3$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:129
+#, php-format
+msgid "<span class=\"rs-green\"><strong>new attachment</strong> in %1$s \"%2$s\":</span> %3$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:135
+#, php-format
+msgid "<span class=\"rs-blue\">attachment OK in %1$s \"%2$s\":</span> %3$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:151
+#, php-format
+msgid "Operation complete: %s linked uploads were found in your post / page content."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:154
+#, php-format
+msgid "<strong>%s attachment records were added to the database.</strong>"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:156
+msgid "All linked uploads are already registered as attachments."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:168
+msgid "Attachments Utility"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:171
+#, php-format
+msgid "Back to %1$sRole Scoper Options%2$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:184
+msgid "Role Scoper can limit direct URL access to files linked from your posts and pages, <strong>but only if</strong> the following requirements are met:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:186
+msgid "Your WP content directory must be a branch of the WordPress directory tree (i.e. wp-config.php must not be customized to separate WP_CONTENT_DIR and WP_CONTENT_URL from the main WordPress folder)."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:192
+msgid "Note that to be detected as attachments, your file references must <strong>include www.</strong>"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:194
+msgid "Note that to be detected as attachments, your file references must <strong>NOT include www.</strong>"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:199
+#, php-format
+msgid "Files linked from WP Posts and Pages must be in %1$s (or a subdirectory of it) to be filtered. After moving files, you may use %2$s a search and replace plugin%3$s to conveniently update the URLs stored in your Post / Page content. %4$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:201
+msgid "Files which are <strong>already appropriately located and linked</strong> must also have their post-file attachment relationship stored to the WP database.  This is normally accomplished by clicking the \"Insert into Post\" button in the WP file uploader / Media Library.  Files which were instead uploaded manually via FTP or CPanel <strong>can receive their attachment record via this utility</strong>."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/attachments_utility.php:210
+msgid "Register File Attachments &raquo;"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/default_groups.php:8
+msgid "see notes"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/default_groups.php:30
+#, php-format
+msgid "Default Groups Updated: %s groups"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/default_groups.php:44
+msgid "No default groups defined."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/default_groups.php:66
+msgid "No groups defined."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/default_groups.php:72
+msgid "Notes"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/default_groups.php:74
+msgid "Each new user will be added to the default groups. Existing users are not affected."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/default_groups.php:77
+msgid "Use default groups only if you need the ability to manually remove a user from one of the groups later. To affect all users (or all users of a certain WP role), assign roles to the corresponding [WP role] group instead."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/filters-admin-save_rs.php:400
+#, php-format
+msgid "The page %s was saved, but the new Page Parent setting was discarded. You do not have permission to disassociate it from the Main Page."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/filters-admin-save_rs.php:402
+#, php-format
+msgid "The Page Parent setting for %s was reverted to the previously stored value. You do not have permission to associate it with the Main Page."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/filters-admin-save_rs.php:416
+#, php-format
+msgid "The page %s cannot be published because you do not have permission to associate it with the Main Page. Please select a different Page Parent and try again."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/filters-admin-ui-listing_rs.php:43
+msgid "Restrict"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/filters-admin-ui-listing_rs.php:48
+msgid "Term Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/filters-admin-ui-listing_rs.php:67
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/filters-admin-ui-listing_rs.php:69
+msgid "Read"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/filters-admin-ui_rs.php:170
+msgid "Role Scoper Plugin CSS:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/filters-admin-ui_rs.php:193
+msgid "Role Scoper"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/filters-admin-ui_rs.php:193
+msgid "Support Forum"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/filters-admin-ui_rs.php:227
+msgid "<strong>Note:</strong> Role Manager settings determine each user's default blog-wide capabilities. Since the Role Scoper plugin is also enabled, <strong>Term-specific or Object-specific Role Assignments</strong> may increase or decrease a user's actual capabilities."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/general_roles.php:177
+msgid "Assign"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/general_roles.php:177
+msgid "Remove"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/general_roles.php:180
+msgid "Assign General Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/general_roles.php:184
+msgid "Supplement any user's blog-wide WordPress Role with additional, type-specific role(s). This does not alter the WordPress role."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/general_roles.php:210
+msgid "Confirm and Submit"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/general_roles.php:264
+msgid "select all roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/general_roles.php:291
+msgid "hide empty"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/general_roles.php:333
+#, php-format
+msgid "Modify role assignments for %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:42
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:93
+msgid "Please specify a name for the group."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:44
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:96
+#, php-format
+msgid "A group with the name <strong>%s</strong> already exists."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:47
+#, php-format
+msgid "Group <strong>%s</strong> created successfuly."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:64
+msgid "This meta group is automatically populated. You cannot manually edit it."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:101
+#, php-format
+msgid "Group <strong>%s</strong> updated successfuly."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:103
+#, php-format
+msgid "Group <strong>%s</strong> was not updated successfuly."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:119
+msgid "Group Deleted."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:121
+msgid "Invalid group. No groups were deleted."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:130
+msgid "Group edit canceled."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:152
+#, php-format
+msgid "%d member deleted."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:157
+#, php-format
+msgid "%d member added."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:195
+msgid "add new"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:196
+msgid "set defaults"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:197
+msgid "browse members"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:203
+msgid "By creating User Groups, you can assign RS roles to multiple users.  Note that group membership itself has no effect on the users until you assign roles to the group."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:211
+#, php-format
+msgid "You are about to delete the group %s. Do you wish to continue?"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:274
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/group_members.php:82
+msgid "No groups available."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:294
+msgid "Create New Group"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:310
+#, php-format
+msgid "Edit Group: %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:371
+#, php-format
+msgid "Group Administrators %1$s(via login to %2$s)%3$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/groups.php:373
+msgid "Group Administrators"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/group_members.php:22
+#, php-format
+msgid "<strong>%s</strong> group membership updated."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/group_members.php:27
+msgid "Invalid group."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/group_members.php:32
+msgid "Group members edit canceled."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/group_members.php:68
+msgid "(automatic)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/group_members.php:70
+msgid "(no users)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/group_members.php:93
+msgid "This meta group is automatically populated. You cannot manually add members to it."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/group_members.php:96
+#, php-format
+msgid "Edit members of %s group"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:267
+#, php-format
+msgid "Restrict for %1$s (<strong>only</strong> selected users/groups are %2$s)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:278
+#, php-format
+msgid "Restrict for Sub-%1$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:442
+msgid "restricted role"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:446
+#, php-format
+msgid "%s user"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:452
+#, php-format
+msgid "%s group"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:569
+msgid "Category Restrictions"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:579
+msgid "Category Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:10
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_roles.php:10
+msgid "Invalid data source"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:66
+#, php-format
+msgid "Reduce access to a specific %1$s by requiring some role(s) to be %2$s%3$s-assigned%4$s. Corresponding WP-assigned Roles and RS-assigned General and %5$s Role assignments are ignored."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:68
+#, php-format
+msgid "Reduce access to a specific %1$s by requiring some role(s) to be %2$s%3$s-assigned%4$s. Corresponding WP-assigned Roles and RS-assigned General and Section Role assignments are ignored."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:70
+#, php-format
+msgid "Reduce access to a specific %1$s by requiring some role(s) to be %2$s%3$s-assigned%4$s. Corresponding WP-assigned Roles and RS-assigned General Role assignments are ignored."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:85
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:89
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_restrictions.php:97
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_restrictions.php:101
+#, php-format
+msgid "for selected %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:90
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_restrictions.php:102
+#, php-format
+msgid "for sub-%s of selected"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:91
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_restrictions.php:103
+#, php-format
+msgid "for selected and sub-%s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:94
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_restrictions.php:106
+msgid "Restrict selected roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:94
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_restrictions.php:106
+msgid "Unrestrict selected roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:202
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_roles.php:211
+#, php-format
+msgid "To edit all roles for any %1$s, click on the %1$s name."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:206
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_roles.php:215
+#, php-format
+msgid "To edit the %s via its default editor, click on the ID link."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_restrictions.php:211
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_roles.php:220
+#, php-format
+msgid "To enhance performance, the role editing checkboxes here may not include some roles which you can only edit due to your own %1$s-specific role. In such cases, click on the editing link to edit roles for the individual %1$s."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_roles.php:68
+#, php-format
+msgid "Expand access to a %2$s, potentially beyond what a user's WP role would allow. To reduce access, define %1$s%2$s&nbsp;Restrictions%3$s."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_roles.php:88
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:120
+#, php-format
+msgid "Assign for selected %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_roles.php:89
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:121
+#, php-format
+msgid "Assign for sub-%s of selected"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_roles.php:90
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:122
+#, php-format
+msgid "Assign for selected and sub-%s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_roles_list.php:206
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_roles_list.php:208
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:212
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:214
+#, php-format
+msgid "%1$s Roles%2$s:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_roles_list.php:217
+msgid "ID"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_roles_list.php:219
+msgid "Role Assignments"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_role_edit.php:21
+msgid "You do not have permission to assign roles for this object."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_role_edit.php:29
+msgid "Object Roles Updated."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/object_role_edit.php:36
+#, php-format
+msgid "Assign Roles for %1$s \"%2$s\""
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:126
+msgid "Role Scoper options were reset to defaults."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:129
+msgid "The persistent cache was flushed."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:131
+msgid "Role Scoper options were updated."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:155
+msgid "Features"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:155
+msgid "Advanced"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:155
+msgid "Realm"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:156
+msgid "RS Role Definitions"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:156
+msgid "WP Role Definitions"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:156
+msgid "Option Scope"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:161
+msgid "Front End"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:162
+msgid "Pages Listing"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:163
+msgid "Categories Listing"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:164
+msgid "Content Maintenance"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:165
+msgid "File Filtering"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:166
+msgid "Role Date Limits"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:167
+msgid "Internal Cache"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:168
+msgid "Version"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:169
+msgid "RSS Feeds"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:170
+msgid "Hidden Content Teaser"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:173
+msgid "Role Basis"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:174
+msgid "Role Type"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:175
+msgid "Page Structure"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:176
+msgid "User Profile"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:177
+msgid "User Management"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:178
+msgid "Administrator Definition"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:179
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:247
+msgid "Limited Editing Elements"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:180
+msgid "Role Assignment Interface"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:181
+msgid "Custom Columns"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:182
+msgid "Additional Object Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:185
+msgid "Term / Object Scope"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:186
+msgid "Term Scope"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:187
+msgid "Object Scope"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:188
+msgid "Access Types"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:201
+msgid "Cache roles and groups to disk"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:202
+msgid "Enabled"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:203
+msgid "Apply Group Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:204
+msgid "Apply User Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:205
+msgid "Within any scope, each user or group has:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:206
+msgid "Support WP Custom User Caps"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:207
+msgid "Assume No Front-end Admin"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:208
+msgid "Indicate blended roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:209
+msgid "Notify on Version Updates"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:211
+msgid "Suppress \"Private:\" Caption"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:212
+msgid "Display Administrative Hints"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:213
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1430
+msgid "Specified element IDs also require the following blog-wide Role:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:214
+msgid "Roles and Restrictions can be set:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:215
+msgid "HTTP Authentication Request in RSS Feed Links"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:216
+msgid "Display mode for readable private posts"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:217
+msgid "Display mode for readable non-private posts"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:218
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:903
+msgid "Feed Replacement Text (use %permalink% for post URL)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:225
+msgid "Pages can be set or removed from Top Level by:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:226
+msgid "Display User Groups"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:227
+msgid "Display User Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:228
+msgid "Users CSV Entry"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:229
+msgid "Non-editors see other users' unattached uploads"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:230
+msgid "Remap pages to visible ancestor"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:231
+msgid "Enforce actual page depth"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:232
+msgid "Remap through excluded page parent"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:233
+msgid "Remap terms to visible ancestor"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:234
+msgid "Enforce actual term depth"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:235
+msgid "Remap through excluded term parent"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:236
+msgid "Limit User Edit by Level"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:237
+msgid "Filter Uploaded File Attachments"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:238
+msgid "Share groups site-wide"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:239
+msgid "Enable Role Duration Limits"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:240
+msgid "Enable Content Date Limits"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:241
+msgid "Filter Users Dropdown"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:242
+msgid "Restrictions Column"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:243
+msgid "Term Roles Column"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:244
+msgid "Object Roles Column"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:246
+msgid "Enable"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:248
+msgid "Limit eligible users for object-specific editing roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:249
+msgid "Include Private Pages in listing if user can read them"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:250
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:251
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:253
+msgid "settings"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:347
+msgid "Role Scoper Site Options"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:349
+msgid "Role Scoper Default Blog Options"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:351
+msgid "Role Scoper Blog Options"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:367
+msgid "These settings will be applied to all blogs."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:373
+msgid "These are the <strong>default</strong> settings for options which can be adjusted per-blog."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:457
+msgid "This page enables <strong>optional</strong> adjustment of Role Scoper's features. For most installations, the default settings are fine."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:466
+#, php-format
+msgid "Note that, depending on your configuration, %1$s blog-specific options%2$s may also be available."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:473
+#, php-format
+msgid "Note that, depending on your configuration, %1$s site-wide options%2$s may also be available."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:499
+msgid "If enabled, each user group will be available for role assignment in any blog.  Any existing blog-specific groups will be unavailable.  Group role assignments are still blog-specific."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:515
+msgid "Remove the \"Private:\" and \"Protected\" prefix from Post, Page titles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:518
+msgid "Reduce memory usage for front-end access by assuming no content, categories or users will be created or edited there. Worst case scenario if you assume wrong: manually assign roles/restrictions to new content or re-sync user roles via plugin re-activation."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:533
+#, php-format
+msgid "Include Private %s in listing if user can read them"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:534
+msgid "Determines whether administrators, editors and users who have been granted access to a private page will see it in their sidebar or topbar page listing."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:537
+msgid "If a page's parent is not visible to the user, it will be listed below a visible grandparent instead."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:542
+msgid "When remapping page parents, apply any depth limits to the actual depth below the requested root page.  If disabled, depth limits apply to apparant depth following remap."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:548
+msgid "Remap a page to next visible ancestor even if some hidden ancestors were explicitly excluded in the get_pages / list_pages call."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:566
+msgid "If a category's parent is not visible to the user, it will be listed below a visible grandparent instead."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:571
+msgid "When remapping category parents, apply any depth limits to the actual depth below the requested root category.  If disabled, depth limits apply to apparant depth following remap."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:577
+msgid "Remap a category to next visible ancestor even if some hidden ancestors were explicitly excluded in the get_terms / get_categories call."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:598
+#, php-format
+msgid "Default new %s to Private visibility"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:599
+msgid "Note: this does not apply to Quickposts or XML-RPC submissions."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:603
+#, php-format
+msgid "Auto-set %s to Private visibility if Reader role is restricted"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:604
+msgid "Note: this is only done if the Reader role is restricted via Post/Page edit form."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:620
+msgid "by the Author or Editor of any Post/Category/Page"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:620
+msgid "by blog-wide Editors and Administrators"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:620
+msgid "by Content Administrators only"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:620
+msgid "by User Administrators only"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:632
+msgid "Specify which users can assign and restrict roles <strong>for their content</strong> - via Post/Page Edit Form or Roles/Restrictions sidebar menu.  For a description of Administrator roles, see the Advanced tab."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:639
+msgid "If enabled, users who are not blog-wide Editors will see only their own unattached uploads in the Media Library."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:642
+msgid "If enabled, Post Author and Page Author selection dropdowns will be filtered based on scoped roles."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:665
+msgid "<strong>Note</strong>: Direct access to uploaded file attachments will not be filtered because DISABLE_ATTACHMENT_FILTERING is defined, perhaps in wp-config.php or role-scoper.php"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:677
+msgid "<strong>Note</strong>: Direct access to uploaded file attachments will not be filtered due to your nonstandard UPLOADS path."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:682
+msgid "<strong>Note</strong>: Direct access to uploaded file attachments cannot be filtered because WordPress permalinks are set to default."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:697
+msgid "Block direct URL access to images and other uploaded files in the WordPress uploads folder which are attached to post(s)/page(s) that the user cannot read.  A separate RewriteRule will be added to your .htaccess file for each protected file.  Non-protected files are returned with no script execution whatsoever."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:702
+msgid "<strong>Note:</strong> The default WP-MU file request script, <strong>wp-content/blogs.php</strong>, requires a patch for compatibility with RS file filtering.  If you need the advanced cache control provided by blogs.php, review the notes in <strong>role-scoper/mu_wp_content_optional/blogs.php</strong> and copy it into wp-content if desired.  Otherwise, files will be accessed directly via header redirect following RS filtering.  If you decide to install the patched blogs.php, add the following line to wp-config.php:<br />&nbsp;&nbsp;&nbsp; define( 'SCOPER_MU_FILE_PROCESSING', true);"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:715
+#, php-format
+msgid "<strong>Note:</strong> FTP-uploaded files will not be filtered correctly until you run the %1$sAttachments Utility%2$s."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:718
+msgid "If WordPress or any plugin output visible PHP warnings during filtering of a protected image request, the image will not be successfully returned."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:734
+msgid "Allow the delay or expiration of roles based on a specified date range."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:737
+msgid "Allow General Roles and Category Roles to be limited to content dated within in a specified range."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:766
+msgid "Group membership, role restrictions, role assignments and some filtered results (including term listings and WP page, category and bookmark listings) will be stored to disk, on a user-specific or group-specific basis where applicable.  This does not cache content such as post listings or page views."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:776
+msgid "<strong>Note:</strong> The internal caching code contains numerous safeguards against corruption.  However, if it does become corrupted your site may be inaccessable.  For optimal reliability, copy rs_cache_flush.php into your WP root directory so it can be executed directly if needed."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:784
+msgid "Flush Cache"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:804
+#, php-format
+msgid "Role Scoper Version: %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:806
+#, php-format
+msgid "Database Schema Version: %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:808
+#, php-format
+msgid "PHP Version: %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:837
+msgid "never"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:837
+msgid "always"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:837
+msgid "for logged users"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:845
+msgid "Suffix RSS feed links with an extra parameter to trigger required HTTP authentication. Note that anonymous and cookie-based RSS will still be available via the standard feed URL."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:849
+msgid "cannot use HTTP Authentication for RSS Feeds because another plugin has already defined the function \"get_currentuserinfo\""
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:860
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:877
+msgid "Display"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:863
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:880
+msgid "Full Content"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:863
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:880
+msgid "Excerpt Only"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:863
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:880
+msgid "Title Only"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:870
+msgid "for readable private posts"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:887
+msgid "for readable non-private posts"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:892
+msgid "Since some browsers will cache feeds without regard to user login, block RSS content even for qualified users."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:963
+#, php-format
+msgid "Enable teaser for %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:985
+#, php-format
+msgid "%s:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:989
+msgid "no teaser"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:989
+msgid "fixed teaser (specified below)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:989
+msgid "excerpt as teaser"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:989
+msgid "excerpt or pre-more as teaser"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:989
+#, php-format
+msgid "excerpt, pre-more or first %s chars"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1000
+msgid "for:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1005
+msgid "anonymous"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1013
+msgid "logged"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1021
+msgid "both"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1031
+msgid "If content is blocked, display replacement text instead of hiding it completely."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1033
+msgid "<strong>Note:</strong> the prefix and suffix settings below will always be applied unless the teaser mode is \"no teaser\"."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1055
+#, php-format
+msgid "Hide private %s (instead of teasing)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1059
+msgid "Hide private content completely, while still showing a teaser for content which is published with restrictions.  <strong>Note:</strong> Private posts hidden in this way will reduce the total number of posts on their \"page\" of a blog listing."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1072
+msgid "name"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1072
+msgid "content"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1072
+msgid "excerpt"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1073
+msgid "replace with (if using fixed teaser, or no excerpt available):"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1073
+msgid "prefix with:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1073
+msgid "suffix with:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1102
+msgid "anonymous users"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1102
+msgid "logged users"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1105
+#, php-format
+msgid "%1$s Teaser Text (%2$s):"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1155
+#, php-format
+msgid "<span class=\"rs-green\"><strong>Idea:</strong></span> For Scheduled Revisions and Pending Revisions functionality that integrates with your RS Roles and Restrictions, install %1$s Revisionary%2$s, another %3$s Agapetry&nbsp;Creations%4$s plugin."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1178
+msgid "<strong>Note:</strong> for most installations, the default settings are fine."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1218
+msgid "Multiple RS Roles (type-specific, plugin-defined)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1218
+msgid "Single WP Role (comprehensive, WP-defined)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1227
+msgid "Either role type can be scoped (assigned for specific terms or objects).  However, RS roles allow finer control.  A user's main WordPress role will be applied by default regardless of this selection."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1234
+msgid "Some users created under older WP versions may have direct-assigned capabilities in addition to their blog-wide role assignment.  This setting does not enable or block that feature, but determines whether Role Scoper must account for it.  Disable when possible (capabilities unrelated to RS Role Definitions are irrelevant)."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1255
+msgid "Page Authors, Editors and Administrators"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1255
+msgid "Page Editors and Administrators"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1255
+msgid "Administrators"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1268
+msgid "Users who do not meet this blog-wide role requirement may still be able to save and/or publish pages, but will not be able to publish a new page with a Page Parent setting of \"Main Page\".  Nor will they be able to move a currently published page from \"Main Page\" to a different Page Parent."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1301
+msgid "If enabled, prevents those with edit_users capability from editing a user with a higher level or assigning a role higher than their own."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1317
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1432
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1434
+msgid "Content Administrator"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1318
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1434
+msgid "User Administrator"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1319
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1434
+msgid "Option Administrator"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1321
+msgid "RS never applies restricting or enabling content filters"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1322
+msgid "RS allows full editing of all user groups and scoped roles / restrictions"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1323
+msgid "Can edit Role Scoper options"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1325
+msgid "Role Scoper internally checks the following capabilities for content and role administration.  By default, these capabilities are all contained in the Administrator role only.  You can use the Capability Manager plugin to split/overlap them among different roles as desired."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1329
+msgid "Administrator Type"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1330
+msgid "Required Capability"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1349
+msgid "Each administrator type's <strong>capability can be modified</strong> by adding any of the following define statements to your wp-config.php:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1357
+msgid "For example, by using Capability Manager to add a custom capability such as <strong>administer_all_content</strong> to certain WordPress roles, you could mirror that setting in the SCOPER_CONTENT_ADMIN_CAP definition to ensure that those users are never content-restricted by Role Scoper."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1375
+msgid "Remove Edit Form elements with these html IDs from users who do not have full editing capabilities for the post/page. Separate with&nbsp;;"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1400
+#, php-format
+msgid "%s Edit Form HTML IDs:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1410
+#, php-format
+msgid "%1$s sample IDs:%2$s %3$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1434
+msgid "no requirement"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1434
+msgid "Contributor / Author / Editor"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1434
+msgid "Author / Editor"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1448
+msgid "Note: The above roles are type-specific RS roles (for the object type involved) which must be contained in a user's blog-wide WordPress role."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1467
+#, php-format
+msgid "Limit eligible users for %s-specific editing roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1468
+msgid "Role Scoper can enable any user to edit a post or page you specify, regardless of their blog-wide WordPress role.  If that's not a good thing, check above options to require basic editing capability blog-wide or category-wide."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1471
+msgid "In the Edit Post/Edit Page roles tabs, decorate user/group name with colors and symbols if they have the role implicitly via group, general role, category role, or a superior post/page role."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1474
+msgid "Display introductory descriptions at the top of various role assignment / definition screens."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1477
+msgid "Accept entry of user names or IDs via comma-separated text instead of individual checkboxes."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1495
+#, php-format
+msgid "Restrictions column in Edit %s listing"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1498
+#, php-format
+msgid "Term Roles column in Edit %s listing"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1501
+#, php-format
+msgid "Object Roles column in Edit %s listing"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1544
+#, php-format
+msgid "%1$s (normally equivalent to %2$s)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1551
+msgid "By default, the above roles are not available for object-specific assignment because another role is usually equivalent. However, the distinctions may be useful if you propagate roles to sub-Pages, set Default Roles or customize RS Role Definitions."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1553
+msgid "Note: Under the default configuration, the tabs labeled \"Reader\" in the Post/Page Edit Form actually assign the corresponding Private Reader role."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1586
+msgid "These <strong>optional</strong> settings allow advanced users to adjust Role Scoper's sphere of influence. For most installations, the default settings are fine."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1609
+msgid "Specify which WordPress taxonomies can have Restrictions and Roles:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1626
+msgid "Specify whether Restrictions and Roles can be set for individual Objects:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1654
+msgid "Section"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1658
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1711
+#, php-format
+msgid "%1$s (for %2$s)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1725
+msgid "* = Role Assignment only (no Restrictions)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1745
+msgid "Apply Roles and Restrictions for:"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1762
+msgid "Viewing content (front-end)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1764
+msgid "Editing and administering content (admin)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1786
+msgid "The &quot;Post Tag&quot; taxonomy cannot be used to define restrictions because tags are not mandatory. For most installations, categories are a better mechanism to define roles. Note that <strong>Role Scoper does not filter tag storage</strong> based on the editing user's access.  As with any other custom-defined taxonomy, use this option at your own discretion."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1790
+msgid "By default, WordPress does not support page categories.  The corresponding &quot;Role Scopes&quot; option is only meaningful if the WP core or another plugin has added this support."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1826
+msgid "Specify which Role Scoper Options should be applied site-wide."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1833
+#, php-format
+msgid "sitewide control of \"%s\""
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1838
+msgid "Selected options will be controlled site-wide via <strong>Site Admin > Role Options</strong>; unselected options can be set per-blog via <strong>Roles > Options</strong>"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1847
+#, php-format
+msgid "<span class=\"rs-h3text rs-blue\">%1$s</span> (%2$s)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1918
+msgid "All settings in this form (including those on undisplayed tabs) will be reset to DEFAULTS.  Are you sure?"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1923
+msgid "Revert to Defaults"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/options.php:1949
+#, php-format
+msgid "%s data source"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:37
+#, php-format
+msgid "Group Roles %1$s(for %2$s)%3$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:39
+msgid "Group Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:43
+msgid "Scoped Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:58
+#, php-format
+msgid "<strong>Assigned WordPress Role:</strong> %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:66
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:123
+#, php-format
+msgid "(contains %s)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:113
+#, php-format
+msgid "<strong>%1$sGeneral Role%2$s</strong>%4$s: %3$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:115
+#, php-format
+msgid "<strong>Additional %1$sGeneral Role%2$s</strong>%4$s: %3$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition.php:15
+msgid "These roles are defined by Role Scoper (and possibly other plugins) for your use in designating content-specific access or supplemental blog-wide access.  Although the default capabilities are ideal for most installations, you may modify them at your discretion."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition.php:19
+msgid "Since Role Scoper role definitions pertain to a particular object type, available capabilities are defined by the provider of that object type. WordPress core or plugins can add or revise default role definitions based on available capabilities."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition.php:23
+msgid "WordPress Role assignments function as a default which may be supplemented or overriden by blog-wide or content-specific assignment of these RS Roles."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition.php:120
+msgid "Capabilities (defaults are bolded)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition.php:153
+#, php-format
+msgid "Warning: Since the WP %1$s role def lacks some caps selected here, it will be treated as a lesser role if Restrictions are applied."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition.php:172
+#, php-format
+msgid "sync WP %1$s <br />to these selections (currently includes %2$s)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition.php:174
+#, php-format
+msgid "sync WP %s <br />to these selections"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition.php:177
+msgid "note: only the capabilities listed here will be affected"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition.php:224
+msgid "Re-sync with WordPress roles on next Update"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition_wp.php:16
+msgid "Note that only <strong>capabilities configured for filtering by Role Scoper</strong> are listed here."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition_wp.php:18
+msgid "These WordPress role definitions may be modified via the Capability Manager or Role Manager plugin."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition_wp.php:23
+msgid "To understand how your WordPress roles relate to type-specific RS Roles, see <a href=\"#wp_rs_equiv\">WP/RS Role Equivalence</a>."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition_wp.php:32
+msgid "WordPress Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition_wp.php:38
+msgid "Capabilities"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition_wp.php:78
+msgid "WP / RS Role Equivalence"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition_wp.php:83
+msgid "WP Role"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/role_definition_wp.php:84
+msgid "Contained RS Roles"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_restrictions.php:10
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:10
+msgid "Invalid taxonomy"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_restrictions.php:63
+#, php-format
+msgid "Reduce access by requiring some role(s) to be %1$s%2$s-assigned%3$s (or %4$s-assigned). Corresponding General Roles (whether assigned by WordPress or Role Scoper) are ignored."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_restrictions.php:65
+#, php-format
+msgid "Reduce access by requiring some role(s) to be %1$s%2$s-assigned%3$s. Corresponding General Role assignments are ignored."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_restrictions.php:70
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:90
+#, php-format
+msgid "Role definition error (taxonomy: %s)."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_restrictions.php:76
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:96
+#, php-format
+msgid "Either you do not have permission to administer any %s, or none exist."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_restrictions.php:153
+#, php-format
+msgid "Any %1$s Restriction causes the specified role to be granted only via %1$s Role assignment, regardless of these %2$s settings."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:82
+#, php-format
+msgid "Grant capabilities within a specific %2$s, potentially more than a user's WP role would allow. To reduce access, define %1$s%2$s&nbsp;Restrictions%3$s."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:84
+#, php-format
+msgid "Grant capabilities within a specific %s, potentially more than a user's WP role would allow."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:173
+msgid "A Role is a collection of capabilities."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:177
+msgid "Capabilities in a user's WordPress Role (and, optionally, RS-assigned General Roles) enable blog-wide operations (read/edit/delete) on some object type (post/page/link), perhaps of a certain status (private/published/draft)."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:182
+#, php-format
+msgid "Scoped Roles can grant users these same WordPress capabilities on a per-%1$s or per-%2$s basis. Useful in fencing off sections your site."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:184
+#, php-format
+msgid "Scoped Roles can grant users these same WordPress capabilities on a per-%1$s basis. Useful in fencing off sections your site."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:188
+#, php-format
+msgid "Users with a %1$s Role assignment may have capabilities beyond their General Role(s) for %2$s in the specified %1$s."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:193
+#, php-format
+msgid "If a role is restricted for some %s, general (blog-wide) assignments of that role are ignored."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:197
+#, php-format
+msgid "If a %1$s is in multiple %2$s, permission is granted if any %3$s has a qualifying role assignment or permits a qualifying General Role."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:206
+#, php-format
+msgid "If a role is restricted for some requested %1$s, %2$s-assignment and General-assignment of that role are ignored."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/section_roles.php:211
+msgid "Administrators are exempted from Role Restrictions."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/update_rs.php:494
+#, php-format
+msgid "Pending Revisions were enabled in your previous Role Scoper version.  To retain that feature, you need to install %1$s Revisionary%2$s, another %3$s Agapetry Creations%4$s plugin."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/misc/version_notice_rs.php:36
+#, php-format
+msgid "A new version of Role Scoper is available (%s)"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/misc/version_notice_rs.php:57
+msgid "read more..."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/misc/version_notice_rs.php:63
+msgid "Read about the update"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/misc/version_notice_rs.php:64
+msgid "View full changelog"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/misc/version_notice_rs.php:70
+msgid "Download for manual install"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/admin/misc/version_notice_rs.php:115
+#, php-format
+msgid "Role Scoper Extensions are available for the following plugins: %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/hardway/cache-persistent.php:190
+msgid "The file cache will not operate because ENABLE_PERSISTENT_CACHE is not defined in wp-config.php or role-scoper.php."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/hardway/cache-persistent.php:193
+msgid "The file cache will not operate because DISABLE_PERSISTENT_CACHE is defined, possibly in wp-config.php or role-scoper.php."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/hardway/cache-persistent.php:196
+#, php-format
+msgid "The file cache cannot operate because the cache directory (%s) is not writeable to WordPress."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/hardway/cache-persistent.php:199
+msgid "The file cache cannot operate because PHP is running in safe mode."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/hardway/cache-persistent.php:207
+#, php-format
+msgid "The file cache cannot operate because file creation attempts fail in %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/hardway/cache-persistent.php:217
+#, php-format
+msgid "The file cache cannot operate because file storage attempts fail in %s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/hardway/hardway-admin-legacy_rs.php:105
+#, php-format
+msgid "You have %1$s, contained within %2$s and %3$s. %4$s %5$s"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/hardway/hardway-admin_non-administrator_rs.php:59
+msgid "You do not have permission to select that Category Parent"
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/lib/agapetry_config_items.php:14
+#, php-format
+msgid "%1$s attempted to define a configuration item (%2$s) after the collection was locked."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/lib/agapetry_config_items.php:15
+#, php-format
+msgid "The calling function probably needs to be registered to a hook.  Consult %s developer documentation."
+msgstr ""
+
+#: E:\www\mu28\wp-content\plugins\role-scoper/lib/debug.php:182
+#, php-format
+msgid "%1$s queries in %2$s seconds. %3$s MB used."
+msgstr ""
+

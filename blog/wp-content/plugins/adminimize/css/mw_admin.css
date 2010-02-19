@@ -1,0 +1,121 @@
+#wpwrap #wphead h1 {
+	font: italic 1.25em/1 Georgia, "Times New Roman", Times, serif;
+	padding: 0.5em 170px 16px 12px;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0 15% 0 0.5em;
+	color: #ABACAB;
+}
+#wphead h1 #viewsite {
+	position: static;
+	margin: 0;
+}
+
+#wphead h1 #viewsite a {
+	padding: 0 2em;
+	font: small-caps smaller "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana, sans-serif;
+	background: transparent;
+	color: #CEE1EF;
+	display: inline;
+	letter-spacing: normal;
+	border-style: none;
+}
+#wphead h1 #viewsite a:after {
+	content: " \BB ";
+}
+
+#adminmenu {
+	padding-top: 0.4em;
+}
+#adminmenu a {
+	font-size: 1em;
+	line-height: 2;
+}
+
+#submenu {
+	padding: 0;
+	border-bottom: 2px solid #C6D9E9;
+	margin-bottom: 1em;
+}
+#submenu li {
+	font-size: 0.95em;
+}
+
+
+#poststuff h3 {wp-admin.css (line 975)
+	font-size: 1em;
+	margin: 0;
+	padding: 0.25em 0.5em;
+}
+#poststuff #titlediv {
+	position: relative;
+	margin-bottom: 0;
+}
+#poststuff #editor-toolbar {
+	margin-top: -2em;
+	height: 2em;
+}
+#poststuff #edit-slug-box {
+	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0.5em;
+}
+
+#ed_toolbar input {
+	padding: 0 0.2em;
+}
+
+
+.submitbox .submit {
+	font-size: smaller;
+	padding: 0.75em;
+	text-align: center;
+}
+.submitbox .submit input {
+	margin: 0;
+	padding: 0.1em 0.2em;
+}
+
+.submitbox #previewview {
+	padding: 0.75em;
+	text-align: center;
+}
+.submitbox #previewview a {
+	border-bottom: medium none;
+	font-size: 0.95em;
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+}
+.submitbox #autosave {
+	display: block;
+	padding-top: 0.25em;
+}
+
+#poststuff .postbox, #poststuff .stuffbox {
+	padding: 0;
+}
+#poststuff .togbox {
+	background-position: -10px 0.55em;
+	height: 1.75em;
+	margin-left: -20px;
+	margin-top: -3px;
+}
+
+#poststuff .closed .togbox {
+	background-position: 4px 0.55em;
+}
+
+
+#the-comment-list .unapproved {
+	background-color: #FFDFD0;
+}
+
+#tagchecklist strong {
+	margin-left: 0 !important;
+	position: relative !important;
+}

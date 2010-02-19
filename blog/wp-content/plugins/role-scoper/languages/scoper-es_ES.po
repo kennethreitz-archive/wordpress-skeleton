@@ -1,0 +1,2611 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Role Scoper 1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-31 13:31-0400\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Rafael Pérez <rafaelperez@rafo.cl>\n"
+"Language-Team: Rafo <rafaelperez@rafo.cl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: E:\\AppServ\\www\\renacimiento.cl\\wp-content\\plugins\\role-scoper\n"
+"X-Poedit-KeywordsList: __;_e;_c;__ngettext;_n;scoper_po_trigger;_x\n"
+"X-Poedit-SearchPath-0: E:\\AppServ\\www\\renacimiento.cl\\wp-content\\plugins\\role-scoper\n"
+"X-Poedit-SearchPath-1: E:\\AppServ\\www\\renacimiento.cl\\wp-content\\plugins\\role-scoper\\admin\n"
+"X-Poedit-SearchPath-2: E:\\AppServ\\www\\renacimiento.cl\\wp-content\\plugins\\role-scoper\\hardway\n"
+"X-Poedit-SearchPath-3: E:\\AppServ\\www\\renacimiento.cl\\wp-content\\plugins\\role-scoper\\lib\n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/data_sources_rs.php:26
+#, fuzzy
+msgid "Term"
+msgstr "T&eacute;rmino"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/data_sources_rs.php:26
+msgid "Terms"
+msgstr "T&eacute;rminos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:95
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:112
+msgid "Sorry, this content requires additional permissions.  Please contact an administrator for help."
+msgstr "Lo sentimos, este contenido requiere de permisos adicionales. Póngase en contacto con un administrador para obtener ayuda."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:96
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:113
+msgid "Sorry, you don't have access to this content.  Please log in or contact a site administrator for help."
+msgstr "Lo sentimos, no tiene acceso a este contenido. Inicia sesi&oacute;n o comun&iacute;catee con un administrador del sitio para obtener ayuda."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:109
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:126
+msgid "note: This content requires a higher login level."
+msgstr "Nota: Este contenido requiere un mayor nivel de acceso."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:110
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:127
+msgid "note: This content requires site login."
+msgstr "Nota: Este contenido requiere inicio de sesi&oacute;n."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:166
+msgid "front-end"
+msgstr "Consola de Usuario"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:167
+msgid "admin"
+msgstr "Administrador"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:390
+msgid "Link"
+msgstr "V&iacute;nculo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:416
+msgid "Group"
+msgstr "Grupo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:417
+msgid "Groups"
+msgstr "Grupos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/defaults_rs.php:491
+msgid "Link Category"
+msgstr "Categor&iacute;a de v&iacute;nculos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/feed-interceptor_rs.php:57
+msgid "Access denied: Incorrect credentials supplied."
+msgstr "Acceso denegado: Credenciales incorrectas suministradas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/role-scoper.php:37
+#, php-format
+msgid "<strong>Error:</strong> Multiple copies of Role Scoper activated. Only version %1$s (in folder \"%2$s\") is functional."
+msgstr "<strong>Error:</strong> Varias copias de Role Scoper est&aacute;n habilitadas. S&oacute;lo la versi&oacute;n %1$s (en directorio \"%2$s\") est&aacute; activa."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:8
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:14
+msgid "Post Reader"
+msgstr "Lector de art&iacute;culo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:14
+msgid "Private Post Reader"
+msgstr "Lector de art&iacute;culo privado"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:17
+msgid "Post Contributor"
+msgstr "Contribuyente de art&iacute;culo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:20
+msgid "Post Author"
+msgstr "Autor de art&iacute;culo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:23
+msgid "Post Revisor"
+msgstr "Revisor de art&iacute;culo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:27
+msgid "Post Publisher"
+msgstr "Publicador de art&iacute;culo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:29
+msgid "Post Editor"
+msgstr "Editor de art&iacute;culo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:32
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:35
+msgid "Page Reader"
+msgstr "Lector de p&aacute;gina"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:35
+msgid "Private Page Reader"
+msgstr "Lector de p&aacute;gina privada"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:38
+msgid "Page Associate"
+msgstr "Asociado de p&aacute;gina"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:41
+msgid "Page Contributor"
+msgstr "Contribuyente de p&aacute;gina"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:44
+msgid "Page Author"
+msgstr "Autor de p&aacute;gina"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:47
+msgid "Page Revisor"
+msgstr "Revisor de p&aacute;gina"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:51
+msgid "Page Publisher"
+msgstr "Publicador de p&aacute;gina"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:53
+msgid "Page Editor"
+msgstr "Editor de p&aacute;gina"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:56
+msgid "Link Admin"
+msgstr "Administraci&oacute;n de V&iacute;nculos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:59
+msgid "Category Manager"
+msgstr "Gesti&oacute;n de Categor&iacute;as"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:62
+msgid "Group Manager"
+msgstr "Gesti&oacute;n de Grupos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:75
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:79
+msgid "Readers"
+msgstr "Lectores"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:79
+msgid "Private Readers"
+msgstr "Lectores Privados"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:83
+msgid "Contributors"
+msgstr "Contribuyentes"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:87
+msgid "Authors"
+msgstr "Autores"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:91
+msgid "Revisors"
+msgstr "Revisores"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:96
+msgid "Publishers"
+msgstr "Publicadores"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:98
+msgid "Editors"
+msgstr "Editores"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:101
+msgid "Associates"
+msgstr "Socios"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:105
+msgid "Admins"
+msgstr "Administradores"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:109
+msgid "Managers"
+msgstr "Directores"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:122
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:126
+msgid "Reader"
+msgstr "Lector"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:126
+msgid "Pvt Reader"
+msgstr "Lector Privado"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:130
+msgid "Contrib"
+msgstr "Contribuyente"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:134
+msgid "Author"
+msgstr "Autor"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:138
+msgid "Revisor"
+msgstr "Revisor"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:143
+msgid "Publisher"
+msgstr "Publicador"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:145
+msgid "Editor"
+msgstr "Editor"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:148
+msgid "Assoc"
+msgstr "Socio"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:152
+msgid "Admin"
+msgstr "Administrador"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles-strings_rs.php:156
+msgid "Manager"
+msgstr "Director"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/roles_rs.php:387
+msgid "Anonymous Reader"
+msgstr "Lector an&oacute;nimo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/teaser_rs.php:263
+#, php-format
+msgid "%s..."
+msgstr "%s..."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/about.php:31
+msgid "unselfish, benevolent love, born of the Spirit."
+msgstr "desinteresado, amor benevolente, nacido del Esp&iacute;ritu."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/about.php:33
+msgid "Agap&eacute; discerns needs and meets them unselfishly and effectively."
+msgstr "&Aacute;gape discierne sobre las necesidades y las satisface desinteresada y eficazmente."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/about.php:36
+#, php-format
+msgid "This WordPress plugin is part of my agap&eacute; try, a lifelong effort to love God and love people by rightly using the time and abilities He has leant me. As a husband, father, engineer, farmer and/or software developer, I have found this stewardship effort to be often fraught with contradiction. A wise and sustainable balancing of roles has seemed to elude me. Yet I want to keep trying, trusting that if God blesses and multiplies the effort, it will become agapetry, a creative arrangement motivated by benevolent love.  A fleeting childlike sketch of the beautiful %1$s chain-breaking agap&eacute;%2$s which %3$s Jesus Christ unleashed%4$s so %5$s freely%6$s and aptly on an enslaving, enslaved world."
+msgstr "Este plugin de WordPress es parte de mi agap&eacute; un esfuerzo de toda una vida en amar a Dios y amar a la gente en forma justa, usando el tiempo y las habilidades que Él me ha prestado. Como esposo, padre, ingeniero, agricultor y desarrollador de software. A menudo, he encontrado este esfuerzo de administraci&oacute;n de mis talentos, estar lleno de contradicciones. Parecer&iacute; que eludo un equilibrio racional y sostenible de los roles. Sin embargo, quiero seguir intentando, confiando en que, si Dios bendice y multiplica el esfuerzo, se convertir&aacute; en <b>agapetry</b>, un acuerdo creativo motivado por el benevolente amor. Un fugaz dibujo infantil de mi hermosa liberación %1$s de esas cadenas %2$s por medio de %3$s Jesucristo %4$s, tan %5$s libremente%6$s y con tanto acierto, en un mundo esclavizante y de esclavitud."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/about.php:38
+#, php-format
+msgid "Although Role Scoper's development was a maniacal hermit-like effort, it was only possible because of the clean and flexible %1$s WordPress code base%2$s.  My PHP programming skills grew immensely by the good examples set forth there and in plugins such as %3$s NextGen Gallery%4$s. I'm not done learning, and look forward to some real-time cooperation with these and other developers now that my all-consuming quest has reached a stable plateau."
+msgstr "El inigualable, ermita&ntilde;o y mani&aacute;tico esfuerzo en el desarrollo del Role Scoper, s&oacute;lo fue posible gracias a la %1$s base de c&oacute;digo %2$s limpio y flexible de Wordpress. Mis conocimientos de programaci&oacute;n PHP creci&oacute; enormemente por los buenos ejemplos establecidos all&iacute; y en los plugins como %3$s NextGen Gallery%4$s. No he terminado de aprender, y tengo esperanza de recibir alg&uacute;n tipo de cooperaci&oacute;n en tiempo real de estos y otros desarrolladores, ahora que veo que mi obsesiva b&uacute;squeda ha alcanzado un nivel aceptable."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/about.php:40
+#, php-format
+msgid "Thanks to %1$sAlberto Ramicciotti%2$s for the Italian translation.  I do try to be translator-friendly, but any untranslated captions are due to my flurry of recent additions and changes, and will no doubt be updated soon.  Now there must be someone else who wants Role Scoper in their language..."
+msgstr "Gracias a %1$sRafo Computaci&oacute;n & Web%2$s por la traducci&oacute;n al espa&ntilde;ol. Trato de hacer código fácilmente traducible, y cualquier frase no traducida se puede deber a mi serie de adiciones y cambios recientes, que sin duda se actualizar&aacute; en breve. Ahora tiene que haber alguien m&aacute;s que quiera Rol Scoper en su idioma..."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/about.php:42
+#, php-format
+msgid "Role Scoper is open source software released under the %1$s General Public License (GPL)%2$s. Due to limitations, obligations and non-technical aspirations common to most human beings, I will probably never again pursue uncommissioned plugin development on the scale Role Scoper has required. However, I do plan to provide some free support, correct bugs which emerge and revise the plugin for future WordPress versions. If it adds value to your website or saves you time and money, you can express appreciation in several ways:"
+msgstr "Role Scoper es un software de c&oacute;digo abierto publicado bajo %1$s General Public License (GPL)%2$s. Debido a las limitaciones, obligaciones y aspiraciones t&eacute;cnicas comunes a la mayor&iacute;a de los seres humanos, probablemente nunca volver&aacute; a intentar el desarrollo de plugins en la escala y envergadura que Role Scoper ha requerido. Sin embargo, planeo proveer algo de apoyo gratuito, corregir errores que surgan y actualizar el plug-in para futuras versiones de WordPress. Si a&ntilde;ade valor a su sitio web o le ahorra tiempo y dinero, puede expresar su reconocimiento de varias maneras:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/about.php:44
+#, php-format
+msgid "%1$s Submit technical feedback%2$s, including improvement requests."
+msgstr "%1$s Enviar comentarios t&eacute;cnicos %2$s, y las solicitudes de mejora."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/about.php:46
+#, php-format
+msgid "%1$s Submit a case study%2$s, explaining how Role Scoper helps you do something excellent and praiseworthy."
+msgstr "%1$s Presentar un caso de estudio%2$s, explicando c&oacute;mo Role Scoper le ayuda a hacer algo excelente y digno de elogio."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/about.php:48
+#, php-format
+msgid "%1$s Localize Role Scoper%2$s to your own language %3$s using poEdit%4$s "
+msgstr "%1$s Traducir Role Scoper%2$s a su propio idioma %3$s usando poEdit%4$s "
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/about.php:52
+#, php-format
+msgid "If the plugin has seriously broadened your CMS horizons, %s"
+msgstr "Si el plugin ha ampliado dr&aacute;sticamente sus horizontes en CMS, %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/about.php:54
+#, php-format
+msgid "If you are an established web developer, %1$s grant me your professional opinion%2$s on how this work stacks up. Might the skills, work ethic and values I express here fit into a development team near you?"
+msgstr "Si usted es un desarrollador web establecido, %1$s Deme su opini&oacute;n profesional%2$s sobre cómo funciona este trabajo. Es posible que los conocimientos, la &eacute;tica de trabajo y los valores que expreso aqu&iacute; calcen con algún perfil de equipo de desarrollo de cerca de usted?"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/about.php:56
+msgid "Hire or refer my services</a> to design, redesign or enhance your site - quality care at reasonable rates."
+msgstr "Contrate o recomiende mis servicios</a>, rediseñe o mejore su sitio web, con calidad y eficiencia a precios razonables. "
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:48
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:677
+msgid "Users or Groups"
+msgstr "Usuarios o Grupos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:57
+msgid "User / Group"
+msgstr "Usuario / Grupo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:59
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:262
+msgid "User"
+msgstr "Usuario"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:90
+msgid "Select Assignment Mode"
+msgstr "Seleccione el Modo de Asignaci&oacute;n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:107
+msgid "Select Restriction Mode"
+msgstr "Seleccione el modo de Restricci&oacute;n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:115
+msgid "Review and Submit"
+msgstr "Revisar y Enviar"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:152
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:1067
+msgid "Update &raquo;"
+msgstr "Actualizar &raquo;"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:159
+#, php-format
+msgid "Select %s to Modify"
+msgstr "Seleccionar %s para modificar"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:173
+msgid "Set Role Duration and/or Content Date Limits (optional)"
+msgstr "Ajustar Duracion y Caducidad para Roles y Contenidos (opcional)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:183
+msgid "Select Roles to Assign / Remove"
+msgstr "Seleccionar Roles para Asignar / Remover"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:188
+msgid "Select Roles to Modify"
+msgstr "Seleccionar Roles para Moficar"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:253
+#, php-format
+msgid "Error: no %s were selected!"
+msgstr "Error: Ning&uacute;n %s fue seleccionado"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:259
+msgid "Error: no roles were selected!"
+msgstr "Error: Ning&uacute;n rol ha sido seleccionado"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:350
+#, php-format
+msgid "%d user"
+msgstr "%d usuario"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:352
+#, php-format
+msgid "%d group"
+msgstr "%d grupo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:360
+#, php-format
+msgid "%d role selection"
+msgstr "%d selecci&oacute;n de rol"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:362
+#, php-format
+msgid "Role Assignments Updated: %1$s for %2$s"
+msgstr "Asignaciones de rol completadas: %1$s para %2$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:366
+#, php-format
+msgid "Role Restrictions Updated: %d setting"
+msgstr "Limitaci&oacute;n de roles completada: %d ajustes"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:516
+msgid "unselect all roles"
+msgstr "desmarcar todos los roles"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:521
+msgid "hide users"
+msgstr "ocultar usuarios"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:525
+msgid "show users"
+msgstr "mostrar usuarios"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:531
+msgid "hide groups"
+msgstr "ocultar grupos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:535
+msgid "show groups"
+msgstr "mostrar grupos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:541
+msgid "hide roles"
+msgstr "ocultar roles"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:545
+msgid "show roles"
+msgstr "mostrar roles"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:571
+msgid "hide unmodified items"
+msgstr "ocultar items no modificado"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:574
+msgid "hide defaulted"
+msgstr "ocultar predefinido"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:576
+msgid "hide unassigned"
+msgstr "ocultar no asignado"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:587
+msgid "items"
+msgstr "items"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:590
+#, php-format
+msgid "include the newest %s with default restrictions"
+msgstr "incluir los nuevos %s con restricciones por defecto"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:592
+#, php-format
+msgid "include the newest %s with no role assignments"
+msgstr "incluir los nuevos %s sin asignaci&oacute;n de roles"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:596
+msgid "show defaulted"
+msgstr "mostrar predeterminado"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:598
+msgid "show unassigned"
+msgstr "mostrar no asignados"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:612
+msgid "collapse all"
+msgstr "colapsar todo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:623
+msgid "expand all"
+msgstr "expandir todo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:630
+#, php-format
+msgid "Note: %1$s with default restrictions will not be listed here unless they are among the %2$s newest."
+msgstr "Nota: %1$s con restricciones por defecto no ser&aacute; listados aqu&iacute; a menos que est&eacute; entre los %2$s m&aacute;s recientes."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:632
+#, php-format
+msgid "Note: %1$s with no role assignments will not be listed here unless they are among the %2$s newest."
+msgstr "Nota: %1$s sin asignaci&oacute;n de roles no ser&aacute; listados aqu&iacute; a menos que est&eacute;n entr los %2$s m&aacute;s recientes."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:688
+msgid "prev"
+msgstr "Anterior"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:689
+msgid "next"
+msgstr "Siguiente"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:697
+#, php-format
+msgid "Current %s"
+msgstr "%s actual"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:701
+msgid "Current Restrictions"
+msgstr "Restricciones actuales"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:731
+msgid "top"
+msgstr "Arriba"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:733
+msgid "show all"
+msgstr "mostrar todo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:743
+#, php-format
+msgid "DEFAULTS for new %s"
+msgstr "VALORES PREDETERMINADOS para nuevos %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:745
+#, php-format
+msgid "DEFAULTS for all %s"
+msgstr "VALORES PREDETERMINADOS para todos los %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:762
+msgid "edit roles"
+msgstr "modifica roles"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:763
+#, php-format
+msgid "edit %s"
+msgstr "editar %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:821
+#, php-format
+msgid "id %s"
+msgstr "id %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:1074
+msgid "select / unselect all:"
+msgstr "seleccionar / deseleccionar todo:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:1075
+msgid "Actions"
+msgstr "Acciones"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-bulk_rs.php:1096
+#, php-format
+msgid "(all %s)"
+msgstr "(todo los %s)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-dashboard_rs.php:11
+msgid "Pending Post"
+msgstr "art&iacute;culo pendiente"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin-dashboard_rs.php:29
+msgid "Pending Page"
+msgstr "P&aacute;gina pendiente"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:53
+msgid "Role Duration specifies the time period in which a role is active."
+msgstr "Duraci&oacute;n del Rol especifica el per&iacute;odo de tiempo en el que una funci&oacute;n est&aacute; activa."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:58
+msgid "Content Date Limits narrow the content which the role applies to."
+msgstr "Fecha de Caducidad del Contenido filtra el contenido y las fechas donde se aplica el Rol."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:77
+msgid "Modify Role Duration"
+msgstr "Modificar Duraci&oacute;n del Rol"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:85
+msgid "Grant Role on:"
+msgstr "Habilitar Rol en:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:90
+msgid "Expire Role on:"
+msgstr "Terminar Rol en:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:112
+msgid "Modify Content Date Limits"
+msgstr "Modificar L&iacute;mites de Fecha para contenidos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:118
+msgid "Min Content Date:"
+msgstr "Fecha M&iacute;nima del contenido:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:123
+msgid "Max Content Date:"
+msgstr "Fecha m&aacute;xima del contenido:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:135
+msgid "This controls what limits to apply to the User / Group roles you select for creation or modification. <strong>Currently stored limits</strong> are indicated by a colored background behind the User or Group name.  For details, hover over the name or view the User or Group Profile."
+msgstr "Controla qu&eacute; l&iacute;mites aplicar a los roles de Usuarios y Grupos seleccionados para crear o modificar. <strong>L&iacute;mites almacenados act5ualmente</strong> est&aacute;n indicados por un fondo coloreado tras el nombre del Usuario o Grupo. Para detalles, mueve el cursor sobre el nombre o examina el Perfil del Usuario o Grupo."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:238
+#, php-format
+msgid "%1$s%2$s, %3$s @ %4$s : %5$s"
+msgstr "%1$s%2$s, %3$s @ %4$s : %5$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-bulk_rs.php:266
+msgid "keep current setting"
+msgstr "guardar ajustes actuales"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-mu_rs.php:7
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:393
+msgid "Role Scoper Options"
+msgstr "Opciones de Role Scoper"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-mu_rs.php:7
+msgid "Role Options"
+msgstr "Opciones de Rol"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-mu_rs.php:21
+msgid "Role Scoper Option Defaults"
+msgstr "Opciones Predefinidas de Role Scoper"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib-mu_rs.php:21
+msgid "Role Defaults"
+msgstr "Rol predefinido"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib_rs.php:218
+#, php-format
+msgid "[WP %s]"
+msgstr "[%s WP]"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib_rs.php:221
+msgid "[Anonymous]"
+msgstr "[An&oacute;nimo]"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib_rs.php:232
+#, php-format
+msgid "All users with the WordPress role of %s"
+msgstr "Todos los usuarios con el rol WordPress de %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_lib_rs.php:235
+msgid "Anonymous users (not logged in)"
+msgstr "Usuarios An&oacute;nimos (no autentificados)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:114
+#, php-format
+msgid "assign role for this %s"
+msgstr "asignar rol para este %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:115
+#, php-format
+msgid "assign role for sub-%s"
+msgstr "asignar rol para sub-%s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:168
+#, php-format
+msgid "%1$s Role Scoper Documentation%2$s"
+msgstr "%1$s Documentaci&oacute;n de Role Scoper%2$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:169
+#, php-format
+msgid "%1$s Role Scoper Support Forum%2$s"
+msgstr "%1$s Foro de soporte para Role Scoper%2$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:254
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:259
+msgid "Role Groups"
+msgstr "Grupos de Roles"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:268
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:275
+msgid "User Groups"
+msgstr "Grupos de Usuarios"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:268
+msgid "Default Groups"
+msgstr "Grupos predeterminados"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:275
+msgid "Group Members"
+msgstr "Miembros del Grupo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:382
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:400
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:405
+msgid "Restrictions"
+msgstr "Restricciones"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:383
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:401
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:403
+msgid "Roles"
+msgstr "Roles"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:390
+msgid "Role Restrictions"
+msgstr "Restricciones de Rol"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:417
+msgid "General Roles"
+msgstr "Roles Generales"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:417
+msgid "General"
+msgstr "General"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:458
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:530
+#, php-format
+msgid "%s Roles"
+msgstr "Roles %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:470
+#, php-format
+msgid "%s restrictions"
+msgstr "Restricciones de %s "
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:539
+#, php-format
+msgid "%s Restrictions"
+msgstr "Restricciones de %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:553
+msgid "About Role Scoper"
+msgstr "Acerca de Role Scoper"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:553
+msgid "About"
+msgstr "Acerca de"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:569
+msgid "Attachment Utility"
+msgstr "Utilidad para Adjuntos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_rs.php:637
+msgid "Object Role Edit"
+msgstr "Editar Rol de Objeto"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:152
+#, php-format
+msgid "TO START on %s"
+msgstr "COMIENZO el %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:153
+#, php-format
+msgid "started on %s"
+msgstr "iniciado el %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:154
+#, php-format
+msgid "EXPIRED on %s"
+msgstr "EXPIRACIÓN el %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:155
+#, php-format
+msgid "expire on %s"
+msgstr "expira el %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:157
+#, php-format
+msgid "(for content %1$s to %2$s)"
+msgstr "(para contenidos entre %1$s y %2$s)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:158
+#, php-format
+msgid "(for content after %1$s)"
+msgstr "(para contenidos posteriores a %1$s)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:159
+#, php-format
+msgid "(for content before %1$s)"
+msgstr "(para contenidos anteriores a %1$s)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:234
+#, php-format
+msgid "Restricted for %s"
+msgstr "Restringido para %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:235
+#, php-format
+msgid "Unrestricted for %1$s, Restricted for sub-%2$s"
+msgstr "Libre para %1$s, Restringido para sub-%2$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:236
+#, php-format
+msgid "Restricted for selected and sub-%s"
+msgstr "Restringido para la selecci&oacute;n y sus sub-%s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:237
+msgid "Unrestricted by default"
+msgstr "Libre por defecto"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:238
+msgid "Unrestricted"
+msgstr "Libre"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:241
+#, php-format
+msgid "Unrestricted for %s"
+msgstr "Libre para %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:242
+#, php-format
+msgid "Unrestricted for sub-%s"
+msgstr "Libre para sus sub-%s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:243
+#, php-format
+msgid "Unrestricted for selected and sub-%s"
+msgstr "Libre para la selecci&oacute;n y sus sub-%s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:244
+msgid "Restricted by default"
+msgstr "Restringido por defecto"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:245
+msgid "Restricted"
+msgstr "Restringido"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:263
+msgid "Groupname"
+msgstr "Nombre de grupo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:263
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:269
+msgid "Users / Groups Key"
+msgstr "Llave para Usuarios / Grupos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:276
+#, php-format
+msgid "%1$s has role assigned for the specified %2$s."
+msgstr "%1$s tiene Rol asignado para las %2$s especificadas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:281
+#, php-format
+msgid "%1$s has role assigned for the specified %2$s and, by default, for all its sub-%3$s. (Propagated roles can also be explicitly removed)."
+msgstr "%1$s tiene Rol asignado para las %2$s especificadas, y por defecto, para todas sus sub-%3$s. (Roles propagados pueden tambi&eacute;n ser expl&iacute;citamente removidos)."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:286
+#, php-format
+msgid "%1$s does NOT have role assigned for the specified %2$s, but has it by default for sub-%3$s."
+msgstr "%1$s no tiene Rol asignado para las %2$s especificadas, sino por defecto para sus sub-%3$s."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:291
+#, php-format
+msgid "%1$s has this role via propagation from parent %2$s, and by default for sub-%3$s."
+msgstr "%1$s tiene Rol asignado por propagaci&oacute;n desde sus padres %2$s, y por defecto para sus sub-%3$s."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:296
+msgid "Role Name"
+msgstr "Nombre de Rol"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:297
+#, php-format
+msgid "role is restricted for specified %s."
+msgstr "El Rol est&aacute; restringido para el %s especificado."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:308
+msgid "Scroll to current settings:"
+msgstr "Vaya a la configuraci&oacute;n actual:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:380
+#, php-format
+msgid "Category Roles for WordPress pages are <a %s>disabled for this blog</a>. Object Roles can be assigned to individual pages, and optionally propagated to sub-pages."
+msgstr "Los Roles de Categor&iacute;a se encuentran <a %s>deshabilitados</a>. Los Roles de Objetos pueden ser asignados a p&aacute;ginas individuales, y, opcionalmente, propagados a sus sub-p&aacute;ginas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:384
+#, php-format
+msgid "Another option is to categorise pages via the <a %s>Page&nbsp;Category&nbsp;Plus</a>&nbsp;plugin."
+msgstr "Otra opci&oacute;n consiste en clasificar las p&aacute;ginas a trav&eacute;s del plugin <a %s>Page&nbsp;Category&nbsp;Plus</a>."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:435
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/admin_ui_lib_rs.php:438
+msgid "Main Page (no parent)"
+msgstr "P&aacute;gina principal (sin padre)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:23
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/general_roles.php:31
+#, php-format
+msgid "%1$s define user groups%2$s"
+msgstr "%1$s definir grupos de usuarios%2$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:25
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/general_roles.php:33
+#, php-format
+msgid "<strong>Note:</strong> To assign roles to user groups, first %1$s define the group(s)%2$s."
+msgstr "<b>Nota:</b> Para asignar roles a grupos de usuarios, primero se necesita %1$s definir los grupos %2$s."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:65
+#, php-format
+msgid "Actions: %s"
+msgstr "Acciones: %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:74
+msgid "Key:"
+msgstr "Clave:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:83
+msgid "Enter additional Group Names or IDs (comma-separate)"
+msgstr "Introducir Nombres o ID de Grupos adicionales (separados por comas)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:83
+msgid "Enter additional User Names or IDs (comma-separate)"
+msgstr "Introducir Nombres o ID de Grupos adicionales (separados por comas)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:89
+msgid "Enter additional Group Names or IDs for Subpages"
+msgstr "Introducir Nombres o ID de Grupos adicionales para las subp&aacute;ginas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:89
+msgid "Enter additional User Names or IDs for Subpages"
+msgstr "Introducir Nombres o ID de Usuarios adicionales para las subp&aacute;ginas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:155
+#, php-format
+msgid "show current groups (%d)"
+msgstr "mostrar grupos actuales (%d)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:155
+#, php-format
+msgid "show eligible groups (%d)"
+msgstr "mostrar grupos disponibles (%d)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:157
+#, php-format
+msgid "show current users (%d)"
+msgstr "mostrar usuarios actuales (%d)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:157
+#, php-format
+msgid "show eligible users (%d)"
+msgstr "mostrar usuarios disponibles (%d)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:177
+msgid "filter:"
+msgstr "filtro:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:186
+msgid "select"
+msgstr "seleccionar"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:191
+msgid "unselect"
+msgstr "deseleccionar"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:197
+msgid "propagate"
+msgstr "propagar"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:202
+msgid "unpropagate"
+msgstr "no propagar"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:211
+#, php-format
+msgid "current groups (%d):"
+msgstr "grupos actuales (%d):"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:211
+#, php-format
+msgid "eligible groups (%d):"
+msgstr "grupos disponibles (%d):"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:213
+#, php-format
+msgid "current users (%d):"
+msgstr "usuarios actuales (%d):"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:213
+#, php-format
+msgid "eligible users (%d):"
+msgstr "usuarios disponibles (%d):"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:222
+msgid "object"
+msgstr "objeto"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:225
+msgid "objects"
+msgstr "objetos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:446
+#, php-format
+msgid "inherited from parent %s"
+msgstr "heredado del padre %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:450
+msgid "has via other role"
+msgstr "tiene v&iacute;a otro rol"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:454
+msgid "has via group"
+msgstr "tiene v&iacute;a grupo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:458
+msgid "has via other scope"
+msgstr "tiene a trav&eacute;s de otros alcances"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:462
+#, php-format
+msgid "propagate to sub-%s"
+msgstr "propagar a sub-%s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/agents_checklist_rs.php:465
+#, php-format
+msgid "%1$sEdit date limits%2$s"
+msgstr "%1$sEditar rango de fechas%2$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:17
+msgid "<strong>Note</strong>: Direct access to uploaded file attachments cannot be filtered because your WP_CONTENT_DIR is not in the WordPress branch."
+msgstr "<b>Nota</b>: Acceso directo a los archivos adjuntos de archivos subidos no se pueden filtrar porque su WP_CONTENT_DIR no est&aacute; bajo el directorio."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:19
+msgid "The operation was terminated due to an invalid configuration."
+msgstr "La operaci&oacute;n se termin&oacute; debido a una configuraci&oacute;n no v&aacute;lida."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:48
+#, php-format
+msgid "<strong>checking %s posts / pages...</strong>"
+msgstr "<strong>revisando %s art&iacute;culos / p&aacute;ginas...</strong>"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:86
+#, php-format
+msgid "<span class=\"rs-brown\">skipping unfilterable file in %1$s \"%2$s\":</span> %3$s"
+msgstr "<span class=\"rs-brown\">saltando archivo no filtrable en %1$s \"%2$s\":</span> %3$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:128
+#, php-format
+msgid "<span class=\"rs-green\"><strong>new attachment</strong> in %1$s \"%2$s\":</span> %3$s"
+msgstr "<span class=\"rs-green\"><strong>nuevo adjunto</strong> en %1$s \"%2$s\":</span> %3$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:133
+#, php-format
+msgid "<span class=\"rs-blue\">attachment OK in %1$s \"%2$s\":</span> %3$s"
+msgstr "<span class=\"rs-blue\">adjunto OK en %1$s \"%2$s\":</span> %3$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:148
+#, php-format
+msgid "Operation complete: %s linked uploads were found in your post / page content."
+msgstr "Operaci&oacute;n completa: %s subidas vinculadas fueron encontradas en el contenido del art&iacute;culo / p&aacute;gina."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:151
+#, php-format
+msgid "<strong>%s attachment records were added to the database.</strong>"
+msgstr "<strong>%s registros de datos adjuntos se a&ntilde;adieron a la base de datos.</strong>"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:153
+msgid "All linked uploads are already registered as attachments."
+msgstr "Todos los archivos subidos vinculados ya est&aacute;n registrados como archivos adjuntos."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:165
+msgid "Attachments Utility"
+msgstr "Utilidad para Adjuntos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:167
+#, php-format
+msgid "Back to %1$sRole Scoper Options%2$s"
+msgstr "Regresar a %1$sOpciones de Role Scoper%2$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:180
+msgid "Role Scoper can limit direct URL access to files linked from your posts and pages, <strong>but only if</strong> the following requirements are met:"
+msgstr "Role Scoper puede limitar el acceso URL directo a los archivos vinculados de sus mensajes y p&aacute;ginas, pero <strong>s&oacute;lo si</strong> se cumplen los siguientes requisitos:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:182
+msgid "Your WP content directory must be a branch of the WordPress directory tree (i.e. wp-config.php must not be customized to separate WP_CONTENT_DIR and WP_CONTENT_URL from the main WordPress folder)."
+msgstr "El directorio de contenido debe encontrarse bajo el &aacute;rbol de directorios (es decir, wp-config.php no debe personalizarse para separar WP_CONTENT_DIR y WP_CONTENT_URL de la carpeta principal)."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:188
+msgid "Note that to be detected as attachments, your file references must <strong>include www.</strong>"
+msgstr "Tenga en cuenta que para ser detectadas como archivos adjuntos, sus referencias de archivo deben <strong>incluir www.</strong>"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:190
+msgid "Note that to be detected as attachments, your file references must <strong>NOT include www.</strong>"
+msgstr "Tenga en cuenta que para ser detectadas como archivos adjuntos, sus referencias de archivo deben <strong>NO incluir www.</strong>"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:195
+#, php-format
+msgid "Files linked from WP Posts and Pages must be in %1$s (or a subdirectory of it) to be filtered. After moving files, you may use %2$s a search and replace plugin%3$s to conveniently update the URLs stored in your Post / Page content. %4$s"
+msgstr "Los archivos vinculados en Art&iacute;culos y P&aacute;ginas deben estar en %1$s (o en un subdirectorio del mismo) para ser filtrados. Despu&eacute;s de mover archivos, puede utilizar la b&uacute;squeda %2$s y reemplazar plugin%3$s para convenientemente actualizar las URL almacenadas en el contenido del Art&iacute;culo / P&aacute;ginas. %4$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:197
+msgid "Files which are <strong>already appropriately located and linked</strong> must also have their post-file attachment relationship stored to the WP database.  This is normally accomplished by clicking the \"Insert into Post\" button in the WP file uploader / Media Library.  Files which were instead uploaded manually via FTP or CPanel <strong>can receive their attachment record via this utility</strong>."
+msgstr "Los ficheros que est&aacute;n <strong>ya debidamente ubicados y v&iacute;nculados</strong> tambi&eacute;n deben tener almacenada en la base de datos, su relaci&oacute;n con el adjunto del archivo del Art&iacute;culo. Esto normalmente se logra haciendo clic en el \"Insertar en art&iacute;culo \" en el subidor de archivos / Biblioteca multimedia. Archivos que fueron subidos en lugar manualmente a trav&eacute;s de FTP o CPanel <strong>pueden recibir sus registros de adjuntos a trav&eacute;s de esta utilidad</strong>."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/attachments_utility.php:206
+msgid "Register File Attachments &raquo;"
+msgstr "Registrar Adjuntos de Archivo &raquo;"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/default_groups.php:8
+msgid "see notes"
+msgstr "ver notas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/default_groups.php:30
+#, php-format
+msgid "Default Groups Updated: %s groups"
+msgstr "Grupos Predeterminados Actualizados: %s grupos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/default_groups.php:44
+msgid "No default groups defined."
+msgstr "No hay grupos definidos por defecto"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/default_groups.php:66
+msgid "No groups defined."
+msgstr "No hay grupos definidos."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/default_groups.php:72
+msgid "Notes"
+msgstr "Notas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/default_groups.php:74
+msgid "Each new user will be added to the default groups. Existing users are not affected."
+msgstr "Cada nuevo usuario se a&ntilde;adir&aacute; a los grupos por defecto. Los usuarios existentes no se ven afectados."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/default_groups.php:77
+msgid "Use default groups only if you need the ability to manually remove a user from one of the groups later. To affect all users (or all users of a certain WP role), assign roles to the corresponding [WP role] group instead."
+msgstr "utilice los grupos por defecto s&oacute;lo si se necesita la capacidad de eliminar manualmente un usuario de uno de los grupos m&aacute;s adelante. Para afectar a todos los usuarios (o a todos los usuarios de un rol WP determinado), en vez, asigna directamente roles al rol WP correspondiente."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/filters-admin-save_rs.php:400
+#, php-format
+msgid "The page %s was saved, but the new Page Parent setting was discarded. You do not have permission to disassociate it from the Main Page."
+msgstr "La P&aacute;gina %s ha sido guardada, pero la nueva configuraci&oacute;n de P&aacute;gina Padre fue descartada. T&uacute; no tienes privilegios para disociarla de la P&aacute;gina Principal."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/filters-admin-save_rs.php:402
+#, php-format
+msgid "The Page Parent setting for %s was reverted to the previously stored value. You do not have permission to associate it with the Main Page."
+msgstr "La configuraci&oacute;n de P&aacute;gina Padre para %s se ha regresado al valor almacenado previamente. T&uacute; no tienes privilegios para asociarla con la P&aacute;gina Principal."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/filters-admin-save_rs.php:416
+#, php-format
+msgid "The page %s cannot be published because you do not have permission to associate it with the Main Page. Please select a different Page Parent and try again."
+msgstr "La p&aacute;gina %s no puede ser publicada debido a que no tienes permiso para asociarla a la p&aacute;gina principal. Por favor seleccione una P&aacute;gina Padre diferente y vuelve a intentarlo."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/filters-admin-ui-listing_rs.php:43
+msgid "Restrict"
+msgstr "Restringir"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/filters-admin-ui-listing_rs.php:48
+msgid "Term Roles"
+msgstr "Roles para T&eacute;rminos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/filters-admin-ui-listing_rs.php:66
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/filters-admin-ui-listing_rs.php:68
+msgid "Read"
+msgstr "Reed"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/filters-admin-ui_rs.php:170
+msgid "Role Scoper Plugin CSS:"
+msgstr "CSS del Plugin Role Scoper:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/filters-admin-ui_rs.php:193
+msgid "Role Scoper"
+msgstr "Role Scoper"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/filters-admin-ui_rs.php:193
+msgid "Support Forum"
+msgstr "Foro de soporte"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/filters-admin-ui_rs.php:227
+msgid "<strong>Note:</strong> Role Manager settings determine each user's default blog-wide capabilities. Since the Role Scoper plugin is also enabled, <strong>Term-specific or Object-specific Role Assignments</strong> may increase or decrease a user's actual capabilities."
+msgstr "<strong>Nota:</strong> La configuraci&oacute;n del Administrador de Roles determina las capacidades predeterminadas para cada usuario. Dado que el plugin Role Scoper tambi&eacute;n est&aacute; habilitado, <strong>las Asignaciones espec&iacute;ficas de Roles a Objetos o Plazos</strong> puede aumentar o disminuir las capacidades reales de un usuario."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/general_roles.php:174
+msgid "Assign"
+msgstr "Asignar"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/general_roles.php:174
+msgid "Remove"
+msgstr "Remover"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/general_roles.php:177
+msgid "Assign General Roles"
+msgstr "Asignar Roles Generales"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/general_roles.php:181
+msgid "Supplement any user's blog-wide WordPress Role with additional, type-specific role(s). This does not alter the WordPress role."
+msgstr "Complementa todos los Roles existentes con roles adicionales de tipo espec&iacute;fico, pero no altera los Roles existentes."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/general_roles.php:207
+msgid "Confirm and Submit"
+msgstr "Confirmar y Enviar"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/general_roles.php:260
+msgid "select all roles"
+msgstr "seleccionar todos los roles"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/general_roles.php:287
+msgid "hide empty"
+msgstr "ocultar vac&iacute;os"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/general_roles.php:329
+#, php-format
+msgid "Modify role assignments for %s"
+msgstr "Modifica asignaciones de rol para %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:42
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:93
+msgid "Please specify a name for the group."
+msgstr "Por favor, especifique un nombre para el grupo."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:44
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:96
+#, php-format
+msgid "A group with the name <strong>%s</strong> already exists."
+msgstr "Un grupo con el nombre <strong>%s</strong> ya existe."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:47
+#, php-format
+msgid "Group <strong>%s</strong> created successfuly."
+msgstr "Grupo <strong>%s</strong> creado exitosamente."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:64
+msgid "This meta group is automatically populated. You cannot manually edit it."
+msgstr "Este grupo meta se rellena autom&aacute;ticamente. No se puede editar manualmente."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:101
+#, php-format
+msgid "Group <strong>%s</strong> updated successfuly."
+msgstr "Grupo <strong>%s</strong> actualizado exitosamente."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:103
+#, php-format
+msgid "Group <strong>%s</strong> was not updated successfuly."
+msgstr "Grupo <strong>%s</strong> no fue actualizado."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:119
+msgid "Group Deleted."
+msgstr "Grupo eliminado"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:121
+msgid "Invalid group. No groups were deleted."
+msgstr "Grupo no v&aacute;lido. Ning&uacute;n grupo fue eliminado."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:130
+msgid "Group edit canceled."
+msgstr "Edici&oacute;n de grupo cancelada."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:152
+#, php-format
+msgid "%d member deleted."
+msgstr "%d miembro borrado."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:157
+#, php-format
+msgid "%d member added."
+msgstr "%d miembro a&ntilde;adido."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:195
+msgid "add new"
+msgstr "a&ntilde;adir nuevo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:196
+msgid "set defaults"
+msgstr "valores predeterminados"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:197
+msgid "browse members"
+msgstr "Mostrar miembros"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:203
+msgid "By creating User Groups, you can assign RS roles to multiple users.  Note that group membership itself has no effect on the users until you assign roles to the group."
+msgstr "Mediante la creaci&oacute;n de grupos de usuarios, puede asignar funciones de RS para m&uacute;ltiples usuarios. Tenga en cuenta que la pertenencia a un grupo, en s&iacute; no tiene ning&uacute;n efecto en los usuarios hasta que al grupo se le asignan roles."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:211
+#, php-format
+msgid "You are about to delete the group %s. Do you wish to continue?"
+msgstr "Est&aacute; a punto de eliminar el grupo %s. ¿Desea continuar?"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:274
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/group_members.php:82
+msgid "No groups available."
+msgstr "No hay grupos disponibles."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:294
+msgid "Create New Group"
+msgstr "Crear nuevo grupo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:310
+#, php-format
+msgid "Edit Group: %s"
+msgstr "Editar Grupo: %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:371
+#, php-format
+msgid "Group Administrators %1$s(via login to %2$s)%3$s"
+msgstr "Administradores de Grupos %1$s (via acceso a %2$s) %3$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/groups.php:373
+msgid "Group Administrators"
+msgstr "Administradores de grupo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/group_members.php:22
+#, php-format
+msgid "<strong>%s</strong> group membership updated."
+msgstr "participaci&oacute;n en el grupo <strong>%s</strong> actualizada."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/group_members.php:27
+msgid "Invalid group."
+msgstr "Grupo no v&aacute;lido."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/group_members.php:32
+msgid "Group members edit canceled."
+msgstr "Edici&oacute;n de miembros de grupoo cancelada."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/group_members.php:68
+msgid "(automatic)"
+msgstr "(autom&aacute;tico)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/group_members.php:70
+msgid "(no users)"
+msgstr "(no hay usuarios)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/group_members.php:93
+msgid "This meta group is automatically populated. You cannot manually add members to it."
+msgstr "Este grupo meta se rellena autom&aacute;ticamente. No se le puede agregar miembros manualmente."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/group_members.php:96
+#, php-format
+msgid "Edit members of %s group"
+msgstr "Editar miembros de %s grupos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:267
+#, php-format
+msgid "Restrict for %1$s (<strong>only</strong> selected users/groups are %2$s)"
+msgstr "Restringir para %1$s (<strong>solo</strong> usuarios/grupos selecccionados son %2$s)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:278
+#, php-format
+msgid "Restrict for Sub-%1$s"
+msgstr "Restringir para sus sub-%1$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:442
+msgid "restricted role"
+msgstr "rol restringido"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:446
+#, php-format
+msgid "%s user"
+msgstr "%s usuario"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:452
+#, php-format
+msgid "%s group"
+msgstr "%s grupo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:569
+msgid "Category Restrictions"
+msgstr "Restricci&oacute;n de Categor&iacute;as"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/item_roles_ui_rs.php:579
+msgid "Category Roles"
+msgstr "Roles de Categor&iacute;as"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:10
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_roles.php:10
+msgid "Invalid data source"
+msgstr "Fuente de datos no v&aacute;lida"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:66
+#, php-format
+msgid "Reduce access to a specific %1$s by requiring some role(s) to be %2$s%3$s-assigned%4$s. Corresponding WP-assigned Roles and RS-assigned General and %5$s Role assignments are ignored."
+msgstr "Reducir el acceso a un %1$s espec&iacute;fico, mediante la asignaci&oacute;n de algunos roles a la %2$s%3$s %4$s. Los roles WP correspondientes y las asignaciones RS de Roles y de Roles Generales a %5$s son ignoradas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:68
+#, php-format
+msgid "Reduce access to a specific %1$s by requiring some role(s) to be %2$s%3$s-assigned%4$s. Corresponding WP-assigned Roles and RS-assigned General and Section Role assignments are ignored."
+msgstr "Reducir el acceso a un %1$s espec&iacute;fico, mediante la asignaci&oacute;n de algunos roles a la %2$s%3$s %4$s. Los roles WP correspondientes y las asignaciones RS de Roles Generales y de Secci&oacute;n son ignoradas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:70
+#, php-format
+msgid "Reduce access to a specific %1$s by requiring some role(s) to be %2$s%3$s-assigned%4$s. Corresponding WP-assigned Roles and RS-assigned General Role assignments are ignored."
+msgstr "Reducir el acceso a un %1$s espec&iacute;fico, mediante la asignaci&oacute;n de algunos roles a la %2$s%3$s %4$s. Los roles WP correspondientes y las asignaciones RS de Roles Generales son ignoradas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:85
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:89
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_restrictions.php:97
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_restrictions.php:101
+#, php-format
+msgid "for selected %s"
+msgstr "para la %s seleccionada"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:90
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_restrictions.php:102
+#, php-format
+msgid "for sub-%s of selected"
+msgstr "para las sub-%s de la selecci&oacute;n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:91
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_restrictions.php:103
+#, php-format
+msgid "for selected and sub-%s"
+msgstr "para la selecci&oacute;n y sus sub-%s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:94
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_restrictions.php:106
+msgid "Restrict selected roles"
+msgstr "Restringir roles seleccionados"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:94
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_restrictions.php:106
+msgid "Unrestrict selected roles"
+msgstr "Liberar roles seleccionados"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:200
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_roles.php:208
+#, php-format
+msgid "To edit all roles for any %1$s, click on the %1$s name."
+msgstr "Para editar todos los roles de cualquier %1$s, haga clic en nombre de la %1$s."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:204
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_roles.php:212
+#, php-format
+msgid "To edit the %s via its default editor, click on the ID link."
+msgstr "Para editar el %s en su editor predeterminado, haga clic en el v&iacute;nculo ID."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_restrictions.php:209
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_roles.php:217
+#, php-format
+msgid "To enhance performance, the role editing checkboxes here may not include some roles which you can only edit due to your own %1$s-specific role. In such cases, click on the editing link to edit roles for the individual %1$s."
+msgstr "Para mejorar el rendimiento, las cajas de opciones de edici&oacute;n de roles no puede incluir algunos roles que s&oacute;lo se puede editar, debido a su rol espec&iacute;fico a la %1$s. En estos casos, haga clic en el enlace de edici&oacute;n para editar los roles para el %1$s in dividual."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_roles.php:67
+#, php-format
+msgid "Expand access to a %2$s, potentially beyond what a user's WP role would allow. To reduce access, define %1$s%2$s&nbsp;Restrictions%3$s."
+msgstr "Expandir el acceso a un %2$s, potencialmente m&aacute;s all&aacute; de lo que un rol WP de usuario permitir&iacute;a. Para reducir el acceso, defina %1$s%2$s&nbsp;Restricciones%3$s."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_roles.php:87
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:119
+#, php-format
+msgid "Assign for selected %s"
+msgstr "Asignar a la %s seleccionada"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_roles.php:88
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:120
+#, php-format
+msgid "Assign for sub-%s of selected"
+msgstr "Asignar a las sub-%s de la selecci&oacute;n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_roles.php:89
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:121
+#, php-format
+msgid "Assign for selected and sub-%s"
+msgstr "Asignar a la selecci&oacute;n y sus sub-%s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_roles_list.php:205
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_roles_list.php:207
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:211
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:213
+#, php-format
+msgid "%1$s Roles%2$s:"
+msgstr "%1$s Roles%2$s:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_roles_list.php:215
+msgid "ID"
+msgstr "ID"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_roles_list.php:217
+msgid "Role Assignments"
+msgstr "Asignaci&oacute;n de Roles"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_role_edit.php:21
+msgid "You do not have permission to assign roles for this object."
+msgstr "Usted no tiene permiso para asignar roles para este objeto."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_role_edit.php:29
+msgid "Object Roles Updated."
+msgstr "Los Roles para Objetos fueron actualizados."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/object_role_edit.php:36
+#, php-format
+msgid "Assign Roles for %1$s \"%2$s\""
+msgstr "Asignar Roles para %1$s \"%2$s\""
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:126
+msgid "Role Scoper options were reset to defaults."
+msgstr "Las opciones de Role Scoper fueron reseteadas a sus valores predeterminados."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:129
+msgid "The persistent cache was flushed."
+msgstr "La cach&eacute; permanente fue vaciada."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:131
+msgid "Role Scoper options were updated."
+msgstr "Las opciones de Role Scoper fueron actualizadas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:155
+msgid "Features"
+msgstr "Caracter&iacute;sticas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:155
+msgid "Advanced"
+msgstr "Avanzado"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:155
+msgid "Realm"
+msgstr "Esfera"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:156
+msgid "RS Role Definitions"
+msgstr "Definici&oacute;n de Roles RS"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:156
+msgid "WP Role Definitions"
+msgstr "Definici&oacute;n de Roles WP"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:156
+msgid "Option Scope"
+msgstr "Alcance de las Opciones"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:161
+msgid "Front End"
+msgstr "Interfaz de Usuario"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:162
+msgid "Pages Listing"
+msgstr "Listado de P&aacute;ginas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:163
+msgid "Categories Listing"
+msgstr "Listado de Categor&iacute;as"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:164
+msgid "Content Maintenance"
+msgstr "Mantenimiento de Contendio"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:165
+msgid "File Filtering"
+msgstr "Filtrado de Archivos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:166
+msgid "Role Date Limits"
+msgstr "Roles limitados seg&uacute;n Fecha"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:167
+msgid "Internal Cache"
+msgstr "Cache interna"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:168
+msgid "Version"
+msgstr "Versi&oacute;n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:169
+msgid "RSS Feeds"
+msgstr "Alimentadores de RSS"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:170
+msgid "Hidden Content Teaser"
+msgstr "Teaser de Contenido Oculto"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:173
+msgid "Role Basis"
+msgstr "Base de Rol"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:174
+msgid "Role Type"
+msgstr "Tipo de rol"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:175
+msgid "Page Structure"
+msgstr "Estructura de P&aacute;gina"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:176
+msgid "User Profile"
+msgstr "Perfil de Usuario"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:177
+msgid "User Management"
+msgstr "Manejo de Usuarios"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:178
+msgid "Administrator Definition"
+msgstr "Definici&oacute;n de Administrador"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:179
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:247
+msgid "Limited Editing Elements"
+msgstr "Elementos de Edici&oacute;n Limitada"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:180
+msgid "Role Assignment Interface"
+msgstr "Elementos de Edici&oacute;n Limitada"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:181
+msgid "Custom Columns"
+msgstr "Columnas Personalizadas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:182
+msgid "Additional Object Roles"
+msgstr "Roles Adicionales para Objetos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:185
+msgid "Term / Object Scope"
+msgstr "Alcance de T&eacute;rminos / Objectos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:186
+msgid "Term Scope"
+msgstr "Alcance para T&eacute;rminos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:187
+msgid "Object Scope"
+msgstr "Alcance para el Objeto"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:188
+msgid "Access Types"
+msgstr "Tipos de Acceso"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:201
+msgid "Cache roles and groups to disk"
+msgstr "Cachear roles y grupos al disco"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:202
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:203
+msgid "Apply Group Roles"
+msgstr "Aplicar Roles de Grupo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:204
+msgid "Apply User Roles"
+msgstr "Aplicar Roles de Usuario"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:205
+msgid "Within any scope, each user or group has:"
+msgstr "Seg&uacute;n cualquier alcance, cada usuario o grupo tiene:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:206
+msgid "Support WP Custom User Caps"
+msgstr "Permitir may&uacute;sculas en los Usuarios de WP"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:207
+msgid "Assume No Front-end Admin"
+msgstr "Permitir may&uacute;sculas en los Usuarios de WP"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:208
+msgid "Indicate blended roles"
+msgstr "Mostrar roles decorados"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:209
+msgid "Notify on Version Updates"
+msgstr "Notificar actualizaciones de versi&oacute;n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:211
+msgid "Suppress \"Private:\" Caption"
+msgstr "Suprimir la palabra \"Privado:\""
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:212
+msgid "Display Administrative Hints"
+msgstr "Mostrar Sugerencias de Administraci&oacute;n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:213
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1421
+msgid "Specified element IDs also require the following blog-wide Role:"
+msgstr "ID de elemento especificado tambi&eacute;n requieren el siguiente Rol:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:214
+msgid "Roles and Restrictions can be set:"
+msgstr "Roles y Restricciones pueden ser configurados:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:215
+msgid "HTTP Authentication Request in RSS Feed Links"
+msgstr "Solicitud de autenticaci&oacute;n HTTP en v&iacute;nculos RSS"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:216
+msgid "Display mode for readable private posts"
+msgstr "Modalidad de visualizaci&oacute;n para art&iacute;culos privados con permiso de lectura"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:217
+msgid "Display mode for readable non-private posts"
+msgstr "Modalidad de visualizaci&oacute;n para art&iacute;culos no privados con permiso de lectura"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:218
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:895
+msgid "Feed Replacement Text (use %permalink% for post URL)"
+msgstr "Texto de Reemplazo para RSS (use %permalink% para suscribir URLs)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:225
+msgid "Pages can be set or removed from Top Level by:"
+msgstr "Las p&aacute;ginas pueden ajustadas o removidas del Nivel Superior por:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:226
+msgid "Display User Groups"
+msgstr "Mostrar Grupos de Usuarios"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:227
+msgid "Display User Roles"
+msgstr "Mostrar Roles de Usuario"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:228
+msgid "Users CSV Entry"
+msgstr "Entrada CSV para Usuarios"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:229
+msgid "Non-editors see other users' unattached uploads"
+msgstr "Los no editores pueden ver subidas no adjuntadas de otros usuarios"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:230
+msgid "Remap pages to visible ancestor"
+msgstr "Reasignaci&oacute;n de las p&aacute;ginas al padre visible"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:231
+msgid "Enforce actual page depth"
+msgstr "Forzar profundidad de p&aacute;gina actual"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:232
+msgid "Remap through excluded page parent"
+msgstr "Reasignar a trav&eacute;s de los padres de las p&aacute;ginas excluidas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:233
+msgid "Remap terms to visible ancestor"
+msgstr "Reasignaci&oacute;n de los t&eacute;rminos para su padre visible"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:234
+msgid "Enforce actual term depth"
+msgstr "Forzar profundidad de t&eacute;rminos actual"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:235
+msgid "Remap through excluded term parent"
+msgstr "Reasignaci&oacute;n a trav&eacute;s de de los padres de t&eacute;rminos que est&aacute;n excluidos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:236
+msgid "Limit User Edit by Level"
+msgstr "Limitar Edici&oacute;n de Usuarios seg&uacute;n Nivel"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:237
+msgid "Filter Uploaded File Attachments"
+msgstr "Filtrar archivos adjuntos subidos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:238
+msgid "Share groups site-wide"
+msgstr "Compartir grupos en todo el sitio"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:239
+msgid "Enable Role Duration Limits"
+msgstr "Habilitar Limites de Duraci&oacute;n para Roles"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:240
+msgid "Enable Content Date Limits"
+msgstr "Habilitar Limites de Duraci&oacute;n para Contenido"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:241
+msgid "Filter Users Dropdown"
+msgstr "Men&uacute; de despliegue para Filtro de Usuarios"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:242
+msgid "Restrictions Column"
+msgstr "Columna de Restricciones"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:243
+msgid "Term Roles Column"
+msgstr "Columna de Roles para T&eacute;rminos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:244
+msgid "Object Roles Column"
+msgstr "Columna de Roles para Objetos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:246
+msgid "Enable"
+msgstr "Habilitar"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:248
+msgid "Limit eligible users for object-specific editing roles"
+msgstr "Limitar a los usuarios disponibles con roles espec&iacute;ficos de edici&oacute;n de objetos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:249
+msgid "Include Private Pages in listing if user can read them"
+msgstr "Incluir P&aacute;ginas Privadas en la lista si el usuario puede leerlas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:250
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:251
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:253
+msgid "settings"
+msgstr "Configuraci&oacute;n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:347
+msgid "Role Scoper Site Options"
+msgstr "Opciones Sito Role Scoper"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:349
+msgid "Role Scoper Default Blog Options"
+msgstr "Opciones Blog predefinido Role Scoper"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:351
+msgid "Role Scoper Blog Options"
+msgstr "Opciones Blog Role Scoper"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:367
+msgid "These settings will be applied to all blogs."
+msgstr "Estos ajustes se aplicar&aacute;n en todos los blogs."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:373
+msgid "These are the <strong>default</strong> settings for options which can be adjusted per-blog."
+msgstr "Estos son los ajustes <strong>predeterminados</strong> para las opciones que pueden ajustar en el blog."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:457
+msgid "This page enables <strong>optional</strong> adjustment of Role Scoper's features. For most installations, the default settings are fine."
+msgstr "Esta p&aacute;gina permite ajustes <strong>opcionales</strong> de caracter&iacute;sticas de Role Scoper. Para la mayor&iacute;a de las instalaciones, los ajustes por defecto funcionan bien."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:466
+#, php-format
+msgid "Note that, depending on your configuration, %1$s blog-specific options%2$s may also be available."
+msgstr "Note que, dependiendo de su configuraci&oacute;n, las opciones espec&iacute;ficas para %1$s del blog %2$s podr&iacute;an tambi&eacute;n estar disponibles."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:473
+#, php-format
+msgid "Note that, depending on your configuration, %1$s site-wide options%2$s may also be available."
+msgstr "Note que, dependiendo de su configuraci&oacute;n, las opciones espec&iacute;ficas para %1$s del sitio %2$s podr&iacute;an tambi&eacute;n estar disponibles."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:499
+msgid "If enabled, each user group will be available for role assignment in any blog.  Any existing blog-specific groups will be unavailable.  Group role assignments are still blog-specific."
+msgstr "Si est&aacute; habilitado, cada grupo de usuarios estar&aacute; disponible para la asignaci&oacute;n de funciones en cualquier blog. Cualquier grupo  espec&iacute;fico existente del blog no estar&aacute; disponible. Asignaciones de roles para grupos son todav&iacute;a espec&iacute;ficas del blog."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:515
+msgid "Remove the \"Private:\" and \"Protected\" prefix from Post, Page titles"
+msgstr "Remover el prefijo \"Privado:\" y \"Protegido\" del t&iacute;tulo de Art&iacute;culos y P&aacute;ginas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:518
+msgid "Reduce memory usage for front-end access by assuming no content, categories or users will be created or edited there. Worst case scenario if you assume wrong: manually assign roles/restrictions to new content or re-sync user roles via plugin re-activation."
+msgstr "Reducir el uso de memoria para acceso de usuarios asumiendo que no hay contenidos, las categor&iacute;as o los usuarios ser&aacute;n creados o editados all&iacute;. En el peor de los casos si se supone mal: asignar manualmente las funciones o restricciones a los contenidos nuevos o re-sincronizar las funciones de usuario a trav&eacute;s de una reactivaci&oacute;n del plug-in."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:533
+#, php-format
+msgid "Include Private %s in listing if user can read them"
+msgstr "Incluir Privado %s en la lista, si el usuario puede leerla"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:534
+msgid "Determines whether administrators, editors and users who have been granted access to a private page will see it in their sidebar or topbar page listing."
+msgstr "Determina si los administradores, editores y usuarios que han tenido acceso a una p&aacute;gina privada la ver&aacute;n en su barra lateral o en el listado de p&aacute;ginas de la barra superior."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:537
+msgid "If a page's parent is not visible to the user, it will be listed below a visible grandparent instead."
+msgstr "Si el padre de una p&aacute;gina no es visible para el usuario, se enumera en vez un abuelo visible."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:542
+msgid "When remapping page parents, apply any depth limits to the actual depth below the requested root page.  If disabled, depth limits apply to apparant depth following remap."
+msgstr "Al reasignar padres de p&aacute;gina, aplicar l&iacute;mites de profundidad a la profundidad actual por debajo de la p&aacute;gina ra&iacute;z solicitada. Si est&aacute; desactivado, los l&iacute;mites de profundidad se aplican a la profundidad aparente despu&eacute;s de reasignar."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:548
+msgid "Remap a page to next visible ancestor even if some hidden ancestors were explicitly excluded in the get_pages / list_pages call."
+msgstr "Reasignar una p&aacute;gina al siguiente antepasados visible, a&uacute;n si algunos antepasados ocultos fueron expl&iacute;citamente excluidos en las llamadas <i>get_pages</i> / <i>list_pages</i>."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:566
+msgid "If a category's parent is not visible to the user, it will be listed below a visible grandparent instead."
+msgstr "Si el padre de una categor&iacute;a no es visible para el usuario, se lista en vez, un abuelo visible."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:571
+msgid "When remapping category parents, apply any depth limits to the actual depth below the requested root category.  If disabled, depth limits apply to apparant depth following remap."
+msgstr "Al reasignar padres de categor&iacute;a, aplicar l&iacute;mites de profundidad a la profundidad actual por debajo de la categor&iacute;a ra&iacute;z solicitada. Si est&aacute; desactivado, los l&iacute;mites de profundidad se aplican a la profundidad aparente despu&eacute;s de reasignar."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:577
+msgid "Remap a category to next visible ancestor even if some hidden ancestors were explicitly excluded in the get_terms / get_categories call."
+msgstr "Reasignar una categor&iacute;a al siguiente antepasado visible, a&uacute;n si algunos antepasados ocultos fueron expl&iacute;citamente excluidos en las llamadas <i>get_terms</i> / <i>list_categories</i>."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:597
+#, php-format
+msgid "Default new %s to Private visibility"
+msgstr "Visibilidad Privada para todos los nuevos %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:598
+msgid "Note: this does not apply to Quickposts or XML-RPC submissions."
+msgstr "Nota: Esto no se aplica a Quickposts o env&iacute;os XML-RPC"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:601
+#, php-format
+msgid "Auto-set %s to Private visibility if Reader role is restricted"
+msgstr "Definir %s autom&aacute;ticamente Visibilidad Privada si el rol de Lector esta restringido"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:602
+msgid "Note: this is only done if the Reader role is restricted via Post/Page edit form."
+msgstr "Nota: Esto ocurre si el rol de Lector est&aacute; restringido via formulario de Edici&oacute;n de P&aacute;ginas/Art&iacute;culos."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:618
+msgid "by the Author or Editor of any Post/Category/Page"
+msgstr "por el Autor o Editor de cualquier Art&iacute;culo/Categor&iacute;a/P&aacute;gina"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:618
+msgid "by blog-wide Editors and Administrators"
+msgstr "por Editores y Administradores del blog"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:618
+msgid "by Content Administrators only"
+msgstr "por Administradores de Contenido solamente"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:618
+msgid "by User Administrators only"
+msgstr "por Administradores de Usuarios solamente"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:630
+msgid "Specify which users can assign and restrict roles <strong>for their content</strong> - via Post/Page Edit Form or Roles/Restrictions sidebar menu.  For a description of Administrator roles, see the Advanced tab."
+msgstr "Especifica qu&eacute; usuarios pueden asignar y restringir roles <strong>a sus contenidos</strong> - via formulario de Edici&oacute;n de P&aacute;ginas/Art&iacute;culos del men&uacute; lateral. Para una descripci&oacute;n de Roles de Administrador, consulte la ficha Opciones avanzadas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:637
+msgid "If enabled, users who are not blog-wide Editors will see only their own unattached uploads in the Media Library."
+msgstr "Si est&aacute; activada, los usuarios qaue no posean rol de Editor, s&oacute;lo ver&aacute;n sus propias subidas no adjuntas en la Biblioteca multimedia."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:640
+msgid "If enabled, Post Author and Page Author selection dropdowns will be filtered based on scoped roles."
+msgstr "Si est&aacute; habilitado, los meni de despliegue para selecci&oacute;n de Autor de Art&iacute;culo y Autor de P&aacute;gina, ser&aacute;n filtrados en base a la incidencia de los Roles asignados"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:663
+msgid "<strong>Note</strong>: Direct access to uploaded file attachments will not be filtered because DISABLE_ATTACHMENT_FILTERING is defined, perhaps in wp-config.php or role-scoper.php"
+msgstr "<strong>Nota</strong>: El acceso directo a los adjuntos de archivos subidos no ser&aacute;n filtrados porque est&aacute; definido DISABLE_ATTACHMENT_FILTERING, tal vez en wp-config.php o role-scoper.php"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:675
+msgid "<strong>Note</strong>: Direct access to uploaded file attachments will not be filtered due to your nonstandard UPLOADS path."
+msgstr "<strong>Nota</strong>: Acceso directo a los archivos adjuntos de archivos subidos no ser&aacute;n filtrados, debido a la ruta no est&aacute;ndar para las subidas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:680
+msgid "<strong>Note</strong>: Direct access to uploaded file attachments cannot be filtered because WordPress permalinks are set to default."
+msgstr "<strong>Nota</strong>: El acceso directo a los adjuntos de archivos subidos no ser&aacute;n filtrados porque los permalinks est&aacute;n configurados por defecto."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:695
+msgid "Block direct URL access to images and other uploaded files in the WordPress uploads folder which are attached to post(s)/page(s) that the user cannot read.  A separate RewriteRule will be added to your .htaccess file for each protected file.  Non-protected files are returned with no script execution whatsoever."
+msgstr "Bloquear el acceso URL directo a las im&aacute;genes y otros archivos en la carpeta de archivos subidos, que se adjunten al contenido que el usuario tiene restricci&oacute;n de Lectura. Un RewriteRule separado ser&aacute; a&ntilde;adido a su archivo httaccess para cada archivo protegido. Los archivos protegidos se manipulan sin ejecuci&oacute;n de scripts de ning&uacute;n tipo."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:700
+msgid "<strong>Note:</strong> The default WP-MU file request script, <strong>wp-content/blogs.php</strong>, requires a patch for compatibility with RS file filtering.  If you need the advanced cache control provided by blogs.php, review the notes in <strong>role-scoper/mu_wp_content_optional/blogs.php</strong> and copy it into wp-content if desired.  Otherwise, files will be accessed directly via header redirect following RS filtering.  If you decide to install the patched blogs.php, add the following line to wp-config.php:<br />&nbsp;&nbsp;&nbsp; define( 'SCOPER_MU_FILE_PROCESSING', true);"
+msgstr "<strong>Nota:</strong> El script predeterminado para solicitudes de archivos WP-MU , <strong>wp-content/blogs.php</strong>,  requiere de un parche de compatibilidad con filtrado RS de archivos. Si usted necesita el control avanzado de cach&eacute;  proporcionado por blogs.php, revise las notas en <strong>role-scoper/mu_wp_content_optional/blogs.php</strong> y c&oacute;piela en wp-content, si lo desea. De lo contrario, los archivos podr&aacute;n ser&aacute;n accesados directamente v&iacute;a redirecccionamiendo de encabezado por medio de filtrado RS. Si decide instalar el blogs.php parchado, agregar la siguiente l&iacute;nea a wp-config.php:<br />&nbsp;&nbsp;&nbsp; define( 'SCOPER_MU_FILE_PROCESSING', true);"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:712
+#, php-format
+msgid "<strong>Note:</strong> FTP-uploaded files will not be filtered correctly until you run the %1$sAttachments Utility%2$s."
+msgstr "<strong>Nota:</strong> Los archivos subidos a trav&eacute;s de FTP no se filtrar&aacute;n correctamente hasta que se ejecute la %1$sUtilidad para Adjuntos%2$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:714
+msgid "If WordPress or any plugin output visible PHP warnings during filtering of a protected image request, the image will not be successfully returned."
+msgstr "Si WordPress o cualquier plugin despliega advertencias PHP visibles durante la filtraci&oacute;n de una solicitud de imagen protegida, la imagen no se retornar&aacute; exitosamente."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:730
+msgid "Allow the delay or expiration of roles based on a specified date range."
+msgstr "Permitir el retraso o vencimiento de roles basados en un intervalo de fechas especificado."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:733
+msgid "Allow General Roles and Category Roles to be limited to content dated within in a specified range."
+msgstr "Permitir Roles Generales and Roles de Categor&iacute;a basados en un intervalo de fechas especificado."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:762
+msgid "Group membership, role restrictions, role assignments and some filtered results (including term listings and WP page, category and bookmark listings) will be stored to disk, on a user-specific or group-specific basis where applicable.  This does not cache content such as post listings or page views."
+msgstr "La pertenencia a grupos, las restricci&oacute;n y asignaci&oacute;n de roles y algunos resultados de filtrado (incluyendo listado de t&eacute;rminos y p&aacute;gina WP, las categor&iacute;as y listas de favoritos) ser&aacute;n almacenados en el disco, en base a condiciones de grupo o usuarios, espec&iacute;ficas para cada caso. Esto no realiza cach&eacute; de contenido, tales como listas de art&iacute;culos o vistas de p&aacute;gina."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:772
+msgid "<strong>Note:</strong> The internal caching code contains numerous safeguards against corruption.  However, if it does become corrupted your site may be inaccessable.  For optimal reliability, copy rs_cache_flush.php into your WP root directory so it can be executed directly if needed."
+msgstr "<strong>Nota:</strong> El c&oacute;digo de almacenamiento en cach&eacute; interno contiene numerosas salvaguardias contra la corrupci&oacute;n. Sin embargo, si es que se da&ntilde;a, su sitio puede ser inaccesible. Para una &oacute;ptima fiabilidad, copie <i>rs_cache_flush.php</i> en el directorio ra&iacute;z WP de forma que pueda ser ejecutado directamente si es necesario."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:780
+msgid "Flush Cache"
+msgstr "Vaciar Cach&eacute;"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:800
+#, php-format
+msgid "Role Scoper Version: %s"
+msgstr "Versi&oacute;n de Role Scoper: %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:802
+#, php-format
+msgid "Database Schema Version: %s"
+msgstr "Versi&oacute;n de Esquema de Base de Datos: %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:804
+#, php-format
+msgid "PHP Version: %s"
+msgstr "Versi&oacute;n de PHP: %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:833
+msgid "never"
+msgstr "nunca"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:833
+msgid "always"
+msgstr "siempre"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:833
+msgid "for logged users"
+msgstr "para usuarios que han iniciado sesi&oacute;n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:841
+msgid "Suffix RSS feed links with an extra parameter to trigger required HTTP authentication. Note that anonymous and cookie-based RSS will still be available via the standard feed URL."
+msgstr "A&ntilde;adir sufijo a alimentadores RSS con un par&aacute;metro adicional que gatille la autentificaci&oacute;n HTTP. Tenga en cuenta que los RSS an&oacute;nimos o basados en cookies, todav&iacute;a estar&aacute;n disponibles a trav&eacute;s de la URL est&aacute;ndar del alimentador RSS."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:845
+msgid "cannot use HTTP Authentication for RSS Feeds because another plugin has already defined the function \"get_currentuserinfo\""
+msgstr "No se puede utilizar la autenticaci&oacute;n HTTP para las fuentes RSS porque otro plugin ya ha definido la funci&oacute;n \"get_currentuserinfo\""
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:855
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:870
+msgid "Display"
+msgstr "Mostrar"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:858
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:873
+msgid "Full Content"
+msgstr "Texto Completo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:858
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:873
+msgid "Excerpt Only"
+msgstr "S&oacute;lo Resumen"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:858
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:873
+msgid "Title Only"
+msgstr "S&oacute;lo T&iacute;tulo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:864
+msgid "for readable private posts"
+msgstr "para mensajes privados con acceso de lectura"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:879
+msgid "for readable non-private posts"
+msgstr "para mensajes no privados con acceso de lectura"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:884
+msgid "Since some browsers will cache feeds without regard to user login, block RSS content even for qualified users."
+msgstr "Dado que algunos navegadores realizan cach&eacute; de alimentadores RSS sin considerar la autentificaci&oacute;n previa de los usuarios, bloquear el contenido RSS incluso para usuarios calificados."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:955
+#, php-format
+msgid "Enable teaser for %s"
+msgstr "Habilitar teaser para %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:977
+#, php-format
+msgid "%s:"
+msgstr "%s:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:981
+msgid "no teaser"
+msgstr "no hay teaser"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:981
+msgid "fixed teaser (specified below)"
+msgstr "teaser ajustado (especificado  a continuaci&oacute;n)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:981
+msgid "excerpt as teaser"
+msgstr "resumen como teaser"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:981
+msgid "excerpt or pre-more as teaser"
+msgstr "resumen o pre-m&aacute;s como teaser"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:981
+#, php-format
+msgid "excerpt, pre-more or first %s chars"
+msgstr "resumen, pre-m&aacute;s o primer %s caracteres"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:991
+msgid "for:"
+msgstr "para:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:996
+msgid "anonymous"
+msgstr "An&oacute;nimo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1004
+msgid "logged"
+msgstr "conectado"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1012
+msgid "both"
+msgstr "ambos "
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1022
+msgid "If content is blocked, display replacement text instead of hiding it completely."
+msgstr "Si se bloquea el contenido, mostrar texto de reemplazo en lugar de esconderlo completamente."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1024
+msgid "<strong>Note:</strong> the prefix and suffix settings below will always be applied unless the teaser mode is \"no teaser\"."
+msgstr "<strong>Nota:</strong> Los siguientes ajustes de prefijo y sufijo siempre se aplicar&aacute; a menos que el modo de teaser sea \"no teaser\"."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1046
+#, php-format
+msgid "Hide private %s (instead of teasing)"
+msgstr "Ocultar %s privado (en lugar de teaser)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1050
+msgid "Hide private content completely, while still showing a teaser for content which is published with restrictions.  <strong>Note:</strong> Private posts hidden in this way will reduce the total number of posts on their \"page\" of a blog listing."
+msgstr "Ocultar completamente el contenido privado, mientras se siga mostrando un teaser para contenidos restringidos. <strong>Nota:</strong> Los Art&iacute;culos Privados ocultos de esta manera reducir&aacute;n su cantidad total de Art&iacute;culos en sus \"p&aacute;ginas\" de listados del blog."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1063
+msgid "name"
+msgstr "nombre"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1063
+msgid "content"
+msgstr "contenido"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1063
+msgid "excerpt"
+msgstr "resumen"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1064
+msgid "replace with (if using fixed teaser, or no excerpt available):"
+msgstr "reemplazar con (if se estuviera usando un teaser ajustado, o no haya resumen disponible)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1064
+msgid "prefix with:"
+msgstr "prefijo:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1064
+msgid "suffix with:"
+msgstr "sufijo:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1093
+msgid "anonymous users"
+msgstr "usuarios an&oacute;nimos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1093
+msgid "logged users"
+msgstr "usuarios conectados"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1096
+#, php-format
+msgid "%1$s Teaser Text (%2$s):"
+msgstr "%1$s Texto del Teaser (%2$s):"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1146
+#, php-format
+msgid "<span class=\"rs-green\"><strong>Idea:</strong></span> For Scheduled Revisions and Pending Revisions functionality that integrates with your RS Roles and Restrictions, install %1$s Revisionary%2$s, another %3$s Agapetry&nbsp;Creations%4$s plugin."
+msgstr "<span class=\"rs-green\"><strong>Idea:</strong></span> Para obtener funcionalidad en Revisiones Programadas y Revisiones Pendientes integrada completamente con Role Scoper, instale %1$s Revisionary%2$s, otro plugin de %3$s Agapetry&nbsp;Creations%4$s."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1169
+msgid "<strong>Note:</strong> for most installations, the default settings are fine."
+msgstr "<strong>Nota:</strong> Para la mayor&iacute;a de las instalaciones, los ajustes predeterminados funcionan bien."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1209
+msgid "Multiple RS Roles (type-specific, plugin-defined)"
+msgstr "Roles RS M&uacute;ltiples (por tipo, configurados por RS)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1209
+msgid "Single WP Role (comprehensive, WP-defined)"
+msgstr "Roles WP Individuales (globales, definidos por WP)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1218
+msgid "Either role type can be scoped (assigned for specific terms or objects).  However, RS roles allow finer control.  A user's main WordPress role will be applied by default regardless of this selection."
+msgstr "Cualquier tipo de rol puede ser asignado (por t&eacute;rminos u objetos espec&iacute;ficos). Sin embargo, los roles RS permiten un control m&aacute;s preciso. Un rol WP ser&aacute; aplicado por defecto, independientemente de esta selecci&oacute;n."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1225
+msgid "Some users created under older WP versions may have direct-assigned capabilities in addition to their blog-wide role assignment.  This setting does not enable or block that feature, but determines whether Role Scoper must account for it.  Disable when possible (capabilities unrelated to RS Role Definitions are irrelevant)."
+msgstr "Algunos usuarios creados en versiones anteriores de WP pueden tener capacidades asignadas directamente que se sumar&iacute;an a la pol&iacute;tica de asignaciones de roles del blog. Esta configuraci&oacute;n no habilita o bloquea tal caracter&iacute;stica, pero determina si Role Scoper debe tomar cuenta de la contingencia. Desactivar cuando sea posible (las capacidades no relacionadas con Definiciones RS de Roles son irrelevantes)."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1246
+msgid "Page Authors, Editors and Administrators"
+msgstr "Autores , Editores y Administradores de p&aacute;ginas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1246
+msgid "Page Editors and Administrators"
+msgstr "Editores y Administradores de p&aacute;ginas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1246
+msgid "Administrators"
+msgstr "Administradores"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1259
+msgid "Users who do not meet this blog-wide role requirement may still be able to save and/or publish pages, but will not be able to publish a new page with a Page Parent setting of \"Main Page\".  Nor will they be able to move a currently published page from \"Main Page\" to a different Page Parent."
+msgstr "Los usuarios que no cumplan con este requisito de roles del blog, podr&iacute;an todav&iacute;a estar habilitados para guardar o publicar p&aacute;ginas, pero no ser&aacute; capaces de publicar una p&aacute;gina nueva con una configuraci&oacute;n de P&aacute;giina Padre configurada en  \"P&aacute;gina Inicial\". Ni ser&aacute;n capaces de mover una p&aacute;gina publica publicada en la \"P&aacute;gina Inicial\" a otra p&aacute;gina diferente."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1292
+msgid "If enabled, prevents those with edit_users capability from editing a user with a higher level or assigning a role higher than their own."
+msgstr "Si est&aacute; activado, evita que aqu&eacute;llos con capacidad de Edici&oacute;n de Usuarios puedan editar a otro usuario  la asignaci&oacute;n de roles, incluso de nivel superior."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1308
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1423
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1425
+msgid "Content Administrator"
+msgstr "Administrador de Contenido"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1309
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1425
+msgid "User Administrator"
+msgstr "Administrador de Usuarios"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1310
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1425
+msgid "Option Administrator"
+msgstr "Administrador de Opciones"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1312
+msgid "RS never applies restricting or enabling content filters"
+msgstr "RS nunca restringue o habilita filtros de contenido"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1313
+msgid "RS allows full editing of all user groups and scoped roles / restrictions"
+msgstr "RS permite la edici&oacute;n completa de todos los grupos de usuario y roles / restricciones"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1314
+msgid "Can edit Role Scoper options"
+msgstr "Puede editar opciones de Role Scoper"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1316
+msgid "Role Scoper internally checks the following capabilities for content and role administration.  By default, these capabilities are all contained in the Administrator role only.  You can use the Capability Manager plugin to split/overlap them among different roles as desired."
+msgstr "Role Scoper controla internamente las siguientes capacidades para el contenido y administraci&oacute;n de roles. De forma predeterminada, estas funciones est&aacute;n contenidas en los roles exclusivos del Administrador. Puede utilizar el plugin Capability Manager para dividirlas o superponerlas entre distintos roles seg&uacute;n se desee."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1320
+msgid "Administrator Type"
+msgstr "Tipo de Administrador"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1321
+msgid "Required Capability"
+msgstr "Capacidad Requerida"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1340
+msgid "Each administrator type's <strong>capability can be modified</strong> by adding any of the following define statements to your wp-config.php:"
+msgstr "Cada capacidad de los tipos de administrador <strong>puede ser modificada</strong> mediante la adici&oacute;n de cualquiera de las siguientes declaraciones en su wp-config.php:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1348
+msgid "For example, by using Capability Manager to add a custom capability such as <strong>administer_all_content</strong> to certain WordPress roles, you could mirror that setting in the SCOPER_CONTENT_ADMIN_CAP definition to ensure that those users are never content-restricted by Role Scoper."
+msgstr "Por ejemplo, utilizando el Administrador de Capacidades para agregar una capacidad personalizada, tal como <strong> administer_all_content</strong> para ciertos Roles de WP, podr&iacute;as reflejar la configuraci&oacute;n en la definici&oacute;n de SCOPER_CONTENT_ADMIN_CAP para garantizar que tales usuarios no sufran contenidos restringidos por Role Scoper."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1366
+msgid "Remove Edit Form elements with these html IDs from users who do not have full editing capabilities for the post/page. Separate with&nbsp;;"
+msgstr "Eliminar elementos del Formulario de Edici&oacute;n con estas ID HTML de usuarios que no tienen capacidades de Edici&oacute;n Completa para Art&iacute;culos o P&aacute;ginas. Separar con&nbsp;;"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1391
+#, php-format
+msgid "%s Edit Form HTML IDs:"
+msgstr "%s IDs de Formulario de Edici&oacute;n HTML:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1401
+#, php-format
+msgid "%1$s sample IDs:%2$s %3$s"
+msgstr "%1$s IDs de muestra:%2$s %3$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1425
+msgid "no requirement"
+msgstr "sin requerimientos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1425
+msgid "Contributor / Author / Editor"
+msgstr "Contribuyente  / Autor / Editor"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1425
+msgid "Author / Editor"
+msgstr "Autor / Editor"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1439
+msgid "Note: The above roles are type-specific RS roles (for the object type involved) which must be contained in a user's blog-wide WordPress role."
+msgstr "Nota: Los roles anteriores son espec&iacute;ficos a los roles RS seg&uacute;n tipo (para el tipo de objeto en cuesti&oacute;n) que deben estar contenidos en el rol WP para usuario."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1458
+#, php-format
+msgid "Limit eligible users for %s-specific editing roles"
+msgstr "Limitar usuarios disponibles a roles de edici&oacute;n espec&iacute;ficos a %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1459
+msgid "Role Scoper can enable any user to edit a post or page you specify, regardless of their blog-wide WordPress role.  If that's not a good thing, check above options to require basic editing capability blog-wide or category-wide."
+msgstr "Rol Scoper puede habilitar a ciertos usuarios para editar un mensaje o p&aacute;gina especifica, independiente de los roles WP asignados.  Si eso no es una buena cosa, marque las opciones que figuran m&aacute;s arriba para simplificar  la edici&oacute;n b&aacute;sica de roles para el blog completo o categor&iacute;as determinadas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1462
+msgid "In the Edit Post/Edit Page roles tabs, decorate user/group name with colors and symbols if they have the role implicitly via group, general role, category role, or a superior post/page role."
+msgstr "En las fichas de roles de Creaci&oacute;n/Edici&oacute;n de Paginas, decorar el nombre de usuarios y grupos con colores y s&iacute;mbolos si tienen roles impl&iacute;citos v&iacute;a grupos, rol general, rol de categor&iacute;as, o roles de orden superior sobre art&iacute;culos o p&aacute;ginas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1465
+msgid "Display introductory descriptions at the top of various role assignment / definition screens."
+msgstr "Mostrar descripciones de introducci&oacute;n en la parte superior de la las distintas p&aacute;ginas de asignaci&oacute;n de roles."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1468
+msgid "Accept entry of user names or IDs via comma-separated text instead of individual checkboxes."
+msgstr "Aceptar la entrada de nombres de usuario o ID v&iacute;a texto separado por comas en lugar de casillas de verificaci&oacute;n individual."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1486
+#, php-format
+msgid "Restrictions column in Edit %s listing"
+msgstr "Columna de Restricciones en Listado de Edici&oacute;n %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1489
+#, php-format
+msgid "Term Roles column in Edit %s listing"
+msgstr "Columna de Roles de T&eacute;rminos en listado de Editar %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1492
+#, php-format
+msgid "Object Roles column in Edit %s listing"
+msgstr "Columna de Roles de Objeto en listado de Editar %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1535
+#, php-format
+msgid "%1$s (normally equivalent to %2$s)"
+msgstr "%1$s (normalmente equivalente a %2$s)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1542
+msgid "By default, the above roles are not available for object-specific assignment because another role is usually equivalent. However, the distinctions may be useful if you propagate roles to sub-Pages, set Default Roles or customize RS Role Definitions."
+msgstr "De forma predeterminada, los roles anteriores no est&aacute;n disponibles para asignaciones de roles a objetos, porque es usualmente equivalente. Sin embargo, la distinci&oacute;n puede ser &uacute;til si se propagan los roles a sus subp&aacute;ginas, establece roles por defecto o personaliza Definiciones RS de Roles."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1544
+msgid "Note: Under the default configuration, the tabs labeled \"Reader\" in the Post/Page Edit Form actually assign the corresponding Private Reader role."
+msgstr "Nota: En la configuraci&oacute;n predeterminada, las fichas con etiqueta \"Reader\" en el Formulario de Edici&oacute;n de Art&iacute;culos o P&aacute;ginas asigna el correspondiente rol de Lector Privado."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1577
+msgid "These <strong>optional</strong> settings allow advanced users to adjust Role Scoper's sphere of influence. For most installations, the default settings are fine."
+msgstr "Estos ajustes <strong>opcionales</strong> permiten que usuarios avanzados ajusten el &aacute;mbito de incidencia de Role Scoper. Para la mayor&iacute;a de las instalaciones, los ajustes predeterminados funcionan bien."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1600
+msgid "Specify which WordPress taxonomies can have Restrictions and Roles:"
+msgstr "Especifica qu&eacute; taxonom&iacute;as WP pueden tener Restricciones y Roles:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1617
+msgid "Specify whether Restrictions and Roles can be set for individual Objects:"
+msgstr "Especifica qu&eacute; Restricciones y Roles pueden ser configuradas por Objetos individuales:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1645
+msgid "Section"
+msgstr "Secci&oacute;n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1648
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1700
+#, php-format
+msgid "%1$s (for %2$s)"
+msgstr "%1$s (para %2$s)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1714
+msgid "* = Role Assignment only (no Restrictions)"
+msgstr "* = S&oacute;lo Asignaci&oacute;n de Roles (no Restricciones)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1734
+msgid "Apply Roles and Restrictions for:"
+msgstr "Aplicar Roles y Restricciones para:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1751
+msgid "Viewing content (front-end)"
+msgstr "Presentando contenido (interfaz de usuario)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1753
+msgid "Editing and administering content (admin)"
+msgstr "Edici&oacute;n y Administraci&oacute;n de contenido (admin)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1775
+msgid "The &quot;Post Tag&quot; taxonomy cannot be used to define restrictions because tags are not mandatory. For most installations, categories are a better mechanism to define roles. Note that <strong>Role Scoper does not filter tag storage</strong> based on the editing user's access.  As with any other custom-defined taxonomy, use this option at your own discretion."
+msgstr "La taxonom&iacute;a de la  &quot;Ficha de Art&iacute;culos&quot; no puede usarse para definir restricciones porque las fichas no son obligatorias. Para la mayor&iacute;a de las instalaciones, las categor&iacute;as son un mejor mecanismo para definir roles. Note que <strong>Role Scoper no filtra el almacenamiento de fichas</strong> basado en el acceso de usuarios con privilegios de Edici&oacute;n. Como con cualquier otra taxonom&iacute;a personalizada, use esta opci&oacute;n a su propia discreci&oacute;n."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1779
+msgid "By default, WordPress does not support page categories.  The corresponding &quot;Role Scopes&quot; option is only meaningful if the WP core or another plugin has added this support."
+msgstr "Por defecto, WP  no es compatible con las categor&iacute;as de p&aacute;gina. Las correspondientes opciones de &quot;Rol Scope&quot; tienen sentido si el n&uacute;cleo de WP u alg&uacute;n otro plugin ha a&ntilde;adido esta modalidad."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1815
+msgid "Specify which Role Scoper Options should be applied site-wide."
+msgstr "Especificar qu&eacute; Opciones de Role Scoper debieran aplicarse a nivel del sitio."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1822
+#, php-format
+msgid "sitewide control of \"%s\""
+msgstr "control de \"%s\""
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1827
+msgid "Selected options will be controlled site-wide via <strong>Site Admin > Role Options</strong>; unselected options can be set per-blog via <strong>Roles > Options</strong>"
+msgstr "Las opciones seleccionadas ser&aacute;n controladas en todo el sitio v&iacute;a <strong>Administraci&oacute;n de Sitio > Opciones de Rol</strong>; opciones deseleccionadas pueden ser ajustadas para-blog v&iacute;a <strong>Roles > Opciones</strong>"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1836
+#, php-format
+msgid "<span class=\"rs-h3text rs-blue\">%1$s</span> (%2$s)"
+msgstr "<span class=\"rs-h3text rs-blue\">%1$s</span> (%2$s)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1906
+msgid "All settings in this form (including those on undisplayed tabs) will be reset to DEFAULTS.  Are you sure?"
+msgstr "Todos los valores de este formulario (incluyendo aqu&eacute;llos en pesta&ntilde;as ocultas) se restablecer&aacute;n a los valores predeterminados. ¿Est&aacute;s seguro?"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1911
+msgid "Revert to Defaults"
+msgstr "Volver valores predeterminados"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/options.php:1937
+#, php-format
+msgid "%s data source"
+msgstr "%s fuente de datos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:37
+#, php-format
+msgid "Group Roles %1$s(for %2$s)%3$s"
+msgstr "Roles de Grupo %1$s(para %2$s)%3$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:39
+msgid "Group Roles"
+msgstr "Roles de Grupo"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:43
+msgid "Scoped Roles"
+msgstr "Roles Implementados"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:58
+#, php-format
+msgid "<strong>Assigned WordPress Role:</strong> %s"
+msgstr "<strong>Rol Wordpress asignado:</strong> %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:66
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:123
+#, php-format
+msgid "(contains %s)"
+msgstr "(contiene %s)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:113
+#, php-format
+msgid "<strong>%1$sGeneral Role%2$s</strong>%4$s: %3$s"
+msgstr "<strong>%1$sRol General%2$s</strong>%4$s: %3$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/profile_ui_rs.php:115
+#, php-format
+msgid "<strong>Additional %1$sGeneral Role%2$s</strong>%4$s: %3$s"
+msgstr "<strong>%1$sRol General%2$s adicional</strong>%4$s: %3$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition.php:15
+msgid "These roles are defined by Role Scoper (and possibly other plugins) for your use in designating content-specific access or supplemental blog-wide access.  Although the default capabilities are ideal for most installations, you may modify them at your discretion."
+msgstr "Estos roles se definen por Role Scoper (y posiblemente otros plugins) para su uso en la designaci&oacute;n de acceso a contenidos espec&iacute;ficos o suplementario. Aunque las capacidades por defecto son ideales para la mayor&iacute;a de las instalaciones, puede modificarlos seg&uacute;n sus necesidades."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition.php:19
+msgid "Since Role Scoper role definitions pertain to a particular object type, available capabilities are defined by the provider of that object type. WordPress core or plugins can add or revise default role definitions based on available capabilities."
+msgstr "Dado que las definiciones de roles de Role Scoper pertenecen a un tipo de objeto particular, las capacidades disponibles son definidas por el proveedor de ese tipo de objeto. el n&uacute;cleo de WP o plugins pueden a&ntilde;adir o revisar las definiciones predeterminadas de rol basado en las capacidades disponibles."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition.php:23
+msgid "WordPress Role assignments function as a default which may be supplemented or overriden by blog-wide or content-specific assignment of these RS Roles."
+msgstr "La asignacion de Roles en WP funcionan como predeterminadas, aunque pueden ser suplantadas o anuladas por tales asignaciones RS, tanto globales como en contenidos espec&iacute;ficos."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition.php:120
+msgid "Capabilities (defaults are bolded)"
+msgstr "Capacidades (valores predeterminados figuran en negrita)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition.php:153
+#, php-format
+msgid "Warning: Since the WP %1$s role def lacks some caps selected here, it will be treated as a lesser role if Restrictions are applied."
+msgstr "Advertencia: Dado que el rol %1$s de WP debilita algunas capacidades seleccionadas aqu&iacute;, ser&aacute; tratado como de nivel inferior si se aplicaran Restricciones en RS."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition.php:165
+#, php-format
+msgid "sync WP %1$s <br />to these selections (currently includes %2$s)"
+msgstr "sincronizar %1$s de WP <br />a estas selecciones (actualmente incluye %2$s)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition.php:167
+#, php-format
+msgid "sync WP %s <br />to these selections"
+msgstr "sincronizar %1$s de WP <br />a estas selecciones"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition.php:170
+msgid "note: only the capabilities listed here will be affected"
+msgstr "Nota: solo las capacidades listadas aqu&iacute; se ver&aacute;n afectadas"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition.php:217
+msgid "Re-sync with WordPress roles on next Update"
+msgstr "Re-sincronizar con roles WP durante la siguiente Actualizaci&oacute;n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition_wp.php:16
+msgid "Note that only <strong>capabilities configured for filtering by Role Scoper</strong> are listed here."
+msgstr "Note que s&oacute;lo aquellas <strong>capacidades configuradas por el filtrado de Role Soper</strong> son listadas aqu&iacute;:"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition_wp.php:18
+msgid "These WordPress role definitions may be modified via the Capability Manager or Role Manager plugin."
+msgstr "Estas definiciones de rol de WP pueden ser modificadas v&iacute;a los plugins Capability Manager o Role Manager."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition_wp.php:23
+msgid "To understand how your WordPress roles relate to type-specific RS Roles, see <a href=\"#wp_rs_equiv\">WP/RS Role Equivalence</a>."
+msgstr "Para entender c&oacute;mo los roles WP se asemejan con los roles RS por tipo, vea <a href=\"#wp_rs_equiv\">Equivalencia de Roles WP/RS</a>."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition_wp.php:32
+msgid "WordPress Roles"
+msgstr "Roles WP"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition_wp.php:38
+msgid "Capabilities"
+msgstr "Capacidades"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition_wp.php:78
+msgid "WP / RS Role Equivalence"
+msgstr "Equivalencia de Roles WP / RS"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition_wp.php:83
+msgid "WP Role"
+msgstr "Rol WP"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/role_definition_wp.php:84
+msgid "Contained RS Roles"
+msgstr "Roles RS Contenidos"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_restrictions.php:10
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:10
+msgid "Invalid taxonomy"
+msgstr "Taxonom&iacute;a no v&aacute;lida"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_restrictions.php:63
+#, php-format
+msgid "Reduce access by requiring some role(s) to be %1$s%2$s-assigned%3$s (or %4$s-assigned). Corresponding General Roles (whether assigned by WordPress or Role Scoper) are ignored."
+msgstr "Reduzca el acceso mediante la %1$sasignaci&oacute;n de algunos roles por %2$s%3$s (o asignados por %4$s). Los Roles Generales correspondientes (sea asignados por WordPress o Role Scoper) son ignorados."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_restrictions.php:65
+#, php-format
+msgid "Reduce access by requiring some role(s) to be %1$s%2$s-assigned%3$s. Corresponding General Role assignments are ignored."
+msgstr "Reduzca el acceso mediante la %1$sasignaci&oacute;n de algunos roles por %1$s%2$s (o asignados por %3$s). Los Roles Generales correspondientes son ignorados."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_restrictions.php:70
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:89
+#, php-format
+msgid "Role definition error (taxonomy: %s)."
+msgstr "Error de definici&oacute;n de rol (taxonom&iacute;a: %s)."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_restrictions.php:76
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:95
+#, php-format
+msgid "Either you do not have permission to administer any %s, or none exist."
+msgstr "O usted no tiene permiso para administrar una %s, o bien no existe ninguno."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_restrictions.php:153
+#, php-format
+msgid "Any %1$s Restriction causes the specified role to be granted only via %1$s Role assignment, regardless of these %2$s settings."
+msgstr "Cualquier Restricci&oacute;n de %1$s causa que el rol espec&iacute;fico sea habilitado s&oacute;lo v&iacute;a asignaci&oacute;n de Roles de %1$s, independiente de los ajustes de %2$s implementados."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:81
+#, php-format
+msgid "Grant capabilities within a specific %2$s, potentially more than a user's WP role would allow. To reduce access, define %1$s%2$s&nbsp;Restrictions%3$s."
+msgstr "Brinda capacidades dentro de un %2$s espec&iacute;fico, potencialmente m&aacute;s de rol de usuario WP permitir&iacute;a. Para restringir el acceso, defina %1$s%2$s&nbsp;Restricciones%3$s."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:83
+#, php-format
+msgid "Grant capabilities within a specific %s, potentially more than a user's WP role would allow."
+msgstr "Permitir capacidades dentro de un %s espec&iacute;fico, potencialmente m&aacute;s de lo que permitr&iacute;a un rol WP de usuario."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:172
+msgid "A Role is a collection of capabilities."
+msgstr "Un Rol es una colecci&oacute;n de capacidades."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:176
+msgid "Capabilities in a user's WordPress Role (and, optionally, RS-assigned General Roles) enable blog-wide operations (read/edit/delete) on some object type (post/page/link), perhaps of a certain status (private/published/draft)."
+msgstr "Las capacidades en un rol WP de Usuario (y, opcionalmente, roles RS generales asignados) habilitan operaciones en todo el blog (lectura/edici&oacute;n/eliminaci&oacute;n) de alg&uacute;n tipo de objeto (art&iacute;culo/p&aacute;gina/v&iacute;nculo), y tal vez en un cierto estado (privado/publicado/borrador)."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:181
+#, php-format
+msgid "Scoped Roles can grant users these same WordPress capabilities on a per-%1$s or per-%2$s basis. Useful in fencing off sections your site."
+msgstr "La incidencia de los Roles pueden permitir a los usuarios las mismas capacidades de WP en una base para-%1$s o para-%2$s, Útil en la protecci&oacute;n de secciones de su sitio."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:183
+#, php-format
+msgid "Scoped Roles can grant users these same WordPress capabilities on a per-%1$s basis. Useful in fencing off sections your site."
+msgstr "La incidencia de los Roles pueden permitir a los usuarios las mismas capacidades de WP en una base para-%1$s, Útil en la protecci&oacute;n de secciones de su sitio."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:187
+#, php-format
+msgid "Users with a %1$s Role assignment may have capabilities beyond their General Role(s) for %2$s in the specified %1$s."
+msgstr "Los usuarios con una asignaci&oacute;n de Roles %1$s pueden tener capacidades, por sobre sus Roles Generales, sobre %2$s en el %1$s especificado."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:192
+#, php-format
+msgid "If a role is restricted for some %s, general (blog-wide) assignments of that role are ignored."
+msgstr "Si un rol se restringe por algunos %s, las asignaciones generales de tal rol ser&aacute;n ignoradas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:196
+#, php-format
+msgid "If a %1$s is in multiple %2$s, permission is granted if any %3$s has a qualifying role assignment or permits a qualifying General Role."
+msgstr "Si un %1$s se encuentra en m&uacute;ltiples %2$s, el estar&aacute; garantizado si cualquier %3$s tiene una asignaci&oacute;n de rol v&aacute;lida o permita un rol general v&aacute;lido."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:205
+#, php-format
+msgid "If a role is restricted for some requested %1$s, %2$s-assignment and General-assignment of that role are ignored."
+msgstr "Si un rol se restringe por algunos %1$s solicitados, las asignaciones a %2$s y asignaciones generales de tal rol ser&aacute;n ignoradas."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/section_roles.php:210
+msgid "Administrators are exempted from Role Restrictions."
+msgstr "Los administradores est&aacute;n exentos de las restricciones de rol."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/update_rs.php:494
+#, php-format
+msgid "Pending Revisions were enabled in your previous Role Scoper version.  To retain that feature, you need to install %1$s Revisionary%2$s, another %3$s Agapetry Creations%4$s plugin."
+msgstr "Revisiones Pendientes fueron habilitadas en versiones previas de Role Scoper. Para retener tal caracter&iacute;stica, se necesita instalar %1$s Revisionary%2$s, otro plugin de %3$s Agapetry Creations%4$s."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/misc/version_notice_rs.php:36
+#, php-format
+msgid "A new version of Role Scoper is available (%s)"
+msgstr "Una nueva versi&oacute;n de Role Scoper est&aacute; disponible (%s)"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/misc/version_notice_rs.php:57
+msgid "read more..."
+msgstr "Leer m&aacute;s..."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/misc/version_notice_rs.php:63
+msgid "Read about the update"
+msgstr "Lee sobre la actualizaci&oacute;n"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/misc/version_notice_rs.php:64
+msgid "View full changelog"
+msgstr "Ver lista de cambios completa"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/misc/version_notice_rs.php:70
+msgid "Download for manual install"
+msgstr "Descargar para instalaci&oacute;n manual"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/admin/misc/version_notice_rs.php:115
+#, php-format
+msgid "Role Scoper Extensions are available for the following plugins: %s"
+msgstr "Las extensiones de Role Scoper est&aacute;n disponibles para los siguientes plugins: %s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/hardway/cache-persistent.php:190
+msgid "The file cache will not operate because ENABLE_PERSISTENT_CACHE is not defined in wp-config.php or role-scoper.php."
+msgstr "La cach&eacute; de archivos no puede operar porque wp-config.php o role-scoper.php no tiene definida ENABLE_PERSISTENT_CACHE."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/hardway/cache-persistent.php:193
+msgid "The file cache will not operate because DISABLE_PERSISTENT_CACHE is defined, possibly in wp-config.php or role-scoper.php."
+msgstr "La cach&eacute; de archivos no puede operar porque la constante DISABLE_PERSISTENT_CACHE est&aacute; definida, posiblemente en wp-config.php o role-scoper.php."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/hardway/cache-persistent.php:196
+#, php-format
+msgid "The file cache cannot operate because the cache directory (%s) is not writeable to WordPress."
+msgstr "La cach&eacute; de archivos no puede operar porque el directorio del cach&eacute; (%s) no es escribible. "
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/hardway/cache-persistent.php:199
+msgid "The file cache cannot operate because PHP is running in safe mode."
+msgstr "La cach&eacute; de archivos no puede operar porque PHP est&aacute; ejecut&aacute;ndose en Modo Seguro."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/hardway/cache-persistent.php:207
+#, php-format
+msgid "The file cache cannot operate because file creation attempts fail in %s"
+msgstr "La cach&eacute; de archivos no puede operar porque los intentos de almacenamiento de archivos fallaron en %s "
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/hardway/cache-persistent.php:217
+#, php-format
+msgid "The file cache cannot operate because file storage attempts fail in %s"
+msgstr "La cach&eacute; de archivos no puede operar porque los intentos de almacenamiento de archivos fallaron en %s "
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/hardway/hardway-admin-legacy_rs.php:105
+#, php-format
+msgid "You have %1$s, contained within %2$s and %3$s. %4$s %5$s"
+msgstr "Usted tiene %1$s, contenido dentro de %2$s y %3$s. %4$s %5$s"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/hardway/hardway-admin_non-administrator_rs.php:59
+msgid "You do not have permission to select that Category Parent"
+msgstr "Usted no tiene permiso para seleccionar esa Categor&iacute;a Padre"
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/lib/agapetry_config_items.php:14
+#, php-format
+msgid "%1$s attempted to define a configuration item (%2$s) after the collection was locked."
+msgstr "%1$s intent&oacute; definir un item de configuraci&oacute;n (%2$s) despu&eacute;s que la colecci&oacute;n fue bloqueada."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/lib/agapetry_config_items.php:15
+#, php-format
+msgid "The calling function probably needs to be registered to a hook.  Consult %s developer documentation."
+msgstr "La funci&oacute;n que se encuentra invocando, probablemente tiene que ser registrada por un <i>hook</i>. Consulte la documentaci&oacute;n del desarrollador de %s."
+
+#: E:\AppServ\www\renacimiento.cl\wp-content\plugins\role-scoper/lib/debug.php:182
+#, php-format
+msgid "%1$s queries in %2$s seconds. %3$s MB used."
+msgstr "%1$s consultas en %2$s segundos. %3$s MB usados."
+
