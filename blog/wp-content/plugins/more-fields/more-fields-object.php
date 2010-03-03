@@ -90,7 +90,7 @@ class more_fields_object {
 		add_filter('query_vars', array(&$this, 'query_vars'));
 		add_filter('posts_join', array(&$this, 'query_join'));
 		add_filter('posts_where', array(&$this, 'query_where'));
-		// add_filter('init', array(&$this, 'rewrite_rules'));
+		//add_filter('init', array(&$this, 'flush_rewrite_rules'));
 		add_filter('generate_rewrite_rules', array(&$this, 'generate_rewrite_rules'));
 
 		// add_action('admin_head', array(&$this, 'admin_options_head'));
@@ -134,7 +134,8 @@ class more_fields_object {
 		
 	}
 	function wp_default_scripts(&$scripts) {
-		$src = get_option('home') . '/wp-content/plugins/more-fields/post.js';
+		global $wp_version;
+		$src = get_option('home') . '/wp-content/plugins/more-fields/post-' . $wp_version . '.js';
 		$scripts->registered['post']->src = $src;
 	}
 	function return_unmodified ($value) {
@@ -729,11 +730,11 @@ class more_fields_object {
 
 	function flush_rewrite_rules() {
 	   	global $wp_rewrite, $wp_query, $wp;
-	   	$wp_rewrite->flush_rules();
-		$wp_query->query_vars[] = 'mf_key';
-		$wp_query->query_vars[] = 'mf_value';
-		$wp->add_query_var('mf_key');
-		$wp->add_query_var('mf_value');
+	    	$wp_rewrite->flush_rules();
+			$wp_query->query_vars[] = 'mf_key';
+			$wp_query->query_vars[] = 'mf_value';
+		// $wp->add_query_var('mf_key');
+		// $wp->add_query_var('mf_value');
 	}
 
 
@@ -753,7 +754,7 @@ class more_fields_object {
 	function generate_rewrite_rules () {
 		global $wp_taxonomies, $wp_rewrite, $wp;
 		$boxes = $this->get_boxes();
-
+		$rules = array();
 		foreach ($boxes as $box) {
 
 			foreach ((array) $box['field'] as $field) {
@@ -762,15 +763,11 @@ class more_fields_object {
 				$slug = substr($field['slug'], 1, strlen($field['slug']));
 				if (!$slug) continue;				
 				$key = $field['key'];
-
-				//add_rewrite_rule("$slug/(.+)", "index.php?mf_key=$key&mf_value=" . $wp_rewrite->preg_index(1));
-				$new_rule = array("$slug/(.+)" => "index.php?mf_key=$key&mf_value=" . $wp_rewrite->preg_index(1));
-				$wp_rewrite->rules = $new_rule + $wp_rewrite->rules;
+				$wp_rewrite->add_rule("$slug/(.+)", "index.php?mf_key=$key&mf_value=\$matches[1]", "top");
 			}
 
 		}
-		
-	return $wp_rewrite; 
+		return $wp_rewrite; 
 	}
 
 	

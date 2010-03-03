@@ -147,7 +147,7 @@
 			update_option('more_fields_boxes', $boxes);
 			
 			// Generate the rewrite rules for this field
-			$mf0->rewrite_rules();
+			$mf0->generate_rewrite_rules();
 			$mf0->flush_rewrite_rules();
 			
 			$mfo->condition(false, __('Field was saved!', 'more-fields'), 'notification');
