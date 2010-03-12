@@ -8,7 +8,7 @@ if ( isset($_POST['cp_add_task_button']) ) {
 	
 	$cp_auth = $current_user->ID;
 	$cp_users = esc_html($_POST['user']);
-	$cp_date =  date("Y-m-d H:m:s");
+	$cp_date = current_time('mysql');
 	$cp_title = esc_html($_POST['cp_title']);
 	$cp_details = esc_html($_POST['cp_details']);
 	$cp_due_date = $_POST['cp_tasks_due_month'] ."-". $_POST['cp_tasks_due_day'] ."-". $_POST['cp_tasks_due_year'];
@@ -227,7 +227,7 @@ if ( isset($_POST['cp_add_comment_button']) ) {
 	$cp_task_comment = esc_html($_POST['cp_task_comment']);
 	$cp_task_title = $task_data->title;
 	$cp_project_title = $project_data->title;
-	$cp_date =  date("Y-m-d H:m:s");
+	$cp_date =  current_time('mysql');
 	$cp_auth = $current_user->ID;
 	$cp_users = esc_html($_POST['cp_author_id']);
 	

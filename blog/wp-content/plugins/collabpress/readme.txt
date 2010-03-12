@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: task, management, basecamp, to do, projects, planning, tracking, reporting
 Requires at least: 2.9
 Tested up to: 2.9.2
-Stable tag: 0.5
+Stable tag: 0.5.2
 
 Project management and task tracking software for WordPress and WPMU
 
@@ -30,6 +30,12 @@ Works with WordPress and WordPress MU
 4. Add comments to individual tasks
 
 == Changelog ==
+
+= 0.5.2 =
+* Fixed JavaScript bug conflicting w/ plugins and themes
+
+= 0.5.1 =
+* Fixed date formatting bug on comments and tasks
 
 = 0.5 =
 * Add and view comments for tasks
@@ -58,6 +64,9 @@ Works with WordPress and WordPress MU
 * First beta release
 
 == Upgrade Notice ==
+
+= 0.5.2 =
+* Fixed JavaScript bug conflicting w/ plugins and themes
 
 = 0.5 =
 * adds a bunch of new features including task editing, task comments, uninstallation script, and more

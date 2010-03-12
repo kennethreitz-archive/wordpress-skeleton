@@ -101,6 +101,9 @@ function cp_wp_add_stylesheet() {
     <?php
 }
 
-add_action('admin_head', 'cp_wp_add_stylesheet');
-
+//temp fix, should do: http://planetozh.com/blog/2008/04/how-to-load-javascript-with-your-wordpress-plugin/
+//only load JS if on a CollabPress page
+If (strpos($_SERVER['REQUEST_URI'], 'cp')>0) {
+	add_action('admin_head', 'cp_wp_add_stylesheet');
+}
 ?>
