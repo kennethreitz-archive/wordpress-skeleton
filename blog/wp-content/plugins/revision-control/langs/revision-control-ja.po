@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: revison contorol ja\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-31 13:06+1000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dion Hulse <contact@dd32.id.au>\n"
+"Language-Team: tekapo <tekapo@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Japanese\n"
+"X-Poedit-Country: JAPAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: C:\\www\\wordpress\\wp-content\\plugins\\revision-control\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: revision-control.php:38
+#: revision-control.php:151
+#: revision-control.php:294
+msgid "Revisions"
+msgstr "リビジョン"
+
+#: revision-control.php:41
+#: revision-control.php:337
+msgid "Revision Control"
+msgstr "リビジョンコントロール"
+
+#: revision-control.php:142
+msgid "Post Revisions"
+msgstr "投稿リビジョン"
+
+#: revision-control.php:153
+#: revision-control.php:347
+#: revision-control.php:368
+msgid "Enabled"
+msgstr "使用する"
+
+#: revision-control.php:154
+#: revision-control.php:157
+#: revision-control.php:165
+#, fuzzy
+msgid " (default)"
+msgstr "(削除)"
+
+#: revision-control.php:156
+#: revision-control.php:350
+#: revision-control.php:371
+msgid "Disabled"
+msgstr "使用しない"
+
+#: revision-control.php:164
+#: revision-control.php:357
+#: revision-control.php:377
+#, fuzzy, php-format
+msgid "Limit to %d Revisions"
+msgstr "%d リビジョン"
+
+#: revision-control.php:262
+msgid "Are you sure you wish to delete this Revision?"
+msgstr "このリビジョンを削除しますか ?"
+
+#: revision-control.php:262
+msgid "(delete)"
+msgstr "(削除)"
+
+#: revision-control.php:329
+msgid "Settings saved."
+msgstr "設定を保存しました。"
+
+#: revision-control.php:334
+msgid "<strong>Error:</strong> You have defined <code>WP_POST_REVISIONS</code> in your <code>wp-config.php</code> file, In order to use this plugin you will need to remove it."
+msgstr "<strong>エラー:</strong> <code>wp-config.php</code> ファイル内で <code>WP_POST_REVISIONS</code> が設定されています。このプラグインを利用するにはこの設定を削除してください。"
+
+#: revision-control.php:343
+msgid "Default Revision Status for Posts"
+msgstr "投稿のリビジョン設定"
+
+#: revision-control.php:364
+msgid "Default Revision Status for Pages"
+msgstr "ページのリビジョン設定"
+
+#: revision-control.php:385
+msgid "Save Changes"
+msgstr "変更を保存"
+
+#~ msgid "Revisions:"
+#~ msgstr "リビジョン:"
+#~ msgid "Limit to"
+#~ msgstr "次のリビジョンまで保持:"
+
