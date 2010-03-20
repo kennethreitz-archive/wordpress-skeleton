@@ -1,0 +1,162 @@
+/*
+Theme Name: Jumpchart Wordpress Theme
+Theme URI: http://www.jumpchart.com/
+Description: This is a basic theme from the Jumpchart team.
+Version: 1.0
+Author: Paste Interctive
+Author URI: http://pasteinteractive.com/
+Tags: jumpchart, simple, wireframe, paste interactive
+*/
+body {
+	font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+	font-size: 12px;
+	background: #999;
+	color: #444;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.1em;
+	margin: 0 0 20px 0;
+}
+
+h1 { font-size: 24px; }
+h2 { font-size: 20px; }
+h3 { font-size: 16px; }
+h4 { font-size: 14px; }
+h5 { font-size: 12px; }
+h6 { font-size: 12px; font-style: italic;}
+
+
+.break {
+	clear: both;
+}
+
+a img { border: none; }
+
+a {
+	color: #444;
+	text-decoration: none;
+	border-bottom: 1px solid #aaa;
+}
+
+a:hover {
+	border-bottom: 1px solid #666;
+	color: #666;
+}
+
+/*
+ * Images
+ */
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+}
+
+.alignright { float: right; }
+.alignleft { float: left; }
+
+/*
+ * Main Layout Controls
+ */
+#wrapper {
+	width: 850px;
+	margin: 0 auto 40px auto;
+	background: #fff;
+	padding: 20px;
+	border: 2px solid #888;
+	border-top: none;
+}
+
+#header {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	font-size: 24px;
+}
+
+#header h1 { 
+	font-weight: normal; 
+	margin: 0;
+}
+#header h1 a { border-bottom: none; }
+
+
+#header span {
+	color: #aaa;
+	font-size: 18px;
+}
+
+#footer { clear: both; }
+
+#content {
+	width: 660px;
+	margin: 0px 0 0 20px;
+	float: right;
+	line-height: 1.5em;
+}
+
+.col1, .col2 {
+	width: 310px;
+	float: left;
+}
+
+.col1 { margin-right: 40px; }
+
+#sidebar {
+	width: 150px;
+	float: left;
+	line-height: 1.3em;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar ul li ul { margin-left: 15px; }
+#sidebar ul li { margin: 7px 0; }
+#sidebar ul li.currentOpenedPage a { background: #ddd; }
+#sidebar ul li.currentOpenedPage li a { background: none; }
+
+/*
+ * Search form
+ */
+#header h1 {
+	width: 600px;
+	float: left;
+}
+
+#header #searchform { 
+	float: right;
+	width: 160px;
+	line-height: 1em;
+}
+
+#searchform label {
+	font-size: 11px;
+	display: none;
+}
+
+#searchform input#s {
+	width: 80px;
+	font-size: 11px;
+	padding: 0;
+	margin: 0;
+}
