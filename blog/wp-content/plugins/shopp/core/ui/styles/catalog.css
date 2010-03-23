@@ -1,0 +1,117 @@
+/**
+ * Shopp style resets
+ * These styles override the theme's styles for shopp-specific shopping pages
+ **/
+#shopp,
+br.clear,
+div.clear,
+#shopp div.description,
+#shopp .products, 
+#shopp .products ul,
+#shopp .products li.row,
+#shopp .category,
+#shopp #cart,
+#shopp #cart table { clear: both; }
+#shopp { position: relative; }
+#shopp ul { list-style: none; text-indent: 0; text-align: left; padding: 0; margin: 0; }
+#shopp li { background: none; padding: 0; margin: 0; }
+#shopp li:before,
+#shopp-cart:before,
+#shopp-cart ul li:before,
+#shopp-cart #shopp-cart-ajax ul li:before,
+#shopp ul.breadcrumb li:before { content: ""; }
+#shopp div.hidden { display: none; }
+
+#shopp .products, #shopp .products ul { width: 100%; margin: 0; padding: 0;}
+#shopp .products ul li { display: block; float: left; }
+#shopp .products li.row { display: block; width: 100%; }
+
+#shopp .products .frame { width: <?php echo $gallery_thumbnail_width; ?>px; text-align: center; }
+#shopp .products .frame img { display: inline; }
+
+#shopp ul.paging { clear: none; display: inline; }
+#shopp ul.paging li { display: inline; margin-left: 5px;}
+
+/* Product Grid (Default View) */
+#shopp ul.products li.product { width: <?php echo $products_per_row; ?>%; }
+
+/**
+ * Shopp Forms
+ **/
+#shopp form ul { width: 100%; clear: both; line-height: 1; }
+#shopp form ul li { text-indent: 0; clear: both; display: block; padding: 4px 0; margin: 0; }
+#shopp form label { clear: both; display: block; }
+#shopp form ul li label.inline { display: inline; clear: none; }
+#shopp form ul li:before { content: ""; }
+#shopp form ul li div.inline { width: auto; clear: both; }
+#shopp form ul li div.inline input { width: auto;  }
+#shopp form ul li div.inline label { clear: none; display: inline; }
+#shopp form ul li input,
+#shopp form ul li select { margin: 0 0 5px 0; }
+#shopp form ul li div input,
+#shopp form ul li div select { width: 100%; }
+#shopp form ul li div.left { display: inline; width: 47%; float: left; margin: 0; clear: left; }
+#shopp form ul li div.right { display: inline; width: 47%; float: right; margin: 0; clear: right; }
+#shopp form ul li.half { display: inline; width: 47%; float: left; clear: none; }
+#shopp form ul li.half.right { display: inline; float: right; }
+#shopp form ul li span { float: left; padding: 0 5px 0 0; display: inline-block; text-align: left; }
+#shopp form ul li span label,
+#shopp form div label { clear: both; }
+
+/* Positions the cart's "default button" way off the screen to hide it, but keep it active */
+#hidden-update { position: absolute; left: -999em; }
+
+/**
+ * Shopp Catalog Tag Cloud
+ **/
+
+#shopp .tagcloud,
+.shopp.tagcloud { padding: 0; width: 100%; }
+
+#shopp .tagcloud li,
+.shopp.tagcloud li { display: inline; margin-right: 10px; line-height: 1.2; padding: 0; background-image: none; }
+.shopp.tagcloud li.level-1 { font-size: 30px; }
+.shopp.tagcloud li.level-2 { font-size: 24px; }
+.shopp.tagcloud li.level-3 { font-size: 20px; }
+.shopp.tagcloud li.level-4 { font-size: 18px; }
+.shopp.tagcloud li.level-5 { font-size: 14px; }
+.shopp.tagcloud li.level-6 { font-size: 12px; }
+.shopp.tagcloud li.level-7 { font-size: 11px; }
+
+/**
+ * Categories
+ **/
+
+#shopp .category { position: relative; }
+#shopp .views .grid { width: 15px; height: 15px; background: url('<?php echo $pluginuri; ?>core/ui/icons/grid.png') no-repeat 50% 50%; }
+#shopp .views .list { width: 15px; height: 15px; background: url('<?php echo $pluginuri; ?>core/ui/icons/list.png') no-repeat 50% 50%; }
+
+/**
+ * Product Page Gallery
+ **/
+#shopp form.product label { clear: none; display: inline; }
+
+#shopp .gallery { float: left; display: block; }
+#shopp .gallery ul { display: block; margin: 0; padding: 0 !important; position: relative; list-style: none !important; text-indent: 0; width: auto; }
+#shopp .gallery ul li:before { content: ""; }
+#shopp .gallery .previews { position: relative; margin: 0 !important; }
+#shopp .gallery .previews li { position: absolute; width: <?php echo $gallery_small_width; ?>px; height: <?php echo $gallery_small_height; ?>px; line-height: <?php echo $gallery_small_height; ?>px; visibility: hidden; top: 0; left: 0; margin: 0; display: block; text-align: center; }
+
+#shopp .gallery .previews li img { display: inline; vertical-align: middle; margin-top: -3px; }
+
+#shopp .gallery .previews li.fill { position: relative; }
+#shopp .gallery .previews li.active { visibility: visible; }
+#shopp .gallery .thumbnails { margin-top: 10px; }
+#shopp .gallery .thumbnails ul { padding: 0; }
+#shopp .gallery .thumbnails li { position: relative; display: inline; visibility: visible; height: auto; line-height: 1; top: auto; left: auto; margin: 0 0 0 10px; }
+#shopp .gallery .thumbnails li.first { margin-left: 0; }
+#shopp .gallery .thumbnails li img { cursor: pointer; }
+
+/**
+ * Debug Console
+ **/
+#overlay { position: absolute; left: 0; width: 100%; opacity: 0.6; background-color: #000; margin: 0; }
+#debug.shopp { position: absolute; left: 25%; top: 100px; width: 50%; margin: 0 auto; height: 300px; overflow-y: auto; background: #fff; border: 5px solid #999; text-align: left; padding: 10px; font: 12px/1 "Lucida Grande",monospace; }
+#debug.shopp.overlay { position: absolute; width: 100%; height: 100%; background: #000; top: 0; left: 0; padding: 0; opacity: 0.8; border: none; }
+#debug.shopp h3 { font: bold 15px/1 "Lucida Grande",monospace;  margin-top: 0; }
+#debug.shopp li { margin-bottom: 6px; }
