@@ -29,8 +29,8 @@ if ($_SERVER['HTTP_HOST'] == 'localhost.dev') {
 	define('WP_DEBUG', false);
 }
 
-define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/');
-define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '/blog');
+define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/blog');
+define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '/');
 
 define('WP_POST_REVISIONS', 5);
 define('AUTOSAVE_INTERVAL', 160 ); 

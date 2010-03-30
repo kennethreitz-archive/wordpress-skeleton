@@ -1,0 +1,282 @@
+# Translation of Development Version in Hindi
+# This file is distributed under the same license as the Development Version package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2010-02-10 20:27:44+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Development Version\n"
+
+#: config-options.php:70
+msgid "Bias Language"
+msgstr "पूर्वाग्रह भाषा"
+
+msgid "http://blog.afterthedeadline.com"
+msgstr "http://blog.afterthedeadline.com "
+
+#: config-key.php:124
+msgid "Feedback"
+msgstr "सुझाव दीजिये"
+
+#: config-key.php:122
+msgid "Visit your <a href=\"%s\">profile page</a> to configure After the Deadline proofreading software options."
+msgstr "आफ्टर दी डेडलाइन के विकल्पों को बदलने को लिए अपने <a href=\"%s\">प्रोफ़ाइल पृष्ठ</a> पर जायें|"
+
+#: config-key.php:120
+msgid "Options"
+msgstr "विकल्प"
+
+#: config-key.php:118
+msgid "Click <img src=\"%s\" border=\"0\" alt=\"the AtD button\" /> in the editor to check spelling, style, and grammar."
+msgstr "वर्तनी और व्याकरण जाँचने के लिए ये बटन <img src=\"%s\" border=\"0\" alt=\"the AtD button\" /> दबाएँ|"
+
+#: atd-l10n.php:28
+msgid "Ignore all"
+msgstr "ऐसे सारे सुझाव हटाइए"
+
+#: atd-l10n.php:27
+msgid "Ignore always"
+msgstr "इस वर्तनी को कभी न जाचें"
+
+#: atd-l10n.php:33
+msgid "edit text"
+msgstr "पाठ संपादित करें"
+
+#: atd-l10n.php:32
+msgid "proofread"
+msgstr "वर्तनी जाँचें"
+
+#: config-options.php:64
+msgid "a post or page is updated"
+msgstr "जब एक पद या पृष्ठ बदलता है"
+
+#: config-options.php:67
+msgid "Enable proofreading for the following grammar and style rules when writing posts and pages:"
+msgstr "निम्नलिखित व्याकरण और शैली को पोस्ट और पृष्ठ लिखने के समय सक्षम करें:"
+
+msgid "Raphael Mudge"
+msgstr "रैफ़ेल मज"
+
+#: atd-l10n.php:26
+msgid "Ignore suggestion"
+msgstr "सुझाव गलत है"
+
+#: atd-l10n.php:25
+msgid "Explain..."
+msgstr "स्पष्ट कीजिये"
+
+#: atd-l10n.php:23
+msgid "No suggestions"
+msgstr "कोई सुझाव नहीं है"
+
+#: atd-l10n.php:21
+msgid "Repeated Word"
+msgstr "शब्द दोहराया गया है"
+
+#: config-options.php:62
+msgid "a post or page is first published"
+msgstr "जब कोई पद या पृष्ठ प्रकाशित किया जाता है"
+
+#: config-options.php:82
+msgid "Jargon"
+msgstr "वर्ग-बोली"
+
+#: config-options.php:22
+msgid "WordPress checks your grammar, spelling, and misused words with <a href=\"%s\">After the Deadline</a>. This feature is available to blogs set to the English language. Blogs in other languages will continue to have access to the old spellchecker."
+msgstr "<a href=\"%s\">आफ्टर दी डेडलाइन</a> प्रासंगिक वर्तनी, शैली, और व्याकरणिक जाँच करता है| यह सुविधा अंग्रेजी भाषा के लिए सेट ब्लॉगों को उपलब्ध है| अन्य भाषाओं में ब्लोगों को पुराने वर्तनी जाँचने वाली सर्विस तक पहुँच जारी रहेगी|"
+
+#: config-options.php:86
+msgid "Phrases to Avoid"
+msgstr "जिन वाक्यांशों को अनदेखा करना है"
+
+#: config-options.php:84
+msgid "Passive Voice"
+msgstr "कर्मवाच्य"
+
+#: atd-l10n.php:30
+msgid "Edit Selection..."
+msgstr "इस वर्तनी को संपादित करें"
+
+#: atd-l10n.php:37
+msgid "There was a problem communicating with the After the Deadline service. Try again in one minute."
+msgstr "आफ्टर दी डेडलाइन सर्विस से बात नहीं हो पा रही है| एक मिनट बाद फिर से कोशिश करें|"
+
+#: atd-l10n.php:36
+msgid "No writing errors were found."
+msgstr "सारी वर्तनी सही हैं|"
+
+#: atd-l10n.php:34
+msgid "Proofread Writing"
+msgstr "वर्तनी जाँचिये"
+
+#: config-options.php:72
+msgid "Clich&eacute;s"
+msgstr "क्लीशे"
+
+#: config-options.php:74
+msgid "Complex Phrases"
+msgstr "जटिल वाक्यांश"
+
+#: config-options.php:76
+msgid "Diacritical Marks"
+msgstr "विशेषक मार्क्स"
+
+#: config-options.php:78
+msgid "Double Negatives"
+msgstr "दो नकारात्मक"
+
+#: config-options.php:80
+msgid "Hidden Verbs"
+msgstr "छिपी क्रिया"
+
+#: config-key.php:126
+msgid "Visit <a href=\"%s\">After the Deadline</a> to give feedback, report bugs, and offer suggestions."
+msgstr "राये, बग रिपोर्ट और सुझाव देने के लिए <a href=\"%s\">आफ्टर दी डेडलाइन वेबसाइट</a> पर जायें|  "
+
+msgid "http://www.afterthedeadline.com"
+msgstr "http://www.afterthedeadline.com"
+
+msgid "Contextual spelling, style, and grammar check for WordPress.  Write better and spend less time editing."
+msgstr "प्रासंगिक वर्तनी, शैली, और व्याकरणिक जाँच| बेहतर लिखें ओर संपादन के लिए कम समय खर्च करें|"
+
+#: atd-l10n.php:38
+msgid "There was an error communicating with the proofreading service."
+msgstr "आफ्टर दी डेडलाइन सर्विस से बात नहीं हो पा रही है|"
+
+#: config-key.php:96
+msgid "Write better and spend less time editing with After the Deadline. To use this plugin you'll need an After the Deadline API key.  You can get this from the <a href=\"%s\">After the Deadline</a> website."
+msgstr "आफ्टर दी डेडलाइन के साथ बेहतर लिखें ओर संपादन के लिए कम समय खर्च करें| इस प्लगइन का उपयोग करने के लिए आपको एक आफ्टर दी डेडलाइन अ.प.इ कुंजी की ज़रूरत पड़ेगी| आपको ये <a href=\"%s\">आफ्टर दी डेडलाइन वेबसाइट</a> से मिल सकती है|"
+
+#: atd-l10n.php:20
+msgid "Spelling"
+msgstr "वर्तनी"
+
+#: after-the-deadline.php:54 config-options.php:57
+msgid "After the Deadline"
+msgstr "आफ्टर दी डेडलाइन"
+
+#: config-options.php:59
+msgid "Automatically proofread content when:"
+msgstr "वर्तनी ऑटोमैटिकलि जाचें जब:"
+
+#: config-options.php:88
+msgid "Redundant Phrases"
+msgstr "निरर्थक वाक्यांश"
+
+#: config-options.php:90
+msgid "<a href=\"%s\">Learn more</a> about these options."
+msgstr "इन विकलों के बारे मैं <a href=\"%s\">ज्यादा जानें</a>|"
+
+#: config-unignore.php:106
+msgid "Ignored Phrases"
+msgstr "उपेक्षित वाक्यांश"
+
+#: config-unignore.php:108
+msgid "Identify words and phrases to ignore while proofreading your posts and pages:"
+msgstr "वर्तनी जांचते समे, इन शब्दों और वाक्यांशों को नजरअंदाज करें:"
+
+#: config-unignore.php:110
+msgid "Add"
+msgstr "जमा करें"
+
+#: config-unignore.php:115
+msgid "Be sure to click \"Update Profile\" at the bottom of the screen to save your changes."
+msgstr "\"अपडेट प्रोफाइल\" बटन को कम होने के बाद दबाना न भूलें|"
+
+msgid "After The Deadline"
+msgstr "आफ्टर दी डेडलाइन"
+
+#: config-key.php:99
+msgid "API Key"
+msgstr "अ.प.इ. कुंजी"
+
+#: config-key.php:114
+msgid "Update key &raquo;"
+msgstr "अ.प.इ. कुंजी को जमा करें"
+
+#: config-key.php:116
+msgid "Using"
+msgstr "प्रयोग"
+
+#: config-key.php:88
+msgid "Options saved."
+msgstr "विकल्प दर्ज करलिये गए हैं|"
+
+#: config-key.php:8
+msgid "After the Deadline is almost ready."
+msgstr "आफ्टर दी डेडलाइन लगभग तैयार है|"
+
+#: atd-l10n.php:42
+msgid ""
+"The proofreader has suggestions for this post. Are you sure you want to update it?\n"
+"\n"
+"Press OK to update your post, or Cancel to view the suggestions and edit your post."
+msgstr ""
+"आफ्टर दी डेडलाइन के पास इस पद के लिए सुझाव हैं|\n"
+"\n"
+"पोस्ट अद्यतन करने के लिए 'OK' दबाएँ या सुझाव देखने के लिए 'Cancel' दबाएँ|"
+
+#: atd-l10n.php:41
+msgid ""
+"The proofreader has suggestions for this post. Are you sure you want to publish it?\n"
+"\n"
+"Press OK to publish your post, or Cancel to view the suggestions and edit your post."
+msgstr ""
+"आफ्टर दी डेडलाइन के पास इस पद के लिए सुझाव हैं|\n"
+"\n"
+"पोस्ट अद्यतन करने के लिए 'OK' दबाएँ या सुझाव देखने के लिए 'Cancel' दबाएँ| "
+
+#: atd-l10n.php:40
+msgid "Replace selection with:"
+msgstr "चुनी हुई वर्तनी बदलिए:"
+
+#: config-key.php:92
+msgid "After the Deadline: Proofreading Software"
+msgstr "आफ्टर दी डेडलाइन: वर्तनी जाँचने वाला सॉफ्टवेर"
+
+#: config-key.php:8
+msgid "You must <a href=\"%1$s\">enter your API key</a> for it to work."
+msgstr "ये प्लगइन चलने के लिए आपको एक <a href=\"%1$s\">अ.प.इ कुंजी</a> दर्ज करनी पड़ेगी|"
+
+#: config-key.php:19
+msgid "After the Deadine can't connect to the proofreading service.</strong> Contact your system administrator and ask them to allow the use of <em>fsockopen</em> from PHP."
+msgstr "आफ्टर दी देअद्लिने सर्विस से बात नहीं हो पा रही है|</strong> अपने सिस्टम प्रशासक से संपर्क करें ओर उन्हें PHP मैं <em>fsockopen</em> उपयोग करने के लिए अनुमति देने के लिए बोलें|"
+
+#: config-key.php:39
+msgid "Cheatin&#8217; uh?"
+msgstr "धोखा..??"
+
+#: config-key.php:74
+msgid "A WordPress.com API key doesn't work here. (<a href=\"%s\" target=\"_new\" style=\"color:#fff\">Get your After the Deadline API key.</a>)"
+msgstr "WordPress.com की अ.प.इ. कुंजी इधर कम नहीं करेगी| (<a href=\"%s\" target=\"_new\" style=\"color:#fff\">इधर से आपको अपनी अ.प.इ. कुंजी मिल सकती है|</a>)"
+
+#: config-key.php:75
+msgid "Your key is cleared."
+msgstr "आपकी कुंजी हटा दी गयी है|"
+
+#: config-key.php:76
+msgid "Your key is now verified. Enjoy!"
+msgstr "आपकी कुंजी जांच्ली गयी है ओर सही है|"
+
+#: config-key.php:77
+msgid "The key you entered is invalid. Please check it."
+msgstr "आपके द्वारा दर्ज की गयी जुंजी सही नहीं है| कृप्या एक ठीक कुंजी दर्ज करें|"
+
+#: config-key.php:78
+msgid "Unable to connect to afterthedeadline.com to verify your key.  Please check your server configuration."
+msgstr "afterthedeadline.com से कुंजी जांचने के लिए संपर्क नहीं हो पा रहा है| कृप्या अपने सर्वर विन्यास जांचे|"
+
+#: config-key.php:79
+msgid "Please enter an API key. (<a href=\"%s\" target=\"_new\" style=\"color:#fff\">Get your key.</a>)"
+msgstr "कृप्या एक अ.प.इ कुंजी दर्ज करें| (<a href=\"%s\" target=\"_new\" style=\"color:#fff\">आप अपनी कुंजी इधर से पा सकते हैं|</a>)"
+
+#: config-key.php:80
+msgid "Your key is valid."
+msgstr "आपकी कुंजी सही है|"
+
+#: config-key.php:81
+msgid "Your key was valid but I was unable to connect to afterthedeadline.com and verify it."
+msgstr "आपकी कुंजी ठीक थी लेकिन हम उसे जांच नहीं पाए|"

@@ -1,0 +1,282 @@
+# Translation of Development Version in Persian
+# This file is distributed under the same license as the Development Version package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2010-02-10 20:26:19+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Development Version\n"
+
+#: config-options.php:70
+msgid "Bias Language"
+msgstr "زبان تبعیض‌گرا"
+
+msgid "http://blog.afterthedeadline.com"
+msgstr "http://blog.afterthedeadline.com"
+
+#: config-key.php:124
+msgid "Feedback"
+msgstr "بازخورد"
+
+#: config-key.php:122
+msgid "Visit your <a href=\"%s\">profile page</a> to configure After the Deadline proofreading software options."
+msgstr "برای تنظیم گزینه‌های نرم‌افزار نمونه‌خوان اَفتِر دِ دِدلاین از <a href=\"%s\">برگه‌ی شناس‌نامه‌</a>ی خود بازدید کنید."
+
+#: config-key.php:120
+msgid "Options"
+msgstr "گزینه‌ها"
+
+#: config-key.php:118
+msgid "Click <img src=\"%s\" border=\"0\" alt=\"the AtD button\" /> in the editor to check spelling, style, and grammar."
+msgstr "برای بررسی هجی، صفحه‌بندی و نکات دستوری در ویرایش‌گر روی<img src=\"%s\" border=\"0\" alt=\"the AtD button\" /> کلیک کنید."
+
+#: atd-l10n.php:28
+msgid "Ignore all"
+msgstr "چشم‌پوشی از همه"
+
+#: atd-l10n.php:27
+msgid "Ignore always"
+msgstr "همواره چشم‌پوشی شود"
+
+#: atd-l10n.php:33
+msgid "edit text"
+msgstr "ویرایش متن"
+
+#: atd-l10n.php:32
+msgid "proofread"
+msgstr "نمونه‌خوانی"
+
+#: config-options.php:64
+msgid "a post or page is updated"
+msgstr "نوشته یا برگه‌ای به‌روز می‌شود"
+
+#: config-options.php:67
+msgid "Enable proofreading for the following grammar and style rules when writing posts and pages:"
+msgstr "کارا کردن نمونه‌خوانی هنگام نگارش نوشته‌ها و برگه‌ها برای قواعد دستوری و صفحه‌بندی زیر:"
+
+msgid "Raphael Mudge"
+msgstr "رافائل ماج"
+
+#: atd-l10n.php:26
+msgid "Ignore suggestion"
+msgstr "نادیده گرفتن پیشنهاد"
+
+#: atd-l10n.php:25
+msgid "Explain..."
+msgstr "توضیح..."
+
+#: atd-l10n.php:23
+msgid "No suggestions"
+msgstr "پیشنهادی نیست"
+
+#: atd-l10n.php:21
+msgid "Repeated Word"
+msgstr "واژه‌ی تکراری"
+
+#: config-options.php:62
+msgid "a post or page is first published"
+msgstr "نوشته یا برگه‌ای برای نخستین بار منتشر می‌شود"
+
+#: config-options.php:82
+msgid "Jargon"
+msgstr "تخصصی"
+
+#: config-options.php:22
+msgid "WordPress checks your grammar, spelling, and misused words with <a href=\"%s\">After the Deadline</a>. This feature is available to blogs set to the English language. Blogs in other languages will continue to have access to the old spellchecker."
+msgstr "وردپرس با استفاده از <a href=\"%s\">اَفتِر دِ دِدلاین</a> دستور زبان، املاء و واژه‌های به اشتباه به کار رفته را بررسی می‌کند. این ویژگی برای وب‌نوشت‌هایی که روی زبان انگلیسی تنظیم شده‌اند آماده است. وب‌نوشت‌های زبان‌های دیگر همچنان به چک‌کننده‌ی املایی قدیمی دسترسی خواهند داشت."
+
+#: config-options.php:86
+msgid "Phrases to Avoid"
+msgstr "عباراتی که پرهیز می‌شوند"
+
+#: config-options.php:84
+msgid "Passive Voice"
+msgstr "حالت مجهول"
+
+#: atd-l10n.php:30
+msgid "Edit Selection..."
+msgstr "ویرایش قسمت گزینش شده..."
+
+#: atd-l10n.php:37
+msgid "There was a problem communicating with the After the Deadline service. Try again in one minute."
+msgstr "مشکلی هنگام ارتباط با خدمات اَفتِر دِ دِدلاین بود. پس از یک دقیقه دوباره تلاش کنید."
+
+#: atd-l10n.php:36
+msgid "No writing errors were found."
+msgstr "خطای نگارشی‌ای یافت نشد."
+
+#: atd-l10n.php:34
+msgid "Proofread Writing"
+msgstr "نمونه‌خوانی نوشته"
+
+#: config-options.php:72
+msgid "Clich&eacute;s"
+msgstr "کلیشه‌ها"
+
+#: config-options.php:74
+msgid "Complex Phrases"
+msgstr "عبارات پیچیده"
+
+#: config-options.php:76
+msgid "Diacritical Marks"
+msgstr "اعراب‌گذاری‌ها"
+
+#: config-options.php:78
+msgid "Double Negatives"
+msgstr "دوبار منفی کردن‌ها"
+
+#: config-options.php:80
+msgid "Hidden Verbs"
+msgstr "افعال پنهان"
+
+#: config-key.php:126
+msgid "Visit <a href=\"%s\">After the Deadline</a> to give feedback, report bugs, and offer suggestions."
+msgstr "برای دادن بازخورد، گزارش اشکالات و دادن پیشنهاد از <a href=\"%s\">اَفتِر دِ دِدلاین</a> بازدید کنید."
+
+msgid "http://www.afterthedeadline.com"
+msgstr "http://www.afterthedeadline.com"
+
+msgid "Contextual spelling, style, and grammar check for WordPress.  Write better and spend less time editing."
+msgstr "بررسی استفاده‌ی نامناسب، صفحه‌بندی و نکات دستوری برای وردپرس. بهتر بنویسید و زمان کمتری را صرف ویرایش کنید."
+
+#: atd-l10n.php:38
+msgid "There was an error communicating with the proofreading service."
+msgstr "خطایی هنگام ارتباط با خدمات نمونه‌خوان رخ داد."
+
+#: config-key.php:96
+msgid "Write better and spend less time editing with After the Deadline. To use this plugin you'll need an After the Deadline API key.  You can get this from the <a href=\"%s\">After the Deadline</a> website."
+msgstr "با اَفتِر دِ دِدلاین بهتر بنویسید و زمان کمتری را صرف ویرایش کنید. برای استفاده از این افزونه نیاز به یک کلید رابط برنامه‌نویسی نرم‌افزار اَفتِر دِ دِدلاین دارید. می‌توانید آن را از وب‌گاه <a href=\"%s\">اَفتِر دِ دِدلاین</a> دریافت کنید."
+
+#: atd-l10n.php:20
+msgid "Spelling"
+msgstr "هجی"
+
+#: after-the-deadline.php:54 config-options.php:57
+msgid "After the Deadline"
+msgstr "اَفتِر دِ دِدلاین"
+
+#: config-options.php:59
+msgid "Automatically proofread content when:"
+msgstr "نمونه‌خوانی خودکار محتوا هنگامی که:"
+
+#: config-options.php:88
+msgid "Redundant Phrases"
+msgstr "عبارات حشو"
+
+#: config-options.php:90
+msgid "<a href=\"%s\">Learn more</a> about these options."
+msgstr "درباره‌ی این گزینه‌ها <a href=\"%s\">بیشتر بدانید</a>."
+
+#: config-unignore.php:106
+msgid "Ignored Phrases"
+msgstr "عباراتی که نادیده گرفته می‌شوند"
+
+#: config-unignore.php:108
+msgid "Identify words and phrases to ignore while proofreading your posts and pages:"
+msgstr "واژه‌ها و عباراتی را که می‌خواهید هنگام نمونه‌خوانی نوشته‌ها و برگه‌هایتان نادیده گرفته شوند مشخص کنید:"
+
+#: config-unignore.php:110
+msgid "Add"
+msgstr "افزودن"
+
+#: config-unignore.php:115
+msgid "Be sure to click \"Update Profile\" at the bottom of the screen to save your changes."
+msgstr "حتما دکمه‌ی \"به‌روزرسانی شناس‌نامه\" را در پایین صفحه بزنید تا تغییراتتان ذخیره گردد."
+
+msgid "After The Deadline"
+msgstr "اَفتِر دِ دِدلاین"
+
+#: config-key.php:99
+msgid "API Key"
+msgstr "کلید رابط برنامه‌نویسی نرم‌افزار"
+
+#: config-key.php:114
+msgid "Update key &raquo;"
+msgstr "به‌روزرسانی کلید &raquo;"
+
+#: config-key.php:116
+msgid "Using"
+msgstr "با استفاده از"
+
+#: config-key.php:88
+msgid "Options saved."
+msgstr "گزینه‌ها ذخیره گشت."
+
+#: config-key.php:8
+msgid "After the Deadline is almost ready."
+msgstr "اَفتِر دِ دِدلاین تقریبا آماده است."
+
+#: atd-l10n.php:42
+msgid ""
+"The proofreader has suggestions for this post. Are you sure you want to update it?\n"
+"\n"
+"Press OK to update your post, or Cancel to view the suggestions and edit your post."
+msgstr ""
+"نمونه‌خوان پیشنهادهایی برای این نوشته دارد. آیا مطمئنید می‌خواهید به‌روزش کنید؟\n"
+"\n"
+"پـذیـرش را بفشارید تا نوشته‌تان به‌روز شود، یا لـغـو برای مشاهده‌ی پیشنهاد‌ها و ویرایش نوشته."
+
+#: atd-l10n.php:41
+msgid ""
+"The proofreader has suggestions for this post. Are you sure you want to publish it?\n"
+"\n"
+"Press OK to publish your post, or Cancel to view the suggestions and edit your post."
+msgstr ""
+"نمونه‌خوان پیشنهادهایی برای این نوشته دارد. آیا مطمئنید که می‌خواهید منتشرش کنید؟\n"
+"\n"
+"پـذیـرش را بفشارید تا نوشته‌تان منتشر شود، یا لـغـو برای مشاهده‌ی پیشنهاد‌ها و ویرایش نوشته"
+
+#: atd-l10n.php:40
+msgid "Replace selection with:"
+msgstr "جایگزین کردن قسمت گزینش شده با:"
+
+#: config-key.php:92
+msgid "After the Deadline: Proofreading Software"
+msgstr "اَفتِر دِ دِدلاین: نرم‌افزار نمونه‌خوان"
+
+#: config-key.php:8
+msgid "You must <a href=\"%1$s\">enter your API key</a> for it to work."
+msgstr "برای به‌کارگیری آن، <a href=\"%1$s\">وارد کردن کلید رابط برنامه‌نویسی نرم‌افزار</a> الزامی است."
+
+#: config-key.php:19
+msgid "After the Deadine can't connect to the proofreading service.</strong> Contact your system administrator and ask them to allow the use of <em>fsockopen</em> from PHP."
+msgstr "اَفتِر دِ دِدلاین نمی‌تواند با خدمات نمونه‌خوان ارتباط برقرار کند.</strong> با مدیریت سیستم خود تماس بگیرید و از آنان بخواهید استفاده از <em>fsockopen</em> در PHP را مجاز کنند."
+
+#: config-key.php:39
+msgid "Cheatin&#8217; uh?"
+msgstr "تقلب می‌کنید، آره؟"
+
+#: config-key.php:74
+msgid "A WordPress.com API key doesn't work here. (<a href=\"%s\" target=\"_new\" style=\"color:#fff\">Get your After the Deadline API key.</a>)"
+msgstr "کلید‌های رابط برنامه‌نویسی نرم‌افزار وردپرس.کام اینجا کار نمی‌کنند. (<a href=\"%s\" target=\"_new\" style=\"color:#fff\">کلید رابط برنامه‌نویسی نرم‌افزار اَفتِر دِ دِدلاین خود را دریافت کنید.</a>)"
+
+#: config-key.php:75
+msgid "Your key is cleared."
+msgstr "کلید شما پاک شده است."
+
+#: config-key.php:76
+msgid "Your key is now verified. Enjoy!"
+msgstr "کلید شما هم‌اکنون بازبینی شده است. لذت ببرید!"
+
+#: config-key.php:77
+msgid "The key you entered is invalid. Please check it."
+msgstr "کلیدی که وارد کردید نامعتبر است. لطفا آن را بررسی کنید."
+
+#: config-key.php:78
+msgid "Unable to connect to afterthedeadline.com to verify your key.  Please check your server configuration."
+msgstr "امکان اتصال به afterthedeadline.com برای بازبینی کلید شما وجود ندارد.  لطفا تنظیمات میزبان خود را بررسی کنید."
+
+#: config-key.php:79
+msgid "Please enter an API key. (<a href=\"%s\" target=\"_new\" style=\"color:#fff\">Get your key.</a>)"
+msgstr "لطفا یک کلید ای‌پی‌آی وارد کنید. (<a href=\"%s\" target=\"_new\" style=\"color:#fff\">کلید خود را دریافت نمایید.</a>)"
+
+#: config-key.php:80
+msgid "Your key is valid."
+msgstr "کلید شما معتبر است."
+
+#: config-key.php:81
+msgid "Your key was valid but I was unable to connect to afterthedeadline.com and verify it."
+msgstr "کلید شما معتبر است اما من قادر نبودم به afterthedeadline.com متصل شوم و آن را بازبینی کنم."

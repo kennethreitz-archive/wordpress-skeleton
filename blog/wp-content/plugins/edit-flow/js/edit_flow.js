@@ -1,1 +1,0 @@
-jQuery(document).ready(function () {	// THIS IS A HACK! YES, A HACK!	// Hides all the empty taxonomy links added to the menu due to a WordPress issue	jQuery('.wp-submenu > ul > li').each(function() {		var $li = jQuery(this);		if($li.text() == '') $li.hide();	});});

@@ -1,0 +1,183 @@
+# Translation of Development Version in Polish
+# This file is distributed under the same license as the Development Version package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2010-03-23 21:27:08+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Development Version\n"
+
+#: config-options.php:88
+msgid "The proofreader supports English, French, German, Portuguese, and Spanish. Your <a href=\"options-general.php\">blog language</a> setting is the default proofreading language."
+msgstr "Korektor tekstu obsługuje język angielski, francuski, niemiecki, portugalski i hiszpański. <a href=\"options-general.php\">Język Twojego blogu</a> jest ustawiony na domyślny język obsługiwany przez korektora."
+
+#: config-options.php:48
+msgid "Proofreading"
+msgstr "Korekta tekstu"
+
+#: config-options.php:86
+msgid "Language"
+msgstr "Język"
+
+#: config-options.php:91
+msgid "Use automatically detected language to proofread posts and pages"
+msgstr "Użyj automatycznie wykrytego języka do korekty wpisów i stron"
+
+#: config-options.php:58
+msgid "English Options"
+msgstr ""
+
+#: config-options.php:63
+msgid "Bias Language"
+msgstr ""
+
+#: atd-l10n.php:28
+msgid "Ignore all"
+msgstr "Ignoruj wszystko"
+
+#: atd-l10n.php:27
+msgid "Ignore always"
+msgstr "Ignoruj zawsze"
+
+#: atd-l10n.php:33
+msgid "edit text"
+msgstr "edytuj tekst"
+
+#: atd-l10n.php:32
+msgid "proofread"
+msgstr "sprawdź tekst"
+
+#: config-options.php:55
+msgid "a post or page is updated"
+msgstr "post lub strona są zaktualizowane"
+
+#: config-options.php:60
+msgid "Enable proofreading for the following grammar and style rules when writing posts and pages:"
+msgstr "Zezwól na korektę tekstu zgodnie z poszczególnymi zasadami gramatyki i stylistyki podczas pisania postów i stron"
+
+#: atd-l10n.php:26
+msgid "Ignore suggestion"
+msgstr "Ignoruj wskazówkę"
+
+#: atd-l10n.php:25
+msgid "Explain..."
+msgstr "Wyjaśnij..."
+
+#: atd-l10n.php:23
+msgid "No suggestions"
+msgstr "Brak wskazówek"
+
+#: atd-l10n.php:21
+msgid "Repeated Word"
+msgstr "Powtórzone Słowo"
+
+#: config-options.php:53
+msgid "a post or page is first published"
+msgstr "post lub strona jest opublikowana po raz pierwszy"
+
+#: config-options.php:75
+msgid "Jargon"
+msgstr "Żargon"
+
+#: config-options.php:79
+msgid "Phrases to Avoid"
+msgstr "Zwroty, których należy unikać"
+
+#: config-options.php:77
+msgid "Passive Voice"
+msgstr "Strona bierna"
+
+#: atd-l10n.php:30
+msgid "Edit Selection..."
+msgstr "Edytuj zaznaczenie..."
+
+#: atd-l10n.php:37
+msgid "There was a problem communicating with the After the Deadline service. Try again in one minute."
+msgstr "Wystąpił problem w połączeniu z usługą After The Deadline. Spróbuj ponownie za minutę."
+
+#: atd-l10n.php:36
+msgid "No writing errors were found."
+msgstr "Nie znaleziono błędów pisowni."
+
+#: atd-l10n.php:34
+msgid "Proofread Writing"
+msgstr "Pisanie Korekty tekstu"
+
+#: config-options.php:65
+msgid "Clich&eacute;s"
+msgstr ""
+
+#: config-options.php:67
+msgid "Complex Phrases"
+msgstr "Rozbudowane frazy"
+
+#: config-options.php:69
+msgid "Diacritical Marks"
+msgstr "Znaki diakrytyczne"
+
+#: config-options.php:71
+msgid "Double Negatives"
+msgstr "Podwójne zaprzeczenie"
+
+#: config-options.php:73
+msgid "Hidden Verbs"
+msgstr ""
+
+#: atd-l10n.php:38
+msgid "There was an error communicating with the proofreading service."
+msgstr "Wystąpił błąd przy połączeniu z modułem sprawdzania tekstu. "
+
+#: atd-l10n.php:20
+msgid "Spelling"
+msgstr "Pisownia"
+
+#: config-options.php:50
+msgid "Automatically proofread content when:"
+msgstr "Automatycznie sprawdź i popraw tekst gdy:"
+
+#: config-options.php:81
+msgid "Redundant Phrases"
+msgstr "Zwroty niepotrzebne/powtarzające się"
+
+#: config-options.php:83
+msgid "<a href=\"%s\">Learn more</a> about these options."
+msgstr "<a href=\"%s\">Dowiedz się więcej</a>o tych opcjach"
+
+#: config-unignore.php:115
+msgid "Ignored Phrases"
+msgstr "Zignorowane zwroty"
+
+#: config-unignore.php:117
+msgid "Identify words and phrases to ignore while proofreading your posts and pages:"
+msgstr "Zdefiniuj wyrazy i zwroty, które mają być ignorowane w automatycznej korekcie tekstu:"
+
+#: config-unignore.php:119
+msgid "Add"
+msgstr "Dodaj"
+
+#: config-unignore.php:124
+msgid "Be sure to click \"Update Profile\" at the bottom of the screen to save your changes."
+msgstr "Pamiętaj o tym, żeby kliknąć \"Aktualizuj profil\"(Update profile) na dole ekranu, żeby zapisać zmiany."
+
+#: atd-l10n.php:42
+msgid ""
+"The proofreader has suggestions for this post. Are you sure you want to update it?\n"
+"\n"
+"Press OK to update your post, or Cancel to view the suggestions and edit your post."
+msgstr ""
+"Korektor tekstu ma wskazówki dla tego postu. Czy na pewno chcesz go uaktualniać? \n"
+"Wybierz OK by zaktualizować twój post, lub ANULUJ by zobaczyć wskazówki i edytować twój post."
+
+#: atd-l10n.php:41
+msgid ""
+"The proofreader has suggestions for this post. Are you sure you want to publish it?\n"
+"\n"
+"Press OK to publish your post, or Cancel to view the suggestions and edit your post."
+msgstr ""
+
+#: atd-l10n.php:40
+msgid "Replace selection with:"
+msgstr "Zastąp zaznaczenie... "

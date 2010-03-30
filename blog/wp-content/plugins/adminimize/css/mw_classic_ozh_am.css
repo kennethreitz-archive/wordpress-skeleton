@@ -1,7 +1,0 @@
-@import url(../../../../wp-admin/css/colors-classic.css);
-@import url(mw_basic.css);
-@import url(mw_cat.css);
-
-#wphead h1 #viewsite a:hover {
-	color: #d54e21;
-}
