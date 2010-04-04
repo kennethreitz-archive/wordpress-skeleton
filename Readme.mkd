@@ -27,12 +27,12 @@
 
 * Example [`/external.php`](http://github.com/kennethreitz/wordpress-skeleton/blob/master/external.php) for dipping into WordPress API from external PHP
 
-## Available Themes
+## Available [Themes](http://github.com/kennethreitz/wordpress-skeleton/tree/master/blog/wp-content/themes/)
 
 * [KennethReitz's Wordpress Theme Skeleton](http://github.com/kennethreitz/wordpress-theme-skeleton)
 * [Jumpchart's Content Wireframing Theme](http://www.jumpchart.com/tour/wordpress/)
 
-## Available Plugins
+## Available [Plugins](http://github.com/kennethreitz/wordpress-skeleton/tree/master/blog/wp-content/plugins/)
 
 * [After the Deadline](http://www.afterthedeadline.com/) (Spelling and grammar checking)
 * [Akismet](http://akismet.com/) (Comment spam destroyer)
