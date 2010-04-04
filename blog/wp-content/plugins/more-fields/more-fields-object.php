@@ -47,8 +47,8 @@ class more_fields_object {
 			'page' => array(		
 			//	array(__('Title'), 'titlediv'),
 			//	array(__('Post'), 'postdiv'),
-				array(__('Custom Fields'), 'pagecustomdiv'),
-				array(__('Discussion'), 'pagecommentstatusdiv'),
+				array(__('Custom Fields'), 'postcustom'),
+				array(__('Discussion'), 'commentstatusdiv'),
 				array(__('Slug'), 'pageslugdiv'),
 				array(__('Attributes'), 'pageparentdiv'),
 				array(__('Page Author'), 'pageauthordiv'),
@@ -135,7 +135,8 @@ class more_fields_object {
 	}
 	function wp_default_scripts(&$scripts) {
 		global $wp_version;
-		$src = get_option('home') . '/wp-content/plugins/more-fields/post-' . $wp_version . '.js';
+		$src = get_option('siteurl') . '/wp-content/plugins/more-fields/post-' . $wp_version . '.js';
+		if (!file_exists($src)) $src = get_option('siteurl') . '/wp-content/plugins/more-fields/post-2.9.2.js';
 		$scripts->registered['post']->src = $src;
 	}
 	function return_unmodified ($value) {
@@ -456,7 +457,7 @@ class more_fields_object {
 		// Does this needs to be checked/selected/ticked?
 		if ($value && ($value == $value_stored)) $html = str_replace('%selected%', $html_selected, $html);
 		else if ((!$value_stored) && ($value_raw != $value)) $html = str_replace('%selected%', $html_selected, $html);
-		// else if ($value_stored == 'on') $html = str_replace('%selected%', $html_selected, $html);
+		else if ($value_stored == 'on') $html = str_replace('%selected%', $html_selected, $html);
 		else $html = str_replace('%selected%', '', $html);
 		return $html;
 	}
@@ -706,10 +707,10 @@ class more_fields_object {
 			$name = ($n = $page['plural']) ? $n : $page['name'];
 			$menu[$nbr] = array( $name, 'edit_posts', $link, $id, 'menu-top', $id, $icon );
 			
-			$submenu[$link][5] = array(__('Add new'), 'edit_posts', $link);
 			$edit_link = ($page['based_on'] == 'post') ? 'edit.php?type=' . urlencode($page['name']) :
 				'edit-pages.php?type=' . urlencode($page['name']);	
 			$submenu[$link][10] = array('Edit', 'edit_posts', $edit_link);
+			$submenu[$link][5] = array(__('Add new'), 'edit_posts', $link);
 
 //			$nbr++;
 			

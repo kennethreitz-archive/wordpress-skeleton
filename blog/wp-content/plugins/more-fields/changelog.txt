@@ -1,9 +1,0 @@
-MORE-FIELDS CHANGELOG
-
-More Fields 1.4Beta1:
-copy wp-admin/js/post.js to wp-content/plugins/more-fields/post.js
-wp-content/plugins/more-fields/post.js: Comment out line 234
-wp-content/plugins/more-fields/post.js: Comment out line 235
-wp-content/plugins/more-fields/post.js: Comment out line 236
-wp-content/plugins/more-fields/post.js: Comment out line 237
-

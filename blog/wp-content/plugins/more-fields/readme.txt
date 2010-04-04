@@ -1,10 +1,10 @@
 === More Fields ===
 Contributors: henrikmelin, kalstrom
-Donate link: http://henrikmelin.se/plugins
+Donate link: http://labs.dagensskiva.com/plugins/
 Tags: custom fields, admin, metadata
-Requires at least: 2.9.1
-Tested up to: 2.9.1
-Stable tag: 1.4Beta3
+Requires at least: 2.9.2
+Tested up to: 2.9.2
+Stable tag: 1.4
 
 Adds any number of extra fields in any number of additional boxes on the Write/Edit page in the Admin.
 

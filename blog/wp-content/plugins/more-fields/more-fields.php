@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: More Fields
-Version: 1.4Beta3
-Author URI: http://henrikmelin.se/
+Version: 1.4
+Author URI: http://labs.dagensskiva.com/
 Plugin URI: http://labs.dagensskiva.com/plugins/more-fields/
-Description:  Adds any number of extra fields, in any number of additional boxes in the admin.;
+Description:  Adds any number of extra fields, in any number of additional boxes in the admin.
 Author: Henrik Melin, Kal Ström
 
 	USAGE:

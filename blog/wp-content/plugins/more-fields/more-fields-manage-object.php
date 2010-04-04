@@ -28,8 +28,8 @@ class more_fields_manage {
 			'page' => array(		
 			//	array(__('Title'), 'titlediv'),
 			//	array(__('Post'), 'postdiv'),
-				array(__('Custom Fields'), 'pagecustomdiv'),
-				array(__('Discussion'), 'pagecommentstatusdiv'),
+				array(__('Custom Fields'), 'postcustom'),
+				array(__('Discussion'), 'commentstatusdiv'),
 				array(__('Slug'), 'pageslugdiv'),
 				array(__('Attributes'), 'pageparentdiv'),
 				array(__('Page Author'), 'pageauthordiv'),
