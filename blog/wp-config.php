@@ -19,6 +19,8 @@ if ($_SERVER['HTTP_HOST'] == 'localhost.dev' /* dev domain name*/) {
 	define('FTP_USER', 'xxxxxxxxx');
 	define('FTP_PASS', 'xxxxxxxxx');
 	define('FTP_HOST', 'xxxxxxxxx');
+	
+	define('WP_CACHE', true);
 }
 
 // Override DB domain for requesting domain
