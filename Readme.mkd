@@ -3,7 +3,8 @@
 
 # Installation
 
-> git clone git://github.com/kennethreitz/wordpress-skeleton.git  
+> cd httpdocs
+> git clone git://github.com/kennethreitz/wordpress-skeleton.git .  
 > git submodule init  
 > git submodule update  
 
