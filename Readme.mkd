@@ -14,6 +14,7 @@
 * Robust `wp-config.php`
   - Built to support dev+ops environments w/ debugging
   - Default FTP connection info for installing/updating/deleting components
+
 * Ready to go `.htaccess`
   - Enables `mod_rewrite` for pretty urls
   - Gzip compression for most requests
@@ -23,6 +24,7 @@
   - No robots on `/archive/` pages  
   - No robots on `/category/` pages
   - No robots on `/tag/` pages
+
 * Example `/external.php` for dipping into WordPress API from external PHP
 
 ## Available Themes
