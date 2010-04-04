@@ -37,7 +37,7 @@
 * [After the Deadline](http://www.afterthedeadline.com/) (Spelling and grammar checking)
 * [Akismet](http://akismet.com/) (Comment spam destroyer)
 * [Collabpress](http://wordpress.org/extend/plugins/collabpress/) (Project tracking + task management within backend)
-* [CoreyLib](http://github.com/kennethreitz/coreylib)  (Universal API parser + cache)
+* [CoreyLib](http://github.com/kennethreitz/wp-coreylib)  (Universal API parser + cache)
 * [Disable Updates](http://github.com/kennethreitz/wp-disable-updates) (I got sick of client sites breaking on updates)
 * [Disqus Commenting System](http://wordpress.org/extend/plugins/disqus-comment-system/) (Socialize your site)
 * [Front End Editor](http://scribu.net/wordpress/front-end-editor) (Beautiful plugin for editing a page/post's content on the spot)

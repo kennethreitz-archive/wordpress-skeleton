@@ -1,3 +1,6 @@
 [submodule "blog/wp-content/themes/theme-skeleton"]
 	path = blog/wp-content/themes/theme-skeleton
 	url = git://github.com/kennethreitz/wordpress-theme-skeleton.git
+[submodule "blog/wp-content/plugins/wp-coreylib"]
+	path = blog/wp-content/plugins/wp-coreylib
+	url = git://github.com/kennethreitz/wp-coreylib.git
