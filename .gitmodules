@@ -4,3 +4,6 @@
 [submodule "blog/wp-content/plugins/wp-coreylib"]
 	path = blog/wp-content/plugins/wp-coreylib
 	url = git://github.com/kennethreitz/wp-coreylib.git
+[submodule "blog/wp-content/plugins/wp-clippy-syntax"]
+	path = blog/wp-content/plugins/wp-clippy-syntax
+	url = git://github.com/kennethreitz/wp-clippy-syntax-plugin.git
