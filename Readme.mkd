@@ -51,7 +51,7 @@
 * Tantan S3 (Amazon S3 for WordPress uploads)
 * Twitter Tools (AutoPost to Twitter when a post goes live. Soon to be replaced with Salsa )
 * Clippy Syntax Highlighter (GeSHi + Clippy from GitHub for one-click copying of code)
-* WP-Dummy Content (Fills your WordPress installation w/ dummy content)
+* [WP-Dummy Content](http://wordpress.org/extend/plugins/wp-dummy-content/) (Fills your WordPress installation w/ dummy content)
 * WP-Minify (Fantastic Auto minification plugin w/ cacheing)
 * WP-Super Cache (Very robust plugin for cacheing Posts and/or Pages)
 * WP-Touch (One click iPhone support)
