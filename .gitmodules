@@ -1,0 +1,3 @@
+[submodule "blog/wp-content/themes/theme-skeleton"]
+	path = blog/wp-content/themes/theme-skeleton
+	url = git://github.com/kennethreitz/wordpress-theme-skeleton.git
