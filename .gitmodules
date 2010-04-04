@@ -7,3 +7,6 @@
 [submodule "blog/wp-content/plugins/wp-clippy-syntax"]
 	path = blog/wp-content/plugins/wp-clippy-syntax
 	url = git://github.com/kennethreitz/wp-clippy-syntax-plugin.git
+[submodule "blog/wp-content/plugins/wp-disable-updates"]
+	path = blog/wp-content/plugins/wp-disable-updates
+	url = git://github.com/kennethreitz/wp-disable-updates.git
