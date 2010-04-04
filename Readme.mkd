@@ -1,6 +1,7 @@
 # WordPress Skeleton
 
-**Wordpress Version**: 2.9.3 (WordPress 3.0 Beta version available in [`3.0`]() branch)
+**Wordpress Version**: 
+*2.9.3 WordPress 3.0 Beta version available in [`3.0`]() branch*
 
 ## Installation
 
@@ -11,21 +12,21 @@
 ## Enhanced Configurations
 
 * WordPress installed in `/blog/`, but will serve site from `/`
-* Robust `wp-config.php`
+* Robust [`wp-config.php`](http://github.com/kennethreitz/wordpress-skeleton/blob/master/blog/wp-config.php)
   - Built to support dev+ops environments w/ debugging
   - Default FTP connection info for installing/updating/deleting components
 
-* Ready to go `.htaccess`
+* Ready to go [`.htaccess`](http://github.com/kennethreitz/wordpress-skeleton/blob/master/.htaccess)
   - Enables `mod_rewrite` for pretty urls
   - Gzip compression for most requests
   - Adds reasonable upload file-sizes
 
-* Ready to go `robots.txt`
+* Ready to go [`robots.txt`](http://github.com/kennethreitz/wordpress-skeleton/blob/master/robots.txt)
   - No robots on `/archive/` pages  
   - No robots on `/category/` pages
   - No robots on `/tag/` pages
 
-* Example `/external.php` for dipping into WordPress API from external PHP
+* Example [`/external.php`](http://github.com/kennethreitz/wordpress-skeleton/blob/master/external.php) for dipping into WordPress API from external PHP
 
 ## Available Themes
 
@@ -58,6 +59,4 @@
 * [WP-Touch](http://www.bravenewcode.com/products/wptouch/) (One click lazy man's iPhone support)
 
 
-
-
-# Rinse and Repeat :)
+**Enjoy :)**
