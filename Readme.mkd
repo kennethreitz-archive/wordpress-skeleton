@@ -24,6 +24,7 @@
   - No robots on `/archive/` pages  
   - No robots on `/category/` pages
   - no robots on `/tag/` pages
+* Example `/external.php` for dipping into WordPress API from external PHP
 
 ## Available Themes
 

@@ -1,46 +1,40 @@
-<?php
-/** 
- * The base configurations of the WordPress.
- *
- * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, WordPress Language, and ABSPATH. You can find more information by
- * visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
- * wp-config.php} Codex page. You can get the MySQL settings from your web host.
- *
- * This file is used by the wp-config.php creation script during the
- * installation. You don't have to use the web site, you can just copy this file
- * to "wp-config.php" and fill in the values.
- *
- * @package WordPress
- */
+<?php /* @package WordPress */
 
-if ($_SERVER['HTTP_HOST'] == 'localhost.dev') { 
-	define('DB_NAME', 'testsite');
-	define('DB_USER', 'root');
-	define('DB_PASSWORD', 'root');
+if ($_SERVER['HTTP_HOST'] == 'localhost.dev' /* dev domain name*/) { 
+	// Settings for Dev Site
+	define('DB_NAME', 'xxxxxxxxx');
+	define('DB_USER', 'xxxxxxxxx');
+	define('DB_PASSWORD', 'xxxxxxxxx');
 	define('DB_HOST', 'localhost');
 	define('WP_DEBUG', true);
 	
 } else { 
-	define('DB_NAME', 'livesite');
-	define('DB_USER', 'root');
-	define('DB_PASSWORD', 'root');
+	// Settings for Live Site
+	define('DB_NAME', 'xxxxxxxxx');
+	define('DB_USER', 'xxxxxxxxx');
+	define('DB_PASSWORD', 'xxxxxxxxx');
 	define('DB_HOST', 'localhost');
 	define('WP_DEBUG', false);
+	
+	define('FTP_USER', 'xxxxxxxxx');
+	define('FTP_PASS', 'xxxxxxxxx');
+	define('FTP_HOST', 'xxxxxxxxx');
 }
 
+// Override DB domain for requesting domain
 define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/blog');
 define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '/');
 
+// Limit post revisions (noone likes a huge database)
 define('WP_POST_REVISIONS', 5);
 define('AUTOSAVE_INTERVAL', 160 ); 
 define('WP_ALLOW_REPAIR', true);
 
-/** Database Charset to use in creating database tables. */
+// Stuff you shouldn't touch
 define('DB_CHARSET', 'utf8');
-
-/** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
+
 
 /**#@+
  * Authentication Unique Keys.
