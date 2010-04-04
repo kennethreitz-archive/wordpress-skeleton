@@ -1,25 +1,25 @@
 # WordPress Skeleton
 
-
 **Wordpress Version**: 2.9.3 (WordPress 3.0 Beta version available in [`3.0`]() branch)
 
 ## Installation
 
-> git clone  
+> git clone git://github.com/kennethreitz/wordpress-skeleton.git
 > git submodule init  
 > git submodule update  
-
-This will pull the latest of all git-powered plugins/themes
 
 ## Enhanced Configurations
 
 * WordPress installed in `/blog/`, but will serve site from `/`
 * Robust `wp-config.php`
-  - built to support dev + production environments w/ debugging
+  - Built to support dev + production environments w/ debugging
   - Default FTP connection info for installing/updating/deleting components
   - 
 * Ready to go `.htaccess`
 * Ready to go `robots.txt`
+  - No robots on `/archive/` pages  
+  - No robots on `/category/` pages
+  - no robots on `/tag/` pages
 
 ## Available Themes
 
