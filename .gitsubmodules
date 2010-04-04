@@ -1,3 +1,0 @@
-[submodule "coreylib-wordpress-plugin"]
-        path =  /blog/wp-content/plugins/coreylib-wordpress-plugin
-        url = git@github.com:kennethreitz/coreylib-wordpress-plugin.git
