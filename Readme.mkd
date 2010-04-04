@@ -1,7 +1,7 @@
 # WordPress Skeleton
 
-**Wordpress Version**: 
-*2.9.3 WordPress 3.0 Beta version available in [`3.0`]() branch*
+**Wordpress 2.9.3 **: 
+*3.0 Beta version available in [`3.0`]() branch*
 
 ## Installation
 
