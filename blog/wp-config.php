@@ -33,7 +33,6 @@ define('AUTOSAVE_INTERVAL', 160 );
 define('WP_ALLOW_REPAIR', true);
 
 
-
 // Stuff you shouldn't touch
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
