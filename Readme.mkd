@@ -16,6 +16,10 @@
   - Default FTP connection info for installing/updating/deleting components
   - 
 * Ready to go `.htaccess`
+  - Enables `mod_rewrite` for pretty urls
+  - Gzip conpression for most requests
+  - Adds reasonable upload filesizes
+
 * Ready to go `robots.txt`
   - No robots on `/archive/` pages  
   - No robots on `/category/` pages
