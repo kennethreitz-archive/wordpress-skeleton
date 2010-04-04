@@ -32,9 +32,18 @@ define('WP_POST_REVISIONS', 5);
 define('AUTOSAVE_INTERVAL', 160 ); 
 define('WP_ALLOW_REPAIR', true);
 
+
+
 // Stuff you shouldn't touch
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
+$table_prefix  = 'wp_';
+define ('WPLANG', 'English');
+
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(__FILE__) . '/');
+
+require_once(ABSPATH . 'wp-settings.php');
 
 
 
@@ -52,30 +61,3 @@ define('SECURE_AUTH_KEY', 'put your unique phrase here');
 define('LOGGED_IN_KEY', 'put your unique phrase here');
 define('NONCE_KEY', 'put your unique phrase here');
 /**#@-*/
-
-/**
- * WordPress Database Table prefix.
- *
- * You can have multiple installations in one database if you give each a unique
- * prefix. Only numbers, letters, and underscores please!
- */
-$table_prefix  = 'wp_';
-
-/**
- * WordPress Localized Language, defaults to English.
- *
- * Change this to localize WordPress.  A corresponding MO file for the chosen
- * language must be installed to wp-content/languages. For example, install
- * de.mo to wp-content/languages and set WPLANG to 'de' to enable German
- * language support.
- */
-define ('WPLANG', '');
-
-/* That's all, stop editing! Happy blogging. */
-
-/** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
-
-/** Sets up WordPress vars and included files. */
-require_once(ABSPATH . 'wp-settings.php');
