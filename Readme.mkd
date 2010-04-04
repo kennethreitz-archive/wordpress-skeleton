@@ -1,1 +1,57 @@
-# Rinse and Repeat.
+# WordPress Skeleton
+
+
+**Wordpress Version**: 2.9.3 (WordPress 3.0 Beta version available in [`3.0`]() branch)
+
+## Installation
+
+> git clone  
+> git submodule init  
+> git submodule update  
+
+This will pull the latest of all git-powered plugins/themes
+
+## Enhanced Configurations
+
+* WordPress installed in `/blog/`, but will serve site from `/`
+* Robust `wp-config.php`
+  - built to support dev + production environments w/ debugging
+  - Default FTP connection info for installing/updating/deleting components
+  - 
+* Ready to go `.htaccess`
+* Ready to go `robots.txt`
+
+## Available Themes
+
+* [KennethReitz's Wordpress Theme Skeleton](http://github.com/kennethreitz/wordpress-theme-skeleton)
+* [Jumpchart's Content Wireframing Theme](http://www.jumpchart.com/tour/wordpress/)
+
+## Available Plugins
+
+* After the Deadline (Spelling and grammar checking)
+* Akismet (Comment spam destroyer)
+* Collabpress (Project tracking within backend)
+* CoreyLib  (Universal API parser + cache)
+* Disable Updates (I got sick of client sites breaking on updates)
+* Disqus Commenting System (Socialize your site)
+* Front End Editor (Beautiful plugin for editing a page/post's content on the spot)
+* Google Sitemap Generator (Google wants the latest)
+* Markdown 1.3 (I don't like typing HTML all the time)
+* More Fields (No more ugly custom fields + custom post/page types)
+* PageMash (Content-heavy sites can be cumbersome)
+* PushPress (Support for PubSubHubbub)
+* Redirection (They are called permalinks for a reason)
+* Role Manager (Turns WordPress into a real CMS)
+* Shopp (The total ecommerce package)
+* Tantan S3 (Amazon S3 for WordPress uploads)
+* Twitter Tools (AutoPost to Twitter when a post goes live. Soon to be replaced with Salsa )
+* Clippy Syntax Highlighter (GeSHi + Clippy from GitHub for one-click copying of code)
+* WP-Dummy Content (Fills your WordPress installation w/ dummy content)
+* WP-Minify (Fantastic Auto minification plugin w/ cacheing)
+* WP-Super Cache (Very robust plugin for cacheing Posts and/or Pages)
+* WP-Touch (One click iPhone support)
+
+
+
+
+# Rinse and Repeat :)
