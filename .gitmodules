@@ -10,3 +10,6 @@
 [submodule "blog/wp-content/plugins/wp-disable-updates"]
 	path = blog/wp-content/plugins/wp-disable-updates
 	url = git://github.com/kennethreitz/wp-disable-updates.git
+[submodule "blog/wp-content/plugins/wp-async-google-analytics"]
+	path = blog/wp-content/plugins/wp-async-google-analytics
+	url = git://github.com/kennethreitz/wp-async-google-analytics.git
