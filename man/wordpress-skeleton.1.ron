@@ -1,0 +1,27 @@
+wordpress-skeleton(1) -- stop repeating yourself
+==============================================
+
+## Synopsis
+
+Hi, I'm Kenneth Reitz. I make WordPress websites for businesses and organizations.
+WordPress is a fantastic CMS solution. However, every time I go to use it, I have to configure it. 
+I always start off with the same configuration. I always install the same plugins. I always start off with the same theme. 
+Now I can take it with me, and you can too.
+
+
+## Installation
+
+	cd httpdocs  
+	git clone git://github.com/kennethreitz/wordpress-skeleton.git .  
+	git submodule init  
+	git submodule update
+
+## Usage
+
+If you use my WordPress skeleton, please contact Kenneth Reitz. 
+Suggestions / comments are welcome. 
+
+
+## SEE ALSO
+
+wordpress-theme-skeleton(1)
