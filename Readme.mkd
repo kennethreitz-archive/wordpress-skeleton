@@ -58,5 +58,8 @@ I don't like repeating myself.
 * [WP-Super Cache](http://wordpress.org/extend/plugins/wp-super-cache/) (Very robust plugin for cacheing Posts and/or Pages)
 * [WP-Touch](http://www.bravenewcode.com/products/wptouch/) (One click lazy man's iPhone support)
 
+## In the Works
+
+* Salsa: Facebook and Twitter updates for WordPress
 
 **Enjoy :)**
