@@ -1,5 +1,5 @@
 # WordPress 2.9.2 Skeleton
-*3.0 Beta version available in [`3.0beta1`](http://github.com/kennethreitz/wordpress-skeleton/tree/3.0beta1) branch*
+I don't like repeating myself. 
 
 # Installation
 
