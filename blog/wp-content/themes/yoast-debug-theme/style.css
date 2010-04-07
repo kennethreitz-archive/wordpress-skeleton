@@ -1,0 +1,70 @@
+/*
+Theme Name: Yoast Debug Theme
+Theme URI: http://yoast.com/wordpress-debug-theme/
+Description: A theme to debug issues with your WordPress install.
+Author: Joost de Valk
+Author URI: http://yoast.com/
+Version: 1.0
+*/
+
+body {
+	font-family: Helvetica;
+	font-size: 12px;
+}
+#wrapper {
+	width: 620px;
+	margin: 0 auto;
+}
+#header, #footer {
+	clear: both;
+}
+#footer {
+	border-top: 1px solid #aaa;
+	color: #aaa;
+	padding-top: 10px;
+	background: url(http://netdna.yoast.com/images/yoast-ipod-touch.png) top right no-repeat;
+	margin-top: 20px;
+	height: 60px;
+}
+#footer a {
+	text-decoration: none;
+	color: #000;
+}
+a {
+	color: orange;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.box {
+	float: left;
+	width: 300px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+.box.double {
+	width: 610px;
+	clear: both;
+}
+table {
+	width: 290px;
+	margin: 0 auto;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+.box.double table {
+	width: 600px;
+}
+th, td {
+	text-align: left;
+	font-size: 12px;
+}
+th {
+	width: 150px;
+}
+h2 {
+	margin-top: 20px;
+	font-size: 130%;
+}
+.clear {
+	clear: both;
+}
