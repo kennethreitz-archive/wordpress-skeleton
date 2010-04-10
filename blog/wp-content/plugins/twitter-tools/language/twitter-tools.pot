@@ -1,0 +1,425 @@
+# Translation of the WordPress plugin Twitter Tools 2.1 by Alex King.
+# Copyright (C) 2010 Alex King
+# This file is distributed under the same license as the Twitter Tools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Twitter Tools 2.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/twitter-tools\n"
+"POT-Creation-Date: 2010-01-09 23:25+0000\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: twitter-tools-bitly.php:83
+msgid "Bit.ly Username"
+msgstr ""
+
+#: twitter-tools-bitly.php:89
+msgid "Bit.ly API key"
+msgstr ""
+
+#: twitter-tools-bitly.php:95
+msgid "URL to use"
+msgstr ""
+
+#: twitter-tools-bitly.php:149
+msgid "Bit.ly for Twitter Tools"
+msgstr ""
+
+#: twitter-tools-bitly.php:160 twitter-tools-excludecat.php:100
+#: twitter-tools-hashtags.php:154
+msgid "Save Settings"
+msgstr ""
+
+#: twitter-tools-excludecat.php:71
+msgid "Exclude Categories for Twitter Tools"
+msgstr ""
+
+#: twitter-tools-excludecat.php:75
+msgid "Posts in selected categories will be excluded from blog post tweets"
+msgstr ""
+
+#: twitter-tools-excludecat.php:76
+msgid "Select All"
+msgstr ""
+
+#: twitter-tools-excludecat.php:76
+msgid "Unselect All"
+msgstr ""
+
+#: twitter-tools-hashtags.php:23
+msgid "#hashtags:"
+msgstr ""
+
+#: twitter-tools-hashtags.php:93
+msgid "Default #hashtags for blog post tweets"
+msgstr ""
+
+#: twitter-tools-hashtags.php:95
+msgid "include the #, example: #twittertools"
+msgstr ""
+
+#: twitter-tools-hashtags.php:143
+msgid "#hashtags for Twitter Tools"
+msgstr ""
+
+#: twitter-tools.php:157
+#, php-format
+msgid "Twitter Updates for %s"
+msgstr ""
+
+#: twitter-tools.php:158
+#, php-format
+msgid "Twitter Weekly Updates for %s"
+msgstr ""
+
+#: twitter-tools.php:427 twitter-tools.php:821
+msgid ""
+"Powered by <a href=\"http://alexking.org/projects/wordpress\">Twitter Tools</"
+"a>"
+msgstr ""
+
+#: twitter-tools.php:666
+msgid "Login succeeded, you're good to go."
+msgstr ""
+
+#: twitter-tools.php:671
+#, php-format
+msgid "Sorry, login failed. Error message from Twitter: %s"
+msgstr ""
+
+#: twitter-tools.php:810 twitter-tools.php:861
+msgid "No tweets available at the moment."
+msgstr ""
+
+#: twitter-tools.php:813
+msgid "More updates..."
+msgstr ""
+
+#: twitter-tools.php:818
+msgid "Posting tweet..."
+msgstr ""
+
+#: twitter-tools.php:870
+#, php-format
+msgid "in reply to %s"
+msgstr ""
+
+#: twitter-tools.php:950
+msgid " characters remaining"
+msgstr ""
+
+#: twitter-tools.php:965
+msgid "Post Tweet!"
+msgstr ""
+
+#. #-#-#-#-#  plugin.pot (Twitter Tools 2.1)  #-#-#-#-#
+#. Plugin Name of an extension
+#: twitter-tools.php:990 twitter-tools.php:1018 twitter-tools.php:1831
+#: twitter-tools.php:1872
+msgid "Twitter Tools"
+msgstr ""
+
+#: twitter-tools.php:996
+msgid "What I'm Doing..."
+msgstr ""
+
+#: twitter-tools.php:1013
+msgid "Title:"
+msgstr ""
+
+#: twitter-tools.php:1014
+msgid ""
+"Find additional Twitter Tools options on the <a href=\"options-general.php?"
+"page=twitter-tools.php\">Twitter Tools Options page</a>."
+msgstr ""
+
+#: twitter-tools.php:1058
+#, php-format
+msgid "Please update your <a href=\"%s\">Twitter Tools settings</a>"
+msgstr ""
+
+#: twitter-tools.php:1211 twitter-tools.php:1374
+msgid "Testing..."
+msgstr ""
+
+#: twitter-tools.php:1506 twitter-tools.php:1543
+msgid "Tweet posted."
+msgstr ""
+
+#: twitter-tools.php:1509
+msgid "Tweet post failed."
+msgstr ""
+
+#: twitter-tools.php:1521
+msgid ""
+"Oops, your tweet was not posted. Please check your username and password and "
+"that Twitter is up and running happily."
+msgstr ""
+
+#: twitter-tools.php:1552
+msgid ""
+"Please enter your <a href=\"http://twitter.com\">Twitter</a> account "
+"information in your <a href=\"options-general.php?page=twitter-tools.php"
+"\">Twitter Tools Options</a>."
+msgstr ""
+
+#: twitter-tools.php:1557
+msgid "Write Tweet"
+msgstr ""
+
+#: twitter-tools.php:1558
+msgid ""
+"This will create a new 'tweet' in <a href=\"http://twitter.com\">Twitter</a> "
+"using the account information in your <a href=\"options-general.php?"
+"page=twitter-tools.php\">Twitter Tools Options</a>."
+msgstr ""
+
+#: twitter-tools.php:1618
+msgid "Oldest first (Chronological order)"
+msgstr ""
+
+#: twitter-tools.php:1619
+msgid "Newest first (Reverse-chronological order)"
+msgstr ""
+
+#: twitter-tools.php:1645 twitter-tools.php:1651 twitter-tools.php:1822
+msgid "No"
+msgstr ""
+
+#: twitter-tools.php:1646 twitter-tools.php:1652 twitter-tools.php:1821
+msgid "Yes"
+msgstr ""
+
+#: twitter-tools.php:1659
+msgid "Tweets updated."
+msgstr ""
+
+#: twitter-tools.php:1666
+msgid "Tweet checking has been reset."
+msgstr ""
+
+#: twitter-tools.php:1672 twitter-tools.php:1871
+msgid "Twitter Tools Options"
+msgstr ""
+
+#: twitter-tools.php:1676
+msgid "Twitter Username"
+msgstr ""
+
+#: twitter-tools.php:1676
+msgid "Password"
+msgstr ""
+
+#: twitter-tools.php:1679
+msgid "Test Login Info"
+msgstr ""
+
+#: twitter-tools.php:1683
+msgid "Enable option to create a tweet when you post in your blog?"
+msgstr ""
+
+#: twitter-tools.php:1687
+msgid "Tweet prefix for new blog posts:"
+msgstr ""
+
+#: twitter-tools.php:1688
+msgid "Cannot be left blank. Will result in <b>{Your prefix}: Title URL</b>"
+msgstr ""
+
+#: twitter-tools.php:1691
+msgid "Set this on by default?"
+msgstr ""
+
+#: twitter-tools.php:1692
+msgid "Also determines tweeting for posting via XML-RPC"
+msgstr ""
+
+#: twitter-tools.php:1695
+msgid "Create a blog post from each of your tweets?"
+msgstr ""
+
+#: twitter-tools.php:1699
+msgid "Category for tweet posts:"
+msgstr ""
+
+#: twitter-tools.php:1703
+msgid "Tag(s) for your tweet posts:"
+msgstr ""
+
+#: twitter-tools.php:1705
+msgid "Separate multiple tags with commas. Example: tweets, twitter"
+msgstr ""
+
+#: twitter-tools.php:1708
+msgid "Author for tweet posts:"
+msgstr ""
+
+#: twitter-tools.php:1712
+msgid "Exclude @reply tweets in your sidebar, digests and created blog posts?"
+msgstr ""
+
+#: twitter-tools.php:1716
+msgid "Tweets to show in sidebar:"
+msgstr ""
+
+#: twitter-tools.php:1718
+msgid "Numbers only please."
+msgstr ""
+
+#: twitter-tools.php:1721
+msgid "Create tweets from your sidebar?"
+msgstr ""
+
+#: twitter-tools.php:1725
+msgid "JS Library to use?"
+msgstr ""
+
+#: twitter-tools.php:1729
+msgid "Give Twitter Tools credit?"
+msgstr ""
+
+#: twitter-tools.php:1734
+msgid "- Experimental -"
+msgstr ""
+
+#: twitter-tools.php:1737
+msgid "Create a daily digest blog post from your tweets?"
+msgstr ""
+
+#: twitter-tools.php:1742
+msgid "Title for daily digest posts:"
+msgstr ""
+
+#: twitter-tools.php:1744 twitter-tools.php:1755
+#, php-format
+msgid "Include %s where you want the date. Example: Tweets on %s"
+msgstr ""
+
+#: twitter-tools.php:1747
+msgid "Create a weekly digest blog post from your tweets?"
+msgstr ""
+
+#: twitter-tools.php:1753
+msgid "Title for weekly digest posts:"
+msgstr ""
+
+#: twitter-tools.php:1758
+msgid "Order of tweets in digest?"
+msgstr ""
+
+#: twitter-tools.php:1766
+msgid "Update Twitter Tools Options"
+msgstr ""
+
+#: twitter-tools.php:1783
+msgid "Update Tweets / Reset Checking and Digests"
+msgstr ""
+
+#: twitter-tools.php:1785
+msgid ""
+"Use these buttons to manually update your tweets or reset the checking "
+"settings."
+msgstr ""
+
+#: twitter-tools.php:1787
+msgid "Update Tweets"
+msgstr ""
+
+#: twitter-tools.php:1788
+msgid "Reset Tweet Checking"
+msgstr ""
+
+#: twitter-tools.php:1789
+msgid "Reset Digests"
+msgstr ""
+
+#: twitter-tools.php:1797
+msgid "README"
+msgstr ""
+
+#: twitter-tools.php:1798
+msgid "Find answers to common questions here."
+msgstr ""
+
+#: twitter-tools.php:1819
+msgid "Send post to Twitter?"
+msgstr ""
+
+#: twitter-tools.php:1881
+msgid "New Tweet"
+msgstr ""
+
+#: twitter-tools.php:1882
+msgid "Tweet"
+msgstr ""
+
+#: twitter-tools.php:1894
+msgid "Settings"
+msgstr ""
+
+#: twitter-tools.php:1968
+msgid "Y-m-d"
+msgstr ""
+
+#: twitter-tools.php:1973
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: twitter-tools.php:1975 twitter-tools.php:1982
+msgid "day"
+msgid_plural "days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: twitter-tools.php:1977 twitter-tools.php:1984 twitter-tools.php:1991
+msgid "hr"
+msgid_plural "hrs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: twitter-tools.php:1986 twitter-tools.php:1993 twitter-tools.php:2000
+msgid "min"
+msgid_plural "mins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: twitter-tools.php:1995 twitter-tools.php:2002 twitter-tools.php:2006
+msgid "sec"
+msgid_plural "secs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: twitter-tools.php:2011
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#. Plugin URI of an extension
+msgid "http://alexking.org/projects/wordpress"
+msgstr ""
+
+#. Description of an extension
+msgid ""
+"A complete integration between your WordPress blog and <a href=\"http://"
+"twitter.com\">Twitter</a>. Bring your tweets into your blog and pass your "
+"blog posts to Twitter. Show your tweets in your sidebar, and post tweets "
+"from your WordPress admin."
+msgstr ""
+
+#. Author of an extension
+msgid "Alex King"
+msgstr ""
+
+#. Author URI of an extension
+msgid "http://alexking.org"
+msgstr ""

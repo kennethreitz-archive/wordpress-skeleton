@@ -6,8 +6,6 @@
 	<div id="dsq-content">
 		<ul id="dsq-comments">
 <?php foreach ( $dsq_response['posts'] as $comment ) : ?>
-			<div id="comment-<?php echo $comment['id']; ?>"></div>
-
 			<li id="dsq-comment-<?php echo $comment['id']; ?>">
 				<div id="dsq-comment-header-<?php echo $comment['id']; ?>" class="dsq-comment-header">
 					<cite id="dsq-cite-<?php echo $comment['id']; ?>">
@@ -62,4 +60,12 @@
 	};
 </script>
 
-<script type="text/javascript" charset="utf-8" src="http://<?php echo strtolower(get_option('disqus_forum_url')); ?>.<?php echo DISQUS_DOMAIN; ?>/disqus.js?v=2.0&slug=<?php echo $dsq_response['thread_slug']; ?>&pname=wordpress&pver=<?php echo $dsq_version; ?>"></script>
+<script type="text/javascript" charset="utf-8">
+(function() {
+	var dsq = document.createElement('script');
+	dsq.type = 'text/javascript';
+	dsq.async = true;
+	dsq.src = "http://<?php echo strtolower(get_option('disqus_forum_url')); ?>.<?php echo DISQUS_DOMAIN; ?>/disqus.js?v=2.0&slug=<?php echo $dsq_response['thread_slug']; ?>&pname=wordpress&pver=<?php echo $dsq_version; ?>";
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>

@@ -75,11 +75,17 @@ function cp_wp_dashboard_widget_function() {
 	list_cp_activity();
 }
 
-// Add CollabPress CSS
-function cp_wp_add_stylesheet() {
-    $url = get_option('siteurl');
+// Add CollabPress Styles
+function cp_wp_add_styles() {
+	$url = get_option('siteurl');
     $url = $url . '/wp-content/plugins/collabpress/style/cp-admin.css';
     echo '<link rel="stylesheet" type="text/css" href="' . $url . '" />';
+}
+
+add_action( 'admin_head', 'cp_wp_add_styles' );
+
+// Add CollabPress Scripts
+function cp_wp_add_scripts() {
 	?>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js">
         </script>
@@ -103,7 +109,7 @@ function cp_wp_add_stylesheet() {
 
 //temp fix, should do: http://planetozh.com/blog/2008/04/how-to-load-javascript-with-your-wordpress-plugin/
 //only load JS if on a CollabPress page
-If (strpos($_SERVER['REQUEST_URI'], 'cp')>0) {
-	add_action('admin_head', 'cp_wp_add_stylesheet');
+If ( strpos($_SERVER['REQUEST_URI'], 'cp')>0 ) {
+	add_action( 'admin_head', 'cp_wp_add_scripts' );
 }
 ?>

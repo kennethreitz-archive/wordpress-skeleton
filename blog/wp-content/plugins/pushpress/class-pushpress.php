@@ -1,6 +1,5 @@
 <?php
 class PuSHPress {
-	var $hubs;
 	var $http_timeout;
 	var $http_user_agent;
 
@@ -8,9 +7,6 @@ class PuSHPress {
 
 	function init( ) {
 		// Let other plugins modify various options
-		$this->hubs = apply_filters( 'pushpress_hubs', array(
-			get_bloginfo( 'url' ) . '/?pushpress=hub'
-		) );
 		$this->http_timeout = apply_filters( 'pushpress_http_timeout', 5 );
 		$this->http_user_agent = apply_filters( 'pushpress_http_timeout', 'WordPress/PuSHPress ' . PUSHPRESS_VERSION );
 
@@ -71,6 +67,20 @@ class PuSHPress {
 		if ( $_POST['hub_topic'] == get_bloginfo( 'atom_url' ) )
 			$allowed = TRUE;
 
+		// If there is no trailing slash on the requested feed URL
+		// see if there is a match when a trailing slash is added
+		if ( substr( $_POST['hub_topic'], -1, 1 ) != '/' ) {
+			$topic_with_slash = $_POST['hub_topic'] . '/';
+
+			if ( $topic_with_slash == get_bloginfo( 'rss2_url' ) ) {
+				$_POST['hub_topic'] = $topic_with_slash;
+				$allowed = TRUE;
+			} elseif ( $topic_with_slash == get_bloginfo( 'atom_url' ) ) {
+				$_POST['hub_topic'] = $topic_with_slash;
+				$allowed = TRUE;
+			}
+		}
+
 		if ( $allowed === FALSE ) {
 			do_action( 'pushpress_topic_failure' );
 
@@ -115,13 +125,21 @@ class PuSHPress {
 	}
 
 	function hub_link_atom( ) {
-		foreach ( (array) $this->hubs as $hub ) {
+		$hubs = apply_filters( 'pushpress_hubs', array(
+			get_bloginfo( 'url' ) . '/?pushpress=hub'
+		) );
+
+		foreach ( (array) $hubs as $hub ) {
 			echo "\t<link rel='hub' href='{$hub}' />\n";
 		}
 	}
 
 	function hub_link_rss2( ) {
-		foreach ( (array) $this->hubs as $hub ) {
+		$hubs = apply_filters( 'pushpress_hubs', array(
+			get_bloginfo( 'url' ) . '/?pushpress=hub'
+		) );
+
+		foreach ( (array) $hubs as $hub ) {
 			echo "\t<atom:link rel='hub' href='{$hub}'/>\n";
 		}
 	}
@@ -132,6 +150,7 @@ class PuSHPress {
 
 		if ( $_POST['hub_mode'] == 'unsubscribe' ) {
 			do_action( 'pushpress_unsubscribe_request' );
+			$this->verify_request( );
 			$this->unsubscribe_callback( $_POST['hub_topic'], $_POST['hub_callback'] );
 			$this->return_ok( );
 		}
@@ -209,7 +228,7 @@ class PuSHPress {
 		$challenge .= uniqid( mt_rand( ), TRUE );
 
 		$hub_vars = 'hub.lease_seconds=315360000'; // 10 years
-		$hub_vars .= '&hub.mode=subscribe';
+		$hub_vars .= '&hub.mode=' . urlencode( $_POST['hub_mode'] );
 		$hub_vars .= '&hub.topic=' . urlencode( $_POST['hub_topic'] );
 		$hub_vars .= '&hub.challenge=' . urlencode( $challenge );
 

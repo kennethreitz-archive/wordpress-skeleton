@@ -10,4 +10,4 @@
 	var disqus_message = '<?php echo $excerpt; ?>';
 </script>
 <script type="text/javascript" src="<?php echo DISQUS_URL; ?>/forums/<?php echo get_option('disqus_forum_url'); ?>/embed.js"></script>
-<noscript><a href="<?php echo 'http://' . get_option('disqus_forum_url') . '.' . DISQUS_DOMAIN . '/?url=' . $the_permalink; ?>">View the entire comment thread.</a></noscript>
+<noscript>Please enable JavaScript to view the <a href="<?php echo 'http://disqus.com/?ref_noscript=' . get_option('disqus_forum_url') ?>">comments powered by Disqus.</a></noscript>

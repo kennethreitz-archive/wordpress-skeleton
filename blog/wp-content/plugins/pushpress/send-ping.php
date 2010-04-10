@@ -3,6 +3,10 @@ add_action( 'pushpress_scheduled_ping', 'pushpress_send_ping', 10, 4 );
 if ( !function_exists( 'pushpress_send_ping' ) ) {
 	function pushpress_send_ping( $callback, $post_id, $feed_type, $secret ) {
 		global $pushpress;
+
+		// Need to make sure that the PuSHPress options are initialized
+		$pushpress->init( );
+
 		do_action( 'pushpress_send_ping' );
 
 		$remote_opt = array(
@@ -13,6 +17,10 @@ if ( !function_exists( 'pushpress_send_ping' ) ) {
 			'timeout'		=> $pushpress->http_timeout,
 			'user-agent'	=> $pushpress->http_user_agent
 		);
+
+		$post = get_post( $post_id );
+		do_enclose( $post->post_content, $post_id );
+		update_postmeta_cache( array( $post_id ) );
 
 		query_posts( "p={$post_id}" );
 		ob_start( );
@@ -63,7 +71,7 @@ if ( !function_exists( 'pushpress_send_ping' ) ) {
 		$status_code = (int) $response['response']['code'];
 		if ( $status_code < 200 || $status_code > 299 ) {
 			do_action( 'pushpress_ping_not_2xx_failure' );
-			$pushpress->suspend_callback( $feed_url, $callback );
+			$pushpress->unsubscribe_callback( $feed_url, $callback );
 			return FALSE;
 		}
 	} // function send_ping

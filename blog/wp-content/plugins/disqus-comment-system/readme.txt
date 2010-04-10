@@ -1,17 +1,16 @@
-=== DISQUS Comment System ===
-Contributors: DISQUS.com <team@disqus.com>
+=== Disqus Comment System ===
+Contributors: disqus, alexkingorg, crowdfavorite
 Tags: comments, threaded, email, notification, spam, avatars, community, profile, widget
-Requires at least: 2.0
-Tested up to: 2.8
-Stable tag: 2.12.7121
+Requires at least: 2.8
+Tested up to: 2.9.2
+Stable tag: 2.33.8752
 
-The DISQUS comment system replaces your WordPress comment system with your comments hosted and powered by DISQUS.
+The Disqus comment system replaces your WordPress comment system with your comments hosted and powered by Disqus.
 
 == Description ==
 
 Disqus, pronounced "discuss", is a service and tool for web comments and
-discussions. The Disqus comment system can be plugged into any website,
-blog, or application. Disqus makes commenting easier and more interactive,
+discussions. Disqus makes commenting easier and more interactive,
 while connecting websites and commenters across a thriving discussion
 community.
 
@@ -29,8 +28,9 @@ The Disqus for WordPress plugin seamlessly integrates using the Disqus API and b
 * Threaded comments and replies
 * Notifications and reply by email
 * Subscribe and RSS options
+* Aggregated comments and social mentions
 * Powerful moderation and admin tools
-* Full spam filtering
+* Full spam filtering, blacklists and whitelists
 * Support for Disqus community widgets
 * Connected with a large discussion community
 * Increased exposure and readership
@@ -50,7 +50,7 @@ The Disqus for WordPress plugin seamlessly integrates using the Disqus API and b
 
 = More documentation =
 
-Go to http://disqus.com/docs/wordpress
+Go to [http://disqus.com/help/wordpress](http://disqus.com/help/wordpress)
 
 == Upgrading ==
 
@@ -63,4 +63,8 @@ Go to http://disqus.com/docs/wordpress
 
 == Support ==
 
-* Visit our forum at http://disqus.disqus.com/ for help.
+* Visit http://disqus.com/help/wordpress for help documentation.
+
+* Visit http://help.disqus.com for help from our support team.
+
+* Disqus also recommends the [WordPress HelpCenter](http://wphelpcenter.com/) for extended help. Disqus is not associated with the WordPress HelpCenter in any way.

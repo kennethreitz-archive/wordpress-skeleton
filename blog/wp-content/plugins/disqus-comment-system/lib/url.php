@@ -1,7 +1,7 @@
 <?php
 define('USER_AGENT', 'Disqus-WPPlugin/2.0-dev');
 
-function get_query_string($postdata) {
+function dsq_get_query_string($postdata) {
 	$postdata_str = '';
 
 	if($postdata) {
@@ -14,9 +14,9 @@ function get_query_string($postdata) {
 }
 
 
-function get_post_content($boundary, $postdata, $file_name, $file_field) {
+function dsq_get_post_content($boundary, $postdata, $file_name, $file_field) {
 	if(!$file_name || !$file_field) {
-		return get_query_string($postdata);
+		return dsq_get_query_string($postdata);
 	}
 
 	$content = array();
@@ -35,7 +35,7 @@ function get_post_content($boundary, $postdata, $file_name, $file_field) {
 }
 
 
-function get_http_headers_for_request($boundary, $content, $file_name, $file_field) {
+function dsq_get_http_headers_for_request($boundary, $content, $file_name, $file_field) {
 	$headers = array();
 	$headers[] = 'User-Agent: ' . USER_AGENT;
 	$headers[] = 'Connection: close';
@@ -51,14 +51,15 @@ function get_http_headers_for_request($boundary, $content, $file_name, $file_fie
 }
 
 
-function _curl_urlopen($url, $postdata, &$response, $file_name, $file_field) {
+function _dsq_curl_urlopen($url, $postdata, &$response, $file_name, $file_field) {
 	$c = curl_init($url);
-	$postdata_str = get_query_string($postdata);
+	$postdata_str = dsq_get_query_string($postdata);
 
 	$c_options = array(
 		CURLOPT_USERAGENT =>		USER_AGENT,
 		CURLOPT_RETURNTRANSFER =>	true,
 		CURLOPT_POST =>				($postdata_str ? 1 : 0),
+		CURLOPT_HTTPHEADER =>       array('Expect:')
 	);
 	if($postdata) {
 		$c_options[CURLOPT_POSTFIELDS] = $postdata_str;
@@ -75,12 +76,12 @@ function _curl_urlopen($url, $postdata, &$response, $file_name, $file_field) {
 }
 
 
-function _fsockopen_urlopen($url, $postdata, &$response, $file_name, $file_field) {
+function _dsq_fsockopen_urlopen($url, $postdata, &$response, $file_name, $file_field) {
 	$buf = '';
 	$req = '';
 	$length = 0;
 	$boundary = '----------' . md5(time());
-	$postdata_str = get_post_content($boundary, $postdata, $file_name, $file_field);
+	$postdata_str = dsq_get_post_content($boundary, $postdata, $file_name, $file_field);
 	$url_pieces = parse_url($url);
 
 	// Set default port for supported schemes if none is provided.
@@ -111,7 +112,7 @@ function _fsockopen_urlopen($url, $postdata, &$response, $file_name, $file_field
 	if(!$fp) { return false; }
 	$req .= ($postdata_str ? 'POST' : 'GET') . ' ' . $url_pieces['path'] . " HTTP/1.1\r\n";
 	$req .= 'Host: ' . $host . "\r\n";
-	$req .=  get_http_headers_for_request($boundary, $postdata_str, $file_name, $file_field);
+	$req .=  dsq_get_http_headers_for_request($boundary, $postdata_str, $file_name, $file_field);
 	if($postdata_str) {
 		$req .= "\r\n\r\n" . $postdata_str;
 	}
@@ -160,12 +161,12 @@ function _fsockopen_urlopen($url, $postdata, &$response, $file_name, $file_field
 }
 
 
-function _fopen_urlopen($url, $postdata, &$response, $file_name, $file_field) {
+function _dsq_fopen_urlopen($url, $postdata, &$response, $file_name, $file_field) {
 	$params = array();
 	if($file_name && $file_field) {
 		$boundary = '----------' . md5(time());
-		$content = get_post_content($boundary, $postdata, $file_name, $file_field);
-		$header = get_http_headers_for_request($boundary, $content, $file_name, $file_field);
+		$content = dsq_get_post_content($boundary, $postdata, $file_name, $file_field);
+		$header = dsq_get_http_headers_for_request($boundary, $content, $file_name, $file_field);
 
 		$params = array('http' => array(
 			'method' => 'POST',
@@ -177,7 +178,7 @@ function _fopen_urlopen($url, $postdata, &$response, $file_name, $file_field) {
 			$params = array('http' => array(
 				'method' =>		'POST',
 				'header' =>		'Content-Type: application/x-www-form-urlencoded',
-				'content' =>	get_query_string($postdata)
+				'content' =>	dsq_get_query_string($postdata)
 			));
 		}
 	}
@@ -220,7 +221,7 @@ function _fopen_urlopen($url, $postdata, &$response, $file_name, $file_field) {
  *								be the name of the file and field is the name
  *								of the field to POST.
  */
-function urlopen($url, $postdata=false, $file=false) {
+function dsq_urlopen($url, $postdata=false, $file=false) {
 	$response = array(
 		'data' => '',
 		'code' => 0
@@ -233,6 +234,8 @@ function urlopen($url, $postdata=false, $file=false) {
 		$file_name = false;
 		$file_field = false;
 	}
+
+//
 
 	// Try curl, fsockopen, fopen + stream (PHP5 only), exec wget
 	if(function_exists('curl_init')) {
@@ -247,13 +250,15 @@ function urlopen($url, $postdata=false, $file=false) {
 				return true;
 			}
 		}
-		_curl_urlopen($url, $postdata, $response, $file_name, $file_field);
+		_dsq_curl_urlopen($url, $postdata, $response, $file_name, $file_field);
 	} else if(ini_get('allow_url_fopen') && function_exists('stream_get_contents')) {
-		_fopen_urlopen($url, $postdata, $response, $file_name, $file_field);
+		_dsq_fopen_urlopen($url, $postdata, $response, $file_name, $file_field);
 	} else {
 		// TODO: Find the failure condition for fsockopen() (sockets?)
-		_fsockopen_urlopen($url, $postdata, $response, $file_name, $file_field);
+		_dsq_fsockopen_urlopen($url, $postdata, $response, $file_name, $file_field);
 	}
+
+// returns array with keys data and code (from headers)
 
 	return $response;
 }

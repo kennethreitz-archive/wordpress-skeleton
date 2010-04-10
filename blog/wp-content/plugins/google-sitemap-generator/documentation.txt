@@ -224,6 +224,7 @@
                         Improved performance of getting the current plugin version with caching
                         Updated Spanish language files
  2009-12-19     3.2.2   Fixed PHP4 problems
+ 2010-04-02     3.2.3   Fixed that all pages were not included in the sitemap if the "Uncategorized" category was excluded
 
  Maybe Todo:
  ==============================================================================

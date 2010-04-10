@@ -1,9 +1,9 @@
 === Twitter Tools ===
 Tags: twitter, tweet, integration, post, digest, notify, integrate, archive, widget
 Contributors: alexkingorg. crowdfavorite
-Requires at least: 2.3
-Tested up to: 2.8.3
-Stable tag: 2.0
+Requires at least: 2.6
+Tested up to: 2.9.1
+Stable tag: 2.2.1
 
 Twitter Tools is a plugin that creates a complete integration between your WordPress blog and your Twitter account.
 
@@ -23,9 +23,9 @@ Twitter Tools integrates with Twitter by giving you the following functionality:
 == Installation ==
 
 1. Download the plugin archive and expand it (you've likely already done this).
-2. Put the 'twitter-tools.php' file into your wp-content/plugins/ directory.
+2. Put the 'twitter-tools' directory into your wp-content/plugins/ directory.
 3. Go to the Plugins page in your WordPress Administration area and click 'Activate' for Twitter Tools.
-4. Go to the Twitter Tools Options page (Options > Twitter Tools) to set your Twitter account information and preferences.
+4. Go to the Twitter Tools Options page (Settings > Twitter Tools) to set your Twitter account information and preferences.
 
 
 == Configuration ==
@@ -39,6 +39,17 @@ There are a number of configuration options for Twitter Tools. You can find thes
 If you are using widgets, you can drag Twitter Tools to your sidebar to display your latest tweets.
 
 
+= Shortcode =
+
+Use:
+
+`[aktt_tweets]`
+
+to show your latest tweets. This will show the number of tweets set in your Settings. If you want to control how many tweets are shown explicitly, you can do so by adding a 'count' parameter like this:
+
+`[aktt_tweets count=5]`
+
+
 = Template Tags =
 
 If you are not using widgest, you can use a template tag to add your latest tweets to your sidebar.
@@ -49,6 +60,13 @@ If you are not using widgest, you can use a template tag to add your latest twee
 If you just want your latest tweet, use this template tag.
 
 `<?php aktt_latest_tweet(); ?>`
+
+
+== Plugins ==
+
+Twitter Tools supports plugins, several are included. You can find more here:
+
+http://delicious.com/alexkingorg/twitter-tools+plugin
 
 
 == Hooks/API ==
@@ -202,6 +220,61 @@ No, this is not a good idea. Twitter Tools needs to be able to look at the begin
 
 
 == Changelog ==
+
+= 2.2.1 =
+
+* Typo-fix that should allow resetting digests properly (not sure when this broke, thanks lionel_chollet).
+
+
+= 2.2 =
+
+* The use of the native `json_encode()` function, required by the changes in WordPress 2.9 (version 2.1) created a problem for users with servers running 32-bit PHP. the `json_decode()` function treats the tweet ID field as an integer instead of a string, which causes the issues. Thanks to Joe Tortuga and Ciaran Walsh for sending in the fix.
+
+
+= 2.1.2 =
+
+* Missed one last(?) instance of Services_JSON
+
+
+= 2.1.1 =
+
+* Missed replacing a couple of instances of Services_JSON
+
+
+= 2.1 =
+
+* Make install code a little smarter
+* Add unique index on tweet ID columns, remove duplicates and optimize table
+* Track the currently installed version for easier upgrades in the future
+* Cleanup around login test code
+* Add action on Update Tweets (aktt_update_tweets)
+* Add a shortcode to display recent tweets
+* Exclude replies in aktt_latest_tweet() function (if option selected)
+* Better RegEx for username and hashtag linking
+* Use site_url() and admin_url(), losing backward compatibility but gaining SSL compatibility
+* Added WordPress HelpCenter contact info to settings page
+* Use standard meta boxes (not backwards compatible) for post screen settings
+* Change how Services_JSON is included to be compatible with changes in WP 2.9 and PHP < 5.2
+* Digest functionality is marked as experimental, they need to be fundamentally rewritten to avoid race conditions experienced by some users 
+* Misc code cleanup and bug fixes
+* Added language dir and .pot file
+
+Bit.ly plugin
+
+* Changed RegEx for finding URLs in tweet content (thanks Porter Maus)
+* Added a j.mp option
+* Cleaned up the settings form
+* Added a trim() on the API Key for people that struggle with copy/paste
+* Use admin_url(), losing backward compatibility but gaining SSL compatibility
+
+Exclude Category plugin
+
+* Use admin_url(), losing backward compatibility but gaining SSL compatibility
+
+Hashtags plugin
+
+* Use admin_url(), losing backward compatibility but gaining SSL compatibility
+
 
 = 2.0 =
 

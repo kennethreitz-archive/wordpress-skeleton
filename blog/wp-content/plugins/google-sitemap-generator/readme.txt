@@ -4,7 +4,7 @@ Donate link: http://www.arnebrachhold.de/redir/sitemap-paypal
 Tags: seo, google, sitemaps, google sitemaps, yahoo, msn, ask, live, xml sitemap, xml
 Requires at least: 2.1
 Tested up to: 2.9
-Stable tag: 3.2.1
+Stable tag: 3.2.2
 
 This plugin will generate a special XML sitemap which will help search engines to better index your blog.
 
@@ -12,14 +12,12 @@ This plugin will generate a special XML sitemap which will help search engines t
 
 This plugin will generate a special XML sitemap which will help search engines like Google, Bing, Yahoo and Ask.com to better index your blog. With such a sitemap, it's much easier for the crawlers to see the complete structure of your site and retrieve it more efficiently. The plugin supports all kinds of WordPress generated pages as well as custom URLs. Additionally it notifies all major search engines every time you create a post about the new content.
 
-<a href="http://www.arnebrachhold.de/redir/sitemap-support-pro">Upgrade to the PRO version to get extra features and professional support</a>
-
 Related Links:
 
 * <a href="http://www.arnebrachhold.de/projects/wordpress-plugins/google-xml-sitemaps-generator/" title="Google XML Sitemaps Plugin for WordPress">Plugin Homepage</a>
 * <a href="http://www.arnebrachhold.de/projects/wordpress-plugins/google-xml-sitemaps-generator/changelog/" title="Changelog of the Google XML Sitemaps Plugin for WordPress">Changelog</a>
 * <a href="http://www.arnebrachhold.de/2006/04/07/google-sitemaps-faq-sitemap-issues-errors-and-problems/" title="Google Sitemaps FAQ">Plugin and sitemaps FAQ</a>
-* <a href="http://www.arnebrachhold.de/projects/wordpress-plugins/google-xml-sitemaps-generator/plugin-support/">Support</a>
+* <a href="http://wordpress.org/tags/google-sitemap-generator?forum_id=10">Support Forum</a>
 
 *This release is compatible with all WordPress versions since 2.1. If you are still using an older one, use <a href="http://downloads.wordpress.org/plugin/google-sitemap-generator.2.7.1.zip">version 2.7.1</a> instead.*
 
@@ -59,7 +57,7 @@ Most of the plugin options are described at the [plugin homepage](http://www.arn
 
 = My question isn't even answered there =
 
-Please see the different [support options](http://www.arnebrachhold.de/projects/wordpress-plugins/google-xml-sitemaps-generator/plugin-support/) to get more information.
+Please post your question at the [WordPress support forum](http://wordpress.org/tags/google-sitemap-generator?forum_id=10) and tag your post with "google-sitemap-generator".
 
 = What's new in the latest version? =
 

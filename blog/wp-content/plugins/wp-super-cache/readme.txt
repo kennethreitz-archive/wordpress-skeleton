@@ -1,8 +1,8 @@
 === WP Super Cache ===
 Contributors: donncha
 Tags: performance,caching,wp-cache,wp-super-cache,cache
-Tested up to: 2.8.6
-Stable tag: 0.9.8
+Tested up to: 2.9.1
+Stable tag: 0.9.9
 Requires at least: 2.6
 Donate link: http://ocaoimh.ie/gad/
 
@@ -22,11 +22,32 @@ The static html files will be served to the vast majority of your users, but bec
 If for some reason "supercaching" doesn't work on your server then don't worry. Caching will still be performed, but every request will require loading the PHP engine. In normal circumstances this isn't bad at all. Visitors to your site will notice no slowdown or difference. Supercache really comes into it's own if your server is underpowered, or you're experiencing heavy traffic.
 Super Cached html files will be served more quickly than PHP generated cached files but in every day use, the difference isn't noticeable.
 
-See the [WP Super Cache homepage](http://ocaoimh.ie/wp-super-cache/) for further information.
+See the [WP Super Cache homepage](http://ocaoimh.ie/wp-super-cache/) for further information. [Developer documentation](http://ocaoimh.ie/wp-super-cache-developers/) is also available for those who need to interact with the cache or write plugins.
 
 The [changelog](http://svn.wp-plugins.org/wp-super-cache/trunk/Changelog.txt) is a good place to start if you want to know what has changed since you last downloaded the plugin.
 
+== Upgrade Notice ==
+
+= 0.9.9 =
+Experimental object cache support, better WP Mobile Edition support, new translations, bugfixes, workarounds for broken .htaccess rules.
+
 == Changelog ==
+
+= 0.9.9 =
+* Added experimental object cache support.
+* Added Chinese(Traditional) translation by Pseric.
+* Added FAQ on WP-Cache vs Supercache files.
+* Use Supercache file if WP-Cache file not found. Useful if mod_rewrite rules are broken or not working.
+* Get mobile browser list from WP Mobile Edition if found. Warn user if .htaccess out of date.
+* Make sure writer lock is unlocked after writing cache files.
+* Added link to developer docs in readme.
+* Added Ukranian translation by Vitaly Mylo.
+* Added Upgrade Notice section to readme.
+* Warn if zlib compression in PHP is enabled.
+* Added compression troubleshooting answer. Props Vladimir (http://blog.sjinks.pro/)
+* Added Japanese translation by Tai (http://tekapo.com/)
+* Updated Italian translation.
+* Link to WP Mobile Edition from admin page for mobile support.
 
 = 0.9.8 =
 * Added Spanish translation by Omi.
@@ -104,7 +125,7 @@ The [changelog](http://svn.wp-plugins.org/wp-super-cache/trunk/Changelog.txt) is
 	`RewriteCond %{QUERY_STRING} !.*=.*`
 	`RewriteCond %{HTTP_COOKIE} !^.*(comment_author_|wordpress|wp-postpass_).*$`
 	`RewriteCond %{HTTP:Accept-Encoding} gzip`
-	`RewriteCond %{HTTP_user_agent} !^.*(2.0\ MMP|240x320|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|hiptop|IEMobile|iPhone|iPod|KYOCERA/WX310K|LG/U990|MIDP-2.0|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|Playstation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|Windows\ CE|WinWAP).*`
+	`RewriteCond %{HTTP_USER_AGENT} !^.*(2.0\ MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800).*`
 	`RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{HTTP_HOST}/$1/index.html.gz -f`
 	`RewriteRule ^(.*) /wp-content/cache/supercache/%{HTTP_HOST}/$1/index.html.gz [L]`
 	
@@ -112,7 +133,7 @@ The [changelog](http://svn.wp-plugins.org/wp-super-cache/trunk/Changelog.txt) is
 	`RewriteCond %{QUERY_STRING} !.*=.*`
 	`RewriteCond %{QUERY_STRING} !.*attachment_id=.*`
 	`RewriteCond %{HTTP_COOKIE} !^.*(comment_author_|wordpress|wp-postpass_).*$`
-	`RewriteCond %{HTTP_user_agent} !^.*(2.0\ MMP|240x320|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|hiptop|IEMobile|iPhone|iPod|KYOCERA/WX310K|LG/U990|MIDP-2.0|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|Playstation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|Windows\ CE|WinWAP).*`
+	`RewriteCond %{HTTP_USER_AGENT} !^.*(2.0\ MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800).*`
 	`RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{HTTP_HOST}/$1/index.html -f`
 	`RewriteRule ^(.*) /wp-content/cache/supercache/%{HTTP_HOST}/$1/index.html [L]`
 	
@@ -183,6 +204,12 @@ To manually uninstall:
 
 View the source of any page on your site. When a page is first created, you'll see the text "Dynamic page generated in XXXX seconds." and "Cached page generated by WP-Super-Cache on YYYY-MM-DD HH:MM:SS" at the end of the source code. On reload, a cached page will show the same timestamp so wait a few seconds before checking. 
 In "HALF-ON" mode, if you have compression enabled, the text "Compression = gzip" will be added. If compression is disabled and the page is served as a static html file, the text "super cache" will be added. The only other way to check if your cached file was served by PHP script or from the static cache is by looking at the HTTP headers. WP-Cache (PHP) cached pages will have the header "WP-Super-Cache: WP-Cache". I used the <a href="https://addons.mozilla.org/en-US/firefox/addon/3829">Live HTTP Headers</a> extension for Firefox to examine the headers. You should also check your cache directory in wp-content/cache/supercache/hostname/ for static cache files.
+If the plugin rules are missing from your .htaccess file, the plugin will attempt to serve the super cached page if it's found. The header "WP-Cache: Served supercache file from PHP" if this happens.
+
+= WP-Cache vs Supercache files =
+
+WP-Cache files are stored in wp-content/cache/ (or on MU sites in a blogs sub directory) and are named wp-cache-XXXXXXXXXXXXXXXXX.html. Associated meta files are stored in a meta sub directory. Those files contain information about the cached file.
+Supercache files are stored in wp-content/cache/supercache/HOSTNAME/ where HOSTNAME is your domain name. The files are stored in directories matching your site's permalink structure.
 
 = Why is WP-Super-Cache better than WP-Cache? =
 
@@ -190,7 +217,7 @@ This plugin is based on the excellent WP-Cache plugin and therefore brings all t
 
 = Will comments and other dynamic parts of my blog update immediately? =
 
-Comments will show as soon as they are moderated, depending on the comment policy of the blog owner. Other dynamic elements on a page may not update unless they are written in Javascript, Flash, Java or another client side browser language. The plugin really produces static html pages. No PHP is executed when those pages are served. "Popularity Contest" is one such plugin that will not work. Plugins that show different content for mobile users will probaby not work either.
+Comments will show as soon as they are moderated, depending on the comment policy of the blog owner. Other dynamic elements on a page may not update unless they are written in Javascript, Flash, Java or another client side browser language. The plugin really produces static html pages. No PHP is executed when those pages are served. "Popularity Contest" is one such plugin that will not work. 
 
 = Will the Super Cache compression slow down my server? =
 
@@ -275,6 +302,13 @@ A line like "127.0.0.1 localhost localhost.localdomain" is ok.
 20. If supercache cache files are generated but not served, check the permissions on all your wp-content/cache/supercache folders (and each of wp-content cache and supercache folders) and wp-content/cache/.htaccess. If your PHP runs as a different user to Apache and permissions are strict Apache may not be able to read the PHP generated cache files. To fix you must add the following line to your wp-config.php (Add it above the WP_CACHE define.) Then clear your cache.
 
 	`umask( 0022 );`
+21. If you see garbage in your browser after enabling compression in the plugin, compression may already be enabled in your web server. In Apache you must disable mod_deflate, or in PHP zlib compression may be enabled. You can disable that in three ways. If you have root access, edit your php.ini and find the zlib.output_compression setting and make sure it's "Off" or add this line to your .htaccess:
+
+	`php_flag zlib.output_compression off`
+
+If that doesn't work, add this line to your wp-config.php:
+
+	`ini_set('zlib.output_compression', 0);`
 
 == Custom Caching ==
 It is now possible to hook into the caching process using the add_cacheaction() function.

@@ -30,6 +30,23 @@ No, once the plugin is activated it takes care of the rest.
 
 == Changelog ==
 
+= 0.1.6 =
+* Force enclosure processing to happen before sending out a ping
+* Make the plugin site wide for WPMU/multi-site installs
+
+= 0.1.5 =
+* When sending out pings we need to make sure that the PuSHPress
+  options have been initialized
+* Apply the hub array filter later in the process, as part of
+  the feed head filter
+* Verify unsubscribe requests (noticed by James Holderness)
+
+= 0.1.4 =
+* Be more flexible dealing with trailing slash vs. no trailing slash
+
+= 0.1.3 =
+* Suspend should really be unsubscribe
+
 = 0.1.2 =
 * Look for WP_Error being returned when sending a ping
 

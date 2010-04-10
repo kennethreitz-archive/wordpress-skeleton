@@ -1,8 +1,8 @@
 <?php
 /**
- * Implementation of the DISQUS v2 API.
+ * Implementation of the Disqus v2 API.
  *
- * @author		DISQUS.com <team@disqus.com>
+ * @author		Disqus <team@disqus.com>
  * @copyright	2007-2008 Big Head Labs
  * @link		http://disqus.com/
  * @package		Disqus
@@ -11,17 +11,18 @@
  */
 
 require_once('url.php');
+require_once(ABSPATH.WPINC.'/http.php');
 
 /** @#+
  * Constants
  */
 /**
- * Base URL for DISQUS.
+ * Base URL for Disqus.
  */
 define('ALLOWED_HTML', '<b><u><i><h1><h2><h3><code><blockquote><br><hr>');
 
 /**
- * Helper methods for all of the DISQUS v2 API methods.
+ * Helper methods for all of the Disqus v2 API methods.
  *
  * @package		Disqus
  * @author		DISQUS.com <team@disqus.com>
@@ -39,7 +40,7 @@ class DisqusAPI {
 
 	function get_forum_list($username, $password) {
 		$credentials = base64_encode($username . ':' . $password);
-		$response = urlopen(DISQUS_API_URL . '/api/v2/get_forum_list/', array(
+		$response = dsq_urlopen(DISQUS_API_URL . '/api/v2/get_forum_list/', array(
 			'credentials'	=> $credentials,
 			'response_type'	=> 'php'
 		));
@@ -56,7 +57,7 @@ class DisqusAPI {
 
 	function get_forum_api_key($username, $password, $short_name) {
 		$credentials = base64_encode($username . ':' . $password);
-		$response = urlopen(DISQUS_API_URL . '/api/v2/get_forum_api_key/', array(
+		$response = dsq_urlopen(DISQUS_API_URL . '/api/v2/get_forum_api_key/', array(
 			'credentials'	=> $credentials,
 			'short_name'	=> $short_name,
 			'response_type' => 'php'
@@ -83,7 +84,7 @@ class DisqusAPI {
 
 		$thread_meta = $post->ID . ' ' . $post->guid;
 
-		$response = @urlopen(DISQUS_API_URL . '/api/v2/get_thread/', array(
+		$response = @dsq_urlopen(DISQUS_API_URL . '/api/v2/get_thread/', array(
 			'short_name'	=> $this->short_name,
 			'thread_url'	=> $permalink,
 			'thread_meta'	=> $thread_meta,
@@ -107,27 +108,29 @@ class DisqusAPI {
 		return $data;
 	}
 
-	function import_wordpress_comments($file) {
-		$response = urlopen(DISQUS_IMPORTER_URL . '/api/import-wordpress-comments/',
+	function import_wordpress_comments($wxr) {
+		$http = new WP_Http();
+		$response = $http->request(
+			DISQUS_IMPORTER_URL . '/api/import-wordpress-comments/',
 			array(
-				'forum_url' => $this->short_name,
-				'forum_api_key' => $this->forum_api_key,
-				'response_type'	=> 'php'
-			), array(
-				'name' => $file,
-				'field' => 'file'
+				'method' => 'POST',
+				'body' => array(
+					'forum_url' => $this->short_name,
+					'forum_api_key' => $this->forum_api_key,
+					'response_type'	=> 'php',
+					'wxr' => $wxr,
+				)
 			)
 		);
-
-		$data = unserialize($response['data']);
-		if(!$data || $data['stat'] == 'fail') {
+		$data = unserialize($response['body']);
+		if (!$data || $data['stat'] == 'fail') {
 			return -1;
 		}
 		return $data['import_id'];
 	}
 
 	function get_import_status($import_id) {
-		$response = @urlopen(DISQUS_IMPORTER_URL . '/api/get-import-status/', array(
+		$response = @dsq_urlopen(DISQUS_IMPORTER_URL . '/api/get-import-status/', array(
 			'forum_url' => $this->short_name,
 			'forum_api_key' => $this->forum_api_key,
 			'import_id' => $import_id,
@@ -139,18 +142,6 @@ class DisqusAPI {
 			return -1;
 		}
 		return $data;
-	}
-
-	function wp_check_version() {
-		global $dsq_version;
-
-		$response = @urlopen(DISQUS_MEDIA_URL . '/wp/LATEST_VERSION');
-		$latest_version = floatval($response['data']);
-		if($dsq_version < $latest_version) {
-			return $latest_version;
-		}
-
-		return false;
 	}
 
 }

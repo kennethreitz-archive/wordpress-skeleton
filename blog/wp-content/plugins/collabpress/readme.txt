@@ -4,13 +4,17 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: task, management, basecamp, to do, projects, planning, tracking, reporting
 Requires at least: 2.9
 Tested up to: 2.9.2
-Stable tag: 0.5.2
+Stable tag: 0.5.3
 
 Project management and task tracking software for WordPress and WPMU
 
 == Description ==
 
 This plugin adds project and task management functionality to WordPress. Easily create projects and assign tasks to users.
+
+CollabPress v0.4b Screencast
+
+[vimeo http://vimeo.com/9408136]
 
 Features include:
 
@@ -30,6 +34,10 @@ Works with WordPress and WordPress MU
 4. Add comments to individual tasks
 
 == Changelog ==
+
+= 0.5.3 =
+* Added CollabPress styles to necessary admin pages
+* Updated readme.txt to display CollabPress screencast (0.4b)
 
 = 0.5.2 =
 * Fixed JavaScript bug conflicting w/ plugins and themes
@@ -65,11 +73,14 @@ Works with WordPress and WordPress MU
 
 == Upgrade Notice ==
 
+= 0.5.3 =
+* Added CollabPress styles to necessary admin pages
+
 = 0.5.2 =
 * Fixed JavaScript bug conflicting w/ plugins and themes
 
 = 0.5 =
-* adds a bunch of new features including task editing, task comments, uninstallation script, and more
+* Adds a bunch of new features including task editing, task comments, uninstallation script, and more
 
 == Installation ==
 
