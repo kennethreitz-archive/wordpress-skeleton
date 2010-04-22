@@ -1,0 +1,235 @@
+<?php include W3TC_DIR . '/inc/options/common/header.phtml'; ?>
+
+<h3>Minify Settings</h3>
+
+<form action="options-general.php">
+    <p>
+        Minify is currently <span class="w3tc-<?php if ($minify_enabled): ?>enabled">enabled<?php else: ?>disabled">disabled<?php endif; ?></span>.
+        <input type="submit" name="flush_minify" value="Empty cache"<?php if (! $minify_enabled): ?> disabled="disabled"<?php endif; ?> class="button" />	
+        <input type="hidden" name="page" value="<?php echo W3TC_FILE; ?>" />
+        <input type="hidden" name="tab" value="<?php echo $this->_tab; ?>" />
+    </p>
+</form>
+
+<form id="minify_form" action="options-general.php?page=<?php echo urldecode(W3TC_FILE); ?>&amp;tab=<?php echo $this->_tab; ?>" method="post">
+	<fieldset>
+		<legend>General</legend>
+
+        <table class="form-table">
+        	<tr>
+        		<th colspan="2">
+        			<input type="hidden" name="minify.rewrite" value="0" />			
+        			<label><input type="checkbox" name="minify.rewrite" value="1"<?php checked($this->_config->get_boolean('minify.rewrite'), true); ?> /> Rewrite <acronym title="Uniform Resource Locator">URL</acronym> structure</label><br />
+    				<span class="description">If disabled, <acronym title="Cascading Style Sheet">CSS</acronym> and <acronym title="JavaScript">JS</acronym> embeddings will use GET variables instead of "fancy links."</span>
+        		</th>
+        	</tr>
+        	<tr>
+        		<th colspan="2">
+        			<input type="hidden" name="minify.upload" value="0" />			
+        			<label><input type="checkbox" name="minify.upload" value="1"<?php checked($this->_config->get_boolean('minify.upload'), true); ?> /> Automatically upload modified files</label><br />
+    				<span class="description">If <acronym title="Content Delivery Network">CDN</acronym> is enabled (and not using the origin pull method), your minified files will be automatically uploaded.</span>
+        		</th>
+        	</tr>
+        	<tr>
+        		<th><label for="minify_compression"><acronym title="Hypertext Transfer Protocol">HTTP</acronym> compression:</label></th>
+        		<td>
+        			<select id="minify_compression" name="minify.compression">
+                   		<option value="">None (not recommended)</option>
+                    	<option value="gzip"<?php selected($this->_config->get_string('minify.compression'), 'gzip'); ?><?php if (! $minify_gzip): ?> disabled="disabled"<?php endif; ?>>gzip (good)</option>
+                    	<option value="deflate"<?php selected($this->_config->get_string('minify.compression'), 'deflate'); ?><?php if (! $minify_deflate): ?> disabled="disabled"<?php endif; ?>>deflate (not recommended)</option>
+    					<option value="gzip,deflate"<?php selected($this->_config->get_string('minify.compression'), 'gzip,deflate'); ?><?php if (! $minify_gzip || ! $minify_deflate): ?> disabled="disabled"<?php endif; ?>>gzip and deflate (best)</option>
+    				</select><br />    			
+    				<span class="description">Use <acronym>HTTP</acronym> compression to automatically reduce the load time of HTML documents in browsers that support it.</span>
+        		</td>
+        	</tr>
+        </table>
+    
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+	</fieldset>
+	
+	<fieldset>
+		<legend><acronym title="Hypertext Markup Language">HTML</acronym></legend>
+
+        <table class="form-table">
+        	<tr>
+        		<th valign="top"><acronym title="Hypertext Markup Language">HTML</acronym> minify settings:</th>
+        		<td>
+        			<input type="hidden" name="minify.html.enable" value="0" />
+        			<input type="hidden" name="minify.html.reject.admin" value="0" />
+        			<input type="hidden" name="minify.html.reject.feed" value="0" />
+        			<input type="hidden" name="minify.html.inline.css" value="0" />
+        			<input type="hidden" name="minify.html.inline.js" value="0" />
+        			<input type="hidden" name="minify.html.strip.crlf" value="0" />
+        			<label><input id="html_enabled" type="checkbox" name="minify.html.enable" value="1"<?php checked($this->_config->get_boolean('minify.html.enable'), true); ?> /> Enable</label><br />
+        			<label><input class="html_enabled" type="checkbox" name="minify.html.reject.admin" value="1"<?php checked($this->_config->get_boolean('minify.html.reject.admin'), true); ?> /> Don't minify <acronym title="Hypertext Markup Language">HTML</acronym> for logged in administrators</label><br />
+        			<label><input class="html_enabled" type="checkbox" name="minify.html.reject.feed" value="1"<?php checked($this->_config->get_boolean('minify.html.reject.feed'), true); ?> /> Don't minify feeds</label><br />
+        			<label><input class="html_enabled" type="checkbox" name="minify.html.inline.css" value="1"<?php checked($this->_config->get_boolean('minify.html.inline.css'), true); ?> /> Inline <acronym title="Cascading Style Sheet">CSS</acronym> minification</label><br />
+        			<label><input class="html_enabled" type="checkbox" name="minify.html.inline.js" value="1"<?php checked($this->_config->get_boolean('minify.html.inline.js'), true); ?> /> Inline <acronym title="JavaScript">JS</acronym> minification</label><br />
+        			<label><input class="html_enabled" type="checkbox" name="minify.html.strip.crlf" value="1"<?php checked($this->_config->get_boolean('minify.html.strip.crlf'), true); ?> /> Line break removal</label><br />
+        		</td>
+        	</tr>
+        </table>
+    
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+	</fieldset>
+	
+	<fieldset>
+		<legend>JavaScript</legend>
+
+        <table class="form-table">
+        	<tr>
+        		<th valign="top"><acronym title="JavaScript">JS</acronym> minify settings:</th>
+        		<td>
+        			<input type="hidden" name="minify.js.enable" value="0" />
+        			<input type="hidden" name="minify.js.combine.header" value="0" />
+        			<input type="hidden" name="minify.js.combine.footer" value="0" />
+        			<input type="hidden" name="minify.js.strip.comments" value="0" />
+        			<input type="hidden" name="minify.js.strip.crlf" value="0" />
+        			<label><input id="js_enabled" type="checkbox" name="minify.js.enable" value="1"<?php checked($this->_config->get_boolean('minify.js.enable'), true); ?> /> Enable</label><br />
+        			<label><input class="js_enabled" type="checkbox" name="minify.js.combine.header" value="1"<?php checked($this->_config->get_boolean('minify.js.combine.header'), true); ?> /> Only combine (Head)</label><br />
+        			<label><input class="js_enabled" type="checkbox" name="minify.js.combine.footer" value="1"<?php checked($this->_config->get_boolean('minify.js.combine.footer'), true); ?> /> Only combine (Footer)</label><br />
+        			<label><input class="js_enabled" type="checkbox" name="minify.js.strip.comments" value="1"<?php checked($this->_config->get_boolean('minify.js.strip.comments'), true); ?> /> Comment removal</label><br />
+        			<label><input class="js_enabled" type="checkbox" name="minify.js.strip.crlf" value="1"<?php checked($this->_config->get_boolean('minify.js.strip.crlf'), true); ?> /> Line break removal</label><br />
+        		</td>
+        	</tr>
+        	<tr>
+        		<th valign="top"><acronym title="JavaScript">JS</acronym> file management:</th>
+        		<td>
+        			<p>
+        				<label>
+                			<select id="js_groups" class="js_enabled" name="js_group">
+                			<?php foreach ($groups as $group_key => $group_text): ?>
+                				<option value="<?php echo $group_key; ?>"<?php selected($group_key, $js_group); ?>><?php echo htmlspecialchars($group_text); ?></option>
+                			<?php endforeach; ?>
+                			</select> 
+    						Group:
+            			</label><br />
+    					<span class="description">Add scripts used in all templates to the default group. Use the menu above to manage scripts unique to a specific template.</span>
+        			</p>
+        			<ol id="js_files">
+                    <?php foreach ($js_groups as $js_group => $js_locations): ?>
+                    	<?php foreach ((array) $js_locations as $js_location => $js_config): ?>
+                    		<?php if (! empty($js_config['files'])): foreach ((array) $js_config['files'] as $js_file): ?>
+        					<li>
+        						<input class="js_enabled" type="text" name="js_files[<?php echo htmlspecialchars($js_group); ?>][<?php echo htmlspecialchars($js_location); ?>][]" value="<?php echo htmlspecialchars($js_file); ?>" size="100" />&nbsp;<select class="js_file_location js_enabled"><option value="include"<?php if ($js_location == 'include'): ?> selected="selected"<?php endif; ?>>Embed in: Header</option><option value="include-nb"<?php if ($js_location == 'include-nb'): ?> selected="selected"<?php endif; ?>>Embed in: Header (non-blocking)</option><option value="include-footer"<?php if ($js_location == 'include-footer'): ?> selected="selected"<?php endif; ?>>Embed in: Footer</option><option value="include-footer-nb"<?php if ($js_location == 'include-footer-nb'): ?> selected="selected"<?php endif; ?>>Embed in: Footer (non-blocking)</option></select>&nbsp;<input class="js_file_delete js_enabled button" type="button" value="Delete" />&nbsp;<input class="js_file_verify js_enabled button" type="button" value="Verify URI" />
+        					</li>
+                    		<?php endforeach; endif; ?>
+                    	<?php endforeach; ?>
+                    <?php endforeach; ?>
+        			</ol>
+                    <div id="js_files_empty" class="w3tc-empty" style="display: none;">No <acronym title="JavaScript">JS</acronym> files added</div>
+                    <input id="js_file_add" class="js_enabled button" type="button" value="Add a script" />
+        		</td>
+        	</tr>
+        </table>
+    
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Cascading Style Sheets</legend>
+
+        <table class="form-table">
+        	<tr>
+        		<th valign="top"><acronym title="Cascading Style Sheet">CSS</acronym> minify settings:</th>
+        		<td>
+        			<input type="hidden" name="minify.css.enable" value="0" />
+        			<input type="hidden" name="minify.css.combine" value="0" />
+        			<input type="hidden" name="minify.css.strip.comments" value="0" />
+        			<input type="hidden" name="minify.css.strip.crlf" value="0" />
+        			<label><input id="css_enabled" type="checkbox" name="minify.css.enable" value="1"<?php checked($this->_config->get_boolean('minify.css.enable'), true); ?> /> Enable</label><br />
+        			<label><input class="css_enabled" type="checkbox" name="minify.css.combine" value="1"<?php checked($this->_config->get_boolean('minify.css.combine'), true); ?> /> Combine only</label><br />
+        			<label><input class="css_enabled" type="checkbox" name="minify.css.strip.comments" value="1"<?php checked($this->_config->get_boolean('minify.css.strip.comments'), true); ?> /> Comment removal</label><br />
+        			<label><input class="css_enabled" type="checkbox" name="minify.css.strip.crlf" value="1"<?php checked($this->_config->get_boolean('minify.css.strip.crlf'), true); ?> /> Line break removal</label><br />
+        		</td>
+        	</tr>
+        	<tr>
+        		<th valign="top"><acronym title="Cascading Style Sheet">CSS</acronym> file management:</th>
+        		<td>
+        			<p>
+        				<label>
+                			<select id="css_groups" class="css_enabled" name="css_group">
+                			<?php foreach ($groups as $group_key => $group_text): ?>
+                				<option value="<?php echo $group_key; ?>"<?php selected($group_key, $css_group); ?>><?php echo htmlspecialchars($group_text); ?></option>
+                			<?php endforeach; ?>
+                			</select> 
+    						Group:
+            			</label><br />
+    					<span class="description">Add style sheets used in all templates to the default group. Use the menu above to manage style sheets unique to a specific template.</span>
+        			</p>
+        			<ol id="css_files">
+                    <?php foreach ($css_groups as $css_group => $css_locations): ?>
+                    	<?php foreach ((array) $css_locations as $css_location => $css_config): ?>
+                    		<?php if (! empty($css_config['files'])): foreach ((array) $css_config['files'] as $css_file): ?>
+        					<li>
+        						<input class="css_enabled" type="text" name="css_files[<?php echo htmlspecialchars($css_group); ?>][<?php echo htmlspecialchars($css_location); ?>][]" value="<?php echo htmlspecialchars($css_file); ?>" size="100" />&nbsp;<input class="css_file_delete css_enabled button" type="button" value="Delete" />&nbsp;<input class="css_file_verify css_enabled button" type="button" value="Verify URI" />
+        					</li>
+                    		<?php endforeach; endif; ?>
+                    	<?php endforeach; ?>
+                    <?php endforeach; ?>
+        			</ol>
+                    <div id="css_files_empty" class="w3tc-empty" style="display: none;">No <acronym title="Cascading Style Sheet">CSS</acronym> files added</div>
+        			<input id="css_file_add" class="css_enabled button" type="button" value="Add a style sheet" /> 
+        		</td>
+        	</tr>
+        </table>
+    
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+    </fieldset>
+	
+	<fieldset>
+		<legend>Advanced</legend>
+
+        <table class="form-table">
+    	<?php if ($this->_config->get_string('minify.engine') == 'memcached'): ?>
+        	<tr>
+        		<th><label for="memcached_servers">Memcached hostname:port / <acronym title="Internet Protocol">IP</acronym>:port:</label></th>
+        		<td>
+        			<input id="memcached_servers" type="text" name="minify.memcached.servers" value="<?php echo htmlspecialchars(implode(',', $this->_config->get_array('minify.memcached.servers'))); ?>" size="100" />
+        			<input id="test_memcached" class="button" type="button" value="Test" />
+        			<span id="test_memcached_status" class="w3tc-status w3tc-process"></span>
+        			<br /><span class="description">Multiple servers may be used and seperated by a comma; e.g. 192.168.1.100:11211, domain.com:22122</span>
+        		</td>
+        	</tr>
+        	<?php endif; ?>
+        	<tr>
+        		<th style="width: 250px;"><label for="minify_maxage">Maximum lifetime of cache objects:</label></th>
+        		<td><input id="minify_maxage" type="text" name="minify.maxage" value="<?php echo $this->_config->get_integer('minify.maxage'); ?>" size="8" /> seconds
+    				<br /><span class="description">Determines the natural expiration time of unchanged cache items. The higher the value, the larger the cache.</span>
+    			</td>
+        	</tr>
+        	<tr>
+        		<th><label for="minify_lifetime">Update external files every:</label></th>
+        		<td><input id="minify_lifetime" type="text" name="minify.lifetime" value="<?php echo $this->_config->get_integer('minify.lifetime'); ?>" size="8" /> seconds<br />
+        		<span class="description">Specify the interval between download and update of external files in the minify cache. Hint: 6 hours is 21600 seconds. 12 hours is 43200 seconds. 24 hours is 86400 seconds.</span></td>
+        	</tr>
+        	<tr>
+        		<th><label for="minify_file_gc">Garbage collection interval:</label></th>
+        		<td><input id="minify_file_gc" type="text" name="minify.file.gc" value="<?php echo $this->_config->get_integer('minify.file.gc'); ?>" size="8"<?php if ($this->_config->get_string('minify.engine') != 'file'): ?> disabled="disabled"<?php endif; ?> /> seconds
+        			<br /><span class="description">If caching to disk, specify how frequently expired cache data is removed. For busy sites, a lower value is best.</span>
+    			</td>
+        	</tr>
+        	<tr>
+        		<th valign="top"><label for="minify_reject_ua">Rejected user agents:</label></th>
+        		<td>
+        			<textarea id="minify_reject_ua" name="minify.reject.ua" cols="40" rows="5"><?php echo htmlspecialchars(implode("\r\n", $this->_config->get_array('minify.reject.ua'))); ?></textarea><br />
+        			<span class="description">Specify user agents that will never receive minified content.</span>
+        		</td>
+        	</tr>
+        </table>
+    
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+	</fieldset>
+</form>
+
+<?php include W3TC_DIR . '/inc/options/common/footer.phtml'; ?>

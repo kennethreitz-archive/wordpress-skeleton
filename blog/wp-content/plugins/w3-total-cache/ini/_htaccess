@@ -1,0 +1,126 @@
+# Append the contents of this file to this .htaccess to the one in your document root or configuration file to enable http
+# compression and client-side (browser) caching of files that W3 Total Cache does not handle. This file can also be used
+# for the self-hosted subdomain used in your CDN settings. Remove the optional directives section if necessary.
+
+# BEGIN Define Mime Types (in case /etc/mime.types is poorly configured or incorrect)
+<IfModule mod_mime.c>
+AddType application/x-javascript		.js
+AddType application/x-shockwave-flash	.swf
+AddType image/bmp						.bmp
+AddType image/gif						.gif
+AddType image/pjpeg						.pjpeg
+AddType image/jpeg						.jpeg
+AddType image/jpg						.jpg
+AddType image/png						.png
+AddType image/svg+xml					.svg
+AddType image/tif						.tif
+AddType image/tiff						.tiff
+AddType image/x-icon					.ico
+AddType text/css						.css
+AddType text/htm						.htm
+AddType text/html						.html
+AddType text/plain						.txt
+AddType text/xml						.xml
+AddType text/xsd						.xsd
+AddType text/xsl						.xsl
+</IfModule>
+# END Define Mime Types
+
+# BEGIN HTTP Compression
+<IfModule mod_deflate.c>
+# Netscape 4.x has some problems...
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+# Netscape 4.06-4.08 have some more problems
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+# MSIE masquerades as Netscape, but it is fine
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+# NOTE: Due to a bug in mod_setenvif up to Apache 2.0.48
+# the above regex won't work. You can use the following
+# workaround to get the desired effect:
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+# Don't compress media or scripts
+SetEnvIfNoCase Request_URI (?:bmp|gif|jpe?g|php|png|swf|tiff?)$ no-gzip dont-vary
+# Make sure proxies don't deliver the wrong content
+Header append Vary User-Agent env=!dont-vary
+# Fragment size to be compressed at one time by zlib
+#DeflateBufferSize 4096
+# Amount of compression applied to output
+#DeflateCompressionLevel 9
+# How much memory should be used by zlib for compression
+#DeflateMemLevel 9
+# Zlib compression window size
+#DeflateWindowSize 15
+# Enable HTTP Compression policy for all except .css, .js and .html documents
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/css text/plain text/html text/xml text/xsd text/xsl application/x-javascript \
+\. application/wlwmanifest+xml image/svg+xml image/x-icon
+</IfModule>
+# END HTTP Compression
+
+# BEGIN Headers: Ensure browser caching of objects for 3 days
+# Set Expires header
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType application/x-javascript		A259200
+ExpiresByType application/x-shockwave-flash	A259200
+ExpiresByType application/wlwmanifest+xml	A259200
+ExpiresByType image/bmp						A259200
+ExpiresByType image/gif						A259200
+ExpiresByType image/pjpeg					A259200
+ExpiresByType image/jpeg					A259200
+ExpiresByType image/jpg						A259200
+ExpiresByType image/png						A259200
+ExpiresByType image/svg+xml					A259200
+ExpiresByType image/tif						A259200
+ExpiresByType image/tiff					A259200
+ExpiresByType image/x-icon					A259200
+ExpiresByType text/css						A259200
+ExpiresByType text/htm						A259200
+ExpiresByType text/html						A259200
+ExpiresByType text/plain					A259200
+ExpiresByType text/xml						A259200
+ExpiresByType text/xsd						A259200
+ExpiresByType text/xsl						A259200
+</IfModule>
+
+<FilesMatch "\.(bmp|css|ico|html?|js|tiff?|gif|p?jpe?g|png|svgz?|swf|txt|xsd|xsl|xml)$">
+<IfModule mod_headers.c>
+# Set Pragma header
+Header set Pragma "public"
+# Set Cache-Control header
+Header append Cache-Control "public, must-revalidate, proxy-revalidate"
+</IfModule>
+
+# Set Entity Tag header
+FileETag MTime Size
+</FilesMatch>
+# END Headers: Ensure client-side caching of objects
+
+# BEGIN Optional Directives (if using a non-default permalink setting)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# BEGIN Do not allow WordPress to process static objects
+RewriteCond %{REQUEST_FILENAME} !^.*\.bmp [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.css [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.gif [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.html? [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.js [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.p?jpe?g [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.png [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.svgz? [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.swf [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.tiff? [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.txt [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.xsd [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.xsl [NC]
+RewriteCond %{REQUEST_FILENAME} !^.*\.xml [NC]
+# END Do not allow WordPress to process static objects
+
+# Default WordPress Directives
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END Optional Directives

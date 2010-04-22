@@ -1,0 +1,30 @@
+	<tr>
+		<th style="width:300px;"><label for="cdn_cf_key">Access key:</label></th>
+		<td>
+			<input id="cdn_cf_key" type="text" name="cdn.cf.key" value="<?php echo htmlspecialchars($this->_config->get_string('cdn.cf.key')); ?>" size="30" />
+		</td>
+	</tr>
+	<tr>
+		<th><label for="cdn_cf_secret">Secret key:</label></th>
+		<td>
+			<input id="cdn_cf_secret" type="text" name="cdn.cf.secret" value="<?php echo htmlspecialchars($this->_config->get_string('cdn.cf.secret')); ?>" size="60" />
+		</td>
+	</tr>
+	<tr>
+		<th><label for="cdn_cf_bucket">Bucket:</label></th>
+		<td>
+			<input id="cdn_cf_bucket" type="text" name="cdn.cf.bucket" value="<?php echo htmlspecialchars($this->_config->get_string('cdn.cf.bucket')); ?>" size="30" />
+			<input id="create_bucket_cf" class="button" type="button" value="Create bucket" />
+			<span id="create_bucket_cf_status" class="w3tc-status w3tc-process"></span>
+		</td>
+	</tr>
+	<tr>
+		<th><label for="cdn_cf_id">Replace site's hostname with:</label></th>
+		<td>
+			<input id="cdn_cf_id" type="text" name="cdn.cf.id" value="<?php echo htmlspecialchars($this->_config->get_string('cdn.cf.id')); ?>" size="18" style="text-align:right;" />.cloudfront.net or <label for="cdn_cf_cname">CNAME:</label> <input id="cdn_cf_cname" type="text" name="cdn.cf.cname" value="<?php echo htmlspecialchars($this->_config->get_string('cdn.cf.cname')); ?>" size="30" /><br />
+			<span class="description">If you have already added a <a href="http://docs.amazonwebservices.com/AmazonCloudFront/latest/DeveloperGuide/index.html?CNAMEs.html" target="_blank">CNAME</a> to your <acronym title="Domain Name System">DNS</acronym> Zone, enter it here.</span>
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2"><input id="test_cf" class="button" type="button" value="Test CloudFront upload" /> <span id="test_cf_status" class="w3tc-status w3tc-process"></span></th>
+	</tr>

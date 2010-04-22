@@ -1,0 +1,250 @@
+<?php include W3TC_DIR . '/inc/options/common/header.phtml'; ?>
+
+<h3>General Settings</h3>
+
+<p>The plugin is currently <span class="w3tc-<?php if ($enabled): ?>enabled">enabled<?php else: ?>disabled">disabled<?php endif; ?></span>. If an option is disabled it means that either your current installation is not compatible or installation is required.</p> 
+
+<form action="options-general.php">
+    <p>You can 
+    	<input type="hidden" name="page" value="<?php echo W3TC_FILE; ?>" />
+    	<input type="hidden" name="tab" value="<?php echo $this->_tab; ?>" />
+    	<input class="button" type="submit" name="flush_all" value="empty all caches" /> at once or 
+    	<input class="button" type="submit" name="flush_memcached" value="empty only the memcached cache(s)"<?php if (! $can_empty_memcache): ?> disabled="disabled"<?php endif; ?> /> or
+    	<input class="button" type="submit" name="flush_opcode" value="empty only the opcode cache"<?php if (! $can_empty_opcode): ?> disabled="disabled"<?php endif; ?> /> or 
+    	<input class="button" type="submit" name="flush_file" value="empty only the disk cache(s)"<?php if (! $can_empty_file): ?> disabled="disabled"<?php endif; ?> />.
+    </p>
+</form>
+
+<form action="options-general.php?page=<?php echo urldecode(W3TC_FILE); ?>&amp;tab=<?php echo $this->_tab; ?>" method="post">
+    <fieldset>
+    	<legend>General</legend>
+    
+        <p>
+        	<label>
+        		<input id="enabled" type="checkbox" name="enabled" value="1"<?php checked($enabled, true); ?> />
+        		Deselect this option to disable all caching functionality.
+        	</label>
+        </p>
+        
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+    </fieldset>
+    
+    <fieldset>
+    	<legend>Page Caching</legend>
+    
+    	<p>Enable page caching to decrease the response time of your blog.</p>
+    	
+        <table class="form-table">
+            <tr>
+            	<th valign="top">Page Caching:</th>
+            	<td>
+            		<input type="hidden" name="pgcache.enabled" value="0" />
+            		<label><input class="enabled" type="checkbox" name="pgcache.enabled" value="1"<?php checked($pgcache_enabled, true); ?> />&nbsp;<strong>Enable</strong></label><br />
+        			<span class="description">Caching pages will reduce the response time of your site and increase the concurrency (scale) of your web server.</span>
+        		</td>
+        	</tr>
+        	<tr>
+        		<th valign="top">Page Caching Method:</th>
+        		<td>
+        			<select name="pgcache.engine">
+        				<optgroup label="Shared Server (disk enhanced is best):">
+                			<option value="file_pgcache"<?php selected($this->_config->get_string('pgcache.engine'), 'file_pgcache'); ?>>Disk (enhanced)</option>
+                			<option value="file"<?php selected($this->_config->get_string('pgcache.engine'), 'file'); ?>>Disk (basic)</option>
+            			</optgroup>
+            			<optgroup label="Dedicated / Virtual Server:">
+    	    				<option value="apc"<?php selected($this->_config->get_string('pgcache.engine'), 'apc'); ?><?php if (! $check_apc): ?> disabled="disabled"<?php endif; ?>>Opcode: Alternative PHP Cache (APC)</option>
+    	    				<option value="eaccelerator"<?php selected($this->_config->get_string('pgcache.engine'), 'eaccelerator'); ?><?php if (! $check_eaccelerator): ?> disabled="disabled"<?php endif; ?>>Opcode: eAccelerator</option>
+    	    				<option value="xcache"<?php selected($this->_config->get_string('pgcache.engine'), 'xcache'); ?><?php if (! $check_xcache): ?> disabled="disabled"<?php endif; ?>>Opcode: XCache</option>
+            			</optgroup>
+    					<optgroup label="Multiple Servers:">        			
+    	        			<option value="memcached"<?php selected($this->_config->get_string('pgcache.engine'), 'memcached'); ?><?php if (! $check_memcached): ?> disabled="disabled"<?php endif; ?>>Memcached</option>
+            			</optgroup>
+        			</select>
+        		</td>
+            </tr>
+        </table>
+
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+    </fieldset>
+         
+    <fieldset>
+    	<legend>Minify</legend>
+
+    	<p>Reduce load time by decreasing the size and number of <acronym title="Cascading Style Sheet">CSS</acronym> and <acronym title="JavaScript">JS</acronym> files. Automatically remove unncessary data from <acronym title="Cascading Style Sheet">CSS</acronym>, <acronym title="JavaScript">JS</acronym>, feed, page and post <acronym title="Hypertext Markup Language">HTML</acronym>.</p>
+    
+        <table class="form-table">
+            <tr>
+            	<th valign="top">Minify:</th>
+            	<td>
+            		<input type="hidden" name="minify.enabled" value="0"<?php if (! W3TC_PHP5): ?> disabled="disabled"<?php endif; ?> />
+            		<label><input class="enabled" type="checkbox" name="minify.enabled" value="1"<?php checked($minify_enabled, true); ?><?php if (! W3TC_PHP5): ?> disabled="disabled"<?php endif; ?> />&nbsp;<strong>Enable</strong></label><br />
+            		<span class="description">Minification can decrease file size of <acronym title="Hypertext Markup Language">HTML</acronym>, <acronym title="Cascading Style Sheet">CSS</acronym>, <acronym title="JavaScript">JS</acronym> and feeds respectively by ~10% on average.</span>    	
+            	</td>
+            </tr>
+            <tr>
+            	<th valign="top">Minify Caching Method:</th>
+            	<td>
+            		<select name="minify.engine"<?php if (! W3TC_PHP5): ?> disabled="disabled"<?php endif; ?>>
+            			<optgroup label="Shared Server (disk is best):">
+                			<option value="file"<?php selected($this->_config->get_string('minify.engine'), 'file'); ?>>Disk</option>
+                		</optgroup>
+                		<optgroup label="Dedicated / Virtual Server:">
+    	    				<option value="apc"<?php selected($this->_config->get_string('minify.engine'), 'apc'); ?><?php if (! $check_apc): ?> disabled="disabled"<?php endif; ?>>Opcode: Alternative PHP Cache (APC)</option>
+    	    				<option value="eaccelerator"<?php selected($this->_config->get_string('minify.engine'), 'eaccelerator'); ?><?php if (! $check_eaccelerator): ?> disabled="disabled"<?php endif; ?>>Opcode: eAccelerator</option>
+    	    				<option value="xcache"<?php selected($this->_config->get_string('minify.engine'), 'xcache'); ?><?php if (! $check_xcache): ?> disabled="disabled"<?php endif; ?>>Opcode: XCache</option>
+        				</optgroup>
+                		<optgroup label="Multiple Servers:">
+                			<option value="memcached"<?php selected($this->_config->get_string('minify.engine'), 'memcached'); ?><?php if (! $check_memcached): ?> disabled="disabled"<?php endif; ?>>Memcached</option>
+                		</optgroup>
+            		</select>
+            	</td>
+            </tr>
+        </table>
+
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+    </fieldset>
+    
+    <fieldset>
+    	<legend>Database Caching</legend>
+    
+        <p>Enable database caching to reduce post, page and feed creation time.</p>
+        
+         <table class="form-table">
+         	<tr>
+         		<th valign="top">Database Caching:</th>
+         		<td>
+         			<input type="hidden" name="dbcache.enabled" value="0" />
+        			<label><input class="enabled" type="checkbox" name="dbcache.enabled" value="1"<?php checked($dbcache_enabled, true); ?> />&nbsp;<strong>Enable</strong></label><br />
+    				<span class="description">Caching database objects may decrease the response time of your blog by up to 100x.</span>
+        		</td>
+        	</tr>
+        	<tr>
+        		<th valign="top">Database Caching Method:</th>
+        		<td>
+        			<select name="dbcache.engine">
+            			<optgroup label="Shared Server:">
+                			<option value="file"<?php selected($this->_config->get_string('dbcache.engine'), 'file'); ?>>Disk</option>
+                		</optgroup>
+                		<optgroup label="Dedicated / Virtual Server:">
+    	    				<option value="apc"<?php selected($this->_config->get_string('dbcache.engine'), 'apc'); ?><?php if (! $check_apc): ?> disabled="disabled"<?php endif; ?>>Opcode: Alternative PHP Cache (APC)</option>
+    	    				<option value="eaccelerator"<?php selected($this->_config->get_string('dbcache.engine'), 'eaccelerator'); ?><?php if (! $check_eaccelerator): ?> disabled="disabled"<?php endif; ?>>Opcode: eAccelerator</option>
+    	    				<option value="xcache"<?php selected($this->_config->get_string('dbcache.engine'), 'xcache'); ?><?php if (! $check_xcache): ?> disabled="disabled"<?php endif; ?>>Opcode: XCache</option>
+        				</optgroup>
+                		<optgroup label="Multiple Servers:">
+                			<option value="memcached"<?php selected($this->_config->get_string('dbcache.engine'), 'memcached'); ?><?php if (! $check_memcached): ?> disabled="disabled"<?php endif; ?>>Memcached</option>
+                		</optgroup>
+        			</select>
+        		</td>
+        	</tr>
+        </table>
+
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+	</fieldset>
+	
+    <fieldset>
+    	<legend>Content Delivery Network</legend>
+	    
+        <p>Host static files with your <acronym title="Content Delivery Network">CDN</acronym> provider to reduce load time.</p>
+        
+        <table class="form-table">
+            <tr>
+    			<th><acronym title="Content Delivery Network">CDN</acronym>:</th>
+            	<td>
+            		<input type="hidden" name="cdn.enabled" value="0" />
+    				<label><input class="enabled" type="checkbox" name="cdn.enabled" value="1"<?php checked($cdn_enabled, true); ?> />&nbsp;<strong>Enable</strong></label><br />
+    				<span class="description">Theme files, media library attachments, <acronym title="Cascading Style Sheet">CSS</acronym>, <acronym title="JavaScript">JS</acronym> files etc will appear to load instantly for siite visitors.</span>
+            	</td>
+            </tr>
+            <tr>
+    			<th><acronym title="Content Delivery Network">CDN</acronym> Type:</th>
+            	<td>
+            		<select name="cdn.engine">
+            			<optgroup label="Origin Pull (mirror is best):">
+							<option value="mirror"<?php selected($this->_config->get_string('cdn.engine'), 'mirror'); ?>>Mirror</option>
+                		</optgroup>
+            			<optgroup label="Origin Push:">
+							<option value="cf"<?php selected($this->_config->get_string('cdn.engine'), 'cf'); ?><?php if (! W3TC_PHP5 || ! $check_curl): ?> disabled="disabled"<?php endif; ?>>Amazon CloudFront</option>
+							<option value="s3"<?php selected($this->_config->get_string('cdn.engine'), 's3'); ?><?php if (! W3TC_PHP5 || ! $check_curl): ?> disabled="disabled"<?php endif; ?>>Amazon Simple Storage Service (S3)</option>
+							<option value="ftp"<?php selected($this->_config->get_string('cdn.engine'), 'ftp'); ?>>Self-hosted / File Transfer Protocol Upload</option>
+                		</optgroup>
+            		</select><br />
+            		<span class="description">Select the <acronym title="Content Delivery Network">CDN</acronym> type you wish to use.</span>
+            	</td>
+            </tr>
+        </table>
+
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+	</fieldset>
+
+    <fieldset>
+    	<legend>Support Us</legend>
+        
+    	<p>We're working to make WordPress better. Please support us, here's how:</p>
+    	
+    	<p>
+        	<label>Link to us:
+            	<select name="common.support">
+            		<option value="">select one</option>
+            		<?php foreach ($supports as $support_id => $support_name): ?>
+            		<option value="<?php echo $support_id; ?>"<?php selected($support, $support_id); ?>><?php echo htmlspecialchars($support_name); ?></option>
+            		<?php endforeach; ?>
+            	</select>
+            </label>, tell your friends with a <input type="button" class="button button-tweet" value="tweet" /> and give us a great <input type="button" class="button button-rating" value="rating" />.
+    	</p>
+    
+        <p>If you want to manually place a link, here is the code:</p>
+        <p><textarea cols="80" rows="4">Performance Optimization &lt;a href=&quot;http://www.w3-edge.com/wordpress-plugins/&quot; rel=&quot;external&quot;&gt;WordPress Plugins&lt;/a&gt; by W3 EDGE</textarea></p> 
+    
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+	</fieldset>
+	
+    <fieldset>
+    	<legend>Debug</legend>
+        
+        <p>Detailed information about each cache will be appended in (publicly available) <acronym title="Hypertext Markup Language">HTML</acronym> comments in the page's source code. Performance in this mode will not be optimal, use sparingly and disable when not in use.</p>
+        
+        <table class="form-table">
+         	<tr>
+         		<th valign="top">Debug Mode:</th>
+         		<td>
+         			<label><input type="checkbox" name="debug[]" value="pgcache"<?php checked($this->_config->get_boolean('pgcache.debug'), true); ?> /> Page Cache</label><br />
+         			<label><input type="checkbox" name="debug[]" value="minify"<?php checked($this->_config->get_boolean('minify.debug'), true); ?> /> Minify</label><br />
+         			<label><input type="checkbox" name="debug[]" value="dbcache"<?php checked($this->_config->get_boolean('dbcache.debug'), true); ?> /> Database Cache</label><br />
+         			<label><input type="checkbox" name="debug[]" value="cdn"<?php checked($this->_config->get_boolean('cdn.debug'), true); ?> /> Content Delivery Network</label><br />
+            		<span class="description">If selected, detailed caching information will be appear at the end of each page in a <acronym title="Hypertext Markup Language">HTML</acronym> comment. View a page's source code to review.</span>
+        		</td>
+        	</tr>
+        </table> 
+        
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+	</fieldset>
+
+    <fieldset>
+    	<legend>Miscellaneous</legend>
+
+    	<p>	
+    		<input type="hidden" name="widget.latest.enabled" value="0" />
+    		<label><input type="checkbox" name="widget.latest.enabled" value="1"<?php checked($this->_config->get_boolean('widget.latest.enabled'), true); ?> /> Enable dashboard news widget</label><br />
+    	</p>
+        
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+	</fieldset>
+</form>
+
+<?php include W3TC_DIR . '/inc/options/common/footer.phtml'; ?>

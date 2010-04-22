@@ -1,0 +1,99 @@
+<?php include W3TC_DIR . '/inc/options/common/header.phtml'; ?>
+
+<h3>Support</h3>
+
+<form action="options-general.php?page=<?php echo urldecode(W3TC_FILE); ?>&amp;tab=<?php echo $this->_tab; ?>" method="post" enctype="multipart/form-data" id="support_form">
+    <p>
+    	Request professional services or notify us of any bugs you have identified:
+	</p>
+	
+    <fieldset>
+    	<legend>Required information</legend>
+
+        <table class="form-table">
+        	<tr>
+        		<th valign="top"><label for="support_request_type">Request type:</label></th>
+        		<td><select id="support_request_type" name="request_type">
+        			<option value="">-- Choose Type --</option>
+        			<?php foreach ($request_types as $_request_type): ?>
+        			<option value="<?php echo $_request_type; ?>"<?php selected($_request_type, $request_type); ?>><?php echo $_request_type; ?></option>
+        			<?php endforeach; ?>
+        		</select></td>
+        	</tr>
+        	<tr>
+        		<th><label for="support_url">Blog <acronym title="Uniform Resource Locator">URL</acronym>:</label></th>
+        		<td><input id="support_url" type="text" name="url" value="<?php echo htmlspecialchars($url); ?>" size="80" /></td>
+        	</tr>
+        	<tr>
+        		<th><label for="support_name">Name:</label></th>
+        		<td><input id="support_name" type="text" name="name" value="<?php echo htmlspecialchars($name); ?>" size="80" /></td>
+        	</tr>
+        	<tr>
+        		<th><label for="support_email">E-Mail:</label></th>
+        		<td><input id="support_email" type="text" name="email" value="<?php echo htmlspecialchars($email); ?>" size="80" /></td>
+        	</tr>
+        	<tr>
+        		<th valign="top"><label for="support_description">Issue description:</label></th>
+        		<td><textarea id="support_description" name="description" cols="80" rows="8"><?php echo htmlspecialchars($description); ?></textarea></td>
+        	</tr>
+        	<tr>
+        		<th><label for="support_template">Attach template:</label></th>
+        		<td><select id="support_template" name="templates[]" multiple="multiple" size="10" style="height: auto;">
+    	    		<?php foreach ($template_files as $template_file): ?>
+        			<option value="<?php echo htmlspecialchars($template_file); ?>"<?php if (in_array($template_file, $templates)): ?> selected="selected"<?php endif; ?>><?php echo htmlspecialchars($template_file); ?></option>
+        			<?php endforeach; ?>
+        		</select></td>
+        	</tr>
+        	<tr>
+        		<th><label for="support_file">Attach file:</label></th>
+        		<td>
+        			<input id="support_file" type="file" name="files[]" value="" /><br />
+        			<a href="#" id="support_more_files">Attach more files</a>
+        		</td>
+        	</tr>
+        </table>
+	</fieldset>
+	
+    <fieldset>
+    	<legend>Additional information</legend>
+
+        <table class="form-table">
+        	<tr>
+        		<th><label for="support_wp_login"><acronym title="WordPress">WP</acronym> Admin login:</label></th>
+        		<td><input id="support_wp_login" type="text" name="wp_login" value="<?php echo htmlspecialchars($wp_login); ?>" size="40" /></td>
+        	</tr>
+        	<tr>
+        		<th><label for="support_wp_password"><acronym title="WordPress">WP</acronym> Admin password:</label></th>
+        		<td><input id="support_wp_password" type="text" name="wp_password" value="<?php echo htmlspecialchars($wp_password); ?>" size="40" /></td>
+        	</tr>
+        	<tr>
+        		<th><label for="support_ftp_host"><acronym title="Secure Shell">SSH</acronym> / <acronym title="File Transfer Protocol">FTP</acronym> host:</label></th>
+        		<td><input id="support_ftp_host" type="text" name="ftp_host" value="<?php echo htmlspecialchars($ftp_host); ?>" size="40" /></td>
+        	</tr>
+        	<tr>
+        		<th><label for="support_ftp_login"><acronym title="Secure Shell">SSH</acronym> / <acronym title="File Transfer Protocol">FTP</acronym> login:</label></th>
+        		<td><input id="support_ftp_login" type="text" name="ftp_login" value="<?php echo htmlspecialchars($ftp_login); ?>" size="40" /></td>
+        	</tr>
+        	<tr>
+        		<th><label for="support_ftp_password"><acronym title="Secure Shell">SSH</acronym> / <acronym title="File Transfer Protocol">FTP</acronym> password:</label></th>
+        		<td><input id="support_ftp_password" type="text" name="ftp_password" value="<?php echo htmlspecialchars($ftp_password); ?>" size="40" /></td>
+        	</tr>
+        </table>
+    </fieldset>
+    
+    <fieldset>
+    	<legend>Notes</legend>
+    
+		<ul>
+			<li>All submitted data will not be saved and is used solely for the purposes your support request. You will not be added to a mailing list, solicited without your permission, nor will your site be administered after this support case is closed.</li>
+			<li>Instead of providing your primary administrative or <acronym title="Secure Shell">SSH</acronym> / <acronym title="File Transfer Protocol">FTP</acronym> accounts, create a new administrator account that can be disabled when the support case is closed.</li>
+			<li>Please add the domain w3-edge.com to your <a href="http://en.wikipedia.org/wiki/Whitelist" target="_blank">email whitelist</a> as soon as possible.</li>
+		</ul>
+    </fieldset>
+	
+    <p>
+    	<input type="submit" name="Submit" class="button-primary" value="Submit request" />
+    </p>
+</form>
+
+<?php include W3TC_DIR . '/inc/options/common/footer.phtml'; ?>

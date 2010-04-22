@@ -1,0 +1,133 @@
+#icon-w3tc-logo {
+	background: url(../images/logo.png) no-repeat;
+	float: left;
+	height: 36px;
+	width: 36px
+}
+
+.w3tc-options-menu-selected {
+	font-weight: 700
+}
+
+.w3tc-enabled {
+	color: #090;
+	font-weight: 700
+}
+
+.w3tc-disabled {
+	color: #f00;
+	font-weight: 700
+}
+
+.w3tc-empty {
+	font-weight: 700;
+	font-style: italic
+}
+
+.w3tc-success {
+	background: #bfb
+}
+
+.w3tc-error {
+	background: #f99
+}
+
+.w3tc-status {
+	padding: 5px
+}
+
+#w3tc acronym {
+	border-bottom: 1px dotted #666
+}
+
+#w3tc ul {
+	list-style-type: disc;
+	list-style-position: inside
+}
+
+#w3tc blockquote {
+	font-style: italic;
+}
+
+#w3tc blockquote cite {
+	font-style: 400
+}
+
+#w3tc h5 {
+	margin: 0
+}
+
+#w3tc hr {
+	clear: both;
+	margin-top: 10px
+}
+
+#w3tc ul {
+	list-style-position: inside
+}
+
+#w3tc #toc a,#qa a {
+	text-decoration: none
+}
+
+#w3tc #toc a:hover,#qa a:hover {
+	text-decoration: underline
+}
+
+#w3tc #toc ul {
+	margin: 0;
+	padding: 0
+}
+
+#w3tc #toc li {
+	margin: 0;
+	padding: 0
+}
+
+#w3tc #toc li.col {
+	float: left;
+	list-style: none;
+	margin: 0 30px 0 0;
+	width: 30%
+}
+
+#w3tc #toc li.col ul {
+	margin-left: 20px
+}
+
+#w3tc #toc li.col ul li {
+	list-style: disc
+}
+
+#w3tc #qa {
+	clear: both;
+	padding: 10px;
+}
+
+#w3tc #qa,#w3tc #about,#w3tc #install {
+	width: 760px;
+}
+
+#w3tc fieldset {
+	margin: 1em 0;
+	padding: 0 1em 1em 1em;
+	border: 1px solid #bbb;
+	border-radius: 11px;
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+}
+
+#w3tc fieldset .submit {
+	margin: 1em 0 0 0;
+	padding: 0;
+}
+
+#w3tc legend {
+	color: #999;
+	padding: 0 5px;
+	font-weight: bold;
+}
+
+#cdn-general th {
+	width: 400px;
+}

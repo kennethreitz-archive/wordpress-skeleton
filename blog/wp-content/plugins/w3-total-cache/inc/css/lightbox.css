@@ -1,0 +1,29 @@
+#overlay {
+	background: #666;
+}
+
+.lightbox {
+	background: #f9f9f9;
+	padding: 10px 20px;
+	border: 1px solid #bbb;
+	border-radius: 11px;
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+}
+
+.lightbox-close {
+	cursor: hand;
+	cursor: pointer;
+	text-decoration: underline;
+	float: right;
+}
+
+.lightbox-loader {
+	background-image: url(../images/loader.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.lightbox th {
+	width: 80px;
+}

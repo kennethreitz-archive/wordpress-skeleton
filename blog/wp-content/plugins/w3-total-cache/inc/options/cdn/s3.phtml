@@ -1,0 +1,33 @@
+	<tr>
+		<th style="width:300px;"><label for="cdn_s3_key">Access key:</label></th>
+		<td>
+			<input id="cdn_s3_key" type="text" name="cdn.s3.key" value="<?php echo htmlspecialchars($this->_config->get_string('cdn.s3.key')); ?>" size="30" />
+		</td>
+	</tr>
+	<tr>
+		<th><label for="cdn_s3_secret">Secret key:</label></th>
+		<td>
+			<input id="cdn_s3_secret" type="text" name="cdn.s3.secret" value="<?php echo htmlspecialchars($this->_config->get_string('cdn.s3.secret')); ?>" size="60" />
+		</td>
+	</tr>
+	<tr>
+		<th><label for="cdn_s3_bucket">Bucket:</label></th>
+		<td>
+			<input id="cdn_s3_bucket" type="text" name="cdn.s3.bucket" value="<?php echo htmlspecialchars($this->_config->get_string('cdn.s3.bucket')); ?>" size="30" />
+			<input id="create_bucket_s3" class="button" type="button" value="Create bucket" /> 
+			<span id="create_bucket_s3_status" class="w3tc-status w3tc-process"></span>
+		</td>
+	</tr>
+	<tr>
+		<th>Replace site's hostname with:</th>
+		<td>
+			<?php if (($cdn_s3_bucket = $this->_config->get_string('cdn.s3.bucket')) != ''): ?>
+			    <?php echo htmlspecialchars($cdn_s3_bucket); ?>.s3.amazonaws.com
+			<?php else: ?>
+			    &lt;bucket&gt;.s3.amazonaws.com
+			<?php endif; ?>
+		</td>
+	</tr>
+	<tr>
+		<th><input id="test_s3" class="button" type="button" value="Test S3 upload" /> <span id="test_s3_status" class="w3tc-status w3tc-process"></span></th>
+	</tr>

@@ -1,0 +1,166 @@
+<?php include W3TC_DIR . '/inc/options/common/header.phtml'; ?>
+
+<div id="install">
+    <h3>Plugin Installation</h3>
+    
+    <ol> 
+        <li>Set the permissions of wp-content back to 755, e.g.: # chmod 755 /var/www/vhosts/domain.com/httpdocs/wp-content/</li>
+        <li>On the "<a href="options-general.php?page=w3-total-cache/w3-total-cache.php&amp;tab=general">General Settings</a>" tab and select your caching methods for page, database and minify. In most cases, "disk enhanced" mode for page cache, "disk" mode for minify and "disk" mode for database caching are "good" settings.</li>
+        <li><em>Optional:</em> If you already have a content delivery network (<acronym title="Content Delivery Network">CDN</acronym>) provider, proceed to the "<a href="options-general.php?page=w3-total-cache/w3-total-cache.php&amp;tab=cdn"><acronym title="Content Delivery Network">CDN</acronym> Settings</a>" tab and populate the fields and set your preferences. If you do not use the Media Library, you will need to import your images etc into the default locations. Use the Media Library Import Tool on the <acronym title="Content Delivery Network">CDN</acronym> Setting tab to perform this task. If you do not have a <acronym title="Content Delivery Network">CDN</acronym> provider, you can still improve your site's performance using the "Self-hosted" method. On your own server, create a subdomain and matching <acronym title="Domain Name System">DNS</acronym> Zone record; e.g. static.domain.com and configure <acronym title="File Transfer Protocol">FTP</acronym> options on the <acronym title="Content Delivery Network">CDN</acronym> tab accordingly. Be sure to <acronym title="File Transfer Protocol">FTP</acronym> upload the appropriate files, using the available upload buttons.</li>
+        <li><em>Optional:</em> On the "<a href="options-general.php?page=w3-total-cache/w3-total-cache.php&amp;tab=minify">Minify Settings</a>" tab all of the recommended settings are preset. View your site's <acronym title="Hypertext Markup Language">HTML</acronym> source and search for .css and .js files and then specify any <acronym title="Cascading Style Sheet">CSS</acronym> and <acronym title="JavaScript">JS</acronym> files in the respective section. In the case of <acronym title="JavaScript">JS</acronym> files you can (optionally) specify the type and location of the embedding using the drop down menu. See the plugin's <a href="options-general.php?page=w3-total-cache/w3-total-cache.php&amp;tab=faq">FAQ</a> for more information on usage.</li>
+        <li><em>Optional:</em> On the "<a href="options-general.php?page=w3-total-cache/w3-total-cache.php&amp;tab=dbcache">Database Cache Settings</a>" tab the recommended settings are preset. If you're using a shared hosting account use the "disk" method with caution; in either of these cases the response time of the disk may not be fast enough, so this option is disabled by default.</li>
+        <li>You're done! Get back to blogging!</li>
+    </ol>
+        Check out the <acronym title="Frequently Asked Questions">FAQ</acronym> for more details on <a href="options-general.php?page=w3-total-cache/w3-total-cache.php&amp;tab=faq">usage</a>.
+        <hr />
+    <h3>(Optional) Software Installation for Dedicated / Virtual Dedicated / Multiple Servers</h3>
+    
+        <p><strong>Server Preparation:</strong><br />
+          <em>Time required: ~1 minute</em></p>
+    <ol> 
+        <li><a href="http://www.google.com/search?q=installing%20yum&amp;output=search&amp;tbs=qdr:y&amp;tbo=1" target="_blank">Install yum</a> if you don't already have it. Then, if you like, you can update all of your installed software, but do so only if you have the experience and time to double check configurations afterwards:<br />
+        # yum update</li>
+        <li>Install <acronym title="PHP Extension Community Library">PECL</acronym>:<br />
+        # yum install php-pear</li>
+        <li>Install the <acronym title="Hypertext Preprocessor">PHP</acronym> Development package:<br />
+        # yum install php-devel</li>
+        <li>Install apxs with the following command:<br />
+        # yum install httpd-devel</li>
+        <li>Make sure GCC is up-to-date:<br />
+		# yum install gcc make</li>
+        <li>Make sure ZLIB is fully installed:<br />
+		# yum install zlib-devel</li>
+    </ol>
+        <hr />
+        <p id="memcached"><strong>Memcached (Daemon) Installation:</strong><br />
+          <em>Time required: 2 minutes</em></p>
+    <ol> 
+        <li>Try to install with yum:<br />
+        # yum install libevent libevent-devel<br />
+        <br />
+        If this succeeds skip to #5. If this fails, then let's compile. Download and extract the <a href="http://www.monkey.org/~provos/libevent/" target="_blank">latest stable version</a>:<br />
+        # cd /usr/local/src &amp;&amp; wget <a href="http://www.monkey.org/~provos/libevent-1.4.13-stable.tar.gz" target="_blank">http://monkey.org/~provos/libevent-1.4.13-stable.tar.gz</a> &amp;&amp; tar -xzf libevent-1.4.13-stable.tar.gz &amp;&amp; cd libevent-1.4.13-stable</li>
+        <li>Let's compile:<br />
+        # ./configure &amp;&amp; make &amp;&amp; make install</li>
+        <li>In the output you should see:<br />
+        <br />
+        Libraries have been installed in:<br />
+        /usr/local/lib<br />
+        <br />
+        If so you can:<br />
+        # echo "/usr/local/lib/" &gt; /etc/ld.so.conf.d/libevent.conf</li>
+        <li>Configure your server for the new install:<br />
+        # ldconfig -v</li>
+        <li>Now find the <a href="http://www.danga.com/memcached/download.bml" target="_blank">latest stable memcached</a>, download and extract:<br />
+        # cd /usr/local/src &amp;&amp; wget <a href="http://memcached.googlecode.com/files/memcached-1.4.4.tar.gz" target="_blank">http://memcached.googlecode.com/files/memcached-1.4.4.tar.gz</a> &amp;&amp; tar -xzf memcached-1.4.4.tar.gz &amp;&amp; cd memcached-1.4.4</li>
+        <li>Let's compile:<br />
+        # ./configure &amp;&amp; make &amp;&amp; make install</li>
+        <li>Make sure memcached is starts automatically on server boot:<br />
+        # touch /etc/init.d/memcached<br />
+        # echo '#!/bin/sh -e' &gt;&gt; /etc/init.d/memcached<br />
+        # echo '/usr/local/bin/memcached -d -m 128 -p 11211 -u nobody -l localhost' &gt;&gt; /etc/init.d/memcached<br />
+        # chmod u+x /etc/init.d/memcached<br />
+		# echo '/etc/init.d/memcached' &gt;&gt; /etc/rc.local</li>
+        <li>And finally, let's start memcached:<br />
+        # /etc/init.d/memcached</li>
+    </ol>
+	<hr />
+	<p id="memcache"><strong><acronym title="PHP Extension Community Library">PECL</acronym> Memcache Module Installation:</strong><br />
+	  <em>Time required: 1 minute</em></p>
+    <ol> 
+        <li>Either use <acronym title="PHP Extension Community Library">PECL</acronym> (and skip to #4 if successful):<br />
+        # pecl install memcache</li>
+        <li>Or via compilation. Download the <a href="http://pecl.php.net/package/memcache" target="_blank">latest stable version</a> and extract:<br />
+        # cd /usr/local/src/ &amp;&amp; wget <a href="http://pecl.php.net/get/memcache-2.2.5.tgz" target="_blank">http://pecl.php.net/get/memcache-2.2.5.tgz</a> &amp;&amp; tar -xzf memcache-2.2.5.tgz &amp;&amp; cd memcache-2.2.5</li>
+        <li>Now we start to compile:<br />
+        # phpize &amp;&amp; ./configure &amp;&amp; make &amp;&amp; make install</li>
+        <li>You can also use the memcache.ini file we prepared for you:<br />
+        # cp /var/www/vhosts/domain.com/httpdocs/wp-content/plugins/w3-total-cache/ini/memcache.ini /etc/php.d/</li>
+        <li>Finally restart apache:<br />
+        # /etc/init.d/httpd restart</li>
+        <li>You're done! Memcache should now be available. If the following command retuns anything, you're all set:<br />
+		# php -r 'phpinfo();' | grep 'memcache'</li>
+    </ol> 
+    <p>For windows users we recommend checking the following site(s) for more installation tips:</p> 
+    <ul> 
+        <li><a href="http://pureform.wordpress.com/2008/01/10/installing-memcache-on-windows-for-php/" target="_blank">Installing memcache on Windows for <acronym title="Hypertext Preprocessor">PHP</acronym></a></li>
+    </ul> 
+	<hr />
+	<p id="APC"><strong><acronym title="PHP Extension Community Library">PECL</acronym> Alternative PHP Cache (<acronym title="Alternative PHP Cache">APC</acronym>) Installation (Recommended):</strong><br />
+	  <em>Time required: 1 minute</em></p>
+    <ol> 
+        <li>Install <acronym title="Alternative PHP Cache">APC</acronym> using the <acronym title="PHP Extension Community Library">PECL</acronym> command (and skip to #5 if successful):<br />
+        # pecl install apc</li>
+        <li>Or via compilation. Download the <a href="http://pecl.php.net/package/APC" target="_blank">latest stable version</a> and extract:<br />
+		# cd /usr/local/src &amp;&amp; wget <a href="http://pecl.php.net/get/APC-3.0.19.tgz" target="_blank">http://pecl.php.net/get/APC-3.0.19.tgz</a> &amp;&amp; tar -xzf APC-3.0.19.tgz &amp;&amp; cd APC-3.0.19</li>
+		<li>Note the path returned for the following command:<br />
+		# whereis php-config</li>
+		<li>Use the output from #2 to modify the --with-apxs and --with-php-config flags in the following compile command:<br />
+		# phpize &amp;&amp; ./configure --enable-apc --enable-apc-mmap --with-apxs=/usr/bin/phpize --with-php-config=/usr/bin/php-config &amp;&amp; make &amp;&amp; make install<br />
+		<br />The result should be similar to:<br />
+		Installing shared extensions: /usr/lib/php/modules/</li>
+        <li>You can also use the apc.ini file we prepared for you:<br />
+		# cp /var/www/vhosts/domain.com/httpdocs/wp-content/plugins/w3-total-cache/ini/apc.ini /etc/php.d/</li>
+		<li>Restart apache when ready:<br />
+		# /etc/init.d/httpd restart</li>
+		<li>You're done! <acronym title="Alternative PHP Cache">APC</acronym> should now be available. If the following command retuns anything, you're all set:<br />
+		# php -r 'phpinfo();' | grep 'apc'</li>
+    </ol>
+    <p>For windows users we recommend checking the following site(s) for more installation tips:</p>
+    <ul> 
+        <li><a href="http://www.sitebuddy.com/PHP/Accelerators/apc_windows_binaries_builds" target="_blank"><acronym title="Alternative PHP Cache">APC</acronym> binaries for <acronym title="Hypertext Preprocessor">PHP</acronym> 5.x (windows builds)</a></li>
+    </ul>
+	<hr />
+	<p id="eAccelerator"><strong>eAccelerator Installation:</strong><br />
+	  <em>Time required: 1 minute</em></p>
+    <ol> 
+        <li>If using <acronym title="Hypertext Preprocessor">PHP</acronym> v5.2+, download the <a href="http://eaccelerator.net/" target="_blank">latest compatible version</a> and extract:<br />
+		# cd /usr/local/src &amp;&amp; wget <a href="http://bart.eaccelerator.net/source/0.9.6/eaccelerator-0.9.6.tar.bz2" target="_blank">http://bart.eaccelerator.net/source/0.9.6/eaccelerator-0.9.6.tar.bz2</a> &amp;&amp; tar -xjf eaccelerator-0.9.6.tar.bz2 &amp;&amp; cd eaccelerator-0.9.6</li>
+		<li>Note the path returned for the following command:<br />
+		# whereis php-config</li>
+		<li>Use the output from #2 to modify the --with-php-config flag in the following compile command:<br />
+		# phpize &amp;&amp; ./configure --enable-eaccelerator=shared --with-php-config=/usr/bin/php-config &amp;&amp; make &amp;&amp; make install<br />
+		<br />The result should be similar to:<br />
+		Installing shared extensions: /usr/lib/php/modules/</li>
+        <li>You can also use the eaccelerator.ini file we prepared for you:<br />
+		# cp /var/www/vhosts/domain.com/httpdocs/wp-content/plugins/w3-total-cache/ini/eaccelerator.ini /etc/php.d/</li>
+		<li>Restart apache when ready:<br />
+		# /etc/init.d/httpd restart</li>
+		<li>You're done! eAccelerator should now be available. If the following command retuns anything, you're all set:<br />
+		# php -r 'phpinfo();' | grep 'eaccelerator'</li>
+    </ol>
+    <p>For windows users we recommend checking the following site(s) for more installation tips:</p>
+    <ul> 
+        <li><a href="http://www.sitebuddy.com/PHP/Accelerators/eAccelerator_windows_binaries_builds" target="_blank">eAccelerator binaries for <acronym title="Hypertext Preprocessor">PHP</acronym> 5.x (windows builds)</a></li>
+    </ul>
+	<hr />
+	<p id="XCache"><strong>XCache Installation:</strong><br />
+	  <em>Time required: 1 minute</em></p>
+    <ol> 
+        <li>Download the <a href="http://xcache.lighttpd.net/wiki/ReleaseArchive" target="_blank">latest compatible version</a> and extract:<br />
+		# cd /usr/local/src &amp;&amp; wget <a href="http://xcache.lighttpd.net/pub/Releases/1.3.0/xcache-1.3.0.tar.gz" target="_blank">http://xcache.lighttpd.net/pub/Releases/1.3.0/xcache-1.3.0.tar.gz</a> &amp;&amp; tar -xzf xcache-1.3.0.tar.gz &amp;&amp; cd xcache-1.3.0</li>
+		<li>Note the path returned for the following command:<br />
+		# whereis php-config</li>
+		<li>Use the output from #2 to modify the --with-php-config flag in the following compile command:<br />
+		# phpize &amp;&amp; ./configure --with-php-config=/usr/bin/php-config --enable-xcache --enable-xcache-optimizer --enable-xcache-coverager &amp;&amp; make &amp;&amp; make install<br />
+		<br />The result should be similar to:<br />
+		Installing shared extensions: /usr/lib/php/modules/</li>
+        <li>You can also use the eaccelerator.ini file we prepared for you:<br />
+		# cp /var/www/vhosts/domain.com/httpdocs/wp-content/plugins/w3-total-cache/ini/xcache.ini /etc/php.d/</li>
+		<li>Restart apache when ready:<br />
+		# /etc/init.d/httpd restart</li>
+		<li>You're done! XCache should now be available. If the following command retuns anything, you're all set:<br />
+		# php -r 'phpinfo();' | grep 'xcache'</li>
+    </ol>
+    <hr />
+    <p><strong>Note(s):</strong></p>
+    <ul>
+      <li>The provided instructions are for 32-bit CentOS, however we can provide others based on <a href="mailto:wordpressexperts@w3-edge.com">your requests</a>.</li>
+      <li>In the case where Apache is not used, the .htaccess file located in the root directory of the WordPress installation, wp-content/w3tc/pgcache/.htaccess and wp-content/w3tc/min/.htaccess contain directives that must be re-created for your web server software.</li>
+      <li>Restarting the web server will empty the opcode cache, which means it will have to be rebuilt over time and your site's performance will suffer during this period. Still, an opcode cache should be installed in any case to maximize WordPress performance.</li>
+      <li>Consider using memcached for objects that must persist across web server restarts or that you wish to share amongst your pool of servers (or cluster), e.g.: database objects or page cache.</li>
+      <li>Some yum or mirrors may not have the necessary packages, in such cases you may have to do a manual installation.</li>
+    </ul>
+</div>
+
+<?php include W3TC_DIR . '/inc/options/common/footer.phtml'; ?>

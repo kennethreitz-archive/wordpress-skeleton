@@ -1,0 +1,150 @@
+<?php include W3TC_DIR . '/inc/options/common/header.phtml'; ?>
+
+<h3>Page Cache Settings</h3>
+
+<form action="options-general.php">
+    <p>
+        Page Caching is currently <span class="w3tc-<?php if ($pgcache_enabled): ?>enabled">enabled<?php else: ?>disabled">disabled<?php endif; ?></span>.
+        <input type="submit" name="flush_pgcache" value="Empty cache"<?php if (! $pgcache_enabled): ?> disabled="disabled"<?php endif; ?> class="button" />	
+        <input type="hidden" name="page" value="<?php echo W3TC_FILE; ?>" />
+        <input type="hidden" name="tab" value="<?php echo $this->_tab; ?>" />
+    </p>
+</form>
+
+<form action="options-general.php?page=<?php echo urldecode(W3TC_FILE); ?>&amp;tab=<?php echo $this->_tab; ?>" method="post">
+	<fieldset>
+		<legend>General</legend>
+
+        <table class="form-table">
+        	<tr>
+        		<th colspan="2">
+        			<input type="hidden" name="pgcache.reject.logged" value="0" />
+        			<label><input type="checkbox" name="pgcache.reject.logged" value="1"<?php checked($this->_config->get_boolean('pgcache.reject.logged'), true); ?> /> Don't cache pages for logged in users</label><br />
+    				<span class="description">Users that have signed in to WordPress (e.g. administrators) will never view cached pages if enabled.</span>
+        		</th>
+        	</tr>
+        	<tr>
+        		<th colspan="2">
+        			<input type="hidden" name="pgcache.cache.home" value="0" />
+        			<label><input type="checkbox" name="pgcache.cache.home" value="1"<?php checked($this->_config->get_boolean('pgcache.cache.home'), true); ?> /> Cache the home page</label><br />
+    				<span class="description">For many blogs this is your most visited page, it is recommended that you cache it.</span>
+        		</th>
+        	</tr>
+        	<tr>
+        		<th colspan="2">
+        			<input type="hidden" name="pgcache.cache.feed" value="0" />
+        			<label><input type="checkbox" name="pgcache.cache.feed" value="1"<?php checked($this->_config->get_boolean('pgcache.cache.feed'), true); ?> /> Cache <acronym title="Really Simple Syndication">RSS</acronym> / Atom feeds (site, categories, tags, comments)</label><br />
+    				<span class="description">Even if using a feed proxy service (like <a href="http://en.wikipedia.org/wiki/FeedBurner" target="_blank">FeedBurner</a>), enabling this option is still recommended.</span>
+        		</th>
+        	</tr>
+        	<tr>
+        		<th colspan="2">
+        			<input type="hidden" name="pgcache.cache.query" value="0"<?php if ($this->_config->get_string('pgcache.engine') == 'file_pgcache'): ?> disabled="disabled"<?php endif; ?> />
+        			<label><input type="checkbox" name="pgcache.cache.query" value="1"<?php checked($this->_config->get_boolean('pgcache.cache.query'), true); ?><?php if ($this->_config->get_string('pgcache.engine') == 'file_pgcache'): ?> disabled="disabled"<?php endif; ?> /> Cache <acronym title="Uniform Resource Identifier">URI</acronym>s with query string variables</label><br />
+    				<span class="description">Search result (and similar) pages will be cached if enabled.</span>
+        		</th>
+        	</tr>
+        	<tr>
+        		<th><label for="pgcache_compression"><acronym title="Hypertext Transfer Protocol">HTTP</acronym> compression:</label></th>
+        		<td>
+        			<select id="pgcache_compression" name="pgcache.compression">
+                   		<option value="">None (not recommended)</option>
+                    	<option value="gzip"<?php selected($this->_config->get_string('pgcache.compression'), 'gzip'); ?><?php if (! $pgcache_gzip): ?> disabled="disabled"<?php endif; ?>>gzip (good)</option>
+                    	<option value="deflate"<?php selected($this->_config->get_string('pgcache.compression'), 'deflate'); ?><?php if (! $pgcache_deflate): ?> disabled="disabled"<?php endif; ?>>deflate (not recommended)</option>
+    					<option value="gzip,deflate"<?php selected($this->_config->get_string('pgcache.compression'), 'gzip,deflate'); ?><?php if (! $pgcache_gzip || ! $pgcache_deflate): ?> disabled="disabled"<?php endif; ?>>gzip and deflate (best)</option>
+    				</select><br />    			
+    				<span class="description">Use <acronym>HTTP</acronym> compression to automatically reduce the load time of HTML documents in browsers that support it.</span>
+        		</td>
+        	</tr>
+        </table>
+    
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+	</fieldset>
+
+	<fieldset>
+		<legend>Advanced</legend>
+
+        <table class="form-table">
+        	<?php if ($this->_config->get_string('pgcache.engine') == 'memcached'): ?>
+        	<tr>
+        		<th><label for="memcached_servers">Memcached hostname:port / <acronym title="Internet Protocol">IP</acronym>:port:</label></th>
+        		<td>
+        			<input id="memcached_servers" type="text" name="pgcache.memcached.servers" value="<?php echo htmlspecialchars(implode(',', $this->_config->get_array('pgcache.memcached.servers'))); ?>" size="100" />
+        			<input id="test_memcached" class="button" type="button" value="Test" />
+        			<span id="test_memcached_status" class="w3tc-status w3tc-process"></span>
+        			<br /><span class="description">Multiple servers may be used and seperated by a comma; e.g. 192.168.1.100:11211, domain.com:22122</span>
+        		</td>
+        	</tr>
+        	<?php endif; ?>
+        	<tr>
+        		<th style="width: 250px;"><label for="pgcache_lifetime">Maximum lifetime of cache objects:</label></th>
+        		<td><input id="pgcache_lifetime" type="text" name="pgcache.lifetime" value="<?php echo $this->_config->get_integer('pgcache.lifetime'); ?>" size="8" /> seconds
+        			<br /><span class="description">Determines the natural expiration time of unchanged cache items. The higher the value, the larger the cache.</span>
+    			</td>
+        	</tr>
+        	<tr>
+        		<th><label for="pgcache_file_gc">Garbage collection interval:</label></th>
+        		<td><input id="pgcache_file_gc" type="text" name="pgcache.file.gc" value="<?php echo $this->_config->get_integer('pgcache.file.gc'); ?>" size="8"<?php if ($this->_config->get_string('pgcache.engine') != 'file' && $this->_config->get_string('pgcache.engine') != 'file_pgcache'): ?> disabled="disabled"<?php endif; ?> /> seconds
+        			<br /><span class="description">If caching to disk, specify how frequently expired cache data is removed. For busy sites, a lower value is best.</span>
+    			</td>
+        	</tr>
+        	<tr>
+        		<th valign="top"><label for="pgcache_reject_ua">Rejected User Agents:</label></th>
+        		<td>
+        			<textarea id="pgcache_reject_ua" name="pgcache.reject.ua" cols="40" rows="5"><?php echo htmlspecialchars(implode("\r\n", $this->_config->get_array('pgcache.reject.ua'))); ?></textarea><br />
+        			<span class="description">Never send cache pages for these user agents.</span>
+        		</td>
+        	</tr>
+        	<tr>
+        		<th valign="top"><label for="pgcache_reject_cookie">Rejected Cookies:</label></th>
+        		<td>
+        			<textarea id="pgcache_reject_cookie" name="pgcache.reject.cookie" cols="40" rows="5"><?php echo htmlspecialchars(implode("\r\n", $this->_config->get_array('pgcache.reject.cookie'))); ?></textarea><br />
+        			<span class="description">Never cache pages that use the specified cookies.</span>
+        		</td>
+        	</tr>
+        	<tr>
+        		<th valign="top"><label for="pgcache_reject_uri">Never cache the following pages:</label></th>
+        		<td>
+        			<textarea id="pgcache_reject_uri" name="pgcache.reject.uri" cols="40" rows="5"><?php echo htmlspecialchars(implode("\r\n", $this->_config->get_array('pgcache.reject.uri'))); ?></textarea><br />
+        			<span class="description">Always ignore the specified pages / directories.</span>
+        		</td>
+        	</tr>
+        	<tr>
+        		<th valign="top"><label for="pgcache_accept_files">Caching exception list:</label></th>
+        		<td>
+        			<textarea id="pgcache_accept_files" name="pgcache.accept.files" cols="40" rows="5"><?php echo htmlspecialchars(implode("\r\n", $this->_config->get_array('pgcache.accept.files'))); ?></textarea><br />
+        			<span class="description">Cache the specified pages / directories even if listed in the "never cache the following pages" field.</span>
+        		</td>
+        	</tr>
+        	<tr>
+        		<th valign="top"><label for="pgcache_cache_headers">Specify page headers:</label></th>
+        		<td>
+        			<textarea id="pgcache_cache_headers" name="pgcache.cache.headers" cols="40" rows="5"<?php if (! W3TC_PHP5 || $this->_config->get_string('pgcache.engine') == 'file_pgcache'): ?> disabled="disabled"<?php endif; ?>><?php echo htmlspecialchars(implode("\r\n", $this->_config->get_array('pgcache.cache.headers'))); ?></textarea><br />
+        			<span class="description">Specify additional page headers to cache.</span>
+        		</td>
+        	</tr>
+        	<tr>
+        		<th valign="top"><label for="pgcache_mobile_agents">Mobile user agents:</label></th>
+        		<td>
+        			<textarea id="pgcache_mobile_agents" name="pgcache.mobile.agents" cols="40" rows="5"><?php echo htmlspecialchars(implode("\r\n", $this->_config->get_array('pgcache.mobile.agents'))); ?></textarea><br />
+        			<span class="description">Specify which mobile devices to detect for redirection to the domain name specified below.</span>
+        		</td>
+        	</tr>
+        	<tr>
+        		<th><label for="pgcache_mobile_redirect">Redirect mobile users to:</label></th>
+        		<td>
+        			<input id="pgcache_mobile_redirect" type="text" name="pgcache.mobile.redirect" value="<?php echo htmlspecialchars($this->_config->get_string('pgcache.mobile.redirect')); ?>" size="100" />
+        			<br /><span class="description">If you have a mobile version of your site hosted on another domain, enter the domain name above. The user agents specified in the "Mobile user agents" box will be directed to this domain.</span>
+        		</td>
+        	</tr>
+        </table>
+    
+        <p class="submit">
+        	<input type="submit" name="Submit" class="button-primary" value="Save changes" />
+        </p>
+	</fieldset>
+</form>
+
+<?php include W3TC_DIR . '/inc/options/common/footer.phtml'; ?>
