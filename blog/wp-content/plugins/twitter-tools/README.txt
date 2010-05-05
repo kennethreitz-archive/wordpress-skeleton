@@ -1,9 +1,9 @@
 === Twitter Tools ===
 Tags: twitter, tweet, integration, post, digest, notify, integrate, archive, widget
-Contributors: alexkingorg. crowdfavorite
+Contributors: alexkingorg, crowdfavorite
 Requires at least: 2.6
-Tested up to: 2.9.1
-Stable tag: 2.2.1
+Tested up to: 3.0b1
+Stable tag: 2.3.1
 
 Twitter Tools is a plugin that creates a complete integration between your WordPress blog and your Twitter account.
 
@@ -220,6 +220,17 @@ No, this is not a good idea. Twitter Tools needs to be able to look at the begin
 
 
 == Changelog ==
+
+= 2.3.1 =
+
+* Fixed a typo that was breaking the latest tweet template tag.
+
+= 2.3 =
+
+* Added nonces
+* Patched several potential security issues (thanks Mark Jaquith)
+* Load JS and CSS in separate process to possibly avoid some race conditions
+
 
 = 2.2.1 =
 
