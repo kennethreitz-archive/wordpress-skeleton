@@ -19,3 +19,6 @@
 [submodule "blog/wp-content/themes/wp-console"]
 	path = blog/wp-content/themes/wp-console
 	url = http://github.com/sant0sk1/wordpress-console.git
+[submodule "blog/wp-content/plugins/wp-console"]
+	path = blog/wp-content/plugins/wp-console
+	url = http://github.com/sant0sk1/wordpress-console.git

@@ -3,8 +3,8 @@
 if ($_SERVER['HTTP_HOST'] == 'localhost.dev' /* dev domain name*/) { 
 	// Settings for Dev Site
 	define('DB_NAME', 'xxxxxxxxx');
-	define('DB_USER', 'xxxxxxxxx');
-	define('DB_PASSWORD', 'xxxxxxxxx');
+	define('DB_USER', 'root');
+	define('DB_PASSWORD', 'drummer42');
 	define('DB_HOST', 'localhost');
 	define('WP_DEBUG', true);
 	
