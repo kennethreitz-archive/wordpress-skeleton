@@ -16,3 +16,6 @@
 [submodule "blog/wp-content/plugins/wp-s3"]
 	path = blog/wp-content/plugins/wp-s3
 	url = git://github.com/kennethreitz/wp-s3.git
+[submodule "blog/wp-content/themes/wp-console"]
+	path = blog/wp-content/themes/wp-console
+	url = http://github.com/sant0sk1/wordpress-console.git

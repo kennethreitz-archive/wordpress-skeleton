@@ -21,3 +21,6 @@ RewriteRule . /blog/index.php [L]
 php_value upload_max_filesize 250M
 php_value post_max_size 250M
 php_value memory_limit 170M
+# BEGIN WordPress
+
+# END WordPress
